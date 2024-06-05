@@ -1,0 +1,145 @@
+
+.container{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    /*background-color:#2f4538;*/
+    background-color: #8cb47a;
+    font-style:helvetica;
+    
+}
+
+.painel{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav{
+    position:fixed;
+    text-decoration: none;
+    list-style-type:none;
+    display:flex;
+    top: -20px;
+    margin:0px;
+    background-color: rgb(0, 0, 0, 0.9);
+    box-shadow: 0px 15px 20px #222121;
+    backdrop-filter: blur(13px);
+    height: 90px;
+    width:100%;
+    align-items: center;
+}
+
+
+
+
+.conteudo{  
+    background-color:aqua;
+    /* border:3px solid red; */
+   
+    height: auto;
+    width: 1000px;
+    /* overflow: hidden; */
+    background-image: url('imgs/platyNoComputador.jpeg');
+}
+
+
+.menu{
+
+    position:fixed;
+    text-decoration: none;
+    list-style-type:none;
+    display:flex;    
+    margin-bottom:0px;
+    /* background-color: black; */
+    /* box-shadow: 0px 15px 20px #222121; */
+    /* height: 80px;
+    width:100%; */
+    margin-left:100px;
+    align-items:center;
+    
+    
+    
+}
+
+nav li {
+    border-radius:5px ;
+    margin: 12px;
+    padding: 20px 25px;
+    height: 10px;
+    width: 50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ 
+    
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    font-size:20px;
+    
+    
+}
+
+
+.divRodape{
+    display:flex;
+}
+
+
+#rodape{
+
+    align-items:start;
+    justify-content:start;
+    /* background-color:#93c572; */
+    background-color: #000000;
+    height: 580px;
+    
+    
+}
+
+
+#divContato{
+    display:flex;
+    /* border:solid red 3px; */
+    justify-content: center;
+    color: white;
+    
+}
+#tituloContatos{
+    font-size:45px;
+    margin:0px;
+    color: #2f4538;
+}
+
+#divWhatsapp{
+    color: white;
+}
+
+#divInstagram{
+    color:white;
+}
+
+#divMsgdia{
+    position:absolute;
+    margin:0px;
+    top:10px;
+    height: 100%;
+    width: auto;
+    right: 25px;
+}
+#msgDia{
+    color:white;
+    font-size: 25px;
+
+}
+
+.container main img{
+    width: 50px;
+    height: 50px;
+}

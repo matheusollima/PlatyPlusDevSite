@@ -1,0 +1,87 @@
+
+.container{
+    overflow-x: hidden; 
+    
+    margin:0;
+    display:flex;
+    min-height:100vh;
+    /* background-image: url(imgs/itl.cat_platypus-wallpaper_1717861.png); */
+    background-color: #437C17;
+    flex-direction: column ; 
+}
+
+
+
+
+nav{
+    margin-left: -200;
+    background-color: black;*/
+    padding:0;
+    height: 0;
+    box-shadow: 0px 16px rgb(4, 241, 24); */
+     
+ 
+     /* z-index: 10; 
+     position:relative; */
+    
+     
+ }
+
+
+
+
+
+.menu{
+    text-decoration: none;
+    list-style-type:none;
+    height: 50px;
+    display:flex;
+    top: -20px;
+    margin:0;
+    /*background-color: black;*/
+    box-shadow: 0px 15px 20px #222121;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+nav li {
+    padding: 20px 25px;
+    
+   
+}
+
+nav li a {
+    text-decoration:  none;
+    color: white;
+   
+}
+
+
+
+
+
+
+
+#painelPrincipal {
+    background-color:rgb(255, 255, 255);
+    height: 500px;
+    width: 1000px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 45px; 
+    
+    top: 20px; 
+    background-image: url(imgs/platyNoComputador.jpeg);
+    flex: 1 1 0;
+    
+}
+
+#rodape{
+   
+    background-color:red;
+}
