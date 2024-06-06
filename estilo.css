@@ -5,8 +5,8 @@
     min-height: 100vh;
     margin: 0;
     /*background-color:#2f4538;*/
-    /* background-color: #8cb47a; */
-    background-color: blue;
+    background-color: #8cb47a; 
+    
     font-style:helvetica;
     
 }
@@ -37,7 +37,7 @@ nav{
 
 
 .conteudo{  
-    background-color:aqua;
+   
     /* border:3px solid red; */
    
     height: auto;
@@ -60,7 +60,8 @@ nav{
     width:100%; */
     margin-left:100px;
     align-items:center;
-    
+    border: red solid 5px;
+  
     
     
 }
@@ -74,7 +75,7 @@ nav li {
     display:flex;
     align-items:center;
     justify-content:center;
- 
+    
     
 }
 
@@ -83,6 +84,7 @@ nav li a {
     color: rgb(255, 255, 255);
     font-weight:bold;
     font-size:20px;
+  
     
     
 }
@@ -147,8 +149,20 @@ nav li a {
 
 
 @media screen and (max-width: 600px) {
+    .container{
+        margin:0px;
+    }
+    nav{
+        display: flex;
+        padding: 0px;
+        align-content: center;
+        justify-content: center;
+    
+    }
     .menu {
-        margin-left: -1px; /* Reduzir a margem esquerda para economizar espaço */
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px; 
     }
 
     .conteudo {
