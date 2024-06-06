@@ -144,3 +144,26 @@ nav li a {
     width: 50px;
     height: 50px;
 }
+
+
+@media screen and (max-width: 600px) {
+    .menu {
+        margin-left: -1px; /* Reduzir a margem esquerda para economizar espaço */
+    }
+
+    .conteudo {
+        width: 100%; /* Ocupar toda a largura da tela */
+        /* background-image: none; Remover a imagem de fundo para melhor legibilidade */
+    }
+
+    nav li {
+        padding: 10px 15px; /* Reduzir o espaçamento dos itens do menu */
+    }
+
+    #divContato {
+        font-size: 18px; /* Tamanho menor para os detalhes de contato */
+    }
+    #divMsgdia{
+        display: none;
+    }
+}
