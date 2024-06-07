@@ -10,11 +10,18 @@
 <body class="container" >
  <header>
     <nav>
-    <ul class = "menu"  >
-        <li id = "inicio" onmouseover="efeitoOver('inicio')" onmouseout = "sairOver('inicio')"><a href="#">Inicio </a></li>
-        <li id = "servicos" onmouseover="efeitoOver('servicos')" onmouseout = "sairOver('servicos')"><a href="#">Serviços</a></li>
-        <li id = "sobre" onmouseover="efeitoOver('sobre')" onmouseout = "sairOver('sobre')" onclick = "alertMsg()"><a href="#">Sobre</a> </li>      
-    </ul>
+   <div class="logomenu">
+    <div class = "logotipo">
+        <img class="logotipoimg" src="imgs\logotipo.png" alt="">
+       </div>
+    
+        <ul class = "menu"  >
+            <li id = "inicio" onmouseover="efeitoOver('inicio')" onmouseout = "sairOver('inicio')"><a href="#">Inicio </a></li>
+            <li id = "servicos" onmouseover="efeitoOver('servicos')" onmouseout = "sairOver('servicos')"><a href="#">Serviços</a></li>
+            <li id = "sobre" onmouseover="efeitoOver('sobre')" onmouseout = "sairOver('sobre')" onclick = "alertMsg()"><a href="#">Sobre</a> </li>      
+        </ul>
+   </div>
+
     <div id = "div0Msgdia"></div>
     <div id = divMsgdia>
         <p  id = "msgDia">Boa noite</p>
