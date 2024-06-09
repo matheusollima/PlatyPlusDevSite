@@ -35,3 +35,33 @@ function msgDia(){
      
 }
 msgDia();
+
+
+
+var header = document.querySelector('header');
+var isHeaderHidden = false;
+
+function onScroll() {
+  if (window.pageYOffset > 2000 && !isHeaderHidden) {
+    header.style.opacity = "0";
+    isHeaderHidden = true;
+  } else if (window.pageYOffset <= 2000 && isHeaderHidden) {
+    header.style.opacity = "1";
+    isHeaderHidden = false;
+  }
+}
+
+var debouncedOnScroll = debounce(onScroll, 50);
+window.addEventListener('scroll', debouncedOnScroll);
+
+function debounce(fn, delay) {
+  var timer = null;
+
+  return function() {
+    var context = this, args = arguments;
+    clearTimeout(timer);
+    timer = setTimeout(function() {
+      fn.apply(context, args);
+    }, delay);
+  };
+}
