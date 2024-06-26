@@ -1,8 +1,10 @@
 function efeitoOver(obj){
     id = obj
    elemento = document.getElementById(id);
-   elemento.style.opacity = 1
-   elemento.style.backgroundColor = "rgb(38, 245, 38)";
+  //  elemento.style.backgroundColor = "rgb(38, 245, 38)";
+ 
+  
+   
    
 
 }
@@ -11,8 +13,10 @@ function sairOver(obj){
     id = obj
    elemento = document.getElementById(id);
    
-   elemento.style.backgroundColor = " rgb(0, 0, 0, 0.0)"
-   
+   elemento.style.backgroundColor = "transparent"
+  elemento.style.borderBottomColor = "transparent";
+  elemento.style.borderRadius = "0px";
+
 }
 
 function alertMsg() {
@@ -50,6 +54,7 @@ function onScroll() {
     isHeaderHidden = false;
   }
 }
+onScroll();
 
 var debouncedOnScroll = debounce(onScroll, 50);
 window.addEventListener('scroll', debouncedOnScroll);
@@ -60,8 +65,29 @@ function debounce(fn, delay) {
   return function() {
     var context = this, args = arguments;
     clearTimeout(timer);
+    
     timer = setTimeout(function() {
       fn.apply(context, args);
     }, delay);
   };
 }
+
+
+const myObserver = new IntersectionObserver((entries) =>{
+  entries.forEach((entry) =>{
+      if(entry.isIntersecting){
+          entry.target.classList.add('show')
+      } else{
+          entry.target.classList.remove('show')
+        
+      }
+  })
+   
+
+
+})
+
+const elementos = document.querySelectorAll('.hidden')
+
+elementos.forEach((element) => myObserver.observe(element) )
+
