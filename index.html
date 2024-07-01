@@ -84,10 +84,10 @@
         </section>
       
       
-        <section class = "hidden">
-            <h1>Tecnologias</h1><br>
+        <section class = "hidden" id = "tecnologias-section">
+            <h1 id = "tecnologias-title">Tecnologias</h1><br>
             
-            <ul>
+            <ul class = "front-back-column">
             <li >
                 <h2>FRONT-END</h2><br>
                 <div id = "tecnologia-front-div">
@@ -114,8 +114,14 @@
                 <h2>BACK-END</h2><br>
                 <div >
                     <ul class = "tecnologia-back">
-                        <li><img class = "front-img" src="imgs/front-end/PHP.svg" alt=""></li>
-                        <li><img class = "front-img" src="imgs/front-end/2560px-Node.js_logo.svg.png" alt=""></li>
+                        <li><img class = "front-img" id = "php-logo-img" src="imgs/front-end/PHP.svg" alt="">
+                            <label class = "tecnologia-logo-label" for="php-logo-img">PHP</label>
+                        </li>
+                        
+                        <li><img class = "front-img" id = "nodejs-logo-img" src="imgs/front-end/2560px-Node.js_logo.svg.png" alt="">
+                            <label class = "tecnologia-logo-label" for="nodejs-logo-img">Node JS</label>
+                        </li>
+                        
                         <li><div></div></li>
                       </ul>
                     
@@ -124,8 +130,23 @@
             
 
             </li>
+        
             </ul>
-
+            <ul>
+                <li>
+                    <h2>DATABASE</h2><br>
+                    <div >
+                        <ul class = "tecnologia-back">
+                            <li><img class = "front-img" src="imgs/front-end/MySQL-Logo.png" alt=""></li>
+                            <li><div></div></li>
+                          </ul>
+                        
+                    </div>
+                        
+                
+    
+                </li> 
+            </ul>
         </section>
      
      
@@ -159,7 +180,6 @@
                 </div>
     
                    <textarea name="" id="msgContato"></textarea>
-                
                 </div>
 
            </section>

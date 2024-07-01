@@ -12,10 +12,14 @@ h1{
 
 }
 
+#tecnologias-title{
+    color: rgb(26, 88, 13);
+}
+
 h2{
   /* display: inline;   */
   font-size: 30px;
-  color:darkgreen;
+  color:#000000;
   font-family: "roboto";
   text-align: center;
 }
@@ -163,7 +167,7 @@ main section h1 {
     justify-content:start; */
     /* background-color:#93c572; */
     background-color:#1f221e;
-    height: auto;
+    /* height: auto; */
     font-family: "roboto";
     padding: 0;
 }
@@ -192,31 +196,49 @@ main section h1 {
 
 
 #msgContato{
-    height: 400px;
-    width: 400px;
+    
     resize:none;
-    margin-top:50px; */
+    margin-top:10px;
+    outline: 0;
+    /* background-color: green; */
+    color: black;
+    font-family: "roboto";
+    font-size: 30px;
+    border: 0;
+    height: auto;
+    width: auto;
 }
 
 
 #formulario-contato {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     padding-bottom: 50px;
 }
 
 .formContato{
-    display: grid;
-    justify-content: center;
+    /* display: grid; */
+    /* justify-content: center; */
     /* margin-bottom: 50px; */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding-top: 15px;
     padding-bottom: 50px;
     background-color: black;
-    width: 500px;
-    
+    border: solid green 4px;
+    height: 300px;
+    width: 2000px;
 }
 
+.front-back-column {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+   
+}
+
+.front-back-column li{
+    margin: 20px;
+}
 
 .formInputs{
   margin: 15px 0;
@@ -244,6 +266,8 @@ main section h1 {
     border-bottom: 2px solid rgb(150,150,150);
     outline: 0;
 }
+
+
 
 .formInputs input:focus,
 .formInputs input:valid {
@@ -278,6 +302,11 @@ main section h1 {
 }
 
 
+#tecnologias-section{
+    background-color: #cdd69d;
+    padding-top: 50px;
+}
+
 #tecnologia-front-div{
     /* border: solid rgb(8, 71, 2) 3px; */
     margin-bottom: 40px;
@@ -299,12 +328,12 @@ main section h1 {
 
 .front-img {
     margin: 30px;
-    height: 200px;
+    height: 100px;
     user-select: none;
 }
 
 .tecnologia-logo-label {
-    color: green;
+    color: rgb(0, 0, 0);
     font-family: "roboto";
     user-select: none;
     display: block;
@@ -318,6 +347,13 @@ main section h1 {
     justify-content: center;
     list-style-type: none;
 }
+
+
+.tecnologia-back li{
+    /* display: block; */
+    text-align: center;
+}
+
 
 /* 
 
