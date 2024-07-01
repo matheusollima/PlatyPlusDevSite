@@ -12,6 +12,14 @@ h1{
 
 }
 
+h2{
+  /* display: inline;   */
+  font-size: 30px;
+  color:darkgreen;
+  font-family: "roboto";
+  text-align: center;
+}
+
 .header{
  
 }
@@ -191,12 +199,17 @@ main section h1 {
 }
 
 
+#formulario-contato {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
 .formContato{
     display: grid;
     justify-content: center;
     /* margin-bottom: 50px; */
     box-sizing: border-box;
-    border: solid red 5px;
     padding-top: 15px;
     padding-bottom: 50px;
     background-color: black;
@@ -264,6 +277,47 @@ main section h1 {
     height: 50px;
 }
 
+
+#tecnologia-front-div{
+    /* border: solid rgb(8, 71, 2) 3px; */
+    margin-bottom: 40px;
+}
+
+.tecnologia-front{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.tecnologia-front li{
+ 
+  text-align: center;
+}
+
+.front-img {
+    margin: 30px;
+    height: 200px;
+    user-select: none;
+}
+
+.tecnologia-logo-label {
+    color: green;
+    font-family: "roboto";
+    user-select: none;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.tecnologia-back{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
 
 /* 
 
