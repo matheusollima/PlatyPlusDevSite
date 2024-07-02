@@ -4,6 +4,37 @@
 }
 
 
+.apresentacao{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #2b302a;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#titulo-apresentação{
+ color: darkgreen;   
+}
+
+#texto-apresentação {
+    height: 800px;
+    width: 800px;
+    margin-top: 300px;
+    overflow-y: hidden;
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+#imagem-apresentação{
+    width: 800px;
+    height: 800px;
+}
+
 h1{
   text-align: center;
   font-size: 70px;
@@ -149,6 +180,7 @@ nav li:hover ::after {
 
 main{
     text-align: center;
+    background-color: transparent;
 }
 
 main section h1 {
@@ -211,7 +243,7 @@ main section h1 {
 
 
 #formulario-contato {
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     padding-bottom: 50px;
 }
@@ -225,7 +257,7 @@ main section h1 {
     background-color: black;
     border: solid green 4px;
     height: 300px;
-    width: 700px;
+    width: 800px;
 }
 
 .front-back-column {
@@ -240,8 +272,8 @@ main section h1 {
 }
 
 .formInputs{
-  margin: 15px 0;
-  width: auto;
+  margin: 25px 0;
+  width: 300px;
  position: relative;
 }
 
@@ -257,7 +289,7 @@ main section h1 {
 }
 
 .formInputs input {
-    width: 100%;
+    width: 750px;
     padding: 5px;
     color: rgb(150,150,150);
     border:0;
@@ -301,6 +333,48 @@ main section h1 {
 }
 
 
+/*
+SERVIÇOS
+*/
+
+#serviços{
+    height: 100vh;
+    margin-top: 100px;
+   
+}
+
+#serviços-titulo{
+    font-size: 60px;
+    
+    margin: 50px 0;
+}
+
+#painel-serviços{
+    height: 1000px;
+    width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background-color: grey;
+    display: flex;
+    border-radius: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel-software{
+    height: 600px;
+    width: 600px;
+    background-color: darkgreen;
+    margin: 50px;
+    margin-top: 50px;
+    top: 50px;
+    
+}
+
+/*
+TECNOLOGIAS
+*/
 #tecnologias-section{
     background-color: #cdd69d;
     padding-top: 50px;
