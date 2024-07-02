@@ -217,16 +217,15 @@ main section h1 {
 }
 
 .formContato{
-    /* display: grid; */
     /* justify-content: center; */
     /* margin-bottom: 50px; */
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     padding-top: 15px;
     padding-bottom: 50px;
     background-color: black;
     border: solid green 4px;
     height: 300px;
-    width: 2000px;
+    width: 700px;
 }
 
 .front-back-column {
@@ -242,7 +241,7 @@ main section h1 {
 
 .formInputs{
   margin: 15px 0;
-  width: 100%;;
+  width: auto;
  position: relative;
 }
 
@@ -366,7 +365,7 @@ main section h1 {
     filter: blur('150px');
     transition: all 2s;
     transform: translateX(-100%);
-    
+    background-color: transparent;
 }
 
 .show {
@@ -374,6 +373,7 @@ main section h1 {
     filter: blur(0);
     transform: translateX(0);
     transition: all 2s;
+   
 }
 
 section{
