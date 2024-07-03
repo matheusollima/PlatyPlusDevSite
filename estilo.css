@@ -8,7 +8,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #2b302a;
+    background-color: #121412;
     margin-right: 100px;
     margin-left: 100px;
 }
@@ -202,6 +202,7 @@ main section h1 {
     /* height: auto; */
     font-family: "roboto";
     padding: 0;
+    margin-top: 100px;
 }
 
 
@@ -215,6 +216,7 @@ main section h1 {
 #tituloContatos{
     font-size:45px;
     margin:0px;
+    margin-top: 20px;
     color: #1aa754;
 }
 
@@ -254,10 +256,12 @@ main section h1 {
     box-sizing: border-box;
     padding-top: 15px;
     padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: black;
     border: solid green 4px;
     height: 300px;
-    width: 800px;
+    width: 830px;
 }
 
 .front-back-column {
@@ -332,13 +336,21 @@ main section h1 {
     height: 50px;
 }
 
-
+#msgFinal{
+    height: 30px;
+    width: 100%;
+    background: #1aa754;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-align: center;
+    font-family: "roboto";
+    font-weight: bold;
+}
 /*
 SERVIÇOS
 */
 
 #serviços{
-    height: 100vh;
     margin-top: 100px;
    
 }
@@ -355,21 +367,29 @@ SERVIÇOS
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-    background-color: grey;
+    background-color: #121412;
     display: flex;
-    border-radius: 200px;
+ 
     justify-content: center;
-    align-items: center;
+    
 }
 
 .painel-software{
-    height: 600px;
-    width: 600px;
-    background-color: darkgreen;
+    height: 1000px;
+    width: auto;
+    display: flex;
     margin: 50px;
-    margin-top: 50px;
-    top: 50px;
-    
+    margin-top: 100px;
+}
+.painel-software img{
+    height: 642.6px;
+    width: 900px;
+   
+}
+
+#website-soft{
+    color: white;
+    background-color: transparent;
 }
 
 /*
