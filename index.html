@@ -22,10 +22,10 @@
             <li id = "sobre" onmouseover="efeitoOver('sobre')" onmouseout = "sairOver('sobre')" onclick = "alertMsg()"><a href="#">Sobre</a> </li>       -->
        
             <li id = "inicio"><a href="#">Inicio </a></li>
-            <li id = "servicos"><a href="#">Serviços</a></li>
-            <li id = "servicos"><a href="#">Tecnologias</a></li>
+            <li id = "servicos"><a href="#serviços">Serviços</a></li>
+            <li id = "servicos"><a href="#tecnologias">Tecnologias</a></li>
             <li id = "sobre"><a href="#">Sobre</a> </li>
-            <li id = "sobre"><a href="#">Contato</a> </li>        
+            <li id = "sobre"><a href="#rodape">Contato</a> </li>        
         </ul>
 
     <div id = "div0Msgdia"></div>
@@ -40,9 +40,14 @@
 
 </header>
 <div class="conteudo"></div>
-<main>
+
+
+<!---
+  SECTION DE INICIO
+-->
+<main id = "home">
   
-    <section style = "display:flex; justify-content = center " class="apresentacao">
+    <section style = "display:flex; justify-content = center " class="apresentacao" >
         
         <div id = "texto-apresentação">
             <h1 id = "titulo-apresentação" >Seu site, sua cara, nosso talento</h1>
@@ -80,7 +85,11 @@
              </div>
         </section>
       
-       <div id = "tecnologias-section">
+       <!---
+        TECNOLOGIAS SECTION
+       -->
+
+       <div id = "tecnologias">
         <section class = "hidden" >
             <h1 id = "tecnologias-title">Tecnologias</h1><br>
             
