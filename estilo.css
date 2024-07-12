@@ -14,6 +14,7 @@
     margin-left: 100px;
    box-sizing: border-box;
    border-bottom: 5px rgb(78, 233, 17) solid;
+
 }
 
 #titulo-apresentação{
@@ -99,17 +100,16 @@ nav{
     width:100vw;
     align-items: center;
     justify-content: center;
-   
+    transition: height 0.3s ease;
    
     /* border: solid red 5px; */
 }
 
 #logo{
     position:absolute;
-    top:-40px;
-    left:80px;
-    height: 200px;
-    width: 67,5
+    left: 200px;
+    height: 80%;
+    width: auto;
 }
 
 .conteudo{  
@@ -145,7 +145,9 @@ nav{
 
 nav li {
     /* border-radius:5px; */
-    margin: 12px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    margin-left: 70px;
     /* padding: 20px 30px; */
     padding: 22px 40px;
     height: 10px;
@@ -178,9 +180,14 @@ nav li a::after{
    transition: 0.7s ease-in-out;
 }
 
-nav li:hover ::after {
+nav li:hover a::after {
    width:100%;
 }
+
+a.actived::after {
+    width:100%;
+ }
+ 
 
 main{
     text-align: center;
@@ -206,7 +213,7 @@ main section h1 {
     /* height: auto; */
     font-family: "roboto";
     padding: 0;
-    margin-top: 100px;
+    
 }
 
 
@@ -252,6 +259,8 @@ main section h1 {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
+    height: auto;
+    background-color: transparent;
 }
 
 .formContato{
@@ -355,36 +364,26 @@ SERVIÇOS
 */
 
 #serviços{
-    
-    
-   
+
 }
 
 #serviços-titulo{
     font-size: 60px;
     
-    margin: 50px 0;
+ 
 }
 
 #painel-serviços{
-    height: 1000px;
-    width: 2000px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    background-color: #121412;
     display: flex;
- 
     justify-content: center;
     
 }
 
 .painel-software{
-    height: 1000px;
+   
     width: auto;
     display: flex;
-    margin: 50px;
-    margin-top: 100px;
+
 }
 
 #img-website{
@@ -408,12 +407,12 @@ TECNOLOGIAS
 #tecnologias{
     /* background-color: #cdd69d; */
     background-color: #6c724b;
-    padding-top: 50px;
+   
 }
 
 #tecnologia-front-div{
     /* border: solid rgb(8, 71, 2) 3px; */
-    margin-bottom: 40px;
+  
 }
 
 .tecnologia-front{
@@ -466,11 +465,14 @@ TECNOLOGIAS
 */
 
 .hidden{
+    padding: 0;
+    margin: 0;
     opacity:0;
     filter: blur('150px');
     transition: all 2s;
     transform: translateX(-100%);
     background-color: transparent;
+    box-sizing: border-box;
 }
 
 .show {
@@ -481,12 +483,18 @@ TECNOLOGIAS
    
 }
 
-section{
+.section{
     padding: 0;
     margin: 0;
     font-size: 19px;
     color: white;
-    height: 100%;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
