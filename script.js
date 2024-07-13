@@ -149,18 +149,21 @@ links.forEach(link => {
 });
 
 
+
+var menuTamanhoMaior = '120px';
+var menuTamanhoMenor = '80px';
 window.addEventListener('scroll', () => {
   let x = window.scrollY;
   let navMenu = document.querySelector('.navMenu');
   console.log(x);
   if(x>=200){
   
-      navMenu.style.height = '60px';
+      navMenu.style.height = menuTamanhoMenor;
     
     
   } else{
    
-      navMenu.style.height = '120px';
+      navMenu.style.height = menuTamanhoMaior;
    
   }
 })
