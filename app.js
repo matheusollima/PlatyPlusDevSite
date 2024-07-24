@@ -47,6 +47,6 @@ app.post("/request", (req, res) => {
   enviarFormularioEmail();
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Servidor esta rodando na port: ${port}`);
 });
