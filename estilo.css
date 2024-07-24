@@ -96,7 +96,7 @@ nav{
     background-color: #1f221e;
     opacity: 0.99; */
     /* box-shadow: 0px 15px 20px #222121;  */
-    backdrop-filter: blur(50px);
+    /* backdrop-filter: blur(50px); */
     height: 120px;
     width:100vw;
     align-items: center;
