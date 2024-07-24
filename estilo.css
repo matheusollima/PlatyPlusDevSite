@@ -73,6 +73,7 @@ h2{
     /* background-color: #8cb47a;  */
     background-color: black;
     font-style:helvetica;
+    /* overflow-x:hidden; */
     
 }
 
@@ -89,12 +90,12 @@ nav{
     text-decoration: none;
     list-style-type:none;
     display:flex;
-    top:0px; */
-    margin:0px;
+    top:0px; 
+    margin: 0px;
     /* background-color: #292726; */
     background-color: #1f221e;
     opacity: 0.99; */
-    /* box-shadow: 0px 15px 20px #222121; */
+    /* box-shadow: 0px 15px 20px #222121;  */
     backdrop-filter: blur(50px);
     height: 120px;
     width:100vw;
@@ -174,13 +175,14 @@ nav li a {
     font-family: "Roboto", sans-serif;
     padding:0px 0px 10px 0;
     position: relative;
+    user-select: none;
  
 }
 
 nav li a::after{
    content: " ";
    width: 0%;
-   height: 4px;
+   height: 2px;
    background-color:#1aa754;
    position: absolute;
    bottom:0;
@@ -221,32 +223,89 @@ main section h1 {
     /* height: auto; */
     font-family: "roboto";
     padding: 0;
-    
+    height: 100%;
+    width: 100%;
 }
 
 
 #divContato{
     display:flex;
+    box-sizing: border-box;
     /* border:solid red 3px; */
     justify-content: center;
     color: white;
+    justify-content: start;
     
 }
 #tituloContatos{
     font-size:45px;
     margin:0px;
-    margin-top: 20px;
-    color: #1aa754;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    /* color: #1aa754; */
+    color: green;
 }
 
 #divWhatsapp{
     color: white;
+    display: flex;
+    align-items: center;
+  
 }
 
 #divInstagram{
     color:white;
+    display: flex;
+    align-items: center;
+    
+
 }
 
+#divFacebook{
+    display: flex;
+    align-items: center;
+}
+
+
+#midiasSociais{
+    display: inline-block ;
+    margin-left:100px ;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    /* display: inline-block; */
+    align-items: end;
+    gap: 50px;
+}
+
+#midiasSociais div label{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(150, 150, 150);
+    font-size: 20px;
+    margin-left:20px ;
+}
+#midiasSociais div a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'roboto';
+        
+}
+
+#midiasSociais div a img{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+
+}
+
+.nmSocial{
+  font-family: "Bebas Neue", sans-serif; ;
+  font-size: 30px;
+  top: -100px;
+}
 
 #msgContato{
     
@@ -258,19 +317,33 @@ main section h1 {
     font-family: "roboto";
     font-size: 30px;
     border: 0;
-    height: 50%;
+    height: 300px;
     width: 100%;
+    left: 0;
 }
 
 
 #formulario-contato {
-    display: flex;
+    display: block;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     height: auto;
     background-color: transparent;
+    width: 830px;
+    height: 380ppx;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    
+  
 }
 
+#msgOrçamento{
+    font-size: 40px;
+    text-align: start;
+    
+}
 .formContato{
     /* justify-content: center; */
     /* margin-bottom: 50px; */
@@ -281,9 +354,16 @@ main section h1 {
     padding-right: 50px;
     background-color: black;
     border: solid green 4px;
-    height: 300px;
+    height: auto;
     width: 830px;
+    
+
 }
+
+.inputContato {
+    border: solid red 5px;
+}
+
 
 .front-back-column {
     display: flex;
@@ -297,7 +377,7 @@ main section h1 {
 }
 
 .formInputs{
-  margin: 25px 0;
+  margin: 25px 0px;
   width: 300px;
  position: relative;
 }
@@ -338,6 +418,36 @@ main section h1 {
 }
 
 
+#btEnviar{
+    padding: 0;
+    height: auto;
+    width: 90px;
+    color: rgb(150,150,150);
+    font-family: 'roboto';
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+#btEnviar::after{
+   content: " ";
+   height: 1.5px;
+   width: 0%;
+   background-color: green;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+
+
+
+#btEnviar:hover::after{
+ width: 100%;
+}
+
 #divMsgdia{
     position:absolute;
     margin:0px;
@@ -358,21 +468,23 @@ main section h1 {
 }
 
 #msgFinal{
-    height: 30px;
+    height: auto;
     width: 100%;
-    background: #025839;
-    color: rgb(0, 0, 0);
-    font-size: 25px;
-    text-align: center;
+    background: #008000;
+    color: rgb(2, 2, 2);
+    font-size: 15px;
+    text-align: start;
     font-family: "roboto";
-    font-weight: bold;
+    display: block;
+    margin-bottom: auto;
+    
 }
 /*
 SERVIÇOS
 */
 
 #serviços{
-
+  margin-top:300px;
 }
 
 #serviços-titulo{
@@ -388,10 +500,9 @@ SERVIÇOS
 }
 
 .painel-software{
-   
-    width: auto;
+    width: 400px;
     display: flex;
-
+    margin-top: 100px;
 }
 
 #img-website{
@@ -402,6 +513,10 @@ SERVIÇOS
     width: 80%;
 }
 
+#img-android {
+    display:inline-block;
+    width: 80%;
+}
 
 .titulo-softwares{
     color: white;

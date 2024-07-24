@@ -2,10 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlatyPlus site</title>
     <link rel="stylesheet" href="estilo.css">
-    <script defer src = "script.js"></script>
+    <!-- <script defer src = "script.js"></script>
+    <script defer  src="formularioEmail.js" ></script>
+    <script defer  src="envioEmail.js" ></script> -->
+    <!--  JQUERY SCRIPT  -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -84,7 +92,16 @@
                     </div>
                     
                  </div>
-
+                 
+                 
+                 </div>
+               
+                 <div class = "painel-software" style = "border: 5px solid red; margin-left: auto; margin-right: auto;" >
+                    <div >
+                        <h2 class="titulo-softwares">Aplicativos Android</h2>
+                    <img id = "img-android" src="imgs/sistema-android" alt="">
+                    </div>
+                    
              </div>
         </section>
         </section>
@@ -175,38 +192,52 @@
         <div id="divContato">
             <b><p id="tituloContatos">Contato</p></b>
         </div>
-        <div id = "divWhatsapp">
-            <label for="num">Whatsapp: </label><a href="tel:+5511965411592" style="text-decoration:none" id = "num">(11) 96541-1592</a> <br>
+        <div id="midiasSociais" >
+            <div id = "divWhatsapp" style = >
+            <a target="_blank" href="tel:+5511965411592" style="text-decoration:none" id = "num"><img src="imgs/redes sociais/icons8-whatsapp.svg" alt=""></a>     <label for="num" class = "nmSocial">(11) 96541-1592</label> <br>
+            </div>
+            <div id = "divInstagram">
+            <a target="_blank" href="https://www.instagram.com/math_olima" style="text-decoration:none" id = "instagram"><img id = "imgInstagram" src="imgs/redes sociais/icons8-instagram.svg" alt=""></a> <label  class = "nmSocial" for="instagram">@math_olima </label>
+            </div> 
+            <div id = "divFacebook">
+                <a target="_blank" href="https://www.facebook.com/matheusollima" style="text-decoration:none" id = "facebook"><img id = "imgFacebook" src="imgs/redes sociais/icons8-facebook.svg" alt=""></a> <label  class = "nmSocial" for="facebook">@matheusollima </label>
+                </div> 
         </div>
-        <div id = "divInstagram">
-        <label for="instagram">Instagram: </label><a href="https://www.instagram.com/math_olima" style="text-decoration:none" id = "instagram">@matheusollima</a>
-        </div>    
+           
          <br>
-            Facebook - matheusollima
+           
             
-           <section class = "section" id = "formulario-contato">
+           <section class = "section" id = "formulario-contato"  >
 
-            <div class = "formContato">
-                <div class = "formInputs">
-                   <input required type="text" name="" id="formNome"> <label for="formNome">Nome</label>
+                <div class = "formContato" >
+                    <h1 id = "msgOrçamento">Faça um orçamento</h1>
+                    
+                    <!-- <form action="/" method="post"> -->
+                    <div class = "formInputs">   
+                    <input required type="text" id="inputNome" class = "inputContato" name = "Nome"> <label for="formNome">Nome</label>
+                    </div>
+                    <div class="formInputs">    
+                       <input required type="email" id="inputEmail" class = "inputContato" name = "Email"><label for="formEmail">Email</label>
+                    </div>
+                       <textarea id="msgContato" name="msgContato"></textarea>
+                       <input type = "submit" id = "btEnviar">Enviar</input>
+                    
+                    <!-- </form> -->
                 </div>
-                <div class="formInputs">    
-                   <input required type="email" name="" id="formEmail"><label for="formEmail">Email</label>
-                </div>
-    
-                   <textarea name="" id="msgContato"></textarea>
-                </div>
-
-           </section>
+            </section>
             
            
          
       <div id = "msgFinal">
-        Todos os direitos reservados á Matheus Lima
+       <p style = "padding-left: 50px;">Todos os direitos reservados a Matheus Lima ©</p> 
       </div>
 
     </footer>
- 
-   
+    <script  src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity= 
+    "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"> 
+    </script>
+    <script src="jquery.js"></script>  
 </body>
 </html>
