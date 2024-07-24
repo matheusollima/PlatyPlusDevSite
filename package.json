@@ -4,9 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start:servidor": "nodemon servidorExpressStatic.js",
-    "start:envioEmail": "nodemon envioEmail.js",
-    "start:app": "nodemon app.js"
+      "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",

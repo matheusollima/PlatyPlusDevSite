@@ -9,10 +9,7 @@ $(document).ready(function () {
       },
       function (data, status) {
         const { Nome, Email, Mensagem } = data;
-
-        console.log(Nome);
-        console.log(Email);
-        console.log(Mensagem);
+        document.getElementById("msgEnviado").innerText = "Msg Enviada";
       }
     );
   });
