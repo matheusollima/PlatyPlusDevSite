@@ -617,58 +617,75 @@ TECNOLOGIAS
     justify-content: center;
 }
 
-@media only screen and (max-width: 412px) and (max-height: 915px){
-    *{
-        height: 15%;
-        width: 100vh;
-    }
-}
-
-@media only screen and (max-width: 1366px) and (max-height: 768px){
+/* Celular */
+@media (max-width: 450px){
+ 
     
-
-    
-    nav li a {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
     .container{
-        margin:0px;
+        margin: 0px;
+        
     }
-    nav{
-        display: flex;
-        padding: 0px;
-        align-content: center;
-        justify-content: center;
+   #texto-apresentação {
+    margin: 0px;
+   }
+     
+    img{
+        width: 30px;
+    }
     
-    }
-    .menu {
+    nav li{
+       
+        gap: 10px;
         padding: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        left: 0; 
+        
     }
 
-    .conteudo {
-        width: 100%; /* Ocupar toda a largura da tela */
-        /* background-image: none; Remover a imagem de fundo para melhor legibilidade */
-    }
-
-    nav li {
-        padding: 10px 15px; /* Reduzir o espaçamento dos itens do menu */
-    
-    }
-
-    nav li a {
-        font-size: 20px;
-    }
-
-    #divContato {
-        font-size: 18px; /* Tamanho menor para os detalhes de contato */
-    }
-    #divMsgdia{
+    nav li a{
         display: none;
     }
+
+    img#logo{
+        display: none;
+    }
+  
+    p#msgDia{
+        display: none;
+    }
+
+    #imagem-apresentação{
+        width: 50%;
+    }
+    .apresentacao{
+        width: 930px;
+    }
+
+    .titulo-section {
+        font-size: 50px;
+    }
+
+    .formContato {
+       
+    }
+    .section {
+        
+       width: 100%;
+        
+    }
+    .front-back-column{
+        display: none;
+    }
+    
+    .front-img{
+        width: 30px;
+    }
+
+   .titulo-softwares{
+    font-size: 10px;
+   }
+   
+    .img-serviços{
+      display: none;
+    }
+
+   
 }
