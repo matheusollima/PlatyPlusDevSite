@@ -63,7 +63,9 @@ h2{
  
 }
 .container{
-    /* flex-direction: column; */
+    display:block;
+    flex-direction: column;
+    min-height: 100%;
     margin:0;
     padding:0px;
     padding-top: 120px;
@@ -72,9 +74,6 @@ h2{
     background-color: black;
     font-style:helvetica;
     /* overflow-x:hidden; */
-    width: 100%;
-    display: block;
-    
     
 }
 
@@ -93,18 +92,15 @@ nav{
     display:flex;
     top:0px; 
     margin: 0px;
-    /* background-color: #292726; */
     background-color: #1f221e;
-    opacity: 0.99; */
-    /* box-shadow: 0px 15px 20px #222121;  */
-    /* backdrop-filter: blur(50px); */
+    opacity: 0.99; 
+    backdrop-filter: blur(50px);
     height: 120px;
-    width:100vw;
+    width:100%;
     align-items: center;
     justify-content: center;
     transition: height 0.3s ease;
-   
-    /* border: solid red 5px; */
+    
 }
 
 #mascoteLogo{
@@ -154,13 +150,13 @@ nav{
 
 nav li {
     /* border-radius:5px; */
-    margin: 0px;
+    margin: 0 10px;
     box-sizing: border-box;
     margin-left: 70px;
     /* padding: 20px 30px; */
     /* padding: 22px 40px; */
     height: 10px;
-    width: 100vh;
+    width: 100%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -362,7 +358,7 @@ main section h1 {
 }
 
 .inputContato {
-  
+    border: solid red 5px;
 }
 
 
@@ -619,86 +615,60 @@ TECNOLOGIAS
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px solid blue;
 }
 
-/* Celular */
-@media (max-width: 450px){
- 
+@media only screen and (max-width: 412px) and (max-height: 915px){
+    *{
+        height: 15%;
+        width: 100vh;
+    }
+}
+
+@media only screen and (max-width: 1366px) and (max-height: 768px){
     
+
+    
+    nav li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .container{
-        margin: 0px;
-        background-color: red;
+        margin:0px;
     }
-   #texto-apresentação {
-    margin: 0px;
-   }
-     
-
-    img{
-        width: 30px;
-    }
-    
-    nav li{
-       
-        gap: 10px;
+    nav{
+        display: flex;
         padding: 0px;
-        
-    }
-
-    nav li a{
-        display: none;
-    }
-
-    img#logo{
-        display: none;
-    }
-  
-    p#msgDia{
-        display: none;
-    }
-
-    #imagem-apresentação{
-        width: 50%;
-    }
-    .apresentacao{
-        width: 930px;
-    }
-
-    .titulo-section {
-        font-size: 50px;
-    }
-
-    .formContato {
-       
-    }
-    .section {
-        
-       width: 100%;
-        
-    }
-    .front-back-column{
-        display: none;
-    }
+        align-content: center;
+        justify-content: center;
     
-    .front-img{
-        width: 30px;
+    }
+    .menu {
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        left: 0; 
     }
 
-   .titulo-softwares{
-    font-size: 10px;
-    display: none;
-   }
-   
-    .img-serviços{
-      display: none;
+    .conteudo {
+        width: 100%; /* Ocupar toda a largura da tela */
+        /* background-image: none; Remover a imagem de fundo para melhor legibilidade */
     }
-   
-    #painel-serviços{
-       display: none;
+
+    nav li {
+        padding: 10px 15px; /* Reduzir o espaçamento dos itens do menu */
+    
     }
-   
-    #img-android{
-        display: none
+
+    nav li a {
+        font-size: 20px;
+    }
+
+    #divContato {
+        font-size: 18px; /* Tamanho menor para os detalhes de contato */
+    }
+    #divMsgdia{
+        display: none;
     }
 }
