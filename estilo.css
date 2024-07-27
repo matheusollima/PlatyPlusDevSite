@@ -310,8 +310,8 @@ main section h1 {
     resize:none;
     margin-top:10px;
     outline: 0;
-    /* background-color: green; */
-    color: black;
+    background-color: #222222;
+    color: rgb(255, 255, 255);
     font-family: "roboto";
     font-size: 30px;
     border: 0;

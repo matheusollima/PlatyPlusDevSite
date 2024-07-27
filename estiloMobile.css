@@ -1,4 +1,4 @@
-@media (max-width: 360px) and (max-height: 629px) {
+@media (max-width: 720px) and (max-height: 1520px) {
   img {
     display: none;
   }
@@ -129,15 +129,20 @@
     
   }
 
+  .formContato > *{
+    position: relative;
+  }
+
   .formInputs {
    
     width: 300px;
     box-sizing: border-box;
+    width: 100%;
 
   }
 
   .formInputs input{
-    width: auto;
+    width: 100%;
   }
 
   #msgOrçamento{
@@ -169,9 +174,10 @@
 
   #msgContato{
     overflow-x: hidden;
-    height: 100px;
-    font-size: 1px;
-    width: 10%;
+    height: 120px;
+    font-size: 25px;
+    width: 100%;
+    position: absolute;
   }
   #btEnviar {
     position: absolute;
