@@ -60,9 +60,12 @@
         
         <div id = "texto-apresentação">
             <h1 id = "titulo-apresentação" >Seu site, sua cara, nosso talento</h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est urna, blandit id libero pellentesque, varius iaculis mauris. Quisque ornare lorem purus, sit amet varius nibh cursus nec. Aenean sit amet nulla nunc. Duis iaculis, felis at laoreet pulvinar, dolor diam convallis ipsum, eu finibus arcu tellus ut mi. Vestibulum dolor lacus, fermentum a posuere sed, sagittis nec sapien. Nullam at diam nec nisi sollicitudin consectetur. Sed sed ultricies risus. Proin tincidunt mollis ex, a ornare turpis accumsan sed. Phasellus rhoncus dui quis nulla euismod, eget fermentum odio lobortis. Integer sodales eget enim sed ultricies.
+            <p id = "lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est urna, blandit id libero pellentesque, varius iaculis mauris. Quisque ornare lorem purus, sit amet varius nibh cursus nec. Aenean sit amet nulla nunc. Duis iaculis, felis at laoreet pulvinar, dolor diam convallis ipsum, eu finibus arcu tellus ut mi. Vestibulum dolor lacus, fermentum a posuere sed, sagittis nec sapien. Nullam at diam nec nisi sollicitudin consectetur. Sed sed ultricies risus. Proin tincidunt mollis ex, a ornare turpis accumsan sed. Phasellus rhoncus dui quis nulla euismod, eget fermentum odio lobortis. Integer sodales eget enim sed ultricies.
 
             Nam luctus justo sed consequat feugiat. Praesent scelerisque, leo ut auctor mollis, ipsum sem euismod lacus, eget convallis lorem libero eget sem. Quisque convallis orci a velit ultrices imperdiet. Cras id dolor dui. Praesent mi elit, efficitur et magna sed, condimentum lobortis quam. Fusce hendrerit facilisis erat, vitae blandit augue sagittis eget. Aenean viverra dictum vestibulum. Maecenas id neque tortor. Curabitur porttitor quis est vel sodales.
+            </p>
+            
             
            
         </div>
@@ -189,30 +192,34 @@
 <!--  RODAPÉ      -->
 
     <footer id = "rodape">
-        <div id="divContato">
-            <b><p id="tituloContatos">Contato</p></b>
-        </div>
-        <div id="midiasSociais" >
-            <div id = "divWhatsapp" style = >
-            <a target="_blank" href="tel:+5511965411592" style="text-decoration:none" id = "num"><img src="imgs/redes sociais/icons8-whatsapp.svg" alt=""></a>     <label for="num" class = "nmSocial">(11) 96541-1592</label> <br>
+        
+        <section class="contato">
+            <div id="divContato">
+                <b><p id="tituloContatos">Contato</p></b>
             </div>
-            <div id = "divInstagram">
-            <a target="_blank" href="https://www.instagram.com/math_olima" style="text-decoration:none" id = "instagram"><img id = "imgInstagram" src="imgs/redes sociais/icons8-instagram.svg" alt=""></a> <label  class = "nmSocial" for="instagram">@math_olima </label>
-            </div> 
-            <div id = "divFacebook">
-                <a target="_blank" href="https://www.facebook.com/matheusollima" style="text-decoration:none" id = "facebook"><img id = "imgFacebook" src="imgs/redes sociais/icons8-facebook.svg" alt=""></a> <label  class = "nmSocial" for="facebook">@matheusollima </label>
+            <div id="midiasSociais" >
+                <div id = "divWhatsapp" style = >
+                <a target="_blank" href="tel:+5511965411592" style="text-decoration:none" id = "num"><img src="imgs/redes sociais/icons8-whatsapp.svg" alt=""></a>     <label for="num" class = "nmSocial">(11) 96541-1592</label> <br>
+                </div>
+                <div id = "divInstagram">
+                <a target="_blank" href="https://www.instagram.com/math_olima" style="text-decoration:none" id = "instagram"><img id = "imgInstagram" src="imgs/redes sociais/icons8-instagram.svg" alt=""></a> <label  class = "nmSocial" for="instagram">@math_olima </label>
                 </div> 
-        </div>
+                <div id = "divFacebook">
+                    <a target="_blank" href="https://www.facebook.com/matheusollima" style="text-decoration:none" id = "facebook"><img id = "imgFacebook" src="imgs/redes sociais/icons8-facebook.svg" alt=""></a> <label  class = "nmSocial" for="facebook">@matheusollima </label>
+                </div> 
+            </div>
+        </section>
+       
            
          <br>
            
             
-           <section class = "section" id = "formulario-contato"  >
+        <section class = "section" id = "formulario-contato" style = "border: solid red 5px; "   >
 
                 <div class = "formContato" >
                     <h1 id = "msgOrçamento">Faça um orçamento</h1>
                     
-                    <!-- <form action="/" method="post"> -->
+                
                     <div class = "formInputs">   
                     <input required type="text" id="inputNome" class = "inputContato" name = "Nome"> <label for="formNome">Nome</label>
                     </div>
@@ -222,17 +229,19 @@
                        <textarea id="msgContato" name="msgContato"></textarea>
                        <button type = "submit" id = "btEnviar">Enviar</button>
                         <p id = "msgEnviado"></p>
-                    <!-- </form> -->
+                    
                 </div>
             </section>
             
            
          
-      <div id = "msgFinal">
+        <div id = "msgFinal">
        <p style = "padding-left: 50px;">Todos os direitos reservados a Matheus Lima ©</p> 
-      </div>
+        </div>
 
     </footer>
+
+
     <script  src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity= 
     "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

@@ -230,7 +230,7 @@ main section h1 {
     box-sizing: border-box;
     /* border:solid red 3px; */
     justify-content: center;
-    color: white;
+  
     justify-content: start;
     
 }
@@ -481,7 +481,7 @@ SERVIÇOS
 */
 
 #serviços{
-  margin-top:300px;
+  
 }
 
 #serviços-titulo{
@@ -618,22 +618,32 @@ TECNOLOGIAS
 }
 /* img{display:none;} */
 /* Celular */
-@media (max-width: 720px){
- 
+@media (max-width: 720px) and (max-height: 1520px) {
+    img{display:none;}
     
     .container{
-        margin: 0px;
+    width: 100%;
         overflow-x: hidden;
-        
     }
+
+   #titulo-apresentação{
+    font-size: 100px;
+  }
+
+  #lorem{
+    display: none;
+  }
+
+
    #texto-apresentação {
     margin: 0px;
    }
      
-    img{
-        width: 30px;
+    nav{
+      width: 100%;
+      overflow-x: hidden;
     }
-    
+   
     nav li{
        
         gap: 10px;
@@ -654,14 +664,17 @@ TECNOLOGIAS
     }
 
     #imagem-apresentação{
-        width: 50%;
+        display: none;
     }
-    section apresentacao{
-
+    section.apresentacao{
+      margin: 0;
+      width: 100%;
+      height: calc(100vh- 120px);
+      top: 0;
     }
 
     .titulo-section {
-        font-size: 50px;
+        font-size: 100px;
     }
 
     .formContato {
@@ -669,7 +682,7 @@ TECNOLOGIAS
     }
     .section {
         
-       width: 100%;
+      width: 100%;
         
     }
     .front-back-column{
@@ -688,5 +701,39 @@ TECNOLOGIAS
       display: none;
     }
 
-   
+
+    #formulario-contato{
+      width: 30%;
+      height: 20px;
+    }
+    #rodape{
+       height: 500px;
+       width: 100%;
+       overflow-x: hidden;
+       border: 5px solid red;
+       position: relative;
+    }
+
+    .formContato{
+        width: 50%;
+        height: 50%;
+    }
+
+
+    #painel-serviços{
+        display:none;
+    }
+
+    .painel-software{
+        display: none;
+    }
+
+  .contato{
+    border: solid rgb(112, 19, 131) 5px;
+    padding: 0;
+    position: absolute;
+    top: 90%;
+    
+  }
+
 }
