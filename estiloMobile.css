@@ -118,7 +118,12 @@
     display: block;
     
   }
+ 
 
+  #midiasSociais{
+    margin: 0;
+    
+  }
   .formContato {
     padding:0 ;
     margin-top: 300px;
@@ -145,8 +150,14 @@
     width: 100%;
   }
 
+  .formInputs label{
+    font-size: 20px;
+  }
+
   #msgOrçamento{
     font-size: 30px;
+    text-align: center;
+    top: 10px;
   }
 
   #painel-serviços {
@@ -157,11 +168,19 @@
     display: none;
   }
 
+
+
+  #tituloContatos{
+    padding: 0;
+  }
+
   .contato {
-    
+    display: inline-block;
     padding: 0;
     position: absolute;
-    top:600px ;
+    top:590px ;
+    left: 100px;
+    jus
   }
 
   #msgFinal {
