@@ -21,10 +21,6 @@
     display: none;
   }
 
-  #texto-apresentação {
-    margin: 0px;
-  }
-
   .header{
     width: 100%;
   }
@@ -33,6 +29,7 @@
     width: 720px;
     overflow-x: hidden;
     margin: 0;
+    height: 120px;
   
   }
 
@@ -56,14 +53,27 @@
     display: none;
   }
 
+  #texto-apresentação{
+    overflow-y: hidden;
+    height: calc(100vh - 120px);
+    margin: 0;
+   
+  }
+
+  #titulo-apresentação{
+    font-size: 30px;
+
+  }
+
   #imagem-apresentação {
     display: none;
   }
   section.apresentacao {
     margin: 0;
     width: 100%;
-    height: calc(100vh- 120px);
-    top: 0;
+    height: calc(100vh - 120px);
+    overflow-y: hidden;
+  
   }
 
   .titulo-section {
@@ -86,6 +96,10 @@
     width: 30px;
   }
 
+  #inicio{
+    top: 0;
+    height: calc(100vh - 120px);
+  }
   .titulo-softwares {
     font-size: 10px;
   }
