@@ -33,10 +33,8 @@
     margin: 0;
     height: 120px;
     box-sizing: border-box;
-  }
-
-  .navMenu #logo{
-    justify-items: center;
+    justify-content: start;
+  
   }
   
   #div0Msgdia{
@@ -61,7 +59,7 @@
 
  #logo {
     margin: 0;
-    left: 0;
+    margin-left: 30px;
     width: 50%;
     height: auto;
     overflow-x: hidden;
