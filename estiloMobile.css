@@ -1,8 +1,4 @@
 @media (max-width: 720px) and (max-height: 1520px) {
-  img {
-    display: none;
-  }
-
 
 
   .container {
@@ -10,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     padding-right: 0;
-   
+    display: block;
   }
 
   #titulo-apresentação {
@@ -21,21 +17,40 @@
     display: none;
   }
 
+
+  /* MENU DE NAVEGAÇÃO */
   .header{
     width: 100%;
+   
   }
 
   .navMenu {
-    width: 720px;
-    overflow-x: hidden;
+    display: flex;
+    width: 100%;
+    /* overflow-x: hidden; */
     margin: 0;
     height: 120px;
+    align-items:center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 5px solid red;
+  }
+
+  .navMenu #logo{
+    justify-items: center;
+  }
   
+  #div0Msgdia{
+    display: none;
+  }
+
+  #divMsgdia{
+    display: none;
   }
 
   .menu{
     width: 100%;
-  
+    /* display: none; */
   }
 
   nav li {
@@ -45,14 +60,24 @@
     display: none;
   }
 
-  img#logo {
+ #logo {
+   
+    border: 5px solid red;
+    margin: 0;
+    left: 0;
+    width: 30%;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  #msgDia {
     display: none;
   }
 
-  p#msgDia {
-    display: none;
-  }
 
+  /*
+     CONTEÚDO
+  */
   #texto-apresentação{
     overflow-y: hidden;
     height: calc(100vh - 120px);
@@ -144,7 +169,6 @@
   .formContato {
     padding:0;
     top: 100px;
-    z-index: 1;
     overflow-x: hidden;
     height: 400px;
     width: 100%;
@@ -194,7 +218,7 @@
 
   #tituloContatos{
     padding: 0;
-    z-index: 999;
+   
   }
 
   .contato {
@@ -219,7 +243,6 @@
     font-size: 25px;
     width: 100%;
     position: absolute;
-    z-index: 999;
   }
   #btEnviar {
     position: absolute;
