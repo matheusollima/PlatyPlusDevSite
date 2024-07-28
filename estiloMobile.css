@@ -124,10 +124,22 @@
     
   }
  
-
+   #divContato {
+    display: flex;
+    justify-content: center;
+   }
   #midiasSociais{
-    margin: 0;
-    
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #midiasSociais div  a  img{
+    height: auto;
+    width: 50px;
   }
   .formContato {
     padding:0;
@@ -138,6 +150,10 @@
     width: 100%;
     position: absolute;
     
+  }
+
+  .nmSocial{
+    display: none;
   }
 
   .formContato > *{
@@ -182,11 +198,10 @@
   }
 
   .contato {
-    display: inline-block;
-    padding: 0;
+
     position: absolute;
-    top:590px ;
-    left: 100px;
+    top:560px ;
+    
     
   }
 
