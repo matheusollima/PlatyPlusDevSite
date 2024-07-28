@@ -24,16 +24,15 @@
    
   }
 
+
+ 
+
   .navMenu {
-    display: flex;
     width: 100%;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     margin: 0;
     height: 120px;
-    align-items:center;
-    justify-content: center;
     box-sizing: border-box;
-    border: 5px solid red;
   }
 
   .navMenu #logo{
@@ -61,13 +60,12 @@
   }
 
  #logo {
-   
-    border: 5px solid red;
     margin: 0;
     left: 0;
-    width: 30%;
+    width: 50%;
     height: auto;
     overflow-x: hidden;
+    position: static;
   }
 
   #msgDia {
