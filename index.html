@@ -20,12 +20,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="container" >
- <header class="header">
+
+  <!-- MENU DESKTOP -->  
+ <header class="header-desktop">
     <nav class = "navMenu">
-       
         <img id = "logo" src="imgs\logo - oficial.svg" alt="">
-    
-    
         <ul class = "menu"  >
        
             <li><a href="#inicio" class = "js-link actived">Inicio </a></li>
@@ -46,6 +45,27 @@
 
 
 </header>
+ <!-- MENU MOBILE -->
+<header class="header-mobile">
+    <nav class = "navMenu-mobile">
+       
+        <img id = "logo-mobile" src="imgs\logo - oficial.svg" alt="">
+        <button id = "btn-menu" onclick = 'ativar_menu()'><img id = 'menu-hamburguer-img' src="./imgs/front-end/menu-icos/menu - hamburguer.svg" alt=""></button>
+        
+        <ul class = "menu-mobile" >
+       
+            <li><a href="#inicio" class = "js-link actived">Inicio </a></li>
+            <li><a href="#serviços" class = "js-link">Serviços</a></li>
+            <li><a href="#tecnologias" class = "js-link">Tecnologias</a></li>
+            <li><a href="#sobre" class = "js-link">Sobre</a> </li>
+            <li><a href="#rodape" class = "js-link">Contato</a> </li>        
+        </ul>
+   </nav>
+
+</header>
+
+
+
 <div class="conteudo"></div>
 
 

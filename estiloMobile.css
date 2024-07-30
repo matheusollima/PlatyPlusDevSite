@@ -7,6 +7,7 @@
     box-sizing: border-box;
     padding-right: 0;
     display: block;
+    padding-top:0 ;
   }
 
   #titulo-apresentação {
@@ -19,22 +20,28 @@
 
 
   /* MENU DE NAVEGAÇÃO */
-  .header{
-    width: 100%;
-   
+  .header-desktop{
+    display: none;
+    
   }
-
-
+  .header-mobile{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+  }
  
 
-  .navMenu {
+  .navMenu-mobile {
     width: 100%;
-    overflow-x: hidden;
-    margin: 0;
     height: 120px;
+    overflow-x: hidden;
+    margin: 0px;
+    top: 0px;
+    display: flex;
+    background-color: #1f221e;
     box-sizing: border-box;
     justify-content: start;
-  
+    
   }
   
   #div0Msgdia{
@@ -45,19 +52,16 @@
     display: none;
   }
 
-  .menu{
-    width: 100%;
-    /* display: none; */
+
+  .navMenu-mobile li {
+    margin: 30px 0;
   }
 
-  nav li {
+  .navMenu-mobile li a {
+   
   }
 
-  nav li a {
-    display: none;
-  }
-
- #logo {
+ #logo-mobile {
     margin: 0;
     margin-left: 30px;
     width: 50%;
@@ -70,6 +74,33 @@
     display: none;
   }
 
+  /* Menu hamburguer*/
+  #btn-menu{
+    background-color: transparent;
+    border: transparent;
+    margin-left: 60px;
+  }
+
+  #btn-menu>img{
+    width: 50%;
+    cursor: pointer;
+  }
+ 
+  .menu-mobile{
+    width: 100%;
+    height: auto;
+    background-color: #1f221e;
+    position: absolute;
+    top: 120px;
+    border-top: 0.5px solid black;
+    display: none;
+  }
+
+  #btn-menu.ativo ~ .menu-mobile{
+    display: block;
+  }
+
+  
 
   /*
      CONTEÚDO

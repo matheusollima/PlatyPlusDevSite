@@ -82,8 +82,13 @@ h2{
     justify-content: center;
 }
 
+/*Ocultando menu mobile*/
 
-nav{
+.header-mobile{
+    display: none;
+}
+
+.navMenu{
     z-index: 99;
     position:fixed;
     text-decoration: none;
