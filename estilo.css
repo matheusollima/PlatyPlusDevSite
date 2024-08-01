@@ -537,11 +537,6 @@ TECNOLOGIAS
    
 }
 
-#tecnologia-front-div{
-    /* border: solid rgb(8, 71, 2) 3px; */
-  
-}
-
 .tecnologia-front{
     display: flex;
     text-decoration: none;
@@ -551,19 +546,41 @@ TECNOLOGIAS
     padding: 0;
 }
 
-.tecnologia-front li{
- 
+.tecnologia-front >li{
+  width: 160px;
+  height: 209px;
+  box-sizing: border-box;
   text-align: center;
+  padding: 0;
+}
+
+.section#tecnologias{
+    background-color: #a9a9a9
 }
 
 .front-img {
     margin: 30px;
     height: 100px;
     user-select: none;
+    width: auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+#css-logo-img{
+   width: 125px;
+   height: auto;
+   top: -200px;
+   padding: 0;
+}
+
+#li-css{
+   padding: 0;
 }
 
 .tecnologia-logo-label {
-    color: rgb(0, 0, 0);
+    color: #006400;
     font-family: "roboto";
     user-select: none;
     display: block;
@@ -582,6 +599,10 @@ TECNOLOGIAS
 .tecnologia-back li{
     /* display: block; */
     text-align: center;
+}
+.tecnologia-back img{
+    width: 150px;
+    height: auto;
 }
 
 
