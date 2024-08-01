@@ -63,26 +63,20 @@ function debounce(fn, delay) {
   };
 }
 
+/* ANIMAÇÃO PARA EXIBIR TITULOS DAS SECTION */ 
 
 const myObserver = new IntersectionObserver((entries) =>{
   entries.forEach((entry) =>{
       if(entry.isIntersecting){
           entry.target.classList.add('show')
       } else{
-          entry.target.classList.remove('show')
-        
+          entry.target.classList.remove('show')     
       }
   })
-   
-
-
+  
 })
-
 const elementos = document.querySelectorAll('.hidden')
-
 elementos.forEach((element) => myObserver.observe(element) )
-
-
 
 /* ANIMAÇÃO MENU - SCROLL   */
  let links = document.querySelectorAll(".js-link");
@@ -121,7 +115,7 @@ function scrollSection(event){
 }
 
 
-
+/* ANIMAÇÃO DE DIMINUIR O MENU */
 links.forEach(link => {
   link.addEventListener('click', scrollSection);
 });
