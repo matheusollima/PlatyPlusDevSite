@@ -78,6 +78,7 @@ const myObserver = new IntersectionObserver((entries) =>{
 const elementos = document.querySelectorAll('.hidden')
 elementos.forEach((element) => myObserver.observe(element) )
 
+
 /* ANIMAÇÃO MENU - SCROLL   */
  let links = document.querySelectorAll(".js-link");
  let sections = document.querySelectorAll(".section");
