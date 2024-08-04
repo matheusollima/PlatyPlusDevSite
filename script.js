@@ -116,13 +116,13 @@ function scrollSection(event){
 }
 
 
-/* ANIMAÇÃO DE DIMINUIR O MENU */
+
 links.forEach(link => {
   link.addEventListener('click', scrollSection);
 });
 
 
-
+/* ANIMAÇÃO DE DIMINUIR O MENU */
 var menuTamanhoMaior = '120px';
 var menuTamanhoMenor = '80px';
 window.addEventListener('scroll', () => {
@@ -132,7 +132,7 @@ window.addEventListener('scroll', () => {
   if(x>=200){
   
       navMenu.style.height = menuTamanhoMenor;
-    
+     
     
   } else{
    
