@@ -78,7 +78,7 @@
     <section style = "display:flex; justify-content = center " class="apresentacao" >
         
         <div id = "texto-apresentação">
-            <h1 id = "titulo-apresentação" >Seu site, sua cara, nosso talento</h1>
+            <h1 id = "titulo-apresentação" ></h1>
             <p id = "lorem">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est urna, blandit id libero pellentesque, varius iaculis mauris. Quisque ornare lorem purus, sit amet varius nibh cursus nec. Aenean sit amet nulla nunc. Duis iaculis, felis at laoreet pulvinar, dolor diam convallis ipsum, eu finibus arcu tellus ut mi. Vestibulum dolor lacus, fermentum a posuere sed, sagittis nec sapien. Nullam at diam nec nisi sollicitudin consectetur. Sed sed ultricies risus. Proin tincidunt mollis ex, a ornare turpis accumsan sed. Phasellus rhoncus dui quis nulla euismod, eget fermentum odio lobortis. Integer sodales eget enim sed ultricies.
 
@@ -95,38 +95,123 @@
 
       <!-- SERVIÇOS-SECTION -->
        <section class = "section" id = "serviços">
-        <section class = "hidden">
+        
+        <section class = "hidden" id = 'serviços-hidden'>
             <h1 id = "serviços-titulo">Serviços</h1>
-             <div id = "painel-serviços">
+            <h2 id = 'serviços-subtitulo01'>Fornecemos estes serviços para atender as suas necessidades</h2>
+            <div id = "painel-serviços">
                
-                
-                <div class = "painel-software">
-                    <div>
-                        <h2 class="titulo-softwares">Web-sites</h2>
-                        <img id = "img-website" src="imgs/website.png" alt="">
+            <!-- SOFTWARES -->    
+            <div class = "painel-software">
+                   
+                    <div class ='painel-software-div' id = 'site-i-div'>
+                    <div class = 'serviço-texto' id = 'site-i'>
+                        <h2>Site institucional</h2>
+                        <p>Um site institucional é como o cartão de visitas virtual da sua empresa ou organização. É onde você apresenta quem você é, o que faz e por que alguém deveria se interessar pelo que você oferece</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/website.png" alt="">
+                    <h2 class = titulo-serviço id = titulo-serviço-site>Site institucional</h2>
+                    </div>
+
+                    <div class ='painel-software-div' id = 'landing-page-div'>
+                    <div class = 'serviço-texto' id = 'landing-page'>
+                    <h2>Landing Page</h2>
+                    <p>Uma landing page, também conhecida como página de destino, é uma página da web projetada com um propósito específico: converter visitantes em ações desejadas. Essa ação pode variar, mas geralmente envolve incentivar o usuário a preencher um formulário, fazer uma compra, baixar um recurso (como um e-book) ou se inscrever em uma newsletter.</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/landing-page.png" alt="">
+                    <h2 class = titulo-serviço>Landing pages</h2>
+                    </div>
+
+                    <div class ='painel-software-div' id = 'hot-site-div'>
+                    <div class = 'serviço-texto' id = 'hot-site'>
+                    <h2>Hot Site</h2>
+                    <p>Um hot site é uma página da web temporária e específica, criada para atender a uma necessidade urgente ou promover um evento, produto ou serviço específico.</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/hot-site.png" alt="">
+                    <h2 class = titulo-serviço>HotSite</h2>
                     </div>
                     
-                </div>
-                 <div class = "painel-software">
-                    <div>
-                        <h2 class="titulo-softwares">Sistema ERP</h2>
-                    <img id = "img-erp" src="imgs/erp-sistema.webp" alt="">
+                    <div class ='painel-software-div' id = 'web-system-div'>
+                    <div class = 'serviço-texto' id = 'web-system'>
+                    <h2>Sistema Web</h2>
+                    <p>Um sistema web é uma aplicação de software que opera na internet, acessível por meio de um navegador da web. Aqui estão os principais pontos sobre sistemas</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/web-system.png" alt="">
+                    <h2 class = titulo-serviço>Sistema Web</h2>
                     </div>
                     
-                 </div>
-                 
-                 
-                 </div>
-               
-                 <div class = "painel-software" >
-                    <div >
-                        <h2 class="titulo-softwares">Aplicativos Android</h2>
-                    <img id = "img-android" src="imgs/sistema-android" alt="">
+                    <div class ='painel-software-div' id = 'e-commerce-div'>
+                    <div class = 'serviço-texto' id = 'commerce'>
+                    <h2>E-Commerce</h2>
+                    <p>Um e-commerce, abreviação de “comércio eletrônico”, refere-se à compra e venda de produtos ou serviços pela internet.</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/e-commerce.png" alt="">
+                    <h2 class = titulo-serviço>E-commerce</h2>
                     </div>
                     
+                    <div  class ='painel-software-div' id = 'consultoria-div'>
+                    <div class = 'serviço-texto' id = 'consultoria'>
+                    <h2>Consultoria</h2>
+                    <p>Leve sua empresa ao próximo nível com Consultoria em Tecnologia! 🌐
+
+                        Maximize eficiência, reduza custos e inove com soluções tecnológicas sob medida. Análise, recomendação, implementação e otimização de sistemas. Tudo para impulsionar sua produtividade!
+                        
+                        Transforme seu negócio hoje mesmo! 💡</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/consultoria.png" alt="">    
+                    <h2>Consultoria em tecnologia</h2>
+                    </div>
+
+                    <div  class ='painel-software-div' id = 'android-div'>
+                        <div class = 'serviço-texto' id = 'android'>
+                            <h2>Aplicativos android</h2>
+                            <p>Desenvolva seu próprio aplicativo Android e conquiste a Google Play Store! Seja um jogo inovador, uma solução prática ou uma ferramenta revolucionária, o seu app pode fazer a diferença. Alcance milhões de usuários, aumente a visibilidade da sua marca e mude o mundo com um toque</p>
+                            </div>  
+                    <img src="./imgs/front-end/serviços - icons/android.png" alt="">
+                    <h2>Aplicativos android</h2>
+                    </div>
+                    <div  class ='painel-software-div' id = 'erp-div'>
+                        <div class = 'serviço-texto' id = 'erp'>
+                            <h2>Sistema de Gestão (ERP)</h2>
+                            <p>ERP: Um sistema que integra todos os processos da sua empresa, como finanças e vendas, em uma única plataforma.
+
+                                📈 Aumente a eficiência do seu negócio com um ERP! Centralize seus processos, reduza custos e tome decisões melhores. Invista no futuro da sua empresa! 🚀</p>
+                            </div>     
+                        <img src="./imgs/front-end/serviços - icons/ERP.png" alt="">
+                        <h2>Sistema de Gestão (ERP)</h2>
+                    </div>
+            </div>
+        <!--   MODELOS DE NEGÓCIO -->
+           
+            <div class = "div-modelo-negocio">
+                <h1 id = "modelo-negocio-titulo">MODELOS DE NEGOCIO</h1>
+                <h2>Diversos tipos de negócios podem se beneficiar de um sistema. Descubra qual é o ideal para você!</h2>
+                <h3 id = "modelo-negocio-subtitulo">Divulge e controle o seu negócio seja ele qual for</h3>
+            <div class = 'painel-modelo-negocio'>
+                <div id = "loja-Roupas"><img src= "./imgs/front-end/serviços - icons/Modelos de negócio/loja-roupas.png" alt="">
+             <label for="" >Loja de roupas</label>   
              </div>
-        </section>
-        </section>
+                <div id = "academia"><img src= "./imgs/front-end/serviços - icons/Modelos de negócio/academia.png" alt=""> <label for="">Academia</label>   </div>
+                <div id = "mercearia"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/basket.png" alt=""> <label for="" >Mercearia</label>   </div>
+                <div id = "petshop"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/petshop.png" alt=""> <label for="" >Petshop</label>   </div>
+                <div id = "loja"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/shop.png" alt=""> <label for="" >Loja</label>   </div>
+                <div id = "fotografo"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/Fotografo.png" alt=""> <label for="" ">Estúdio de Fotografia</label>   </div>
+                <div id = "escola"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/educação.png" alt=""> <label for="">Escola</label>   </div>
+                <div><img src="./imgs/front-end/serviços - icons/Modelos de negócio/salao-beleza.png" alt=""> <label for="" >Salão de beleza</label>   </div>
+                <div><img src="./imgs/front-end/serviços - icons/Modelos de negócio/portfolio.png" alt=""> <label for="">Portfólio</label>   </div>
+                <div><img src="./imgs/front-end/serviços - icons/Modelos de negócio/oficina.png" alt=""> <label for="" >Oficina</label>   </div> 
+             </div>
+            </div>
+            
+
+
+             </div>   
+         </section>
+
+
+
+
+      </section>
       
        <!---
         TECNOLOGIAS SECTION
@@ -136,6 +221,7 @@
         <section class = "hidden">
             <h1 id = "tecnologias-titulo">Tecnologias</h1><br>
             <h2 id = 'tecnologias-subtitulo01'>É com estas ferramentas que construimos seu negócio na internet!</h2>
+            <img id ='platypus-capacete' src="./imgs/front-end/platypus-capacete.svg" alt="">
             <div id="painelTecnologias">
                 <ul class = "front-back-column">
                     <li id = 'front' >

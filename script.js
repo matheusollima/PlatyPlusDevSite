@@ -153,3 +153,48 @@ const ativar_menu = () =>{
     img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu - hamburguer.svg"
   }
 }
+
+
+// ANIMAÇÃO DE DIGITAÇÃO SLOGAN
+
+//texto que sera digitao e apagado
+const texto_apresentação = "Seu site, sua cara, nosso talento!"
+
+//Função para escrever o texto
+function escrever(texto, elemento){
+ //Cria um array com o texto invertido
+  const texto_reverso_array = texto.split('').reverse();
+  
+ const intervalo_digitação = setInterval(()=>{
+     //verifica se o array com o texto invertido está vazio 
+    if(texto_reverso_array.length == ''){
+      clearInterval(intervalo_digitação) // limpa o intervalo
+      setTimeout(apagar, 1000)
+      return
+    }
+    //Pega o ultimo elemento do array invertido, exibe na tela e remove
+    const proxima_letra = texto_reverso_array.pop()
+    elemento.innerHTML += proxima_letra;
+
+ }, 90);
+}
+
+
+//Função para apagar o texto 
+
+function apagar(){
+  const elemento = document.getElementById('titulo-apresentação')
+  const texto_separado_array = elemento.innerHTML.split('')
+  const deletar = setInterval(()=>{
+    if(!texto_separado_array.length){
+       clearInterval(deletar)
+       escrever(texto_apresentação,elemento)
+       return
+    }
+    texto_separado_array.pop()
+    elemento.innerHTML = texto_separado_array.join('')
+  },50)
+}
+
+//Inicio da função
+escrever(texto_apresentação, document.getElementById('titulo-apresentação'))
