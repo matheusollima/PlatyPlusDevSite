@@ -1178,6 +1178,7 @@
   padding-left: 500px;
   column-gap: 150px;
   
+  
 }
 
 .sobre-container div{
@@ -1204,14 +1205,36 @@
 }
 
 #sobre-texto{
-  height: 50%;
+  height: auto;
   width: 300%;
   background-color: #1e2329;
   border-radius: 10px;
   align-self: center;
   border: 2px solid darkgreen;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
+#sobre-titulo{
+  font-size: 50px;
+  color: darkgreen;
+  font-family: "roboto";
+}
+
+#sobre-nome {
+  color: #d3d3d3;
+  font-size: 30px;
+  text-align: start;
+  margin-left: 30px;
+}
+
+#sobre-formacao{
+  color: #d3d3d3;
+  font-size: 20px;
+  text-align: start;
+  margin-left: 30px;
+  font-family: "roboto";
+}
 
   
   /* 
