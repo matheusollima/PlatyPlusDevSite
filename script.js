@@ -25,12 +25,12 @@ var isHeaderHidden = false;
 var i = 0;
 
 function onScroll() {
-  if (window.scrollY > 2591 && !isHeaderHidden) {
+  if (window.scrollY >=2926 && !isHeaderHidden) {
     header.style.opacity = "0";
     isHeaderHidden = true;
     i = ++i;
     console.log("o valor do contador é " + i);
-  } else if (window.scrollY <= 2591 && isHeaderHidden) {
+  } else if (window.scrollY <2926 && isHeaderHidden) {
     header.style.opacity = "1";
     isHeaderHidden = false;
     i = ++i;
@@ -40,7 +40,7 @@ function onScroll() {
 
 }
 
-onScroll();
+// onScroll();
 
 window.addEventListener('scroll', onScroll);
 
@@ -62,6 +62,19 @@ function debounce(fn, delay) {
     }, delay);
   };
 }
+
+
+/*  DESCOBRIR ALTURA SECTION SOBRE  */
+
+const sectionSobre = document.getElementById('sobre');
+
+const alturaSection = sectionSobre.offsetTop;
+
+console.log("Altura section sobre: ", alturaSection);
+
+
+
+
 
 /* ANIMAÇÃO PARA EXIBIR TITULOS DAS SECTION */ 
 
@@ -123,23 +136,69 @@ links.forEach(link => {
 
 
 /* ANIMAÇÃO DE DIMINUIR O MENU */
+var resolucao = window.screen.width;
+var navMenu = document.querySelector('.navMenu');
 var menuTamanhoMaior = '120px';
+var menuTamanhoMaior768p = '100px'
 var menuTamanhoMenor = '80px';
+var tamanhoMenu =  navMenu.offsetHeight;
+console.log(tamanhoMenu);
 window.addEventListener('scroll', () => {
   let x = window.scrollY;
-  let navMenu = document.querySelector('.navMenu');
   console.log(x);
   if(x>=200){
   
       navMenu.style.height = menuTamanhoMenor;
-     
+      console.log(navMenu.style.height);
     
-  } else{
+  }
+
+  else{
    
-      navMenu.style.height = menuTamanhoMaior;
-   
+      navMenu.style.height = tamanhoMenu + 'px';
+
   }
 })
+
+
+/* QUANDO MUDAR A RESOLUÇÃO*/
+
+window.addEventListener('resize', ()=>{
+ 
+  var resolucao = window.screen.width;
+
+  
+  if(resolucao>1366){
+    console.log(resolucao);
+    navMenu.style.height = '120px';
+  }
+  else if(resolucao<=1366){
+    navMenu.style.height = '100px';
+  
+  }
+
+  
+  window.addEventListener('scroll', () => {
+    let x = window.scrollY;
+    console.log(x);
+    if(x>=200){
+    
+        navMenu.style.height = menuTamanhoMenor;
+       
+      
+    }
+  
+    else if(x<200 && resolucao > 1366){
+     
+        navMenu.style.height = menuTamanhoMaior;
+     
+    }else {
+      navMenu.style.height = menuTamanhoMaior768p;
+    }
+  })
+
+})
+
 
 
 

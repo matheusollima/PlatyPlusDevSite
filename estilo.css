@@ -348,6 +348,7 @@
     margin-top: 60px;
     row-gap: 100px;
     
+    
   }
   
   .front-back-column > li {
@@ -385,7 +386,7 @@
   }
   
   .formInputs input {
-    width: 750px;
+    width: 700px;
     padding: 5px;
     color: rgb(150, 150, 150);
     border: 0;
@@ -952,6 +953,7 @@
   #tecnologias {
     /* background-color: #cdd69d; */
     /* background-color: #6c724b; */
+    height: 100vh;
   }
 
   #platypus-capacete{
@@ -987,16 +989,10 @@
     border-bottom: solid 6px green;
     border-radius: 20px;
     background-color: black;
-    transition: 0.1s ease-in-out;
+
   }
   
-  #painelTecnologias:hover {
-    width: 1210px;
-    height: 710px;
-    box-shadow: none;
-    box-shadow: 0px 2px 1px 0px black;
-  }
-  
+ 
 
   .tecnologia-front {
     display: grid;
@@ -1143,7 +1139,6 @@
     justify-self: center;
   }
   
-  /* PAINEL TECNOLOGIA DATABASE*/
   
   #data-li {
     display: grid;
@@ -1167,11 +1162,17 @@
 
 #sobre *{
   box-sizing: border-box;
+ 
+}
+
+.section#sobre{
+  box-sizing: border-box;
+  height: 100vh;
 }
 
 
 .sobre-container{
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: 20% 15%;
@@ -1206,7 +1207,7 @@
 
 #sobre-texto{
   height: auto;
-  width: 300%;
+  width: 330%;
   background-color: #1e2329;
   border-radius: 10px;
   align-self: center;
@@ -1285,7 +1286,7 @@
   
   .section#serviços {
     margin-top: 100px;
-    height: 200vh;
+    height: auto;
   }
 
   #serviços-hidden{

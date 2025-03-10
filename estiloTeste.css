@@ -1,0 +1,250 @@
+@media (max-width: 1920px) and (max-height: 1080px) {
+    #logo {
+      left: 180px;
+    }
+  }
+  
+  @media (max-width: 1366px) {
+    * {
+      box-sizing: border-box; /* Adicionado para garantir o box-sizing em todos os elementos */
+    }
+  
+    .container {
+      overflow-x: hidden;
+    }
+  
+    .navMenu {
+      width: 100%;
+      display: flex;
+      height: 100px;
+      justify-content: flex-start; /* Alterado para flex-start */
+      align-items: center;
+    }
+  
+    .navMenu > * {
+      margin: 0;
+      padding: 0;
+    }
+  
+    #logo {
+      left: 0;
+      width: auto;
+      height: 70%;
+      margin-left: 70px;
+      margin-right: 0;
+    }
+  
+    .menu {
+      height: 100%;
+      width: auto;
+      margin-left: 300px;
+    }
+  
+    #titulo-apresentação {
+      font-size: 40px;
+    }
+  
+    #imagem-apresentação {
+      width: 569.16px;
+      height: 569.16px;
+      margin-top: -30px;
+    }
+  
+    .apresentacao {
+      margin: 0;
+      width: 100vw;
+    }
+  
+    .section {
+      display: flex;
+      height: 100vh; /* Alterado para 100vh para ocupar a tela inteira */
+      padding-top: 50px; /* Mantido para espaçamento interno */
+      align-items: center; /*centraliza o conteudo verticalmente*/
+    }
+  
+    h1 {
+      font-size: 40px !important;
+    }
+  
+    #serviços-hidden {
+      height: 100%;
+      z-index: 99999999999;
+      background-color: rgb(0, 0, 0);
+    }
+  
+    #serviços {
+      height: auto;
+    }
+  
+    .painel-software img {
+      width: 40%;
+    }
+  
+    /* PAINEL MODELOS DE NEGÓCIO */
+  
+    .painel-modelo-negocio {
+      column-gap: 10px;
+      grid-template-columns: auto auto auto auto auto;
+      padding-bottom: 30px;
+    }
+  
+    .painel-software-div {
+      width: 250px;
+      height: 300px;
+    }
+  
+    #painel-serviços label {
+      font-size: 20px;
+    }
+  
+    #modelo-negocio-subtitulo {
+      font-size: 25px;
+    }
+  
+    .painel-modelo-negocio div {
+      width: 200px;
+      height: 112.5px;
+    }
+  
+    .painel-modelo-negocio img {
+      width: 30%;
+    }
+  
+    /* TECNOLOGIAS */
+    .section#tecnologias {
+      margin-top: 0px;
+      height: 100vh; /* Alterado para 100vh */
+      padding: 0; /*removido padding 50px*/
+      display: flex;
+      align-items: center; /*centraliza verticalmente*/
+      justify-content: center;
+      position: relative;
+    }
+  
+    #painelTecnologias {
+      width: 853.75px;
+      height: 498.02px;
+    }
+  
+    #painelTecnologias:hover {
+      width: 863.75px;
+      height: 508.02px;
+    }
+  
+    /* PAINEL TECNOLIGIAS FRONT-END */
+  
+    #platypus-capacete {
+      border: solid 5px blue;
+      margin-left: 0;
+      left: -100px;
+      width: 200px;
+    }
+  
+    #painelTecnologias img {
+      width: 50%;
+    }
+  
+    .tecnologia-front {
+      width: 360px;
+    }
+  
+    #tecnologia-front-div {
+      box-sizing: border-box;
+      width: 360px;
+      margin-left: 270px;
+    }
+  
+    .tecnologia-front li {
+      width: 120px;
+      height: 170px;
+    }
+  
+    .front-li img {
+      justify-self: center;
+    }
+  
+    .front-img {
+      width: 60px !important;
+    }
+  
+    .front-li label {
+      margin-top: 20px;
+    }
+  
+    #javascript-li label {
+      font-size: 15px;
+    }
+  
+    /* Painel Backend */
+  
+    #tecnologia-back-div {
+      width: 360px;
+      box-sizing: border-box;
+      margin-right: 200px;
+      display: grid;
+      column-gap: 30px;
+    }
+  
+    .tecnologia-back {
+      display: flex;
+      column-gap: 30px;
+      align-items: center;
+    }
+  
+    .tecnologia-back li {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      padding: 0;
+      width: 120px;
+      height: 170px;
+      box-sizing: border-box;
+    }
+  
+    .tecnologia-back li img {
+      width: 100px !important;
+      height: 140px;
+      padding: 0;
+      margin-top: -20px;
+    }
+  
+    #php-li {
+      margin-right: 0;
+    }
+  
+    #painelTecnologias {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .front-back-column {
+      row-gap: 20px;
+    }
+  
+    #front {
+      width: 600px !important;
+    }
+  
+    /* DATABASE */
+  
+    #database {
+      box-sizing: border-box !important;
+      width: 360px;
+      height: 225px;
+      justify-self: center;
+    }
+  
+    #tecnologia-database-div {
+      height: 225px;
+      width: 360px;
+    }
+  
+    .tecnologia-database li {
+      margin-top: -50px;
+    }
+  
+    #data-li img {
+      justify-self: center;
+      width: 100px;
+    }
+  }

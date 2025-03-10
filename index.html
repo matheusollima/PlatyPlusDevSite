@@ -7,7 +7,7 @@
     <title>PlatyPlus site</title>
     <link rel="stylesheet" href="estilo.css">
     <link href="estiloMobile.css" media="screen and (max-width: 720px) and (max-height: 1520px)" rel="stylesheet" />
-    <link href="estiloMonitor16.9.css" media="screen and (max-width: 1920px) and (max-height: 1080px)" rel="stylesheet" />
+    <link href="estiloMonitor16.9.css"  rel="stylesheet" />
     <script defer src = "script.js"></script>
     <!--  <script defer  src="formularioEmail.js" ></script>
     <script defer  src="envioEmail.js" ></script> -->
@@ -26,6 +26,7 @@
  <header class="header-desktop">
     <nav class = "navMenu">
         <img id = "logo" src="imgs\logo - oficial.svg" alt="">
+        
         <ul class = "menu"  >
        
             <li><a href="#inicio" class = "js-link actived">Inicio </a></li>
@@ -34,13 +35,7 @@
             <li><a href="#sobre" class = "js-link">Sobre</a> </li>
             <li><a href="#rodape" class = "js-link">Contato</a> </li>        
         </ul>
-
-    <!-- <div id = "div0Msgdia"></div>
-    <div id = divMsgdia>
-        <p  id = "msgDia">Boa noite</p>
-    </div> -->
-   
-   </nav>
+    </nav>
   
   
 
@@ -151,7 +146,7 @@
                     
                     <div  class ='painel-software-div' id = 'consultoria-div'>
                     <div class = 'serviço-texto' id = 'consultoria'>
-                    <h2>Consultoria</h2>
+                    <h2 >Consultoria</h2>
                     <p>Leve sua empresa ao próximo nível com Consultoria em Tecnologia! 🌐
 
                         Maximize eficiência, reduza custos e inove com soluções tecnológicas sob medida. Análise, recomendação, implementação e otimização de sistemas. Tudo para impulsionar sua produtividade!
@@ -159,7 +154,7 @@
                         Transforme seu negócio hoje mesmo! 💡</p>
                     </div>
                     <img src="./imgs/front-end/serviços - icons/consultoria.png" alt="">    
-                    <h2>Consultoria em tecnologia</h2>
+                    <h2 class = 'titulo-serviço' id = 'titulo-serviço-consultoria' >Consultoria em tecnologia</h2>
                     </div>
 
                     <div  class ='painel-software-div' id = 'android-div'>
@@ -168,7 +163,7 @@
                             <p>Desenvolva seu próprio aplicativo Android e conquiste a Google Play Store! Seja um jogo inovador, uma solução prática ou uma ferramenta revolucionária, o seu app pode fazer a diferença. Alcance milhões de usuários, aumente a visibilidade da sua marca e mude o mundo com um toque</p>
                             </div>  
                     <img src="./imgs/front-end/serviços - icons/android.png" alt="">
-                    <h2>Aplicativos android</h2>
+                    <h2 class = 'titulo-serviço'>Aplicativos android</h2>
                     </div>
                     <div  class ='painel-software-div' id = 'erp-div'>
                         <div class = 'serviço-texto' id = 'erp'>
@@ -178,15 +173,15 @@
                                 📈 Aumente a eficiência do seu negócio com um ERP! Centralize seus processos, reduza custos e tome decisões melhores. Invista no futuro da sua empresa! 🚀</p>
                             </div>     
                         <img src="./imgs/front-end/serviços - icons/ERP.png" alt="">
-                        <h2>Sistema de Gestão (ERP)</h2>
+                        <h2 class = 'titulo-serviço' id = 'titulo-serviço-erp'>Sistema de Gestão (ERP)</h2>
                     </div>
             </div>
         <!--   MODELOS DE NEGÓCIO -->
            
             <div class = "div-modelo-negocio">
-                <h1 id = "modelo-negocio-titulo">MODELOS DE NEGOCIO</h1>
-                <h2>Diversos tipos de negócios podem se beneficiar de um sistema. Descubra qual é o ideal para você!</h2>
-                <h3 id = "modelo-negocio-subtitulo">Divulge e controle o seu negócio seja ele qual for</h3>
+                <h1 id = "modelo-negocio-titulo">Modelos de negócio</h1>
+                <h2 id = "modelo-negocio-subtitulo">Diversos tipos de negócios podem se beneficiar de um sistema. Descubra qual é o ideal para você!</h2>
+               
             <div class = 'painel-modelo-negocio'>
                 <div id = "loja-Roupas"><img src= "./imgs/front-end/serviços - icons/Modelos de negócio/loja-roupas.png" alt="">
              <label for="" >Loja de roupas</label>   
