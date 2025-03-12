@@ -18,7 +18,7 @@ msgDia();
 */
 
 
-
+// OCULTAR O MENU
 
 var header = document.querySelector('header');
 var isHeaderHidden = false;
@@ -161,7 +161,7 @@ window.addEventListener('scroll', () => {
 })
 
 
-/* QUANDO MUDAR A RESOLUÇÃO*/
+/* ANIMAÇÃO DE DIMINUIR O MENU - QUANDO MUDAR A RESOLUÇÃO*/
 
 window.addEventListener('resize', ()=>{
  
