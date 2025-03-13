@@ -147,8 +147,8 @@
 
   #imagem-apresentação {
     margin-top: 100px !important;
-    width: 350px !important;
-    height: 350px !important;
+    width: 320px !important;
+    height: 320px !important;
 
   }
 
@@ -238,10 +238,10 @@
   }
   .formContato {
     padding: 0;
-    height: 400px !important;
+    height: 310px !important;
     width: 100vw !important;
     position: relative;
-    top: 80px;
+    top: 60px;
     overflow-x: hidden;
     box-sizing: border-box !important;
   
@@ -253,17 +253,18 @@
   }
 
   .formInputs {
-    /* width: 300px;
-    box-sizing: border-box;
-    width: 100%; */
+    width: auto;
+    margin-top: -20px;
+    position: relative;
+    top: 20px;
   }
 
   .formInputs input {
-    width: 290px !important;
+    width: 250px !important;
   }
 
   .formInputs label {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #msgOrçamento {
@@ -318,7 +319,7 @@
 
   #msgContato {
     overflow-x: hidden;
-    height: 150px !important;
+    height: 100px !important;
     font-size: 17px !important;
     width: 100vw;
     position: absolute;
@@ -326,7 +327,7 @@
   }
   #btEnviar {
     position: relative;
-    top: 165px ;
+    top: 120px ;
     left: -20px;
     font-size: 25px;
   }
