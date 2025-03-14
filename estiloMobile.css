@@ -170,7 +170,9 @@
   }
 
   .titulo-section {
-    font-size: 100px;
+    font-size: 30px !important;
+
+   
   }
 
   .section {
@@ -203,8 +205,67 @@
 
   #sobre {
     z-index: 0;
-    overflow: hidden;
+    height: auto !important;
+    border: solid 2px yellowgreen;
+    display: flex;
+    align-content: start;
+    padding-top: 20px;
+
   }
+
+  #sobre * {
+    display: block;
+  }
+
+  #sobre-titulo{
+    font-size: 15px !important;
+   
+  }
+
+  #sobre-titulo-section{
+   
+
+   
+
+  }
+
+  .sobre-container {
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    width: 100vw !important;
+    height: auto !important;
+   
+    box-sizing: border-box !important;
+    justify-items: center !important;
+    
+  }
+
+ #sobre-foto{
+   align-self: start !important;
+ 
+  
+   justify-items: center !important;
+   left: 0 !important;
+   height: 40vh ;
+   display: flex;
+   justify-content: center;
+ }
+
+ #sobre-texto{
+   height: 40vh;
+   width: 80%;
+   height: auto !important;
+   box-sizing: border-box !important;
+
+ }
+
+ #foto-apresentação {
+  height: 75%;
+  width: auto;
+ }
+
 
   #rodape {
     height: 100vh !important;
