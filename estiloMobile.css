@@ -253,16 +253,19 @@
  }
 
  #sobre-texto{
-   height: 40vh;
+   height: 80%;
    width: 80%;
    height: auto !important;
    box-sizing: border-box !important;
    display: flex;
-   justify-content: start;
+   justify-content: center !important;
    flex-direction: column;
-
+   /* object-fit: contain; */
  }
 
+ #sobre-texto * {
+  text-align: center;
+ }
 
  #foto-apresentação {
   height: 75%;
@@ -271,13 +274,14 @@
 
  #sobre-nome{
    font-size: 28px !important;
+   margin-left: 0;
 
  }
 
 #sobre-formacao{
  font-size: 15px;
  width: 100%;
- margin-left: 7px;
+ margin-left: 0;
  
 }
 
@@ -342,7 +346,7 @@
   }
 
   .formInputs input {
-    width: 290px !important;
+    width: 100% !important;
     margin-top: 10px;
     color: whitesmoke;
   }
