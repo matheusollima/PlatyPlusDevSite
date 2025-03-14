@@ -206,7 +206,6 @@
   #sobre {
     z-index: 0;
     height: auto !important;
-    border: solid 2px yellowgreen;
     display: flex;
     align-content: start;
     padding-top: 20px;
@@ -218,7 +217,7 @@
   }
 
   #sobre-titulo{
-    font-size: 15px !important;
+    font-size: 20px !important;
    
   }
 
@@ -233,7 +232,7 @@
 
     display: grid !important;
     grid-template-columns: 1fr !important;
-    gap: 30px !important;
+    gap: 5px !important;
     width: 100vw !important;
     height: auto !important;
    
@@ -258,13 +257,35 @@
    width: 80%;
    height: auto !important;
    box-sizing: border-box !important;
+   display: flex;
+   justify-content: start;
+   flex-direction: column;
 
  }
+
 
  #foto-apresentação {
   height: 75%;
   width: auto;
  }
+
+ #sobre-nome{
+   font-size: 28px !important;
+
+ }
+
+#sobre-formacao{
+ font-size: 15px;
+ width: 100%;
+ margin-left: 7px;
+ 
+}
+
+.destaque-formacao{
+  color: green ;
+}
+
+
 
 
   #rodape {
@@ -302,7 +323,7 @@
     height: 310px !important;
     width: 100vw !important;
     position: relative;
-    top: 60px;
+    top: 100px;
     overflow-x: hidden;
     box-sizing: border-box !important;
   
@@ -321,10 +342,18 @@
   }
 
   .formInputs input {
-    width: 250px !important;
+    width: 290px !important;
+    margin-top: 10px;
+    color: whitesmoke;
   }
 
   .formInputs label {
+    font-size: 15px;
+  }
+
+  .formInputs input:focus ~ label,
+  .formInputs input:valid ~ label {
+    transform: translateY(-17px);
     font-size: 15px;
   }
 
@@ -369,7 +398,7 @@
   .contato {
     position: relative;
 
-    top: -40px;
+    top: -70px;
     height: auto !important;
     z-index: 9999999999;
     align-self: end;
@@ -413,7 +442,7 @@
  }
 
  #midiasSociais div a img{
-  width: 25px;
+  width: 30px;
   height: auto;
   align-self: center;
  
