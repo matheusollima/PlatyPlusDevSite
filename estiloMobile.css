@@ -123,6 +123,7 @@
   #menu-hamburguer-img {
     position: relative;
     left: 30px;
+    display: none;
   }
 
   /*
