@@ -38,7 +38,7 @@
     display: none;
   }
   .header-mobile {
-    width: 100%;
+    width: 100vw;
     display: block;
     box-sizing: border-box;
     height: auto !important;
@@ -47,7 +47,7 @@
   .navMenu-mobile {
     box-sizing: border-box;
     width: 100vw;
-    height: 70px;
+    min-height: 12vh;
     position: fixed;
     /* overflow-x: hidden; */
     margin: 0px;
@@ -55,13 +55,16 @@
     display: grid;
     background-color: #1f221e;
     grid-template-columns: 70% 30%;
-    justify-content: start;
-    align-items: center;
     border-bottom: 1px solid black;
-    z-index: 9999999;
-    
+    z-index: 9999;
+   
    
   }
+
+ .navMenu-mobile > {
+  display: inline-block ;
+ }
+
 
   #div0Msgdia {
     display: none;
@@ -80,18 +83,25 @@
   }
 
  .navMenu-mobile > {
-  border: solid 5px blue !important;
+  
  }
 
 
-  #logo-mobile {
+ #logo-mobile-div {
+ 
+  
+  position: static;
+  display: flex;
+  justify-content: center;
+ }
+
+  #logo-mobile-img {
     margin: 0;
     position: relative;
-    left: 50px !important;
-    width: 55%;
-    height: auto;
+    width: 60%;
+    left: 7%;
     overflow-x: hidden;
-    left: 30% !important;
+ 
   }
 
   #msgDia {
@@ -103,7 +113,11 @@
     background-color: transparent;
     border: transparent;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+  
   }
 
   #btn-menu > img {
@@ -130,8 +144,7 @@
   }
 
   #menu-hamburguer-img {
-    position: relative;
-    left: 30px;
+
   }
 
   /*
@@ -251,7 +264,7 @@
     padding-bottom: 30% !important;
     max-width: 100vw !important;
     box-sizing: border-box;
-    border: solid 5px red;
+
   }
 
   #tecnologias-titulo {
@@ -263,6 +276,13 @@
     top: 10px !important;
   }
 
+  
+  #tecnologias-subtitulo01 {
+    font-size: 15px;
+    position: relative;
+    top: -20% !important;
+  }
+
   #painelTecnologias {
     max-width: 90vw !important;
     max-height: 60vh !important;
@@ -271,11 +291,13 @@
     top: 0 !important;
   }
 
-  #tecnologias-subtitulo01 {
-    font-size: 15px;
-    position: relative;
-    top: -20% !important;
+
+  #painelTecnologias > {
+    width: 90%;
+    height: auto;
   }
+
+
 
   /*  ////////////////////////////////////////////// SOBRE ///////////////////////////////////////////////////////////*/
 
