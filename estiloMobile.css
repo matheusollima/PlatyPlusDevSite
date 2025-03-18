@@ -260,12 +260,8 @@ section#tecnologias{
   border: solid 5px rgb(9, 97, 20);
   padding: 0;
   position: absolute;
+  padding-bottom: 30% !important;
 }
-
-section#tecnologias > {
- display: none !important;
-}
-
 
 
 
@@ -275,15 +271,24 @@ section#tecnologias > {
  height: 30px;
  width: auto;
  position: relative !important;
- top: px !important;
+ top: 10px !important;
 }
 
 
 #painelTecnologias {
-  width: 300px !important;
-  height: 200px !important;
+  width: 320px !important;
+  height: 500px !important;
   overflow-x: hidden;
-  border: 2px outset olivedrab;
+  position: relative;
+  top: 0 !important;
+}
+
+
+#tecnologias-subtitulo01{
+  font-size: 15px;
+  position: relative;
+  top: -20% !important;
+
 }
 
 
@@ -329,8 +334,6 @@ section#tecnologias > {
   }
 
   #sobre-titulo-section{
-   
-
    
 
   }
