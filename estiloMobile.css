@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) {
   html {
     box-sizing: border-box;
     width: 100vw ;
@@ -219,7 +219,6 @@
   }
 
   .hidden{
-    border: solid 2px orangered;
     box-sizing: border-box;
    
   }
@@ -258,10 +257,10 @@
 section#tecnologias{
 
   height: auto !important;
-  border: solid 5px rgb(9, 97, 20);
   padding: 0;
   position: absolute;
   padding-bottom: 30% !important;
+  width: 100vw !important;
 }
 
 
