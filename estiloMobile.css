@@ -1,7 +1,7 @@
-@media (min-width: 320px)and (min-height: 480px) {
+@media (min-width: 320px) and (min-height: 480px) {
   html {
     box-sizing: border-box;
-    width: 100vw ;
+    width: 100vw;
     overflow-x: hidden;
   }
 
@@ -24,8 +24,8 @@
   #titulo-apresentação {
     font-size: 25px !important;
     position: relative;
-  
-   top: -10px;
+
+    top: -10px;
     z-index: 999;
   }
 
@@ -52,12 +52,15 @@
     /* overflow-x: hidden; */
     margin: 0px;
     top: 0px;
-    display: flex;
+    display: grid;
     background-color: #1f221e;
-
+    grid-template-columns: 70% 30%;
     justify-content: start;
+    align-items: center;
     border-bottom: 1px solid black;
     z-index: 9999999;
+    
+   
   }
 
   #div0Msgdia {
@@ -70,19 +73,25 @@
 
   .navMenu-mobile li {
     margin: 30px 0;
+
   }
 
   .navMenu-mobile li a {
   }
 
+ .navMenu-mobile > {
+  border: solid 5px blue !important;
+ }
+
+
   #logo-mobile {
     margin: 0;
     position: relative;
     left: 50px !important;
-    width: 50%;
+    width: 55%;
     height: auto;
     overflow-x: hidden;
-
+    left: 30% !important;
   }
 
   #msgDia {
@@ -93,11 +102,11 @@
   #btn-menu {
     background-color: transparent;
     border: transparent;
-    margin-left: 60px;
+    display: flex;
+    justify-content: start;
   }
 
   #btn-menu > img {
-    width: 80%;
     cursor: pointer;
     outline: none;
   }
@@ -123,7 +132,6 @@
   #menu-hamburguer-img {
     position: relative;
     left: 30px;
-  
   }
 
   /*
@@ -134,8 +142,7 @@
     height: 200px;
     width: 100vw;
     margin: 0;
-   
-  
+
     position: absolute;
   }
 
@@ -150,7 +157,6 @@
     margin-top: 100px !important;
     width: 320px !important;
     height: 320px !important;
-
   }
 
   section {
@@ -162,18 +168,15 @@
     width: 100%;
 
     /* overflow-y: hidden; */
-    
+
     /* flex-direction: column-reverse; */
     position: relative;
     top: 70px;
     padding-top: 0;
-   
   }
 
   .titulo-section {
     font-size: 30px !important;
-
-   
   }
 
   .section {
@@ -197,18 +200,14 @@
     height: calc(100vh - 120px);
   }
 
-
-
-
   /*///////////////////////// SERVIÇOS ///////////////////////////////*/
 
-
-  section#serviços{
-   height: auto !important;
-   border: solid 5px cornflowerblue;
-   width: 100vw !important;
-   overflow-x: hidden;
-   box-sizing: border-box;
+  section#serviços {
+    height: auto !important;
+    border: solid 5px cornflowerblue;
+    width: 100vw !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
   .titulo-softwares {
     font-size: 10px;
@@ -218,96 +217,65 @@
     /* display: none; */
   }
 
-  .hidden{
+  .hidden {
     box-sizing: border-box;
-   
   }
 
   #painel-serviços {
-   width: 100vw !important;
-   overflow-x: hidden !important;
-   border: solid 2px blue;
-   height: auto;
-   box-sizing: border-box;
+    width: 100vw !important;
+    overflow-x: hidden !important;
+    border: solid 2px blue;
+    height: auto;
+    box-sizing: border-box;
   }
 
-  #painel-serviços > div{
-    
-  
+  #painel-serviços > div {
   }
 
   .painel-software {
     grid-template-columns: auto !important;
     border: solid 5px purple;
     height: auto !important;
-  
   }
 
-
-  #serviços-hidden{
+  #serviços-hidden {
     height: auto !important;
   }
 
+  /* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
 
-/* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
+  section#tecnologias {
+    min-height: 100vh !important;
+    padding: 0;
+    position: absolute;
+    padding-bottom: 30% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+    border: solid 5px red;
+  }
 
+  #tecnologias-titulo {
+    font-size: 30px !important;
+    border: solid 4px rgb(0, 238, 255);
+    height: 30px;
+    width: auto;
+    position: relative !important;
+    top: 10px !important;
+  }
 
+  #painelTecnologias {
+    max-width: 90vw !important;
+    max-height: 60vh !important;
+    overflow-x: hidden;
+    position: relative;
+    top: 0 !important;
+  }
 
-
-section#tecnologias{
-
-  min-height: 100vh !important;
-  padding: 0;
-  position: absolute;
-  padding-bottom: 30% !important;
-  max-width: 100vw !important;
-  box-sizing: border-box;
-  border: solid 5px red;
-}
-
-
-
-#tecnologias-titulo{
-  font-size: 30px !important;
-  border: solid 4px rgb(0, 238, 255);
- height: 30px;
- width: auto;
- position: relative !important;
- top: 10px !important;
-}
-
-
-#painelTecnologias {
-  max-width: 90vw !important;
-  max-height: 60vh !important;
-  overflow-x: hidden;
-  position: relative;
-  top: 0 !important;
-}
-
-
-#tecnologias-subtitulo01{
-  font-size: 15px;
-  position: relative;
-  top: -20% !important;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #tecnologias-subtitulo01 {
+    font-size: 15px;
+    position: relative;
+    top: -20% !important;
+  }
 
   /*  ////////////////////////////////////////////// SOBRE ///////////////////////////////////////////////////////////*/
 
@@ -317,31 +285,23 @@ section#tecnologias{
     display: block;
     align-content: start;
     padding-top: 20px;
-
-  
   }
 
   #sobre * {
     display: block;
-  
   }
 
   #sobre > * {
- 
   }
 
-  #sobre-titulo{
+  #sobre-titulo {
     font-size: 20px !important;
-   
   }
 
-  #sobre-titulo-section{
-   
-
+  #sobre-titulo-section {
   }
 
-
-  #sobre-section{
+  #sobre-section {
     height: auto;
     background-color: blueviolet;
     border: color red solid 5px;
@@ -359,57 +319,51 @@ section#tecnologias{
     column-gap: 0;
   }
 
- #sobre-foto{
-   align-self: start !important;
- 
-  
-   justify-items: center !important;
-   left: 0 !important;
-   height: 40vh ;
-   display: flex;
-   justify-content: center;
- }
+  #sobre-foto {
+    align-self: start !important;
 
- #sobre-texto{
-   max-height: 100%;
-   width: 80%;
-   height: auto !important;
-   box-sizing: border-box !important;
-   display: flex;
-   justify-content: center !important;
-   flex-direction: column;
-   /* object-fit: contain; */
-   padding: 0;
- }
+    justify-items: center !important;
+    left: 0 !important;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+  }
 
- #sobre-texto * {
-  text-align: center;
- }
+  #sobre-texto {
+    max-height: 100%;
+    width: 80%;
+    height: auto !important;
+    box-sizing: border-box !important;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    /* object-fit: contain; */
+    padding: 0;
+  }
 
- #foto-apresentação {
-  height: 75%;
-  width: auto;
- }
+  #sobre-texto * {
+    text-align: center;
+  }
 
- #sobre-nome{
-   font-size: 28px !important;
-   margin-left: 0;
+  #foto-apresentação {
+    height: 75%;
+    width: auto;
+  }
 
- }
+  #sobre-nome {
+    font-size: 28px !important;
+    margin-left: 0;
+  }
 
-#sobre-formacao{
- font-size: 15px;
- width: 100%;
- margin-left: 0;
- 
-}
+  #sobre-formacao {
+    font-size: 15px;
+    width: 100%;
+    margin-left: 0;
+  }
 
-.destaque-formacao{
-  color: green ;
-}
-
-
-
+  .destaque-formacao {
+    color: green;
+  }
 
   #rodape {
     height: 100vh !important;
@@ -449,8 +403,6 @@ section#tecnologias{
     top: 100px;
     overflow-x: hidden;
     box-sizing: border-box !important;
-  
-   
   }
 
   .nmSocial {
@@ -491,12 +443,9 @@ section#tecnologias{
     height: auto;
   }
 
-
   #tituloContatos {
     padding: 0;
   }
-
-
 
   #msgFinal {
     display: none;
@@ -520,7 +469,6 @@ section#tecnologias{
     align-self: end;
     display: flex;
     flex-direction: column;
-   
   }
 
   #msgContato {
@@ -529,55 +477,46 @@ section#tecnologias{
     font-size: 17px !important;
     width: 100vw;
     position: absolute;
-   
   }
   #btEnviar {
     position: relative;
-    top: 120px ;
+    top: 120px;
     left: -20px;
     font-size: 25px;
   }
 
+  #tituloContatos {
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+  }
 
- #tituloContatos{
-  position: relative;
-  top: 30px;
-  font-size: 30px;
- }
+  #midiasSociais {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center !important;
+    justify-items: center;
 
- #midiasSociais{
-   display: grid !important;
-   grid-template-columns: auto auto auto;
-   column-gap: 30px;
-   align-items: center;
-   justify-content: center !important;
-   justify-items: center;
-   
-   padding: 0;
-   right: 0 !important;
- }
+    padding: 0;
+    right: 0 !important;
+  }
 
- #midiasSociais div a img{
-  width: 30px;
-  height: auto;
-  align-self: center;
- 
- }
+  #midiasSociais div a img {
+    width: 30px;
+    height: auto;
+    align-self: center;
+  }
 
- #midiasSociais a {
-  
-   width: 25px !important;
-   height: 25px !important;
- }
+  #midiasSociais a {
+    width: 25px !important;
+    height: 25px !important;
+  }
 
-
- .teste{
-  width: 40%;
-  height: 100px;
-  background-color: crimson;
- }
-
-
-
-
+  .teste {
+    width: 40%;
+    height: 100px;
+    background-color: crimson;
+  }
 }
