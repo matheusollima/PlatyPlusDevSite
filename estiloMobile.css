@@ -195,13 +195,114 @@
     top: 0;
     height: calc(100vh - 120px);
   }
+
+
+
+
+  /*///////////////////////// SERVIÇOS ///////////////////////////////*/
+
+
+  section#serviços{
+   height: auto !important;
+   border: solid 5px cornflowerblue;
+   width: 100vw !important;
+   overflow-x: hidden;
+   box-sizing: border-box;
+  }
   .titulo-softwares {
     font-size: 10px;
   }
 
   .img-serviços {
-    display: none;
+    /* display: none; */
   }
+
+  .hidden{
+    border: solid 2px orangered;
+    box-sizing: border-box;
+   
+  }
+
+  #painel-serviços {
+   width: 100vw !important;
+   overflow-x: hidden !important;
+   border: solid 2px blue;
+   height: auto;
+   box-sizing: border-box;
+  }
+
+  #painel-serviços > div{
+    
+  
+  }
+
+  .painel-software {
+    grid-template-columns: auto !important;
+    border: solid 5px purple;
+    height: auto !important;
+  
+  }
+
+
+  #serviços-hidden{
+    height: auto !important;
+  }
+
+
+/* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
+
+
+
+
+section#tecnologias{
+
+  height: auto !important;
+  border: solid 5px rgb(9, 97, 20);
+  padding: 0;
+  position: absolute;
+}
+
+section#tecnologias > {
+ display: none !important;
+}
+
+
+
+
+#tecnologias-titulo{
+  font-size: 30px !important;
+  border: solid 4px rgb(0, 238, 255);
+ height: 30px;
+ width: auto;
+ position: relative !important;
+ top: px !important;
+}
+
+
+#painelTecnologias {
+  width: 300px !important;
+  height: 200px !important;
+  overflow-x: hidden;
+  border: 2px outset olivedrab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*  ////////////////////////////////////////////// SOBRE ///////////////////////////////////////////////////////////*/
 
   .section#sobre {
     z-index: 999999;
@@ -385,13 +486,6 @@
     height: auto;
   }
 
-  #painel-serviços {
-    display: none;
-  }
-
-  .painel-software {
-    display: none;
-  }
 
   #tituloContatos {
     padding: 0;
