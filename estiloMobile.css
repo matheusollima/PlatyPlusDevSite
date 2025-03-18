@@ -256,11 +256,11 @@
 
 section#tecnologias{
 
-  height: auto !important;
+  min-height: 100vh !important;
   padding: 0;
   position: absolute;
   padding-bottom: 30% !important;
-  width: 100vw !important;
+  max-width: 100vw !important;
 }
 
 
