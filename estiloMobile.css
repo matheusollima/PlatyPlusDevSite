@@ -264,12 +264,11 @@
     padding-bottom: 30% !important;
     max-width: 100vw !important;
     box-sizing: border-box;
-
+  
   }
 
   #tecnologias-titulo {
     font-size: 30px !important;
-    border: solid 4px rgb(0, 238, 255);
     height: 30px;
     width: auto;
     position: relative !important;
@@ -284,7 +283,8 @@
   }
 
   #painelTecnologias {
-    max-width: 90vw !important;
+    max-width: 95vw !important;
+    
     max-height: 60vh !important;
     overflow-x: hidden;
     position: relative;
@@ -297,7 +297,14 @@
     height: auto;
   }
 
+ #platypus-capacete{
 
+  left: 50% !important;
+  right: 50% !important;
+  top: 90vh !important;
+  max-width: 30vw !important;
+  transform: translate(-50%, -50%);
+ }
 
   /*  ////////////////////////////////////////////// SOBRE ///////////////////////////////////////////////////////////*/
 
