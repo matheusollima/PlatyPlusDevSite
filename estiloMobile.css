@@ -287,15 +287,129 @@
     
     max-height: 60vh !important;
     overflow-x: hidden;
+    overflow-y: scroll !important;
     position: relative;
     top: 0 !important;
   }
 
 
-  #painelTecnologias > {
-    width: 90%;
-    height: auto;
-  }
+ .front-back-column {
+  border: solid 5px darkgoldenrod;
+  width: 100%;
+  height: 600px;
+  position: absolute !important;
+  left: 50% !important;
+  right: 50% !important;
+  transform: translate(-50%, -50%);
+   display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:  1fr 1fr 1fr ;
+  grid-template-areas: 
+   "front "
+   "back"
+   "database" !important;
+    column-gap: 5px !important;
+  /* flex-direction: column; */
+  top: 250px;
+  box-sizing: border-box;
+ }
+
+ .front-back-column > li {
+  
+  top: 0;
+  
+  column-gap: 0;
+  max-width: 95vw ;
+  max-height: calc(60vh/3);
+  box-sizing: border-box;
+  margin: 0;
+ }
+
+
+ #front div{
+    width: 95vw;
+    height: calc(60vh/3) ;
+    left: 0;
+    margin: 0 !important;
+ }
+
+ #back div {
+  width: 95vw;
+  height: calc(60vh/3) ;
+  right: 0;
+  margin: 0 !important;
+  
+ }
+
+ #database div {
+  width: 95vw;
+  height: calc(60vh/3) ;
+ }
+
+
+
+#front h2{
+ font-size: 15px; 
+}
+
+#back h2 {
+  font-size: 15px;
+}
+
+#database h2 {
+  font-size: 15px;
+}
+
+
+#front img{
+  width: 40% !important;
+  height: auto; 
+ }
+ 
+ #back img {
+  width: 40% !important;
+  height: auto;
+ }
+ 
+ #database img {
+  width: 40% !important;
+  height: auto;
+ }
+
+
+ #tecnologia-front-div{
+  border: solid 2px coral;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ box-sizing: border-box;
+ }
+
+ #tecnologia-front-div ul{
+
+   height: 100% !important;
+   width: 100% !important;
+   box-sizing: border-box;
+   display: grid;
+   grid-template-columns: auto auto auto;
+  
+ }
+
+ #tecnologia-front-div ul * {
+  margin: 0;
+  font-size: 15px;
+ }
+
+ #tecnologia-front-div ul li {
+  
+ }
+
+.front-li {
+  height: 20px !important;
+  width: auto;
+}
+
+
 
  #platypus-capacete{
 
@@ -305,6 +419,11 @@
   max-width: 30vw !important;
   transform: translate(-50%, -50%);
  }
+
+
+
+
+
 
   /*  ////////////////////////////////////////////// SOBRE ///////////////////////////////////////////////////////////*/
 
