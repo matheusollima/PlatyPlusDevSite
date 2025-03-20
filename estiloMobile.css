@@ -247,7 +247,7 @@
 
   .painel-software {
     grid-template-columns: auto !important;
-    border: solid 5px purple;
+  
     height: auto !important;
   }
 
@@ -284,45 +284,46 @@
 
   #painelTecnologias {
     max-width: 95vw !important;
-    
     max-height: 60vh !important;
-    overflow-x: hidden;
-    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    
     position: relative;
     top: 0 !important;
   }
 
 
  .front-back-column {
-  border: solid 5px darkgoldenrod;
+
   width: 100%;
-  height: 600px;
+  height: auto;
   position: absolute !important;
   left: 50% !important;
   right: 50% !important;
   transform: translate(-50%, -50%);
    display: grid;
   grid-template-columns: 100%;
-  grid-template-rows:  1fr 1fr 1fr ;
+ 
   grid-template-areas: 
    "front "
    "back"
    "database" !important;
-    column-gap: 5px !important;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
   /* flex-direction: column; */
-  top: 250px;
+  top: 130px;
   box-sizing: border-box;
  }
 
  .front-back-column > li {
   
   top: 0;
-  
+  padding: 0 !important;
   column-gap: 0;
   max-width: 95vw ;
   max-height: calc(60vh/3);
   box-sizing: border-box;
   margin: 0;
+  
  }
 
 
@@ -367,31 +368,31 @@
  }
  
  #back img {
-  width: 40% !important;
+  width: 60% !important;
   height: auto;
  }
  
  #database img {
-  width: 40% !important;
+  width: 25% !important;
   height: auto;
  }
 
-
+/*  FRONT DIV */
  #tecnologia-front-div{
-  border: solid 2px coral;
   display: flex;
   flex-direction: column;
  justify-content: center;
  box-sizing: border-box;
+ 
  }
 
  #tecnologia-front-div ul{
-
    height: 100% !important;
    width: 100% !important;
    box-sizing: border-box;
    display: grid;
    grid-template-columns: auto auto auto;
+  
   
  }
 
@@ -410,7 +411,85 @@
 }
 
 
+/* BACK DIV*/
 
+#tecnologia-back-div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+box-sizing: border-box;
+width: 100%;
+
+
+ }
+
+ #tecnologia-back-div ul{
+  margin: 0;
+  height: 100% !important;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr !important;
+
+  justify-content: center;
+  gap: 0;
+column-gap: 0;
+row-gap: 0;
+}
+
+
+
+#tecnologia-back-div ul li {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#tecnologia-back-div ul * {
+  margin: 0;
+  font-size: 15px;
+ }
+
+/* DATABASE DIV*/
+
+#tecnologia-database-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+
+   }
+  
+   #tecnologia-database-div ul{
+    margin: 0;
+    height: 100% !important;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 100% !important;
+ 
+    
+  }
+  
+  
+  
+  #tecnologia-database-div ul li {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  #tecnologia-database-div ul * {
+    margin: 0;
+    font-size: 15px;
+   }
+
+
+
+
+
+
+
+/* EMOJI PLATYPUS*/
  #platypus-capacete{
 
   left: 50% !important;
