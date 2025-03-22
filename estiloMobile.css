@@ -598,8 +598,7 @@ row-gap: 0;
 
   #sobre-section {
     height: auto;
-    background-color: blueviolet;
-    border: color red solid 5px;
+    
   }
 
   .sobre-container {
@@ -612,7 +611,6 @@ row-gap: 0;
     justify-items: center !important;
     align-items: start;
     column-gap: 0;
-    border: solid 2px blue;
     
   }
 
@@ -636,7 +634,6 @@ row-gap: 0;
     flex-direction: column;
     /* object-fit: contain; */
     padding: 0;
-    border: solid 2px red;
     position: relative;
     top: -20px;
   }
