@@ -230,7 +230,6 @@
 
   section#serviços {
     height: auto !important;
-    border: solid 5px cornflowerblue;
     width: 100vw !important;
     overflow-x: hidden;
     box-sizing: border-box;
@@ -239,6 +238,16 @@
     font-size: 10px;
   }
 
+
+  .painel-software{
+    display: none;
+  }
+
+
+  .div-modelo-negocio{
+   display: none;
+
+  }
   .img-serviços {
     /* display: none; */
   }
