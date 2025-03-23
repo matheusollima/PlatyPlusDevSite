@@ -695,7 +695,7 @@ row-gap: 0;
   .formContato {
     padding: 0;
     height: 310px !important;
-    width: 100vw !important;
+    width: 90vw !important;
     position: relative;
     top: 100px;
     overflow-x: hidden;
@@ -734,10 +734,12 @@ row-gap: 0;
     text-align: center;
     position: relative;
     top: 2px;
-    left: 30px;
-    right: 30px;
+    left: 50%;
+    /* right: 30px; */
+    transform: translateX(-50%);
     align-self: center;
     height: auto;
+    display: block;
   }
 
   #tituloContatos {
@@ -772,8 +774,11 @@ row-gap: 0;
     overflow-x: hidden;
     height: 100px !important;
     font-size: 17px !important;
-    width: 100vw;
+    width: 80vw !important;
     position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  
   }
   #btEnviar {
     position: relative;
