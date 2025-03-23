@@ -10,6 +10,7 @@
     <link href="estiloMobile.css" media="screen and (max-width: 720px) and (max-height: 1520px)" rel="stylesheet" />
     <link href="estiloMonitor16.9.css"  rel="stylesheet" />
     <script defer src = "script.js"></script>
+    <script defer src = sliderMobile.js></script>
     <!--  <script defer  src="formularioEmail.js" ></script>
     <script defer  src="envioEmail.js" ></script> -->
     <!--  JQUERY SCRIPT  -->
@@ -96,7 +97,9 @@
         <section class = "hidden" id = 'serviços-hidden'>
             <h1 class = "titulo-section" id = "serviços-titulo">Serviços</h1>
             <h2 id = 'serviços-subtitulo01'>Fornecemos estes serviços para atender as suas necessidades</h2>
-            <div id = "painel-serviços">
+            
+        <!-- PAINEL - DESKTOP-->    
+            <div class = "desktop" id = "painel-serviços">
                
             <!-- SOFTWARES -->    
             <div class = "painel-software">
@@ -202,7 +205,88 @@
             
 
 
-             </div>   
+             </div> 
+             
+             
+        <!-- PAINEL SLIDER - MOBILE -->
+             <div class = "slider-mobile">
+                <div class = 'item' id = 'site-i-div'>
+                    <div class = 'serviço-texto' id = 'site-i'>
+                        <h2>Site institucional</h2>
+                        <p>Um site institucional é como o cartão de visitas virtual da sua empresa ou organização. É onde você apresenta quem você é, o que faz e por que alguém deveria se interessar pelo que você oferece</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/website.png" alt="">
+                    <h2 class = titulo-serviço id = titulo-serviço-site>Site institucional</h2>
+                    </div>
+
+                    <div class ='item' id = 'landing-page-div'>
+                    <div class = 'serviço-texto' id = 'landing-page'>
+                    <h2>Landing Page</h2>
+                    <p>Uma landing page, também conhecida como página de destino, é uma página da web projetada com um propósito específico: converter visitantes em ações desejadas. Essa ação pode variar, mas geralmente envolve incentivar o usuário a preencher um formulário, fazer uma compra, baixar um recurso (como um e-book) ou se inscrever em uma newsletter.</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/landing-page.png" alt="">
+                    <h2 class = titulo-serviço>Landing pages</h2>
+                    </div>
+
+                    <div class ='item' id = 'hot-site-div'>
+                    <div class = 'serviço-texto' id = 'hot-site'>
+                    <h2>Hot Site</h2>
+                    <p>Um hot site é uma página da web temporária e específica, criada para atender a uma necessidade urgente ou promover um evento, produto ou serviço específico.</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/hot-site.png" alt="">
+                    <h2 class = titulo-serviço>HotSite</h2>
+                    </div>
+                    
+                    <div class ='item' id = 'web-system-div'>
+                    <div class = 'serviço-texto' id = 'web-system'>
+                    <h2>Sistema Web</h2>
+                    <p>Um sistema web é uma aplicação de software que opera na internet, acessível por meio de um navegador da web. Aqui estão os principais pontos sobre sistemas</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/web-system.png" alt="">
+                    <h2 class = titulo-serviço>Sistema Web</h2>
+                    </div>
+                    
+                    <div class ='item' id = 'e-commerce-div'>
+                    <div class = 'serviço-texto' id = 'commerce'>
+                    <h2>E-Commerce</h2>
+                    <p>Um e-commerce, abreviação de “comércio eletrônico”, refere-se à compra e venda de produtos ou serviços pela internet.</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/e-commerce.png" alt="">
+                    <h2 class = titulo-serviço>E-commerce</h2>
+                    </div>
+                    
+                    <div  class ='item' id = 'consultoria-div'>
+                    <div class = 'serviço-texto' id = 'consultoria'>
+                    <h2 >Consultoria</h2>
+                    <p>Leve sua empresa ao próximo nível com Consultoria em Tecnologia! 🌐
+
+                        Maximize eficiência, reduza custos e inove com soluções tecnológicas sob medida. Análise, recomendação, implementação e otimização de sistemas. Tudo para impulsionar sua produtividade!
+                        
+                        Transforme seu negócio hoje mesmo! 💡</p>
+                    </div>
+                    <img src="./imgs/front-end/serviços - icons/consultoria.png" alt="">    
+                    <h2 class = 'titulo-serviço' id = 'titulo-serviço-consultoria' >Consultoria em tecnologia</h2>
+                    </div>
+
+                    <div  class ='item' id = 'android-div'>
+                        <div class = 'serviço-texto' id = 'android'>
+                            <h2>Aplicativos android</h2>
+                            <p>Desenvolva seu próprio aplicativo Android e conquiste a Google Play Store! Seja um jogo inovador, uma solução prática ou uma ferramenta revolucionária, o seu app pode fazer a diferença. Alcance milhões de usuários, aumente a visibilidade da sua marca e mude o mundo com um toque</p>
+                            </div>  
+                    <img src="./imgs/front-end/serviços - icons/android.png" alt="">
+                    <h2 class = 'titulo-serviço'>Aplicativos android</h2>
+                    </div>
+                    <div  class ='item' id = 'erp-div'>
+                        <div class = 'serviço-texto' id = 'erp'>
+                            <h2>Sistema de Gestão (ERP)</h2>
+                            <p>ERP: Um sistema que integra todos os processos da sua empresa, como finanças e vendas, em uma única plataforma.
+
+                                📈 Aumente a eficiência do seu negócio com um ERP! Centralize seus processos, reduza custos e tome decisões melhores. Invista no futuro da sua empresa! 🚀</p>
+                            </div>     
+                        <img src="./imgs/front-end/serviços - icons/ERP.png" alt="">
+                        <h2 class = 'titulo-serviço' id = 'titulo-serviço-erp'>Sistema de Gestão (ERP)</h2>
+                    </div>
+             </div>
          </section>
 
 

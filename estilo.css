@@ -467,6 +467,10 @@
   SERVIÇOS
   */
   
+  .slider-mobile {
+    display: none;
+  }
+
   #serviços {
     display: grid;
     
