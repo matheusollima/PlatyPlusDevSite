@@ -231,9 +231,37 @@
   section#serviços {
     height: auto !important;
     width: 100vw !important;
-    overflow-x: hidden;
+    display: flex !important;
+    justify-content: center !important;
+    /* overflow-x: hidden; */
     box-sizing: border-box;
+    flex-direction: column;
+  
+    
   }
+
+  #serviços-hidden {
+    display: flex;
+    justify-content: start !important;
+    flex-direction: column;
+    width: 100vw !important;
+    height: auto !important;
+    box-sizing: border-box;
+   
+  }
+
+
+  #serviços-subtitulo01 {
+    font-size: 15px;
+    width: auto;
+    text-align: center;
+  
+  
+  
+  }
+
+
+
   .titulo-softwares {
     font-size: 10px;
   }
@@ -256,11 +284,15 @@
     box-sizing: border-box;
   }
 
+
+  /* DESKTOP */
+
   #painel-serviços {
     width: 100vw !important;
     overflow-x: hidden !important;
     height: auto;
     box-sizing: border-box;
+  
   }
 
   #painel-serviços > div {
@@ -308,7 +340,7 @@
   }
 
   .item:first-child{
-    z-index: 99999;
+    /* z-index: 99999; */
   }
 
 
