@@ -155,7 +155,7 @@
 
  
   #menu-hamburguer-img {
-
+    width: 40%;
   }
 
   /*
@@ -310,7 +310,33 @@
 
 
   /* ////////////////////////////////////// SLIDER SERVIÇOS //////////////////////////////////////////*/
+    
+ .serviço-texto{
+  /* display: flex ; */
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto;
+  right: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-sizing: border-box;
+  justify-content: center !important;
+  border: solid 1px rgb(0, 255, 55);
+ }
 
+  .serviço-texto * {
+    border: solid 2px rgb(14, 76, 190) !important;
+    box-sizing: border-box !important;
+    right: 0 !important;
+    left: 0 !important;
+    width: auto;
+    height: auto !important;
+    position: absolute;
+    top: 0;
+    display: block !important;
+   
+  }
 
   .slider-mobile {
     display: flex;
@@ -339,8 +365,8 @@
   
   }
 
-  .item:first-child{
-    /* z-index: 99999; */
+  .item:nth-child(8){
+    z-index: 99999;
   }
 
 
@@ -356,6 +382,34 @@
     width: 30vw !important;
     height: auto !important;
   }
+
+  #next, #prev{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 50px;
+   
+}
+
+#next {
+    left: unset;
+    top: 150px;
+    right: 10px;
+}
+
+#prev {
+  right: unset;
+  top: 150px;
+  left: 10px;
+}
+
+
+
 
   /* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
 
