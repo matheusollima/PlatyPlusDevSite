@@ -427,7 +427,10 @@
 
 
 /* ///////////////////////////////////////// MODELOS DE NEGÓCIO /////////////////////////////////////////////*/
-
+.div-modelo-negocio-mobile{
+  
+  padding-bottom: 30%;
+}
 .painel-modelo-negocio-container {
   background-color: #dfdfdf;
   width: 100vw;
@@ -450,6 +453,7 @@
   /* Criar o efeito contínuo */
   animation: slide 14s infinite linear; 
   width: max-content; /* Necessário para o fluxo contínuo */
+  list-style: none;
 }
 
 .modelos ul:hover {
@@ -457,7 +461,7 @@
 }
 
 .item-container {
-  background-color: white; /* Fundo branco para o retângulo */
+  background-color: #1b1b1b; /* Fundo branco para o retângulo */
   border: 2px solid #ccc; /* Borda cinza clara */
   border-radius: 10px; /* Bordas arredondadas */
   padding: 10px;
@@ -466,6 +470,7 @@
   align-items: center;
   width: 160px; /* Tamanho consistente para o retângulo */
   box-sizing: border-box; /* Garantir que padding não afete tamanho */
+
 }
 
 .item-container img {
@@ -475,9 +480,10 @@
 
 .item-container label {
   font-family: 'Roboto', sans-serif; /* Fonte Roboto */
-  color: darkgreen; /* Cor verde escuro */
+  color: rgb(255, 255, 255); /* Cor verde escuro */
   margin-top: 10px;
   text-align: center; /* Centraliza o texto */
+  font-size: 20px;
 }
 
 @keyframes slide {
