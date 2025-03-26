@@ -432,7 +432,7 @@
   background-color: #dfdfdf;
   width: 100vw;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: hidden; /* Importante para esconder o conteúdo fora do container */
   margin: 0 auto;
 }
 
@@ -456,27 +456,27 @@
   animation-play-state: paused; /* Pausa a animação ao passar o mouse */
 }
 
-.modelos li {
-  list-style: none;
-  background-color: #fff; /* Fundo branco para contraste */
+.item-container {
+  background-color: white; /* Fundo branco para o retângulo */
+  border: 2px solid #ccc; /* Borda cinza clara */
   border-radius: 10px; /* Bordas arredondadas */
-  padding: 10px; /* Espaçamento interno */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para destacar os itens */
-  text-align: center; /* Centraliza o conteúdo */
-  width: 120px; /* Define um tamanho mais compacto */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px; /* Tamanho consistente para o retângulo */
+  box-sizing: border-box; /* Garantir que padding não afete tamanho */
 }
 
-.modelos img {
-  width: 80px; /* Imagens mais compactas */
-  margin-bottom: 8px; /* Espaçamento inferior */
+.item-container img {
+  width: 100%; /* Ajusta a largura da imagem ao container */
+  height: auto; /* Mantém proporção correta */
 }
 
-.modelos label {
-  color: #008000; /* Verde para os labels */
+.item-container label {
   font-family: 'Roboto', sans-serif; /* Fonte Roboto */
-  font-size: 14px; /* Tamanho da fonte ajustado */
-  display: block;
-  margin-top: 5px;
+  color: darkgreen; /* Cor verde escuro */
+  margin-top: 10px;
   text-align: center; /* Centraliza o texto */
 }
 
@@ -485,10 +485,9 @@
       transform: translateX(0); /* Início */
   }
   100% {
-      transform: translateX(-1900px); /* Ajustar com base no cálculo exato */
+      transform: translateX(-2000px); /* Ajustar com base no cálculo exato */
   }
 }
-
   /* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
 
   section#tecnologias {
