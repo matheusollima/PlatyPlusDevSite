@@ -424,6 +424,71 @@
 
 
 
+
+
+/* ///////////////////////////////////////// MODELOS DE NEGÓCIO /////////////////////////////////////////////*/
+
+.painel-modelo-negocio-container {
+  background-color: #dfdfdf;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.modelos {
+  width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.modelos ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  /* Criar o efeito contínuo */
+  animation: slide 14s infinite linear; 
+  width: max-content; /* Necessário para o fluxo contínuo */
+}
+
+.modelos ul:hover {
+  animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+}
+
+.modelos li {
+  list-style: none;
+  background-color: #fff; /* Fundo branco para contraste */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 10px; /* Espaçamento interno */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para destacar os itens */
+  text-align: center; /* Centraliza o conteúdo */
+  width: 120px; /* Define um tamanho mais compacto */
+}
+
+.modelos img {
+  width: 80px; /* Imagens mais compactas */
+  margin-bottom: 8px; /* Espaçamento inferior */
+}
+
+.modelos label {
+  color: #008000; /* Verde para os labels */
+  font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+  font-size: 14px; /* Tamanho da fonte ajustado */
+  display: block;
+  margin-top: 5px;
+  text-align: center; /* Centraliza o texto */
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0); /* Início */
+  }
+  100% {
+      transform: translateX(-1900px); /* Ajustar com base no cálculo exato */
+  }
+}
+
   /* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
 
   section#tecnologias {
