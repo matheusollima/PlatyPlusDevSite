@@ -426,11 +426,22 @@
 
 
 
-/* ///////////////////////////////////////// MODELOS DE NEGÓCIO /////////////////////////////////////////////*/
+/* ///////////////////////////////////////// MODELOS DE NEGÓCIO MOBILE /////////////////////////////////////////////*/
 .div-modelo-negocio-mobile{
   display: block;
   padding-bottom: 30%;
 }
+
+#modelo-negocio-titulo{
+  font-size: 30px !important;
+  margin-bottom: 30px;
+}
+
+#modelo-negocio-subtitulo{
+  font-size: 15px !important;
+}
+
+
 .painel-modelo-negocio-container {
   background-color: #dfdfdf;
   width: 100vw;
