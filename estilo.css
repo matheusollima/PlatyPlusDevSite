@@ -892,7 +892,9 @@
 
 
 /* PAINEL MODELOS DE NEGOCIO */
-
+.div-modelo-negocio-mobile {
+  display: none;
+}
 
 #modelo-negocio-subtitulo {
   margin-bottom: 60px;

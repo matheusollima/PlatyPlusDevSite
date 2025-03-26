@@ -428,7 +428,7 @@
 
 /* ///////////////////////////////////////// MODELOS DE NEGÓCIO /////////////////////////////////////////////*/
 .div-modelo-negocio-mobile{
-  
+  display: block;
   padding-bottom: 30%;
 }
 .painel-modelo-negocio-container {
