@@ -427,83 +427,96 @@
 
 
 /* ///////////////////////////////////////// MODELOS DE NEGÓCIO MOBILE /////////////////////////////////////////////*/
-.div-modelo-negocio-mobile{
+.div-modelo-negocio-mobile {
   display: block;
   padding-bottom: 30%;
 }
 
-#modelo-negocio-titulo{
+#modelo-negocio-titulo {
   font-size: 30px !important;
   margin-bottom: 30px;
 }
 
-#modelo-negocio-subtitulo{
+#modelo-negocio-subtitulo {
   font-size: 15px !important;
 }
-
 
 .painel-modelo-negocio-container {
   background-color: #dfdfdf;
   width: 100vw;
   box-sizing: border-box;
-  overflow: hidden; /* Importante para esconder o conteúdo fora do container */
+  overflow-x: scroll; /* Permitir rolagem horizontal */
+  overflow-y: hidden;
   margin: 0 auto;
-}
 
-.modelos {
-  width: 1000px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  /* Configuração para snap */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Melhor rolagem para iOS */
 }
 
 .modelos ul {
   display: flex;
-  align-items: center;
   gap: 40px;
-
-  /* Criar o efeito contínuo */
-  animation: slide 14s infinite linear; 
-  width: max-content; /* Necessário para o fluxo contínuo */
   list-style: none;
-}
 
-.modelos ul:hover {
-  animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+  /* Garantir o snap */
+  scroll-snap-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .item-container {
-  background-color: #1b1b1b; /* Fundo branco para o retângulo */
-  border: 2px solid #ccc; /* Borda cinza clara */
-  border-radius: 10px; /* Bordas arredondadas */
+  background-color: #1b1b1b;
+  border: 2px solid #ccc;
+  border-radius: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160px; /* Tamanho consistente para o retângulo */
-  box-sizing: border-box; /* Garantir que padding não afete tamanho */
+  width: 160px;
+  box-sizing: border-box;
 
+  /* Alinhar o snap */
+  scroll-snap-align: center;
 }
 
 .item-container img {
-  width: 100%; /* Ajusta a largura da imagem ao container */
-  height: auto; /* Mantém proporção correta */
+  width: 100%;
+  height: auto;
 }
 
 .item-container label {
-  font-family: 'Roboto', sans-serif; /* Fonte Roboto */
-  color: rgb(255, 255, 255); /* Cor verde escuro */
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
   margin-top: 10px;
-  text-align: center; /* Centraliza o texto */
+  text-align: center;
   font-size: 20px;
 }
 
-@keyframes slide {
-  0% {
-      transform: translateX(0); /* Início */
-  }
-  100% {
-      transform: translateX(-2000px); /* Ajustar com base no cálculo exato */
-  }
+/* Configura o cursor interativo no carrossel */
+.slider-mobile {
+  cursor: grab;
+}
+
+.slider-mobile:active {
+  cursor: grabbing;
+}
+
+/* Bloqueia a seleção de texto e manipulação das imagens nos itens */
+.item-container {
+  user-select: none; /* Impede seleção de texto */
+}
+
+.item-container img {
+  /* Bloqueia a interação e seleção de imagens */
+.item-container img {
+  pointer-events: none; /* Impede interações como cliques */
+  user-select: none;    /* Bloqueia a seleção */
+  -webkit-user-drag: none; /* Bloqueia arraste padrão em navegadores baseados em WebKit */
+  -moz-user-select: none;  /* Bloqueia seleção no Firefox */
+  -ms-user-select: none;   /* Bloqueia seleção no Edge antigo */
+  user-drag: none;         /* Compatibilidade adicional */
+}
 }
   /* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
 
@@ -905,6 +918,56 @@ row-gap: 0;
     color: green;
   }
 
+     /* Estilização básica para centralizar o conteúdo */
+     body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Estilização do botão */
+    .linkedin-button {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      background-color: #0077B5;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .linkedin-button:hover {
+      background-color: #005983;
+    }
+
+    /* Ícone do botão */
+    .button-icon {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .button-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    /* Legenda do botão */
+    .button-label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+
+
+  /* /////////////////////////////////////////// RODAPÉ ///////////////////////////////*/
   #rodape {
     height: 100vh !important;
     width: 100vw !important;

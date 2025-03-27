@@ -1243,6 +1243,53 @@
   margin-left: 30px;
   font-family: "roboto";
 }
+ 
+    /* Estilização básica para centralizar o conteúdo */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    /* Estilização do botão */
+    .linkedin-button {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      background-color: #0077B5;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .linkedin-button:hover {
+      background-color: #005983;
+    }
+
+    /* Ícone do botão */
+    .button-icon {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .button-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+
+    /* Legenda do botão */
+    .button-label {
+      font-size: 16px;
+      font-weight: bold;
+    }
 
   
   /* 
