@@ -509,7 +509,6 @@
 
 .item-container img {
   /* Bloqueia a interação e seleção de imagens */
-.item-container img {
   pointer-events: none; /* Impede interações como cliques */
   user-select: none;    /* Bloqueia a seleção */
   -webkit-user-drag: none; /* Bloqueia arraste padrão em navegadores baseados em WebKit */
@@ -517,7 +516,7 @@
   -ms-user-select: none;   /* Bloqueia seleção no Edge antigo */
   user-drag: none;         /* Compatibilidade adicional */
 }
-}
+
   /* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
 
   section#tecnologias {
