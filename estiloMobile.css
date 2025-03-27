@@ -324,6 +324,8 @@
   box-sizing: border-box;
   justify-content: center !important;
   border: solid 1px rgb(0, 255, 55);
+
+
  }
 
   .serviço-texto * {
@@ -336,6 +338,8 @@
     position: absolute;
     top: 0;
     display: block !important;
+  
+  
     
   }
 
@@ -385,6 +389,10 @@
     display: block !important;
     width: 30vw !important;
     height: auto !important;
+    user-select: none !important; /* Impede que o texto dentro do item seja selecionado */
+    -webkit-user-select: none; /* Para navegadores baseados em WebKit */
+    -moz-user-select: none; /* Para Firefox */
+    -ms-user-select: none; /* Para Edge antigo */
   }
 
   #next, #prev{
@@ -427,96 +435,85 @@
 
 
 /* ///////////////////////////////////////// MODELOS DE NEGÓCIO MOBILE /////////////////////////////////////////////*/
-.div-modelo-negocio-mobile {
+.div-modelo-negocio-mobile{
   display: block;
   padding-bottom: 30%;
 }
 
-#modelo-negocio-titulo {
+#modelo-negocio-titulo{
   font-size: 30px !important;
   margin-bottom: 30px;
 }
 
-#modelo-negocio-subtitulo {
+#modelo-negocio-subtitulo{
   font-size: 15px !important;
 }
+
 
 .painel-modelo-negocio-container {
   background-color: #dfdfdf;
   width: 100vw;
   box-sizing: border-box;
-  overflow-x: scroll; /* Permitir rolagem horizontal */
-  overflow-y: hidden;
+  overflow: hidden; /* Importante para esconder o conteúdo fora do container */
   margin: 0 auto;
+}
 
-  /* Configuração para snap */
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; /* Melhor rolagem para iOS */
+.modelos {
+  width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .modelos ul {
   display: flex;
+  align-items: center;
   gap: 40px;
-  list-style: none;
 
-  /* Garantir o snap */
-  scroll-snap-align: center;
-  padding: 0;
-  margin: 0;
+  /* Criar o efeito contínuo */
+  animation: slide 14s infinite linear; 
+  width: max-content; /* Necessário para o fluxo contínuo */
+  list-style: none;
+}
+
+.modelos ul:hover {
+  animation-play-state: paused; /* Pausa a animação ao passar o mouse */
 }
 
 .item-container {
-  background-color: #1b1b1b;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  background-color: #1b1b1b; /* Fundo branco para o retângulo */
+  border: 2px solid #ccc; /* Borda cinza clara */
+  border-radius: 10px; /* Bordas arredondadas */
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160px;
-  box-sizing: border-box;
+  width: 160px; /* Tamanho consistente para o retângulo */
+  box-sizing: border-box; /* Garantir que padding não afete tamanho */
 
-  /* Alinhar o snap */
-  scroll-snap-align: center;
+
 }
 
 .item-container img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Ajusta a largura da imagem ao container */
+  height: auto; /* Mantém proporção correta */
 }
 
 .item-container label {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+  color: rgb(255, 255, 255); /* Cor verde escuro */
   margin-top: 10px;
-  text-align: center;
+  text-align: center; /* Centraliza o texto */
   font-size: 20px;
 }
 
-/* Configura o cursor interativo no carrossel */
-.slider-mobile {
-  cursor: grab;
+@keyframes slide {
+  0% {
+      transform: translateX(0); /* Início */
+  }
+  100% {
+      transform: translateX(-2000px); /* Ajustar com base no cálculo exato */
+  }
 }
-
-.slider-mobile:active {
-  cursor: grabbing;
-}
-
-/* Bloqueia a seleção de texto e manipulação das imagens nos itens */
-.item-container {
-  user-select: none; /* Impede seleção de texto */
-}
-
-.item-container img {
-  /* Bloqueia a interação e seleção de imagens */
-  pointer-events: none; /* Impede interações como cliques */
-  user-select: none;    /* Bloqueia a seleção */
-  -webkit-user-drag: none; /* Bloqueia arraste padrão em navegadores baseados em WebKit */
-  -moz-user-select: none;  /* Bloqueia seleção no Firefox */
-  -ms-user-select: none;   /* Bloqueia seleção no Edge antigo */
-  user-drag: none;         /* Compatibilidade adicional */
-}
-
   /* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
 
   section#tecnologias {
