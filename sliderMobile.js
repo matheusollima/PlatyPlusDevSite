@@ -112,5 +112,18 @@ document.addEventListener('touchend', () => {
   isDragging = false;
 });
 
+
+// Bloqueia o menu contextual nas imagens
+document.querySelectorAll('.item-container img').forEach((img) => {
+    img.addEventListener('contextmenu', (e) => {
+      e.preventDefault(); // Impede o menu padrão
+    });
+  
+    // Bloqueia o toque longo em dispositivos móveis
+    img.addEventListener('touchstart', (e) => {
+      e.preventDefault(); // Impede o comportamento padrão
+    });
+  });
+
 // Carrega a exibição inicial
 loadShow();
