@@ -120,19 +120,45 @@ function scrollSection(event){
   event.preventDefault();
   const href = event.currentTarget.getAttribute('href');
   const section = document.querySelector(href);
+  console.log("Section atual: ",section);
   let topSection = section.offsetTop - 60;
-
+  var alturaMenu = document.querySelector('.menu-mobile');
   window.scrollTo({
     top: topSection,
     behavior: 'smooth'
   })
+ setTimeout(() =>{
+  alturaMenu.style.height = 0 ;
+  document.getElementById('btn-menu').classList.remove('ativo');
+  img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+ }, 500);
+ 
 }
+
 
 
 
 links.forEach(link => {
   link.addEventListener('click', scrollSection);
 });
+
+
+// ANIMAÇÃO MENU HAMBURGUER
+const btn_menu = document.getElementById('btn-menu');
+const img_menu_hamburguer = document.getElementById('menu-hamburguer-img');
+const ativar_menu = () =>{
+  if(btn_menu.classList.toggle('ativo') == true){
+    img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu-close.svg"
+    document.querySelector('.menu-mobile').style.height = "250px";
+  } else {
+    img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+    document.querySelector('.menu-mobile').style.height = 0;
+  }
+}
+
+
+
+
 
 
 /* ANIMAÇÃO DE DIMINUIR O MENU */
@@ -202,16 +228,6 @@ window.addEventListener('resize', ()=>{
 
 
 
-// ANIMAÇÃO MENU HAMBURGUER
-const btn_menu = document.getElementById('btn-menu');
-const img_menu_hamburguer = document.getElementById('menu-hamburguer-img');
-const ativar_menu = () =>{
-  if(btn_menu.classList.toggle('ativo') == true){
-    img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu-close.svg"
-  } else {
-    img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu - hamburguer.svg"
-  }
-}
 
 
 // ANIMAÇÃO DE DIGITAÇÃO SLOGAN
