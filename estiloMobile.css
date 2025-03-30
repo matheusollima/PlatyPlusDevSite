@@ -518,11 +518,13 @@
 
   section#tecnologias {
     min-height: 100vh !important;
+    height: max-content !important;
     padding: 0;
     position: absolute;
     padding-bottom: 30% !important;
     max-width: 100vw !important;
     box-sizing: border-box;
+    padding-top: 10% !important;
   
   }
 
