@@ -578,7 +578,9 @@ position: relative;
 
 
 
-
+#rodape {
+  height: max-content;
+}
 
 
 
