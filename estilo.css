@@ -1174,7 +1174,10 @@
 
 .section#sobre{
   box-sizing: border-box;
+
   height: 100vh;
+  border: red 2px solid;
+  
 }
 
 
@@ -1221,6 +1224,8 @@
   border: 2px solid darkgreen;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
+  top: -5%;
 }
 
 #sobre-titulo{
@@ -1257,20 +1262,15 @@
     }
 
     /* Estilização do botão */
-    .linkedin-button {
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      background-color: #0077B5;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    #linkedin-button{
+      background-color: transparent;
+      border: none;
     }
 
-    .linkedin-button:hover {
-      background-color: #005983;
+    #linkedin-button img{
+      width: 60%;
+      height: auto;
     }
 
     /* Ícone do botão */

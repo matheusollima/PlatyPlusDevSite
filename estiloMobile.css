@@ -359,7 +359,7 @@
   .item{
     position: absolute !important;
     width: 60vw !important;
-    height: 320px !important;
+    /* height: 320px !important; */
     text-align: justify;
     border: solid 1px gray;
     border-bottom: solid 4px darkgreen;
@@ -369,6 +369,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center !important;
+    aspect-ratio: 8 / 12 !important;
   
   
   }
@@ -545,6 +546,8 @@
 
   #painelTecnologias {
     margin-top: 15% !important;
+    padding-top: 10% !important ;
+    padding-bottom: 10% !important;
     max-width: 95vw !important;
     max-height: 60vh !important;
     overflow-x: hidden !important;
@@ -558,13 +561,13 @@
 
 
  .front-back-column {
-  width: 80%;
+  width: max-content;
   margin-top: 50% !important;
   margin: 0 !important;
-  height: auto !important;
+  height: max-content !important;
   position: absolute !important;
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 100% !important;
   grid-template-areas: 
    "front "
    "back"
@@ -622,7 +625,14 @@
   display: block;
  }
 
+ #database {
+  border: solid 2px blue;
+  width: 100% !important;
+ }
 
+#data-li{
+  left: 0;
+}
 
 #front h2{
  font-size: 15px; 
@@ -657,7 +667,7 @@
 
 
  #tecnologia-front-div{
-  display: flex !important;
+  display: grid !important;
   flex-direction: column;
  justify-content: center !important;
  box-sizing: border-box;
@@ -696,6 +706,8 @@
   
 }
 
+
+
 .front-li {
   /* display: flex; */
   
@@ -703,14 +715,20 @@
   justify-content: start; */
   height: 100% !important;
   width: auto;
- 
+  display: grid;
+  
   box-sizing: border-box;
-}
-
-.front-li * {
   
 }
 
+.front-li:nth-child(1) {
+ justify-self: end !important;
+ position: relative;
+ left: 20%;
+}
+#html-logo-img{
+  justify-self: center;
+}
 #javascript-li label {
   font-size: 10px !important;
 }
@@ -831,7 +849,11 @@ row-gap: 0;
   .section#sobre {
     z-index: 999999;
     height: auto !important;
-
+    display: grid;
+    grid-template-areas: 
+    "auto"
+    "auto"
+    ;
     padding-top: 20px;
     padding-bottom: 20%;
   }
