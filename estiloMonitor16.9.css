@@ -460,16 +460,25 @@ position: relative;
 /* Sobre section*/
 
 .section#sobre {
-  height: 100vh;
+ 
 
 }
 
+.section#sobre > {
+  
+}
+
 .sobre-container{
- 
-  padding-left: 0px;
+  display: grid;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
   column-gap: 150px;
   grid-template-columns: 30% 15%;
-  
+  border: solid 2px red;
+  height: max-content;
+  width: 100%;
+  justify-content: start;
+  overflow: hidden;
   
 }
 
@@ -481,6 +490,10 @@ position: relative;
   position: relative;
   left: 100px;
   width: 80%;
+}
+
+#sobre-texto{
+
 }
 
 /* Formulário Contato */
@@ -579,7 +592,10 @@ position: relative;
 
 
 #rodape {
-  height: max-content;
+  height: 100vh;
+  display: grid;
+  
+  
 }
 
 
