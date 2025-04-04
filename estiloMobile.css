@@ -546,6 +546,7 @@
 
   #painelTecnologias {
     margin-top: 15% !important;
+    
     padding-top: 10% !important ;
     padding-bottom: 10% !important;
     max-width: 95vw !important;
@@ -608,6 +609,7 @@
     width: 95vw;
     height: calc(60vh/3) ;
     left: 0;
+    right: 0;
     margin: 0 !important;
  }
 
@@ -630,6 +632,11 @@
   width: 100% !important;
  }
 
+
+
+.front-li{
+
+} 
 #data-li{
   left: 0;
 }
@@ -726,6 +733,21 @@
  position: relative;
  left: 20%;
 }
+
+.front-li:nth-child(2) {
+  justify-self: end !important;
+  position: relative;
+  right: -20%;
+ }
+
+.front-li:nth-child(3) {
+  justify-self: end !important;
+  position: relative;
+  right: 20%;
+ }
+
+
+
 #html-logo-img{
   justify-self: center;
 }
@@ -834,7 +856,7 @@ row-gap: 0;
 
   left: 17% !important;
   right: 50% !important;
-  top: 90vh !important;
+  top: 110% !important;
   max-width: 30vw !important;
   transform: translate(-50%, -50%);
  }
@@ -856,7 +878,6 @@ row-gap: 0;
     ;
     padding-top: 20px;
     padding-bottom: 20%;
-    border: solid 2px blue;
   }
 
   #sobre * {
@@ -939,13 +960,19 @@ row-gap: 0;
     color: green;
   }
 
+
+  /* Painel redes profissionais */
   #painel-redes-profissionais{
     align-self: center;
   
   }
+  #painel-redes-profissionais a,
+  #painel-redes-profissionais button {
+    width: max-content;
+  }
 
   #painel-redes-profissionais img {
-    width: 20%;
+    width: 7vw;
   }
 
 
