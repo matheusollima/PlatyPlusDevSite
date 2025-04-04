@@ -217,8 +217,8 @@
   .contato {
     height: fit-content;
     width: fit-content;
-    border: solid 2px red;
-    z-index: 99999999999999999999999999999999999999999999999999999999 !important;
+    
+    
   }
 
   #rodape > {
@@ -1240,6 +1240,15 @@
   top: -5%;
   padding-left: 5%;
   padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+}
+
+#sobre-texto > * {
+  
+  align-self: center;
 }
 
 #sobre-titulo{
@@ -1260,55 +1269,38 @@
   text-align: start;
   font-family: "roboto";
 }
- 
-    /* Estilização básica para centralizar o conteúdo */
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
 
-    /* Estilização do botão */
 
-    #linkedin-button{
-      background-color: transparent;
-      border: none;
-    }
+/* REDES SOCIAIS PROFISSIONAIS*/
 
-    #linkedin-button img{
-      width: 60%;
-      height: auto;
-    }
+#painel-redes-profissionais {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os botões */
+  border: solid 1px darkgreen;
+  width: max-content;
+  align-self: end;
+  border-radius: 10px;
+}
 
-    #linkedin-label{
-      font-size: 30px;
-      font-family: "roboto";
-      color: darkgreen;
-      font-weight: bold;
-    }
+#painel-redes-profissionais a, 
+#painel-redes-profissionais button {
+  display: inline-flex; /* Garante que os elementos internos sejam alinhados */
+  padding: 0; /* Remove quaisquer espaçamentos internos */
+  border: none; /* Remove bordas indesejadas */
+  background: none; /* Remove fundo padrão */
+  width: max-content;
+  cursor: pointer;
+}
 
-    /* Ícone do botão */
-    .button-icon {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    .button-icon svg {
-      width: 20px;
-      height: 20px;
-      fill: #fff;
-    }
-
-    /* Legenda do botão */
-    .button-label {
-      font-size: 16px;
-      font-weight: bold;
-    }
+#painel-redes-profissionais img {
+  display: block; /* Remove espaçamentos extras ao redor da imagem */
+  width: 3vw; /* Define o tamanho da imagem em relação ao contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+  transition: ease 0.5s;
+}
+#painel-redes-profissionais img:hover {
+  filter: brightness(2);
+}
 
   
   /* 

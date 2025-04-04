@@ -474,11 +474,10 @@ position: relative;
   padding-right: 10% !important;
   column-gap: 150px;
   grid-template-columns: 30% 15%;
-  border: solid 2px red;
   height: max-content;
   width: 100%;
   justify-content: start;
-  overflow: hidden;
+  
   
 }
 
@@ -492,8 +491,8 @@ position: relative;
   width: 80%;
 }
 
-#sobre-texto{
-
+#sobre-texto > {
+  border: solid 2px red !important;
 }
 
 /* Formulário Contato */

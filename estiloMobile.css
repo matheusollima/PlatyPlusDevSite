@@ -939,54 +939,14 @@ row-gap: 0;
     color: green;
   }
 
-     /* Estilização básica para centralizar o conteúdo */
-     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+  #painel-redes-profissionais{
+    align-self: center;
+  
+  }
 
-    /* Estilização do botão */
-    #linkedin-button {
-      height: auto;
-      width: 60px;
-      border: solid 2px red;
-      display: inline-flex;
-      position: relative;
-      left: 50%;
-      right:50%;
-      transform: translateX(-50%);
-    }
-   
-    #linkedin-button img {
-      width: 100%;
-      height: auto;
-    }
-   
-
-    /* Ícone do botão */
-    .button-icon {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    .button-icon svg {
-      width: 20px;
-      height: 20px;
-      fill: #fff;
-    }
-
-    /* Legenda do botão */
-    .button-label {
-      font-size: 16px;
-      font-weight: bold;
-    }
-
+  #painel-redes-profissionais img {
+    width: 20%;
+  }
 
 
   /* /////////////////////////////////////////// RODAPÉ ///////////////////////////////*/
