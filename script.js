@@ -24,22 +24,19 @@ var header = document.querySelector('header');
 var isHeaderHidden = false;
 var i = 0;
 
+
+
 function onScroll() {
-  if (window.scrollY >=2926 && !isHeaderHidden) {
-    header.style.opacity = "0";
-    isHeaderHidden = true;
-    i = ++i;
-    console.log("o valor do contador é " + i);
-  } else if (window.scrollY <2926 && isHeaderHidden) {
-    header.style.opacity = "1";
-    isHeaderHidden = false;
-    i = ++i;
-    console.log("o valor do contador é " + i);
+  let section = document.getElementById("tecnologias");
+  let sectionTop = section.offsetTop;
+  let scrollPosition = window.scrollY;
+
+  if (scrollPosition >= sectionTop) { 
+    header.style.display = 'none';
+  } else {
+    header.style.display = 'block';
   }
-  
-
 }
-
 // onScroll();
 
 window.addEventListener('scroll', onScroll);
@@ -121,18 +118,32 @@ function scrollSection(event){
   const href = event.currentTarget.getAttribute('href');
   const section = document.querySelector(href);
   console.log("Section atual: ",section);
-  let topSection = section.offsetTop - 60;
+  if(href == "#inicio"){
+    let topSection = 0;
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  } else if (href == "#serviços"){
+    let topSection = section.offsetTop - 80 ;
+    window.scrollTo({
+      top: topSection,
+      behavior: 'smooth'
+    })
+  } else {
+  let topSection = section.offsetTop;
   var alturaMenu = document.querySelector('.menu-mobile');
   window.scrollTo({
     top: topSection,
     behavior: 'smooth'
   })
+  console.log("altura", topSection);
  setTimeout(() =>{
   alturaMenu.style.height = 0 ;
   document.getElementById('btn-menu').classList.remove('ativo');
   img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu - hamburguer.svg";
  }, 500);
- 
+}
 }
 
 
