@@ -1,103 +1,78 @@
-@media (max-width: 1920px) and (max-height: 1080px){
-
-    #logo{
-   
-      left:180px;
-    }
-
+@media (max-width: 1920px) and (max-height: 1080px) {
+  #logo {
+    left: 180px;
+  }
 }
 
-
-
-
-
-@media (max-width: 1366px){
- *{
-    
- }
- .container{
-    overflow-x: hidden ;
+@media (max-width: 1366px) {
+  * {
+  }
+  .container {
+    overflow-x: hidden;
     box-sizing: border-box;
- }
-    .navMenu{
-       
-        box-sizing: border-box;
-        width: 100%;
-        display: flex;
-        height: 100px;
-       justify-content: center;
-        align-items: center;
-        justify-content: start;
-       z-index: 99999;
-      
-        
-  
+  }
+  .navMenu {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    justify-content: start;
+    z-index: 99999;
   }
 
-  .navMenu .menu{
-    
+  .navMenu .menu {
   }
 
-  .navMenu > *{
-    
+  .navMenu > * {
     margin: 0;
     padding: 0;
-    
   }
 
-  #logo{
-   width: auto;
-   height: 70%;
-   left: 120px;
-   margin-right: 0;
-   position: relative;
-  
-
+  #logo {
+    width: auto;
+    height: 70%;
+    left: 120px;
+    margin-right: 0;
+    position: relative;
   }
-  .menu{
+  .menu {
     height: 100%;
     width: auto;
     margin-left: 300px;
-   
   }
 
-
-  #titulo-apresentação{
+  #titulo-apresentação {
     font-size: 40px;
   }
 
-
-  #imagem-apresentação
-  {  
+  #imagem-apresentação {
     width: 569.16px;
     height: 569.16px;
     margin-top: -30px;
   }
 
-
-  .apresentacao{
-   height: calc(100vh - 100px);
-   margin-top: -20px;
+  .apresentacao {
+    height: calc(100vh - 100px);
+    margin-top: -20px;
   }
 
-
-  .navMenu{
+  .navMenu {
     /* display: none; */
   }
-    
-  .section{
-    
+
+  .section {
     display: flex;
     height: calc(auto - 80px);
-    
+
     /* justify-content: center; */
   }
 
-  .section > *{
-    
+  .section > * {
   }
 
-  h1{
+  h1 {
     font-size: 40px !important;
   }
 
@@ -107,499 +82,400 @@
   }
 
   #serviços-hidden {
-
     height: 100%;
     background-color: rgb(0, 0, 0);
-    
   }
 
+  #serviços {
+    height: auto;
+  }
 
-#serviços{
-  height: auto;
-}
-
-
-  .painel-software img{
+  .painel-software img {
     width: 40%;
   }
 
+  /*PAINEL MODELOS DE NEGÓCIO */
 
-/*PAINEL MODELOS DE NEGÓCIO */
-
-.painel-modelo-negocio{
- column-gap: 10px;
- grid-template-columns: auto auto auto auto auto ;
- padding-bottom: 30px;
- 
-}
-
-
-.painel-software-div {
-width: 200px;
-height: 280px;
-
-}
-
-
-
-.serviço-texto{
-  width: 200px;
-  height: 280px;
-}
-
-
-.serviço-texto h2{
-   font-size: 22px !important;
-   position: relative !important;
-   left: -50px;
-   top: 10px;
-   
-}
-
-
-.serviço-texto p{
- font-size: 15px !important;
- position: relative;
- left: -17px;
- height: 280px;
- width: 185px;
- text-align: left;
- 
-
- 
-}
-
-.serviço-texto#landing-page p{
-font-size: 14px !important;
-position: relative;
-left: -20px;
-height: 280px;
-width: 185px;
-top: -53px; 
-}
-
-
-.serviço-texto#consultoria p{
-  font-size: 14px !important;
-  position: relative;
-  left: -20px;
-  height: 280px;
-  width: 185px;
-  top: -53px; 
+  .painel-modelo-negocio {
+    column-gap: 10px;
+    grid-template-columns: auto auto auto auto auto;
+    padding-bottom: 30px;
   }
 
-.serviço-texto#android p{
-  font-size: 14px !important;
-  position: relative;
-  left: -20px;
-  height: 280px;
-  width: 185px;
-  top: -40px; 
+  .painel-software-div {
+    width: 200px;
+    height: 280px;
   }
 
-.serviço-texto#erp p{
-  font-size: 14px !important;
-  position: relative;
-  left: -20px;
-  height: 280px;
-  width: 185px;
-  top: -40px; 
+  .serviço-texto {
+    width: 200px;
+    height: 280px;
   }
 
+  .serviço-texto h2 {
+    font-size: 22px !important;
+    position: relative !important;
+    left: -50px;
+    top: 10px;
+  }
 
+  .serviço-texto p {
+    font-size: 15px !important;
+    position: relative;
+    left: -17px;
+    height: 280px;
+    width: 185px;
+    text-align: left;
+  }
 
-  .serviço-texto#android h2{
+  .serviço-texto#landing-page p {
+    font-size: 14px !important;
+    position: relative;
+    left: -20px;
+    height: 280px;
+    width: 185px;
+    top: -53px;
+  }
+
+  .serviço-texto#consultoria p {
+    font-size: 14px !important;
+    position: relative;
+    left: -20px;
+    height: 280px;
+    width: 185px;
+    top: -53px;
+  }
+
+  .serviço-texto#android p {
+    font-size: 14px !important;
+    position: relative;
+    left: -20px;
+    height: 280px;
+    width: 185px;
+    top: -40px;
+  }
+
+  .serviço-texto#erp p {
+    font-size: 14px !important;
+    position: relative;
+    left: -20px;
+    height: 280px;
+    width: 185px;
+    top: -40px;
+  }
+
+  .serviço-texto#android h2 {
     font-size: 17px !important;
   }
 
-
-.serviço-texto#erp h2{
-  font-size: 16px !important;
-
+  .serviço-texto#erp h2 {
+    font-size: 16px !important;
   }
 
+  #titulo-serviço-erp {
+    font-size: 17px;
+  }
 
-#titulo-serviço-erp{
-  font-size: 17px;
-}
+  #titulo-serviço-consultoria {
+    font-size: 16px;
+  }
 
-#titulo-serviço-consultoria{
-  font-size: 16px;
-}
+  .painel-software-div h2 {
+    font-size: 20px;
+  }
 
+  #painel-serviços label {
+    font-size: 25px;
+  }
 
-.painel-software-div h2{
-  font-size: 20px;
-}
+  .div-modelo-negocio h1 {
+  }
 
-#painel-serviços label{
-  font-size: 25px;
-}
+  #modelo-negocio-subtitulo {
+    font-size: 25px;
+  }
 
-.div-modelo-negocio h1{
- 
-}
+  .painel-modelo-negocio div {
+    width: 200px;
+    height: 112.5px;
+  }
 
-#modelo-negocio-subtitulo {
-  font-size: 25px;
-}
+  .painel-modelo-negocio img {
+    width: 30%;
+  }
 
+  /* TECNOLOGIAS */
+  .section#tecnologias {
+    margin-top: 0px;
+    height: calc(100vh + 200px);
+    padding: 50px;
 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+  }
 
+  #tecnologias-titulo {
+    position: relative;
+    top: 60px;
+  }
 
-.painel-modelo-negocio div{
-   width: 200px;
-   height: 112.5px;
+  #tecnologias-subtitulo01 {
+    position: relative;
+    top: -40px;
+  }
 
- }
- 
- .painel-modelo-negocio img{
-  width: 30%;
-  
-}
+  #painelTecnologias {
+    width: 853.75px;
+    height: 498.02px;
+    margin: 0;
+    position: relative;
+    top: -50px;
+  }
 
+  /* PAINEL TECNOLIGIAS FRONT-END*/
 
-/* TECNOLOGIAS */
-.section#tecnologias{
- margin-top: 0px;
- height: calc(100vh + 200px);
- padding: 50px;
+  #platypus-capacete {
+    margin-left: 0;
+    left: -150px;
+    width: 200px;
+    top: 250px;
+  }
 
-display: flex;
-align-content: center;
-justify-content: center;
-padding: 0;
-position: relative;
+  #painelTecnologias img {
+    width: 50%;
+  }
 
-}
+  .tecnologia-front {
+    width: 360px;
+  }
+  #tecnologia-front-div {
+    box-sizing: border-box;
+    width: 360px;
+    margin-left: 270px;
+  }
 
-#tecnologias-titulo{
-  position: relative;
-  top: 60px;
-}
+  .tecnologia-front li {
+    /* display: block; */
 
-#tecnologias-subtitulo01{
-  position: relative;
-  top: -40px
-}
-
-
-#painelTecnologias {
-  width: 853.75px ;
-  height: 498.02px;
-  margin: 0;
-  position: relative;
-  top: -50px;
-  
-}
-
-
-
-
- /* PAINEL TECNOLIGIAS FRONT-END*/
-  
-
-#platypus-capacete{
-  margin-left: 0;
-  left: -150px;
-  width: 200px;
- top: 250px;
-  
-  
-
-}
-
-
-#painelTecnologias img{
-   width: 50%;
-}
-
-
-.tecnologia-front{
- 
- width: 360px;
- 
-}
-#tecnologia-front-div {
-  box-sizing: border-box;
-  width: 360px;
-  margin-left: 270px;
-
-}
-
-.tecnologia-front li{
-   /* display: block; */
- 
     /* justify-content: center;
     align-items: center; */
-    
-   width: 120px ;
-   height: 170px;
-}
 
-.front-li img{
-  
- 
-
- justify-self: center;
-
-}
-
-.front-img {
-  width: 60px !important;
-}
-
-.front-li label {
- 
-  margin-top: 20px;
- 
-}
-
-#html-logo-img{
- 
-}
-
-#javascript-li label{
-  font-size: 15px;
-}
-
-
-
-/* Painel Backend */
-
-#tecnologia-back-div{
-  width: 360px;
-  box-sizing: border-box;
-  margin-right: 200px;
-  display: grid;
-  column-gap: 30px;
-
-  
-}
-
-.tecnologia-back {
-  display: flex;
-  column-gap: 30px;
-  align-items: center;
-  /* justify-items: end; */
-}
-
-.tecnologia-back li{
-   display: grid;
-   align-items: center;
-   justify-items: center;
-   padding: 0;
-   width: 120px;
-   height: 170px;
-   box-sizing: border-box;
-   
-}
-
-.tecnologia-back li img{
- width: 100px !important;
- height: 140px;
- padding: 0;
- margin-top: -20px;
-}
-#php-li {
-  margin-right: 0;
-
-}
-
-
-#painelTecnologias {
- display: flex;
- justify-content: center;
-}
-
-.front-back-column{
-  row-gap: 20px;
-  
-}
-
-#front{
-  width: 600px !important;
-}
-
-
-
-/* DATABASE*/
-
-
-#database{
-  box-sizing: border-box !important;
-
-  width: 360px;
-  height: 225px;
-  justify-self: center;
-  
-}
-
-#tecnologia-database-div{
-  height: 225px;
-  width: 360px;
-}
-
-
-
-.tecnologia-database li{
-
-  margin-top: -50px;
-}
-
-#data-li img {
-  justify-self: center;
-  width: 100px;
-
-}
-
-
-
-
-
-/* Sobre section*/
-
-.section#sobre {
- 
-
-}
-
-.section#sobre > {
-  
-}
-
-.sobre-container{
-  display: grid;
-  padding-left: 10% !important;
-  padding-right: 10% !important;
-  column-gap: 150px;
-  grid-template-columns: 30% 15%;
-  height: max-content;
-  width: 100%;
-  justify-content: start;
-  
-  
-}
-
-
-
-
-
-#sobre-foto{
-  position: relative;
-  left: 100px;
-  width: 80%;
-}
-
-#sobre-texto > {
-  border: solid 2px red !important;
-}
-
-/* Formulário Contato */
-
-#msgContato {
-  resize: none;
-  margin-top: 10px;
-  outline: 0;
-  background-color: #222222;
-  color: rgb(255, 255, 255);
-  font-family: "roboto";
-  font-size: 18px; /* Diminuído o tamanho da fonte */
-  border: 0;
-  height: 150px; /* Diminuída a altura */
-  width: 100%;
-  left: 0;
-  border-radius: 10px;
-}
-
-#formulario-contato {
-  display: block;
-  justify-content: center;
-  padding-bottom: 10px;
-  height: auto;
-  background-color: transparent;
-  width: 90%; /* Ajustado para responsividade */
-  max-width: 600px; /* Limitado a largura máxima */
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -100px; /* Ajustado o margin-top */
-  margin-bottom: 30px; /* Ajustado o margin-bottom */
-}
-
-#msgOrçamento {
-  font-size: 30px; /* Diminuído o tamanho da fonte */
-  text-align: start;
-}
-
-.formContato {
-  box-sizing: border-box;
-
-  padding-top: 15px;
-  padding-bottom: 30px; /* Diminuído o padding-bottom */
-  padding-left: 25px; /* Diminuído o padding-left */
-  padding-right: 25px; /* Diminuído o padding-right */
-  background-color: black;
-  border: solid green 2px; /* Diminuída a espessura da borda */
-  height: auto;
-  width: 100%; /* Ajustado para responsividade */
-  max-width: 600px; /* Limitado a largura máxima */
-  border-radius: 10px; /* Diminuído o raio da borda */
-  margin: auto; /* Centralizando o form */
-
-}
-
-#formulario-contato {
-  display: block;
-  justify-content: center;
-  padding-bottom: 10px;
-  height: auto;
-  background-color: transparent;
-  width: 830px;
-  height: 380ppx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -200px;
-  margin-bottom: 50px;
-}
-
-.inputContato {
- 
-  font-size: 16px; /* Ajustado o tamanho da fonte */
-  padding: 5px; /* Adicionado padding para melhor espaçamento */
-  width: 300px; /* Ajuste de largura para considerar a borda e o padding */
-  margin-bottom: 10px;
-
-}
-
-
-
-.formInputs input {
-  width: 530px;
-  
-  
-}
-
-.formInputs label{
-  margin-bottom: 10px;
-}
-
-.inputContato:last-child {
-  margin-bottom: 0px;
-}
-
-
-
-
-#rodape {
-  height: 100vh;
-  display: grid;
-  
-  
-}
-
-
-
-
-
-
+    width: 120px;
+    height: 170px;
+  }
+
+  .front-li img {
+    justify-self: center;
+  }
+
+  .front-img {
+    width: 60px !important;
+  }
+
+  .front-li label {
+    margin-top: 20px;
+  }
+
+  #html-logo-img {
+  }
+
+  #javascript-li label {
+    font-size: 15px;
+  }
+
+  /* Painel Backend */
+
+  #tecnologia-back-div {
+    width: 360px;
+    box-sizing: border-box;
+    margin-right: 200px;
+    display: grid;
+    column-gap: 30px;
+  }
+
+  .tecnologia-back {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    /* justify-items: end; */
+  }
+
+  .tecnologia-back li {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    width: 120px;
+    height: 170px;
+    box-sizing: border-box;
+  }
+
+  .tecnologia-back li img {
+    width: 100px !important;
+    height: 140px;
+    padding: 0;
+    margin-top: -20px;
+  }
+  #php-li {
+    margin-right: 0;
+  }
+
+  #painelTecnologias {
+    display: flex;
+    justify-content: center;
+  }
+
+  .front-back-column {
+    row-gap: 20px;
+  }
+
+  #front {
+    width: 600px !important;
+  }
+
+  /* DATABASE*/
+
+  #database {
+    box-sizing: border-box !important;
+
+    width: 360px;
+    height: 225px;
+    justify-self: center;
+  }
+
+  #tecnologia-database-div {
+    height: 225px;
+    width: 360px;
+  }
+
+  .tecnologia-database li {
+    margin-top: -50px;
+  }
+
+  #data-li img {
+    justify-self: center;
+    width: 100px;
+  }
+
+  /* Sobre section*/
+
+  .section#sobre {
+  }
+
+  .section#sobre > {
+  }
+
+  .sobre-container {
+    display: grid;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    column-gap: 150px;
+    grid-template-columns: 30% 15%;
+    height: max-content;
+    width: 100%;
+    justify-content: start;
+  }
+
+  #sobre-foto {
+    position: relative;
+    left: 100px;
+    width: 80%;
+  }
+
+  #sobre-texto > {
+    border: solid 2px red !important;
+  }
+
+  /* Formulário Contato */
+
+  #msgContato {
+    resize: none;
+    margin-top: 10px;
+    outline: 0;
+    background-color: #222222;
+    color: rgb(255, 255, 255);
+    font-family: "roboto";
+    font-size: 18px; /* Diminuído o tamanho da fonte */
+    border: 0;
+    height: 150px; /* Diminuída a altura */
+    width: 100%;
+    left: 0;
+    border-radius: 10px;
+  }
+
+  #formulario-contato {
+    display: block;
+    justify-content: center;
+    padding-bottom: 10px;
+    height: auto;
+    background-color: transparent;
+    width: 90%; /* Ajustado para responsividade */
+    max-width: 600px; /* Limitado a largura máxima */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px; /* Ajustado o margin-top */
+    margin-bottom: 30px; /* Ajustado o margin-bottom */
+  }
+
+  #msgOrçamento {
+    font-size: 30px; /* Diminuído o tamanho da fonte */
+    text-align: start;
+  }
+
+  .formContato {
+    box-sizing: border-box;
+
+    padding-top: 15px;
+    padding-bottom: 30px; /* Diminuído o padding-bottom */
+    padding-left: 25px; /* Diminuído o padding-left */
+    padding-right: 25px; /* Diminuído o padding-right */
+    background-color: black;
+    border: solid green 2px; /* Diminuída a espessura da borda */
+    height: auto;
+    width: 100%; /* Ajustado para responsividade */
+    max-width: 600px; /* Limitado a largura máxima */
+    border-radius: 10px; /* Diminuído o raio da borda */
+    margin: auto; /* Centralizando o form */
+  }
+
+  #formulario-contato {
+    display: block;
+    justify-content: center;
+    padding-bottom: 10px;
+    height: auto;
+    background-color: transparent;
+    width: 830px;
+    height: 380ppx;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+    margin-bottom: 50px;
+  }
+
+  .inputContato {
+    font-size: 16px; /* Ajustado o tamanho da fonte */
+    padding: 5px; /* Adicionado padding para melhor espaçamento */
+    width: 300px; /* Ajuste de largura para considerar a borda e o padding */
+    margin-bottom: 10px;
+  }
+
+  .formInputs input {
+    width: 530px;
+  }
+
+  .formInputs label {
+    margin-bottom: 10px;
+  }
+
+  .inputContato:last-child {
+    margin-bottom: 0px;
+  }
+
+  #rodape {
+    height: 100vh;
+    display: grid;
+  }
 }
