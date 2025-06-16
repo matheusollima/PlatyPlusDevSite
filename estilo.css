@@ -1,575 +1,566 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .apresentacao {
-    height: calc(100vh - 120px);
-    display: flex;
-    justify-content: center;
-    background-color: #121412;
-    margin-right: 100px;
-    margin-left: 100px;
-    box-sizing: border-box;
-    border-bottom: 5px rgb(78, 233, 17) solid;
-  }
-  
-  #titulo-apresentação {
-    color: darkgreen;
-  }
-  
-  #texto-apresentação {
-    height: 800px;
-    width: 800px;
-    margin-top: 300px;
-    overflow-y: hidden;
-    background-color: transparent;
-    color: white;
-    font-weight: bolder;
-    padding: 30px;
-    box-sizing: border-box;
-  }
-  
-  #imagem-apresentação {
-    width: 800px;
-    height: 800px;
-  }
-  
-  h1{
-    text-align: center;
-    font-size: 70px;
-    color: green;
-    font-family: "roboto";
-  }
-  
-  #tecnologias-titulo {
-    font-size: 55px;
-  }
-  
-  h2 {
-    /* display: inline;   */
-    font-size: 30px;
-    color: #d3d3d3;
-    font-family: "roboto";
-    text-align: center;
-  }
-  
-  .container {
-    display: block;
-    flex-direction: column;
-    min-height: 100%;
-    margin: 0;
-    padding: 0px;
-    padding-top: 120px;
-    max-width: 100%;
-    /*background-color:#2f4538;*/
-    /* background-color: #8cb47a;  */
-    background-color: rgb(0, 0, 0);
-    font-style: helvetica;
-    overflow-x:hidden;
-  }
-  
-  .painel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /*Ocultando menu mobile*/
-  
-  .header-mobile {
-    display: none;
-  }
-  
-  .navMenu {
-    z-index: 99;
-    position: fixed;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    top: 0px;
-    margin: 0px;
-    background-color: #1f221e;
-    opacity: 0.99;
-    backdrop-filter: blur(50px);
-    height: 120px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    transition: height 0.3s ease;
-  }
-  
-  #mascoteLogo {
-    position: absolute;
-    height: 85%;
-    left: 500px;
-  }
-  
-  #logo {
-    /* position:absolute; */
-    left: 500px;
-    height: 90%;
-    width: auto;
-    box-sizing: border-box;
-    margin-right: 1300px;
-    z-index: 1;
-  }
-  
-  .conteudo {
-    /* border:3px solid red; */
-  
-    height: auto;
-    overflow-x: hidden;
-    /* width: 1000000px; */
-    /* overflow: hidden; */
-    /* background-image: url('imgs/platyNoComputador.jpeg'); */
-  }
-  
-  .menu {
-    /* border:solid red 5px; */
-  
-    position: fixed;
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    margin-bottom: 0px;
-    background-color: none;
-    /* box-shadow: 0px 15px 20px #222121; */
-    /* height: 80px;
-      width:100%; */
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
-    width: 100vh;
-  }
-  
-  nav li {
-    /* border-radius:5px; */
-    margin: 0 10px;
-    box-sizing: border-box;
-    margin-left: 70px;
-    /* padding: 20px 30px; */
-    /* padding: 22px 40px; */
-    height: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  nav li a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    /* font-weight:bold; */
-    font-size: 30px;
-    font-family: "Roboto", sans-serif;
-    padding: 0px 0px 10px 0;
-    position: relative;
-    user-select: none;
-  }
-  
-  nav li a::after {
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background-color: #1aa754;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.7s ease-in-out;
-  }
-  
-  nav li:hover a::after {
-    width: 100%;
-  }
-  
-  a.actived::after {
-    width: 100%;
-  }
-  
-  main {
-    text-align: center;
-    background-color: transparent;
-  }
-  
-  main section h1 {
-    font-size: 70px;
-    color: green;
-    font-family: "roboto";
-  }
-  .divRodape {
-    display: flex;
-  }
-  
-  #rodape {
-    /* align-items:start;
-      justify-content:start; */
-    /* background-color:#93c572; */
-    background-color: #1f221e;
-    /* height: auto; */
-    font-family: "roboto";
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+}
 
-  .contato {
-    height: fit-content;
-    width: fit-content;
-    
-    
-  }
+.apresentacao {
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  background-color: #121412;
+  margin-right: 100px;
+  margin-left: 100px;
+  box-sizing: border-box;
+  border-bottom: 5px rgb(78, 233, 17) solid;
+}
 
-  #rodape > {
-    border: solid 2px red !important;
-  }
-  
-  #divContato {
-    display: flex;
-    box-sizing: border-box;
-    /* border:solid red 3px; */
-    justify-content: center;
-  
-    justify-content: start;
-  }
-  #tituloContatos {
-    font-size: 45px;
-    margin: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 100px;
-    /* color: #1aa754; */
-    color: green;
-  }
-  
-  #divWhatsapp {
-    color: white;
-    display: flex;
-    align-items: center;
-  }
-  
-  #divInstagram {
-    color: white;
-    display: flex;
-    align-items: center;
-  }
-  
-  #divFacebook {
-    display: flex;
-    align-items: center;
-  }
-  
-  #midiasSociais {
-    display: inline-block;
-    margin-left: 100px;
-    box-sizing: border-box;
-    height: auto;
-    width: auto;
-    /* display: inline-block; */
-    align-items: end;
-    gap: 50px;
-  }
-  
-  #midiasSociais div label {
-    text-decoration: none;
-    list-style: none;
-    color: rgb(150, 150, 150);
-    font-size: 20px;
-    margin-left: 20px;
-  }
-  #midiasSociais div a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    font-family: "roboto";
-  }
-  
-  #midiasSociais div a img {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-  }
-  
-  .nmSocial {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 30px;
-    top: -100px;
-  }
-  
-  #msgContato {
-    resize: none;
-    margin-top: 10px;
-    outline: 0;
-    background-color: #222222;
-    color: rgb(255, 255, 255);
-    font-family: "roboto";
-    font-size: 30px;
-    border: 0;
-    height: 300px;
-    width: 100%;
-    left: 0;
-    border-radius: 10px;
-  }
-  
-  #formulario-contato {
-    display: block;
-    justify-content: center;
-    padding-bottom: 10px;
-    height: auto;
-    background-color: transparent;
-    width: 830px;
-    height: 380px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -150px;
-    margin-bottom: 50px;
-  }
-  
-  #msgOrçamento {
-    font-size: 40px;
-    text-align: start;
-  }
-  .formContato {
-    /* justify-content: center; */
-    /* margin-bottom: 50px; */
-    box-sizing: border-box;
-    padding-top: 15px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: black;
-    border: solid green 4px;
-    height: auto;
-    width: 830px;
-    border-radius: 20px;
-  }
-  
-  .inputContato {
-    border: solid red 5px;
-  }
-  
-  .front-back-column {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-areas:
-      "front back "
-      "database database";
-    list-style: none;
-    justify-content: center;
-    margin-top: 60px;
-    row-gap: 100px;
-    
-    
-  }
-  
-  .front-back-column > li {
-    column-gap: 60px;
-  }
+#titulo-apresentação {
+  color: darkgreen;
+}
 
- #front{
-  justify-self:center;
- }
+#texto-apresentação {
+  height: 800px;
+  width: 800px;
+  margin-top: 300px;
+  overflow-y: hidden;
+  background-color: transparent;
+  color: white;
+  font-weight: bolder;
+  padding: 30px;
+  box-sizing: border-box;
+}
 
-  #back{
-    justify-self: center;
-    width: 600px;
-  }
-  
-  #database {
-    grid-area: database;
-  }
-  
-  .formInputs {
-    margin: 25px 0px;
-    width: 300px;
-    position: relative;
-  }
-  
-  .formInputs label {
-    font-size: 16px;
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    color: grey;
-    font-weight: bold;
-    cursor: text;
-    transition: 0.5s ease-in-out;
-  }
-  
-  .formInputs input {
-    width: 700px;
-    padding: 5px;
-    color: rgb(150, 150, 150);
-    border: 0;
-    background-color: transparent;
-    border-bottom: 2px solid rgb(150, 150, 150);
-    outline: 0;
-  }
-  
-  .formInputs input:focus,
-  .formInputs input:valid {
-    border-bottom: 2px solid green;
-  }
-  
-  .formInputs input:focus ~ label,
-  .formInputs input:valid ~ label {
-    transform: translateY(-24px);
-    font-size: 20px;
-    color: grey;
-  }
-  
-  #btEnviar {
-    padding: 0;
-    height: auto;
-    width: 90px;
-    color: rgb(150, 150, 150);
-    font-family: "roboto";
-    font-size: 30px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  #btEnviar::after {
-    content: " ";
-    height: 1.5px;
-    width: 0%;
-    background-color: green;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  
-  #btEnviar:hover::after {
-    width: 100%;
-  }
-  
-  #divMsgdia {
-    position: absolute;
-    margin: 0px;
-    top: 10px;
+#imagem-apresentação {
+  width: auto;
     height: 100%;
-    width: auto;
-    right: 25px;
-  }
-  #msgDia {
-    color: white;
-    font-size: 25px;
-  }
-  
-  .container main img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  #msgFinal {
-    height: auto;
-    width: 100%;
-    background: #008000;
-    color: rgb(2, 2, 2);
-    font-size: 15px;
-    text-align: start;
-    font-family: "roboto";
-    display: none;
     
-  }
-  /*
+ 
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  color: green;
+  font-family: "roboto";
+}
+
+#tecnologias-titulo {
+  font-size: 55px;
+}
+
+h2 {
+  /* display: inline;   */
+  font-size: 30px;
+  color: #d3d3d3;
+  font-family: "roboto";
+  text-align: center;
+}
+
+.container {
+  display: block;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  padding: 0px;
+  padding-top: 120px;
+  max-width: 100%;
+  /*background-color:#2f4538;*/
+  /* background-color: #8cb47a;  */
+  background-color: rgb(0, 0, 0);
+  font-style: helvetica;
+  overflow-x: hidden;
+}
+
+.painel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Ocultando menu mobile*/
+
+.header-mobile {
+  display: none;
+}
+
+.navMenu {
+  z-index: 99;
+  position: fixed;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  top: 0px;
+  margin: 0px;
+  background-color: #1f221e;
+  opacity: 0.99;
+  backdrop-filter: blur(50px);
+  height: 120px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease;
+}
+
+#mascoteLogo {
+  position: absolute;
+  height: 85%;
+  left: 500px;
+}
+
+#logo {
+  /* position:absolute; */
+  left: 500px;
+  height: 90%;
+  width: auto;
+  box-sizing: border-box;
+  margin-right: 1300px;
+  z-index: 1;
+}
+
+.conteudo {
+  /* border:3px solid red; */
+
+  height: auto;
+  overflow-x: hidden;
+  /* width: 1000000px; */
+  /* overflow: hidden; */
+  /* background-image: url('imgs/platyNoComputador.jpeg'); */
+}
+
+.menu {
+  /* border:solid red 5px; */
+
+  position: fixed;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0px;
+  background-color: none;
+  /* box-shadow: 0px 15px 20px #222121; */
+  /* height: 80px;
+      width:100%; */
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+}
+
+nav li {
+  /* border-radius:5px; */
+  margin: 0 10px;
+  box-sizing: border-box;
+  margin-left: 70px;
+  /* padding: 20px 30px; */
+  /* padding: 22px 40px; */
+  height: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  /* font-weight:bold; */
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  padding: 0px 0px 10px 0;
+  position: relative;
+  user-select: none;
+}
+
+nav li a::after {
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #1aa754;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.7s ease-in-out;
+}
+
+nav li:hover a::after {
+  width: 100%;
+}
+
+a.actived::after {
+  width: 100%;
+}
+
+main {
+  text-align: center;
+  background-color: transparent;
+}
+
+main section h1 {
+  font-size: 70px;
+  color: green;
+  font-family: "roboto";
+}
+.divRodape {
+  display: flex;
+}
+
+#rodape {
+  /* align-items:start;
+      justify-content:start; */
+  /* background-color:#93c572; */
+  background-color: #1f221e;
+  /* height: auto; */
+  font-family: "roboto";
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.contato {
+  height: fit-content;
+  width: fit-content;
+}
+
+#rodape > {
+  border: solid 2px red !important;
+}
+
+#divContato {
+  display: flex;
+  box-sizing: border-box;
+  /* border:solid red 3px; */
+  justify-content: center;
+
+  justify-content: start;
+}
+#tituloContatos {
+  font-size: 45px;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  /* color: #1aa754; */
+  color: green;
+}
+
+#divWhatsapp {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#divInstagram {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#divFacebook {
+  display: flex;
+  align-items: center;
+}
+
+#midiasSociais {
+  display: inline-block;
+  margin-left: 100px;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  /* display: inline-block; */
+  align-items: end;
+  gap: 50px;
+}
+
+#midiasSociais div label {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(150, 150, 150);
+  font-size: 20px;
+  margin-left: 20px;
+}
+#midiasSociais div a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: "roboto";
+}
+
+#midiasSociais div a img {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+
+.nmSocial {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  top: -100px;
+}
+
+#msgContato {
+  resize: none;
+  margin-top: 10px;
+  outline: 0;
+  background-color: #222222;
+  color: rgb(255, 255, 255);
+  font-family: "roboto";
+  font-size: 30px;
+  border: 0;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  border-radius: 10px;
+}
+
+#formulario-contato {
+  display: block;
+  justify-content: center;
+  padding-bottom: 10px;
+  height: auto;
+  background-color: transparent;
+  width: 830px;
+  height: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
+
+#msgOrçamento {
+  font-size: 40px;
+  text-align: start;
+}
+.formContato {
+  /* justify-content: center; */
+  /* margin-bottom: 50px; */
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: black;
+  border: solid green 4px;
+  height: auto;
+  width: 830px;
+  border-radius: 20px;
+}
+
+.inputContato {
+  border: solid red 5px;
+}
+
+.front-back-column {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas:
+    "front back "
+    "database database";
+  list-style: none;
+  justify-content: center;
+  margin-top: 60px;
+  row-gap: 100px;
+}
+
+.front-back-column > li {
+  column-gap: 60px;
+}
+
+#front {
+  justify-self: center;
+}
+
+#back {
+  justify-self: center;
+  width: 600px;
+}
+
+#database {
+  grid-area: database;
+}
+
+.formInputs {
+  margin: 25px 0px;
+  width: 300px;
+  position: relative;
+}
+
+.formInputs label {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  color: grey;
+  font-weight: bold;
+  cursor: text;
+  transition: 0.5s ease-in-out;
+}
+
+.formInputs input {
+  width: 700px;
+  padding: 5px;
+  color: rgb(150, 150, 150);
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(150, 150, 150);
+  outline: 0;
+}
+
+.formInputs input:focus,
+.formInputs input:valid {
+  border-bottom: 2px solid green;
+}
+
+.formInputs input:focus ~ label,
+.formInputs input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 20px;
+  color: grey;
+}
+
+#btEnviar {
+  padding: 0;
+  height: auto;
+  width: 90px;
+  color: rgb(150, 150, 150);
+  font-family: "roboto";
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+#btEnviar::after {
+  content: " ";
+  height: 1.5px;
+  width: 0%;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#btEnviar:hover::after {
+  width: 100%;
+}
+
+#divMsgdia {
+  position: absolute;
+  margin: 0px;
+  top: 10px;
+  height: 100%;
+  width: auto;
+  right: 25px;
+}
+#msgDia {
+  color: white;
+  font-size: 25px;
+}
+
+.container main img {
+  width: 50px;
+  height: 50px;
+}
+
+#msgFinal {
+  height: auto;
+  width: 100%;
+  background: #008000;
+  color: rgb(2, 2, 2);
+  font-size: 15px;
+  text-align: start;
+  font-family: "roboto";
+  display: none;
+}
+/*
   SERVIÇOS
   */
-  
-  .slider-mobile {
-    display: none;
-  }
 
-  #serviços {
-    display: grid;
-    
-    align-items: start;
-  }
-  
-  #serviços-titulo {
-    font-size: 60px;
-    padding: 0;
-  }
-  
-  #painel-serviços {
-    display: flex;
-    flex-direction: column;
-    row-gap: 100px;
-    align-items: center;
-   
-  }
-  
-  .painel-software {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 20px;
-    row-gap:100px;
-    margin-top: 100px;
-    width: auto;
-    height: auto;
-    
-    
-  }
-  .painel-software-div {
-    width: 300px;
-    height: 400px;
-    padding: 0;
-    border-radius: 30px;
-    border: 0.009em solid rgb(169, 169, 169, 0.2 );
-    border-bottom: 10px solid green;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .painel-software-div:nth-child(6){
-     grid-column: 2;
-  }
-
-.painel-software h2{
- display: inline-block;
- width: 250px;
- justify-self: center;
+.slider-mobile {
+  display: none;
 }
 
-  .painel-software h2::after{
-    content: " ";
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: green;
-    left: 0;
-    bottom: 10px;
-    
-    
-  }
-  
-  .painel-software img{
-    width: 50%;
-    height: auto;
-    justify-self: center;
-  }
+#serviços {
+  display: grid;
 
-  .serviço-texto{
-    position: absolute;
-    z-index: 2000;
-    display: grid;
-    background-image: linear-gradient(to top, #013220, #000000);
-    }
-.serviço-texto p{
+  align-items: start;
+}
+
+#serviços-titulo {
+  font-size: 60px;
+  padding: 0;
+}
+
+#painel-serviços {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  align-items: center;
+}
+
+.painel-software {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 100px;
+  margin-top: 100px;
+  width: auto;
+  height: auto;
+}
+.painel-software-div {
+  width: 300px;
+  height: 400px;
+  padding: 0;
+  border-radius: 30px;
+  border: 0.009em solid rgb(169, 169, 169, 0.2);
+  border-bottom: 10px solid green;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.painel-software-div:nth-child(6) {
+  grid-column: 2;
+}
+
+.painel-software h2 {
+  display: inline-block;
+  width: 250px;
+  justify-self: center;
+}
+
+.painel-software h2::after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: green;
+  left: 0;
+  bottom: 10px;
+}
+
+.painel-software img {
+  width: 50%;
+  height: auto;
+  justify-self: center;
+}
+
+.serviço-texto {
+  position: absolute;
+  z-index: 2000;
+  display: grid;
+  background-image: linear-gradient(to top, #013220, #000000);
+}
+.serviço-texto p {
   margin: 0;
   font-size: 29px;
-  font-family: 'roboto';
+  font-family: "roboto";
 }
 
-
- /* .painel-software>div:hover img{
+/* .painel-software>div:hover img{
    opacity: 0;
   
  }
@@ -579,9 +570,8 @@
  
 } */
 
-
-/* TEXTO EXPLICATIVO SITE INSTITUCIONAL*/    
-#site-i{
+/* TEXTO EXPLICATIVO SITE INSTITUCIONAL*/
+#site-i {
   width: 300px;
   height: 400px;
   display: grid;
@@ -593,41 +583,34 @@
   top: 600px;
   transition: top 0.5s ease-in-out;
   border: none;
-  background-color:rgba(62, 185, 13);
+  background-color: rgba(62, 185, 13);
 }
 
-#site-i-div{
+#site-i-div {
   position: relative;
   overflow: hidden;
 }
 
-#site-i-div:hover #site-i{
-   
-   top: 0;
- } 
+#site-i-div:hover #site-i {
+  top: 0;
+}
 
-
-
- .serviço-texto#site-i>h2{
+.serviço-texto#site-i > h2 {
   font-size: 30px;
- 
-  
+}
 
- }
-
- #site-i p {
+#site-i p {
   /* opacity: 0;
   transition: 5s ease-in; */
- }
+}
 
- #site-i-div:hover #site-i p{
+#site-i-div:hover #site-i p {
   /* opacity: 1; */
-} 
-  
+}
 
- /* TEXTO EXPLICATIVO LANDING-PAGES*/
+/* TEXTO EXPLICATIVO LANDING-PAGES*/
 
- #landing-page{
+#landing-page {
   width: 300px;
   height: 400px;
   display: grid;
@@ -639,37 +622,32 @@
   top: 600px;
   transition: top 0.5s ease-in-out;
   border: none;
-  background-color:rgba(62, 185, 13);
-  
+  background-color: rgba(62, 185, 13);
 }
 
-#landing-page-div{
+#landing-page-div {
   position: relative;
   overflow: hidden;
 }
 
-#landing-page-div:hover #landing-page{
-   
-   top: 0;
- } 
+#landing-page-div:hover #landing-page {
+  top: 0;
+}
 
- .serviço-texto#landing-page>h2{
+.serviço-texto#landing-page > h2 {
   font-size: 30px;
- 
+
   z-index: 2001;
   position: absolute;
+}
 
- }
-
- #landing-page p{
+#landing-page p {
   font-size: 20px;
- }
-  
+}
 
 /* TEXTO EXPLICATIVO HOT SITE*/
 
-
-#hot-site{
+#hot-site {
   width: 300px;
   height: 400px;
   display: grid;
@@ -681,31 +659,28 @@
   top: 600px;
   transition: top 0.5s ease-in-out;
   border: none;
-  background-color:rgba(62, 185, 13);
-  
+  background-color: rgba(62, 185, 13);
 }
 
-#hot-site-div{
+#hot-site-div {
   position: relative;
   overflow: hidden;
 }
 
-#hot-site-div:hover #hot-site{
-   
-   top: 0;
- } 
+#hot-site-div:hover #hot-site {
+  top: 0;
+}
 
- .serviço-texto#hot-site>h2{
+.serviço-texto#hot-site > h2 {
   font-size: 30px;
 
   z-index: 2001;
   position: absolute;
+}
 
- }
-  
 /*TEXTO EXPLICATIVO SISTEMA WEB*/
 
-#web-system{
+#web-system {
   width: 300px;
   height: 400px;
   display: grid;
@@ -717,30 +692,27 @@
   top: 600px;
   transition: top 0.5s ease-in-out;
   border: none;
-  background-color:rgba(62, 185, 13);
-  
+  background-color: rgba(62, 185, 13);
 }
 
-#web-system-div{
+#web-system-div {
   position: relative;
   overflow: hidden;
 }
 
-#web-system-div:hover #web-system{
-   
-   top: 0;
- } 
+#web-system-div:hover #web-system {
+  top: 0;
+}
 
- .serviço-texto#web-system>h2{
+.serviço-texto#web-system > h2 {
   font-size: 30px;
   z-index: 2001;
   position: absolute;
+}
 
- }
-  
 /* TEXTO EXPLICATIVO E-COMMERCE*/
 
-#commerce{
+#commerce {
   width: 300px;
   height: 400px;
   display: grid;
@@ -756,40 +728,37 @@
   background-image: linear-gradient(to top, #013220, #000000);
 }
 
-#e-commerce-div{
+#e-commerce-div {
   position: relative;
   overflow: hidden;
 }
 
-#e-commerce-div:hover #commerce{
-   
-   top: 0;
- } 
+#e-commerce-div:hover #commerce {
+  top: 0;
+}
 
- .serviço-texto#commerce>h2{
+.serviço-texto#commerce > h2 {
   font-size: 30px;
   z-index: 2001;
- 
- }
+}
 
-.serviço-texto>h2{
+.serviço-texto > h2 {
   color: darkgreen;
   justify-self: center;
   align-self: start;
 }
 
-.serviço-texto>h2::after{
+.serviço-texto > h2::after {
   display: none;
 }
-.serviço-texto p{
+.serviço-texto p {
   color: rgb(73, 243, 73);
   font-size: 25px;
 }
 
-
 /* TEXTO EXPLICATIVO CONSULTORIA*/
 
-#consultoria{
+#consultoria {
   width: 300px;
   height: 400px;
   display: grid;
@@ -801,33 +770,29 @@
   top: 600px;
   transition: top 0.5s ease-in-out;
   border: none;
-  background-color:rgba(62, 185, 13);
+  background-color: rgba(62, 185, 13);
 }
 
-#consultoria-div{
+#consultoria-div {
   position: relative;
   overflow: hidden;
 }
 
-#consultoria-div:hover #consultoria{
-   
-   top: 0;
- } 
+#consultoria-div:hover #consultoria {
+  top: 0;
+}
 
- .serviço-texto#consultoria>h2{
+.serviço-texto#consultoria > h2 {
   font-size: 30px;
- 
-  
+}
 
- }
-
- #consultoria-div p {
+#consultoria-div p {
   font-size: 20px;
- }
+}
 
-/* TEXTO EXPLICATIVO APLICATIVOS ANDROID*/  
+/* TEXTO EXPLICATIVO APLICATIVOS ANDROID*/
 
-#android{
+#android {
   width: 300px;
   height: 400px;
   display: grid;
@@ -839,31 +804,29 @@
   top: 600px;
   transition: top 0.5s ease-in-out;
   border: none;
-  background-color:rgba(62, 185, 13);
+  background-color: rgba(62, 185, 13);
 }
 
-#android-div{
+#android-div {
   position: relative;
   overflow: hidden;
 }
 
-#android-div:hover #android{
-   
-   top: 0;
- } 
+#android-div:hover #android {
+  top: 0;
+}
 
- .serviço-texto#android>h2{
+.serviço-texto#android > h2 {
   font-size: 30px;
+}
 
- }
- 
- #android-div p {
+#android-div p {
   font-size: 20px;
- }
+}
 
- /* TEXTO EXPLICATIVO SISTEMA DE GESTÃO (ERP)*/
+/* TEXTO EXPLICATIVO SISTEMA DE GESTÃO (ERP)*/
 
- #erp{
+#erp {
   width: 300px;
   height: 400px;
   display: grid;
@@ -875,33 +838,27 @@
   top: 600px;
   transition: top 0.5s ease-in-out;
   border: none;
-  background-color:rgba(62, 185, 13);
+  background-color: rgba(62, 185, 13);
 }
 
-#erp-div{
+#erp-div {
   position: relative;
   overflow: hidden;
 }
 
-#erp-div:hover #erp{
-   
-   top: 0;
- } 
+#erp-div:hover #erp {
+  top: 0;
+}
 
- .serviço-texto#erp>h2{
+.serviço-texto#erp > h2 {
   font-size: 30px;
- 
-  
+}
 
- }
-
- #erp-div p {
+#erp-div p {
   font-size: 20px;
- }
+}
 
 /*********************************************/
-
-
 
 /* PAINEL MODELOS DE NEGOCIO */
 .div-modelo-negocio-mobile {
@@ -912,13 +869,11 @@
   margin-bottom: 60px;
 }
 
-.div-modelo-negocio h1{
-   font-size: 40px;
+.div-modelo-negocio h1 {
+  font-size: 40px;
 }
 
-
-
-.painel-modelo-negocio{
+.painel-modelo-negocio {
   display: grid;
   flex-direction: row;
   grid-template-columns: auto auto auto auto auto;
@@ -929,305 +884,281 @@
   column-gap: 30px;
 }
 
-.painel-modelo-negocio div{
-  
+.painel-modelo-negocio div {
   padding: 0;
   height: auto;
   width: auto;
- 
 }
 
-.painel-modelo-negocio img{
+.painel-modelo-negocio img {
   width: 100px;
 }
 
-
-
-
-
-
 /************************************************/
-  #img-website {
-    width: 80%;
-  }
-  
-  #img-erp {
-    width: 80%;
-  }
-  
-  #img-android {
-    display: inline-block;
-    width: 80%;
-  }
-  
-  .titulo-softwares {
-    color: white;
-    background-color: transparent;
-    margin-bottom: 30px;
-  }
-  
-  /*
+#img-website {
+  width: 80%;
+}
+
+#img-erp {
+  width: 80%;
+}
+
+#img-android {
+  display: inline-block;
+  width: 80%;
+}
+
+.titulo-softwares {
+  color: white;
+  background-color: transparent;
+  margin-bottom: 30px;
+}
+
+/*
   TECNOLOGIAS
   */
-  #tecnologias {
-    /* background-color: #cdd69d; */
-    /* background-color: #6c724b; */
-    height: 100vh;
-  }
+#tecnologias {
+  /* background-color: #cdd69d; */
+  /* background-color: #6c724b; */
+  height: 100vh;
+}
 
-  #platypus-capacete{
-    width: 15%;
-    position:absolute;
-    z-index: 1000;
-    left: 100px;
-    opacity:1;
-    transition: opacity 10s ease-in;
-  }
+#platypus-capacete {
+  width: 15%;
+  position: absolute;
+  z-index: 1000;
+  left: 100px;
+  opacity: 1;
+  transition: opacity 10s ease-in;
+}
 
+/* PAINEL TECNOLIGIAS FRONT-END*/
 
-  
-  /* PAINEL TECNOLIGIAS FRONT-END*/
-  
-  #tecnologia-front-div {
-    display: grid;
-    width: 700px;
-  }
-  
-  #tecnologias-subtitulo01 {
-    font-size: 20px;
-    font-weight: 0;
-    color: black;
-  }
-  
-  #painelTecnologias {
-    margin-top: 70px;
-    justify-self: center;
-    width: 1200px;
-    height: 700px;
-    background-color: transparent;
-    border-bottom: solid 6px green;
-    border-radius: 20px;
-    background-color: black;
+#tecnologia-front-div {
+  display: grid;
+  width: 700px;
+}
 
-  }
-  
- 
+#tecnologias-subtitulo01 {
+  font-size: 20px;
+  font-weight: 0;
+  color: black;
+}
 
-  .tecnologia-front {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-decoration: none;
-    list-style-type: none;
-    justify-content: center;
-    padding: 0;
-    
-  }
-  
-  .tecnologia-front li {
-    width: 160px;
-    height: 209px;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    position: relative;
-   
-  }
-  
-  .front-li {
-    display: grid;
-    align-items: center;
-    justify-content: start;
-    padding: 0;
-    margin: 0;
-    transition: 0.3ms ease;
-  }
+#painelTecnologias {
+  margin-top: 70px;
+  justify-self: center;
+  width: 1200px;
+  height: 700px;
+  background-color: transparent;
+  border-bottom: solid 6px green;
+  border-radius: 20px;
+  background-color: black;
+}
 
-  .front-li:hover{
-    transform: scale(1.2);
-  }
-  
-  .front-li label {
-    align-self: end;
-  }
-  
-  #javascript-li img {
-    /* margin-left: 40px;
+.tecnologia-front {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.tecnologia-front li {
+  width: 160px;
+  height: 209px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.front-li {
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  transition: 0.3ms ease;
+}
+
+.front-li:hover {
+  transform: scale(1.2);
+}
+
+.front-li label {
+  align-self: end;
+}
+
+#javascript-li img {
+  /* margin-left: 40px;
     margin-right: 40px; */
-    justify-content: start;
-  }
-  
-#javascript-li label{
+  justify-content: start;
+}
+
+#javascript-li label {
   justify-self: center;
 }
 
-  .section#tecnologias {
-    background-color: #a9a9a9;
-    height: 100vh;
-  }
-  
-  .front-img {
-    height: 100px;
-    user-select: none;
-    width: auto;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* #css-logo-img{
+.section#tecnologias {
+  background-color: #a9a9a9;
+  height: 100vh;
+}
+
+.front-img {
+  height: 100px;
+  user-select: none;
+  width: auto;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* #css-logo-img{
      width: 125px;
      height: auto;
      top: -200px;
      padding: 0;
   } */
-  
-  #li-css {
-    padding: 0;
-  }
-  
-  .tecnologia-logo-label {
-    color: #006400;
-    font-family: "roboto";
-    user-select: none;
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* PAINEL TECNOLOGIA BACK-END*/
-  .tecnologia-back-div {
-    display: grid;
-  }
-  
-  .tecnologia-back {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-  }
-  
-  .tecnologia-back li {
-    /* display: block; */
-    text-align: center;
-    margin: 0;
-    width: 160px;
-    height: 209px;
-  }
-  
-  .back-li {
-    display: grid;
-    align-items: center;
-    transition: 0.9ms ease-in-out;
 
-  }
+#li-css {
+  padding: 0;
+}
 
-  .back-li:hover{
-    transform: scale(1.2);
-  }
-  .back-li img {
-    align-self: start;
-  }
-  
-  .back-li label {
-    align-self: end;
-  }
-  
-  #php-li {
-    margin-right: 50px;
-  }
-  
-  .back-img {
-    width: 150px;
-    height: auto;
-    margin: 0;
-  }
-  
-  /* PAINEL TECNOLOGIA DATABASE*/
-  #tecnologia-database-div li {
-    list-style-type: none;
-  }
-  
-  .tecnologia-database {
-    display: grid;
-    grid-template-columns: auto;
-  }
-  .tecnologia-database li {
-    justify-self: center;
-  }
-  
-  
-  #data-li {
-    display: grid;
-    align-items: center;
-    transition: 0.9ms ease-in-out;
-  }
+.tecnologia-logo-label {
+  color: #006400;
+  font-family: "roboto";
+  user-select: none;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-  #data-li:hover{
-    transform: scale(1.2);
-  }
-  
-  #data-li label {
-    justify-self: center;
-  }
-  .data-img {
-    height: 150px;
-  }
+/* PAINEL TECNOLOGIA BACK-END*/
+.tecnologia-back-div {
+  display: grid;
+}
 
+.tecnologia-back {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.tecnologia-back li {
+  /* display: block; */
+  text-align: center;
+  margin: 0;
+  width: 160px;
+  height: 209px;
+}
+
+.back-li {
+  display: grid;
+  align-items: center;
+  transition: 0.9ms ease-in-out;
+}
+
+.back-li:hover {
+  transform: scale(1.2);
+}
+.back-li img {
+  align-self: start;
+}
+
+.back-li label {
+  align-self: end;
+}
+
+#php-li {
+  margin-right: 50px;
+}
+
+.back-img {
+  width: 150px;
+  height: auto;
+  margin: 0;
+}
+
+/* PAINEL TECNOLOGIA DATABASE*/
+#tecnologia-database-div li {
+  list-style-type: none;
+}
+
+.tecnologia-database {
+  display: grid;
+  grid-template-columns: auto;
+}
+.tecnologia-database li {
+  justify-self: center;
+}
+
+#data-li {
+  display: grid;
+  align-items: center;
+  transition: 0.9ms ease-in-out;
+}
+
+#data-li:hover {
+  transform: scale(1.2);
+}
+
+#data-li label {
+  justify-self: center;
+}
+.data-img {
+  height: 150px;
+}
 
 /* SECTION SOBRE*/
 
-#sobre *{
+#sobre * {
   box-sizing: border-box;
- 
 }
 
-.section#sobre{
+.section#sobre {
   box-sizing: border-box;
   min-height: 100vh;
   max-height: max-content;
-  
 }
 
-
-.sobre-container{
+.sobre-container {
   height: 100vh;
   width: 100%;
   display: grid;
   grid-template-columns: 20% 15%;
   padding-left: 500px;
   column-gap: 150px;
-  
-  
 }
 
-.sobre-container div{
-   
-   
+.sobre-container div {
 }
 
-.sobre-container p{
+.sobre-container p {
   font-size: 70px;
   color: white;
 }
 
-#sobre-foto{
+#sobre-foto {
   display: grid;
 }
 
-#foto-apresentação{
+#foto-apresentação {
   width: 120%;
-  justify-self:center;
-  align-self:center;
+  justify-self: center;
+  align-self: center;
   border-radius: 30px;
   border: 4px solid darkgreen;
   position: relative;
   top: -5%;
 }
 
-#sobre-texto{
+#sobre-texto {
   height: max-content;
   width: max-content;
   background-color: #1e2329;
@@ -1247,11 +1178,10 @@
 }
 
 #sobre-texto > * {
-  
   align-self: center;
 }
 
-#sobre-titulo{
+#sobre-titulo {
   font-size: 30px;
   color: darkgreen;
   font-family: "roboto";
@@ -1263,13 +1193,12 @@
   text-align: start;
 }
 
-#sobre-formacao{
+#sobre-formacao {
   color: #d3d3d3;
   font-size: 20px;
   text-align: start;
   font-family: "roboto";
 }
-
 
 /* REDES SOCIAIS PROFISSIONAIS*/
 
@@ -1282,7 +1211,7 @@
   border-radius: 10px;
 }
 
-#painel-redes-profissionais a, 
+#painel-redes-profissionais a,
 #painel-redes-profissionais button {
   display: inline-flex; /* Garante que os elementos internos sejam alinhados */
   padding: 0; /* Remove quaisquer espaçamentos internos */
@@ -1302,86 +1231,83 @@
   filter: brightness(2);
 }
 
-  
-  /* 
+/* 
   
   #ANIMAÇÃO DE SCROLL
   
   */
-  
-  .hidden {
-    display: grid;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    filter: blur("150px");
-    transition: all 2s;
-    transform: translateX(-100%);
-    background-color: transparent;
-    box-sizing: border-box;
-  }
-  
-  .show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-    transition: all 2s;
-  }
-  
-  .section#inicio {
-    padding: 0;
-    margin: 0;
-    font-size: 19px;
-    color: white;
-    width: 100%;
-    height: calc(100vh - 120px);
-    background-color: rgb(0, 0, 0);
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  }
-  /* img{display:none;} */
-  /* Celular */
-  
-  .section {
-    height: calc(100vh - 80px);
-    padding-top: 50px;
-    display: block;
-  }
-  
-  .section#serviços {
-    margin-top: 100px;
-    height: auto;
-  }
 
-  #serviços-hidden{
-    display: block;
-    
-    padding: 0;
-    height: 200vh;
-  }
-  
-  .painel-modelo-negocio div {
-    display: flex;
-    flex-direction: column;
-    background-color: #1b1b1b;
-    border-radius: 15px;
-    height: 200px;
-    width: 350px;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s
-  }
+.hidden {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  filter: blur("150px");
+  transition: all 2s;
+  transform: translateX(-100%);
+  background-color: transparent;
+  box-sizing: border-box;
+}
 
-  .painel-modelo-negocio  div:hover{
-    transform: scale(1.1);
-  }
-  .painel-modelo-negocio label{
-   font-family: 'roboto';
-   font-size: 35px;
-   font-weight: bold;
-   position: relative;
-   
-  }
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.section#inicio {
+  padding: 0;
+  margin: 0;
+  font-size: 19px;
+  color: white;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* img{display:none;} */
+/* Celular */
+
+.section {
+  height: calc(100vh - 80px);
+  padding-top: 50px;
+  display: block;
+}
+
+.section#serviços {
+  margin-top: 100px;
+  height: auto;
+}
+
+#serviços-hidden {
+  display: block;
+
+  padding: 0;
+  height: 200vh;
+}
+
+.painel-modelo-negocio div {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  border-radius: 15px;
+  height: 200px;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.painel-modelo-negocio div:hover {
+  transform: scale(1.1);
+}
+.painel-modelo-negocio label {
+  font-family: "roboto";
+  font-size: 35px;
+  font-weight: bold;
+  position: relative;
+}

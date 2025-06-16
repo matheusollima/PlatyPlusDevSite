@@ -17,270 +17,224 @@ msgDia();
 
 */
 
-
 // OCULTAR O MENU
 
-var header = document.querySelector('header');
+var header = document.querySelector("header");
 var isHeaderHidden = false;
 var i = 0;
-
-
 
 function onScroll() {
   let section = document.getElementById("tecnologias");
   let sectionTop = section.offsetTop;
   let scrollPosition = window.scrollY;
 
-  if (scrollPosition >= sectionTop) { 
-    header.style.display = 'none';
+  if (scrollPosition >= sectionTop) {
+    header.style.display = "none";
   } else {
-    header.style.display = 'block';
+    header.style.display = "block";
   }
 }
 // onScroll();
 
-window.addEventListener('scroll', onScroll);
-
-
-
+window.addEventListener("scroll", onScroll);
 
 var debouncedOnScroll = debounce(onScroll, 50);
-window.addEventListener('scroll', debouncedOnScroll);
+window.addEventListener("scroll", debouncedOnScroll);
 
 function debounce(fn, delay) {
   var timer = null;
 
-  return function() {
-    var context = this, args = arguments;
+  return function () {
+    var context = this,
+      args = arguments;
     clearTimeout(timer);
-    
-    timer = setTimeout(function() {
+
+    timer = setTimeout(function () {
       fn.apply(context, args);
     }, delay);
   };
 }
 
-
 /*  DESCOBRIR ALTURA SECTION SOBRE  */
 
-const sectionSobre = document.getElementById('sobre');
+const sectionSobre = document.getElementById("sobre");
 
 const alturaSection = sectionSobre.offsetTop;
 
 console.log("Altura section sobre: ", alturaSection);
 
+/* ANIMAÇÃO PARA EXIBIR TITULOS DAS SECTION */
 
-
-
-
-/* ANIMAÇÃO PARA EXIBIR TITULOS DAS SECTION */ 
-
-const myObserver = new IntersectionObserver((entries) =>{
-  entries.forEach((entry) =>{
-      if(entry.isIntersecting){
-          entry.target.classList.add('show')
-      } else{
-          entry.target.classList.remove('show')     
-      }
-  })
-  
-})
-const elementos = document.querySelectorAll('.hidden')
-elementos.forEach((element) => myObserver.observe(element) )
-
+const myObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+const elementos = document.querySelectorAll(".hidden");
+elementos.forEach((element) => myObserver.observe(element));
 
 /* ANIMAÇÃO MENU - SCROLL   */
- let links = document.querySelectorAll(".js-link");
- let sections = document.querySelectorAll(".section");
+let links = document.querySelectorAll(".js-link");
+let sections = document.querySelectorAll(".section");
 
- window.addEventListener('scroll', () => {
-   sections.forEach(section => {
+window.addEventListener("scroll", () => {
+  sections.forEach((section) => {
     let top = window.scrollY;
     let offset = section.offsetTop - 120;
     let heightSection = section.offsetHeight;
-    let idSection = section.getAttribute('id');
+    let idSection = section.getAttribute("id");
 
-     if(top >= offset && top < offset + heightSection){
-      links.forEach(link => {
-        link.classList.remove('actived');
-        document.querySelector(`header nav ul li a[href*='${idSection}']`).classList.add('actived');
-      })
-     }
+    if (top >= offset && top < offset + heightSection) {
+      links.forEach((link) => {
+        link.classList.remove("actived");
+        document
+          .querySelector(`header nav ul li a[href*='${idSection}']`)
+          .classList.add("actived");
+      });
+    }
+  });
+});
 
-   })
- })
+/* ANIMAÇÃO DE CLIQUE  */
 
-
- /* ANIMAÇÃO DE CLIQUE  */
-
-function scrollSection(event){
+function scrollSection(event) {
   event.preventDefault();
-  const href = event.currentTarget.getAttribute('href');
+  const href = event.currentTarget.getAttribute("href");
   const section = document.querySelector(href);
-  console.log("Section atual: ",section);
-  if(href == "#inicio"){
+  console.log("Section atual: ", section);
+  if (href == "#inicio") {
     let topSection = 0;
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  } else if (href == "#serviços"){
-    let topSection = section.offsetTop - 80 ;
+      behavior: "smooth",
+    });
+  } else if (href == "#serviços") {
+    let topSection = section.offsetTop - 80;
     window.scrollTo({
       top: topSection,
-      behavior: 'smooth'
-    })
+      behavior: "smooth",
+    });
   } else {
-  let topSection = section.offsetTop;
-  var alturaMenu = document.querySelector('.menu-mobile');
-  window.scrollTo({
-    top: topSection,
-    behavior: 'smooth'
-  })
-  console.log("altura", topSection);
- setTimeout(() =>{
-  alturaMenu.style.height = 0 ;
-  document.getElementById('btn-menu').classList.remove('ativo');
-  img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu - hamburguer.svg";
- }, 500);
-}
-}
-
-
-
-
-links.forEach(link => {
-  link.addEventListener('click', scrollSection);
-});
-
-
-// ANIMAÇÃO MENU HAMBURGUER
-const btn_menu = document.getElementById('btn-menu');
-const img_menu_hamburguer = document.getElementById('menu-hamburguer-img');
-const ativar_menu = () =>{
-  if(btn_menu.classList.toggle('ativo') == true){
-    img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu-close.svg"
-    document.querySelector('.menu-mobile').style.height = "250px";
-  } else {
-    img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu - hamburguer.svg";
-    document.querySelector('.menu-mobile').style.height = 0;
+    let topSection = section.offsetTop;
+    var alturaMenu = document.querySelector(".menu-mobile");
+    window.scrollTo({
+      top: topSection,
+      behavior: "smooth",
+    });
+    console.log("altura", topSection);
+    setTimeout(() => {
+      alturaMenu.style.height = 0;
+      document.getElementById("btn-menu").classList.remove("ativo");
+      img_menu_hamburguer.src =
+        "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+    }, 500);
   }
 }
 
+links.forEach((link) => {
+  link.addEventListener("click", scrollSection);
+});
 
-
-
-
+// ANIMAÇÃO MENU HAMBURGUER
+const btn_menu = document.getElementById("btn-menu");
+const img_menu_hamburguer = document.getElementById("menu-hamburguer-img");
+const ativar_menu = () => {
+  if (btn_menu.classList.toggle("ativo") == true) {
+    img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu-close.svg";
+    document.querySelector(".menu-mobile").style.height = "250px";
+  } else {
+    img_menu_hamburguer.src =
+      "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+    document.querySelector(".menu-mobile").style.height = 0;
+  }
+};
 
 /* ANIMAÇÃO DE DIMINUIR O MENU */
 var resolucao = window.screen.width;
-var navMenu = document.querySelector('.navMenu');
-var menuTamanhoMaior = '120px';
-var menuTamanhoMaior768p = '100px'
-var menuTamanhoMenor = '80px';
-var tamanhoMenu =  navMenu.offsetHeight;
+var navMenu = document.querySelector(".navMenu");
+var menuTamanhoMaior = "120px";
+var menuTamanhoMaior768p = "100px";
+var menuTamanhoMenor = "80px";
+var tamanhoMenu = navMenu.offsetHeight;
 console.log(tamanhoMenu);
-window.addEventListener('scroll', () => {
+window.addEventListener("scroll", () => {
   let x = window.scrollY;
   console.log(x);
-  if(x>=200){
-  
-      navMenu.style.height = menuTamanhoMenor;
-      console.log(navMenu.style.height);
-    
+  if (x >= 200) {
+    navMenu.style.height = menuTamanhoMenor;
+    console.log(navMenu.style.height);
+  } else {
+    navMenu.style.height = tamanhoMenu + "px";
   }
-
-  else{
-   
-      navMenu.style.height = tamanhoMenu + 'px';
-
-  }
-})
-
+});
 
 /* ANIMAÇÃO DE DIMINUIR O MENU - QUANDO MUDAR A RESOLUÇÃO*/
 
-window.addEventListener('resize', ()=>{
- 
+window.addEventListener("resize", () => {
   var resolucao = window.screen.width;
 
-  
-  if(resolucao>1366){
+  if (resolucao > 1366) {
     console.log(resolucao);
-    navMenu.style.height = '120px';
-  }
-  else if(resolucao<=1366){
-    navMenu.style.height = '100px';
-  
+    navMenu.style.height = "120px";
+  } else if (resolucao <= 1366) {
+    navMenu.style.height = "100px";
   }
 
-  
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     let x = window.scrollY;
     console.log(x);
-    if(x>=200){
-    
-        navMenu.style.height = menuTamanhoMenor;
-       
-      
-    }
-  
-    else if(x<200 && resolucao > 1366){
-     
-        navMenu.style.height = menuTamanhoMaior;
-     
-    }else {
+    if (x >= 200) {
+      navMenu.style.height = menuTamanhoMenor;
+    } else if (x < 200 && resolucao > 1366) {
+      navMenu.style.height = menuTamanhoMaior;
+    } else {
       navMenu.style.height = menuTamanhoMaior768p;
     }
-  })
-
-})
-
-
-
-
-
+  });
+});
 
 // ANIMAÇÃO DE DIGITAÇÃO SLOGAN
 
 //texto que sera digitao e apagado
-const texto_apresentação = "Seu site, sua cara, nosso talento!"
+const texto_apresentação = "Seu site, sua cara, nosso talento!";
 
 //Função para escrever o texto
-function escrever(texto, elemento){
- //Cria um array com o texto invertido
-  const texto_reverso_array = texto.split('').reverse();
-  
- const intervalo_digitação = setInterval(()=>{
-     //verifica se o array com o texto invertido está vazio 
-    if(texto_reverso_array.length == ''){
-      clearInterval(intervalo_digitação) // limpa o intervalo
-      setTimeout(apagar, 1000)
-      return
+function escrever(texto, elemento) {
+  //Cria um array com o texto invertido
+  const texto_reverso_array = texto.split("").reverse();
+
+  const intervalo_digitação = setInterval(() => {
+    //verifica se o array com o texto invertido está vazio
+    if (texto_reverso_array.length == "") {
+      clearInterval(intervalo_digitação); // limpa o intervalo
+      setTimeout(apagar, 1000);
+      return;
     }
     //Pega o ultimo elemento do array invertido, exibe na tela e remove
-    const proxima_letra = texto_reverso_array.pop()
+    const proxima_letra = texto_reverso_array.pop();
     elemento.innerHTML += proxima_letra;
-
- }, 90);
+  }, 90);
 }
 
+//Função para apagar o texto
 
-//Função para apagar o texto 
-
-function apagar(){
-  const elemento = document.getElementById('titulo-apresentação')
-  const texto_separado_array = elemento.innerHTML.split('')
-  const deletar = setInterval(()=>{
-    if(!texto_separado_array.length){
-       clearInterval(deletar)
-       escrever(texto_apresentação,elemento)
-       return
+function apagar() {
+  const elemento = document.getElementById("titulo-apresentação");
+  const texto_separado_array = elemento.innerHTML.split("");
+  const deletar = setInterval(() => {
+    if (!texto_separado_array.length) {
+      clearInterval(deletar);
+      escrever(texto_apresentação, elemento);
+      return;
     }
-    texto_separado_array.pop()
-    elemento.innerHTML = texto_separado_array.join('')
-  },50)
+    texto_separado_array.pop();
+    elemento.innerHTML = texto_separado_array.join("");
+  }, 50);
 }
 
 //Inicio da função
-escrever(texto_apresentação, document.getElementById('titulo-apresentação'))
+escrever(texto_apresentação, document.getElementById("titulo-apresentação"));

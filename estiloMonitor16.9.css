@@ -48,13 +48,18 @@
   }
 
   #imagem-apresentação {
-    width: 569.16px;
+    /* width: 569.16px;
     height: 569.16px;
-    margin-top: -30px;
+    object-fit: cover;
+    margin-top: -30px; */
+    width: auto;
+    height: 100%;
+    
   }
 
   .apresentacao {
     height: calc(100vh - 100px);
+    
     margin-top: -20px;
   }
 
