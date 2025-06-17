@@ -36,7 +36,10 @@
   /* MENU DE NAVEGAÇÃO */
   .header-desktop {
     display: none;
+   
   }
+
+
   .header-mobile {
     width: 100vw;
     display: block;
@@ -153,20 +156,25 @@
     width: 100vw;
     margin: 0;
 
-    position: absolute;
+    
   }
 
   #titulo-apresentação {
     font-size: 30px;
   }
 
-  .apresentacao > * {
+  .apresentacao  {
+    display: flex;
+    flex-direction: column;
   }
 
   #imagem-apresentação {
-    margin-top: 100px !important;
+    /* margin-top: 100px !important;
     width: 320px !important;
-    height: 320px !important;
+    height: 320px !important; */
+    margin-top: 0 !important; 
+    max-width: 75%;
+    max-height: fit-content;
   }
 
   section {

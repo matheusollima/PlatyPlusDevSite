@@ -1,28 +1,17 @@
-/*Mensagem de Bom dia/tarde/noite 
 
-function msgDia(){
-    const tempoAtual = new Date();
-    const horaAtual = tempoAtual.getHours();
-    
-    if(horaAtual>=18 && horaAtual<5){
-        document.getElementById("msgDia").innerHTML = "Boa noite";
-    }else if(horaAtual>=5 && horaAtual<=12){
-        document.getElementById("msgDia").innerHTML = "Bom dia";
-    }else if(horaAtual>12 && horaAtual<18){
-        document.getElementById("msgDia").innerHTML = "Boa tarde";
-    }
-     
-}
-msgDia();
-
-*/
 
 // OCULTAR O MENU
 
-var header = document.querySelector("header");
-var isHeaderHidden = false;
-var i = 0;
-
+var header = document.querySelector(".header-desktop");
+var is_mobile;
+function ismobile(){
+  return window.innerWidth <= 768
+}
+is_mobile = ismobile();
+console.log(is_mobile);
+if(is_mobile == false){
+  window.addEventListener("scroll", onScroll);
+}
 function onScroll() {
   let section = document.getElementById("tecnologias");
   let sectionTop = section.offsetTop;
@@ -30,30 +19,30 @@ function onScroll() {
 
   if (scrollPosition >= sectionTop) {
     header.style.display = "none";
-  } else {
-    header.style.display = "block";
-  }
+  
+  }else {
+     header.style.display = "block"; }
 }
-// onScroll();
 
-window.addEventListener("scroll", onScroll);
 
-var debouncedOnScroll = debounce(onScroll, 50);
-window.addEventListener("scroll", debouncedOnScroll);
 
-function debounce(fn, delay) {
-  var timer = null;
 
-  return function () {
-    var context = this,
-      args = arguments;
-    clearTimeout(timer);
+// var debouncedOnScroll = debounce(onScroll, 50);
+// window.addEventListener("scroll", debouncedOnScroll);
 
-    timer = setTimeout(function () {
-      fn.apply(context, args);
-    }, delay);
-  };
-}
+// function debounce(fn, delay) {
+//   var timer = null;
+
+//   return function () {
+//     var context = this,
+//       args = arguments;
+//     clearTimeout(timer);
+
+//     timer = setTimeout(function () {
+//       fn.apply(context, args);
+//     }, delay);
+//   };
+// }
 
 /*  DESCOBRIR ALTURA SECTION SOBRE  */
 
