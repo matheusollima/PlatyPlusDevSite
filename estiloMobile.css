@@ -434,7 +434,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
-
+    
     /* Criar o efeito contínuo */
     animation: slide 14s infinite linear;
     width: max-content; /* Necessário para o fluxo contínuo */
@@ -453,13 +453,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 160px; /* Tamanho consistente para o retângulo */
     box-sizing: border-box; /* Garantir que padding não afete tamanho */
+    height: 200px;
   }
 
   .item-container img {
-    width: 100%; /* Ajusta a largura da imagem ao container */
+    width: 50%; /* Ajusta a largura da imagem ao container */
     height: auto; /* Mantém proporção correta */
+    justify-self: center;
   }
 
   .item-container label {
@@ -468,6 +471,7 @@
     margin-top: 10px;
     text-align: center; /* Centraliza o texto */
     font-size: 20px;
+    justify-self: end;
   }
 
   @keyframes slide {
