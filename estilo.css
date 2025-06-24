@@ -33,7 +33,11 @@
 #imagem-apresentação {
   width: auto;
     height: 100%;
-    
+     filter:
+      drop-shadow(0 0 1px #39ff14)
+      drop-shadow(0 0 1px #39ff14)
+      drop-shadow(0 0 12px #39ff14);
+   border-radius: 1%;
  
 }
 
