@@ -183,9 +183,11 @@
  }
 
   #titulo-apresentação {
-    font-size: 30px;
+    font-size: 23px !important;
     width: 100%;
-
+    padding-top: 50%;
+    justify-self: center;
+    align-self: center;
     white-space: nowrap;
     
   }
@@ -193,7 +195,7 @@
   #texto-apresentação a {
     width: 100%;  
     justify-self: center;
-    align-self: start;
+    align-self: end;
     
   }
 
@@ -206,8 +208,8 @@
     
   }
   .apresentacao  {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-direction: column-;
     margin: 0;
     justify-content: start;
     align-items: center ;
@@ -222,7 +224,7 @@
 
 
  #img-container{
-
+  grid-area: imagem;
   width: 100%;
  }
 
