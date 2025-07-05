@@ -42,7 +42,7 @@
 
   .header-mobile {
     width: 100vw;
-    display: none;
+    display: block;
     box-sizing: border-box;
     height: auto !important;
    
@@ -211,7 +211,7 @@
     margin: 0;
     justify-content: start;
     align-items: center ;
-    gap: 1%;
+    gap: 0;
     
   }
 
@@ -251,6 +251,10 @@
     padding-top: 0;
     height: calc(100vh - 12vh) !important;
   }
+
+ .apresentacao > * {
+  border: solid 3px blue;
+ }
 
   .titulo-section {
     font-size: 30px !important;
