@@ -42,7 +42,7 @@
 
   .header-mobile {
     width: 100vw;
-    display: block;
+    display: none;
     box-sizing: border-box;
     height: auto !important;
    
@@ -245,7 +245,7 @@
     /* overflow-y: hidden; */
 
     /* flex-direction: column-reverse; */
-    position: relative;
+    position: absolute;
     top: 0;
 
     padding-top: 0;
