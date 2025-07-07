@@ -47,6 +47,13 @@
     font-size: 40px;
   }
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  
+}
+
   #imagem-apresentação {
     /* width: 569.16px;
     height: 569.16px;
@@ -61,7 +68,11 @@
     height: calc(100vh - 100px);
     width: 100vw;
     margin-top: -20px;
-    display: flex;
+      display: grid;
+  
+  grid-template-areas:
+  "titulo  imagem"
+  "botao   imagem";
   }
 
   .navMenu {

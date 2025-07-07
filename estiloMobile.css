@@ -226,6 +226,7 @@
  #img-container{
   grid-area: imagem;
   width: 100%;
+  background-color: red;
  }
 
   #imagem-apresentação {

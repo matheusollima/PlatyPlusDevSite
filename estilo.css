@@ -9,11 +9,13 @@ html {
 
 .apresentacao {
   height: calc(100vh - 120px);
-  width: 100vw;
+  max-width: 100%;
   display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
   grid-template-areas:
-  "titulo titulo imagem"
-  "botao botao  imagem";
+  "titulo  imagem"
+  "botao   imagem";
 
   justify-content: center;
   background-color: #121412;
@@ -26,28 +28,25 @@ html {
    border: solid 3px green;
 }
 
-#img-container {
-  grid-area: imagem;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
+#titulo-container {
+  grid-area: titulo;
 }
 
 
 #titulo-apresentação {
-  grid-area: titulo;
+  
   color: #39ff14;
   justify-self: center;
   margin-top: 15%;
-  width: 50%;
   white-space: nowrap;
 }
 
 #botao-apresentação {
   grid-area: botao;
   height: auto;
-  width: 50%;
+  width: 100%;
   overflow-y: hidden;
   background-color: transparent;
   color: white;
@@ -103,12 +102,18 @@ html {
   }
 }
 
-
+#img-container {
+  grid-area: imagem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 #imagem-apresentação {
   width: auto;
-  height: 70%;
+  height: 75%;
+  
   filter:
     drop-shadow(0 0 1px #39ff14) drop-shadow(0 0 1px #39ff14) drop-shadow(0 0 12px #39ff14);
   border-radius: 1%;
