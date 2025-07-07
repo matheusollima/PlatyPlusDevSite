@@ -6,7 +6,7 @@
   }
 
   body {
-    overflow-x: hidden !important;
+  
     width: 100vw !important;
   }
 
@@ -21,13 +21,6 @@
     width: 100vw;
   }
 
-  #titulo-apresentação {
-    font-size: 25px !important;
-    position: relative;
-
-    top: -10px;
-    z-index: 999;
-  }
 
   #lorem {
     display: none;
@@ -156,77 +149,59 @@
 .section#inicio{
   padding: 0;
   margin-top: 12vh;
-  
+  border: solid 5px brown;
 }
 
-
-  #texto-apresentação {
-    /* overflow-y: hidden; */
-    height: 50%;
-    width: 100%;
+   section.apresentacao {
     margin: 0;
-    display: grid;
-    gap: 0;
-    flex-direction: column;
-    align-items: start;
+    width: 100vw;
+    height: calc(100vh - 12vh) !important;
     justify-content: center;
-    padding: 0;
-    box-sizing: border-box;
-    padding-top: 10%;
-    overflow-x: hidden;
-    
+    align-items: start;
+    gap: 0;
+    background-color: red;
+    border: solid 3px purple;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 100vw;
+    grid-template-rows: calc(100% / 3);
+    grid-template-areas:
+    "titulo"
+    "imagem"
+    "botao"; 
   }
 
- #texto-apresentação > * {
-   margin: 0 !important;
-   width: 100%;
+ .apresentacao > * {
+  border: solid 3px blue;
  }
+
+
+
+
+/* TITULO */
+
+  .titulo-container {
+    grid-area: titulo;
+    background-color: green;
+  
+  }
 
   #titulo-apresentação {
-    font-size: 23px !important;
-    width: 100%;
-    padding-top: 50%;
-    justify-self: center;
-    align-self: center;
+    font-size: 25px !important;
+    z-index: 999;
     white-space: nowrap;
-    
-  }
-
-  #texto-apresentação a {
-    width: 100%;  
-    justify-self: center;
-    align-self: end;
-    
-  }
-
-  .botao-orcamento {
-    font-size: 25px;
-    white-space: nowrap;
-    height: 20%;
-    padding: 5% 13%;
-    
-    
-  }
-  .apresentacao  {
-    display: grid;
-    flex-direction: column-;
     margin: 0;
-    justify-content: start;
-    align-items: center ;
-    gap: 0;
-    
   }
 
- .apresentacao >  div  {
-  width: 100% !important;
-  height: 50%;
- }
+/* IMAGEM */ 
 
 
  #img-container{
   grid-area: imagem;
-  width: 100%;
-  background-color: red;
+  width: 100vw;
+  background-color: rgb(55, 0, 255);
+  border: solid 4px orange;
+  align-self: start;
  }
 
   #imagem-apresentação {
@@ -236,32 +211,31 @@
     
   }
 
+
+  /* BOTÃO */
  
+
+
+  .botao-container {
+    grid-area: botao;
+  }
+
+  .botao-orcamento {
+    font-size: 25px;
+    white-space: nowrap;
+    height: 20%;
+    padding: 5% 13%;
+  }
+
+
+
   section {
     height: calc(100vh - 12vh) !important;
   }
 
-  section.apresentacao {
-    margin: 0;
-    width: 100%;
 
-    /* overflow-y: hidden; */
 
-    /* flex-direction: column-reverse; */
-    position: absolute;
-    top: 0;
 
-    padding-top: 0;
-    height: calc(100vh - 12vh) !important;
-  }
-
- .apresentacao > * {
-  border: solid 3px blue;
- }
-
-  .titulo-section {
-    font-size: 30px !important;
-  }
 
   .section {
     margin: 0;

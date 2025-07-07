@@ -9,14 +9,13 @@ html {
 
 .apresentacao {
   height: calc(100vh - 120px);
-  width: 100vw !important;
+  width: 100vw;
   display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
   grid-template-areas:
   "titulo  imagem"
   "botao   imagem";
-
   justify-content: center;
   background-color: #121412;
   
@@ -43,7 +42,7 @@ html {
   white-space: nowrap;
 }
 
-#botao-apresentação {
+#botao-container {
   grid-area: botao;
   height: auto;
   width: 100%;
@@ -107,6 +106,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 
