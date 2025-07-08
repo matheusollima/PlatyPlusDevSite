@@ -169,7 +169,7 @@
   }
 
  .apresentacao > * {
-  border: solid 3px red;
+  border: solid 3px rgb(102, 255, 0);
  }
 
 
@@ -204,7 +204,7 @@
 
   #imagem-apresentação {
     margin-top: 0 !important; 
-    height: 80% !important;
+    height: 100% !important;
     /* max-height: fit-content; */
     
   }
@@ -222,7 +222,7 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    padding: 0;
+    margin-top: -2%;
     position: relative;
     /* margin-top: -10% */
   }
