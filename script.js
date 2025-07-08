@@ -88,7 +88,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* ANIMAÇÃO DE CLIQUE  */
+/* ANIMAÇÃO PARA FECHAR O MENU - MOBILE APÓS CLICAR EM ALGUMA DAS OPÇÕES  */
 
 function scrollSection(event) {
   event.preventDefault();
@@ -98,9 +98,10 @@ function scrollSection(event) {
   if (href == "#inicio") {
     let topSection = 0;
     window.scrollTo({
-      top: 0,
+      top: 5,
       behavior: "smooth",
     });
+  alert("olá, mundo!");
   } else if (href == "#serviços") {
     let topSection = section.offsetTop - 80;
     window.scrollTo({
@@ -127,6 +128,7 @@ function scrollSection(event) {
 links.forEach((link) => {
   link.addEventListener("click", scrollSection);
 });
+
 
 // ANIMAÇÃO MENU HAMBURGUER
 const btn_menu = document.getElementById("btn-menu");
