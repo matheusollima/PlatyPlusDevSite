@@ -135,7 +135,11 @@ loadShow();
 
 // FUNÇÃO CLIQUE DOS ITEMS DO PAINEL SERVIÇOS
 
-
+let layer = document.querySelector(".serviço-layer");
+let servico_texto = document.querySelector(".serviço-texto");
+layer.addEventListener('click', function(){
+  servico_texto.style.top = 0;
+})
 function clique(item){
   const item_clicado = item.currentTarget;
   const servico_texto = document.querySelectorAll('.serviço-texto');

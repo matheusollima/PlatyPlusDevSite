@@ -277,6 +277,12 @@
 
   /*///////////////////////// SERVIÇOS ///////////////////////////////*/
 
+  .serviço-layer {
+    width: 100vw;
+    height: 200vw;
+    position: absolute;
+    top: 0;
+  }
   section#serviços {
     height: 100vh !important;
     min-width: 100vw !important;
@@ -287,6 +293,7 @@
     box-sizing: border-box;
     flex-direction: column;
     margin-top: 0 !important;
+    position: relative;
   }
 
   #serviços-hidden {
