@@ -147,7 +147,7 @@ function clique(servico){
   if(ativo == false){
      servico_clicado.style.top = 0;
      ativo = true;
-  } else {
+  } else if(ativo == true) {
      servico_clicado.style.top = "600px";
      ativo = false;
 
