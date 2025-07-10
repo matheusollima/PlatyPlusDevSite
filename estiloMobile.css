@@ -1,4 +1,8 @@
-@media (min-width: 320px) and (min-height: 480px) {
+
+
+/* ------------------------------------------------POSIÇÃO VERTICAL------------------------------------------------ */
+
+@media (min-width: 320px) and (min-height: 480px)  {
   html {
     box-sizing: border-box;
     width: 100vw;
@@ -1111,5 +1115,91 @@
   }
   .nmSocial {
     display: block;
+  }
+}
+
+/* ------------------------------------------------POSIÇÃO VERTICAL------------------------------------------------ */
+@media screen and (orientation: landscape) and (max-height: 480px) {
+  html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .container,
+  .header-mobile,
+  .navMenu-mobile,
+  .menu-mobile,
+  section,
+  #painel-serviços,
+  #painelTecnologias,
+  #formulario-contato {
+    width: 100vw !important;
+    height: auto !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  section.apresentacao {
+    grid-template-columns: 1fr 1fr; /* Divide horizontalmente */
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "imagem titulo"
+      "botao botao";
+    height: 100vh;
+    padding: 5%;
+  }
+
+  .titulo-container {
+    grid-area: titulo;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5%;
+  }
+
+  #img-container {
+    grid-area: imagem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #imagem-apresentação {
+    height: 60vh;
+    width: auto;
+  }
+
+  #botao-container {
+    grid-area: botao;
+    justify-content: center;
+    padding-top: 5%;
+  }
+
+  .botao-orcamento {
+    position: relative;
+    transform: none;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* Tecnologias */
+  #tecnologia-front-div ul,
+  #tecnologia-back-div ul,
+  #tecnologia-database-div ul {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* Rodapé e formulário */
+  .formContato {
+    width: 80vw !important;
+    height: auto;
+  }
+
+  #midiasSociais {
+    display: flex !important;
+    justify-content: center;
+    gap: 20px;
   }
 }

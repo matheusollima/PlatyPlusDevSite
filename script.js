@@ -95,27 +95,48 @@ function scrollSection(event) {
   const href = event.currentTarget.getAttribute("href");
   const section = document.querySelector(href);
   console.log("Section atual: ", section);
+var alturaMenu = document.querySelector(".menu-mobile");
+
+
   if (href == "#inicio") {
     let topSection = 0;
     window.scrollTo({
-      top: 5,
+      top: 0,
       behavior: "smooth",
     });
-  alert("olá, mundo!");
-  } else if (href == "#serviços") {
+       setTimeout(() => {
+      alturaMenu.style.height = 0;
+      document.getElementById("btn-menu").classList.remove("ativo");
+      img_menu_hamburguer.src =
+        "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+    }, 500);
+  } 
+  
+  
+
+  else if (href == "#serviços") {
     let topSection = section.offsetTop - 80;
     window.scrollTo({
       top: topSection,
       behavior: "smooth",
     });
-  } else {
+       setTimeout(() => {
+      alturaMenu.style.height = 0;
+      document.getElementById("btn-menu").classList.remove("ativo");
+      img_menu_hamburguer.src =
+        "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+    }, 500);
+  } 
+  
+  
+  else {
     let topSection = section.offsetTop;
-    var alturaMenu = document.querySelector(".menu-mobile");
+    
     window.scrollTo({
       top: topSection,
       behavior: "smooth",
     });
-    console.log("altura", topSection);
+
     setTimeout(() => {
       alturaMenu.style.height = 0;
       document.getElementById("btn-menu").classList.remove("ativo");
@@ -123,7 +144,19 @@ function scrollSection(event) {
         "./imgs/front-end/menu-icos/menu - hamburguer.svg";
     }, 500);
   }
-}
+
+
+    console.log("altura", topSection);
+
+
+
+    
+
+
+
+
+  }
+
 
 links.forEach((link) => {
   link.addEventListener("click", scrollSection);
