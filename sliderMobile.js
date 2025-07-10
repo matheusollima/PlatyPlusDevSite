@@ -145,7 +145,7 @@ function clique(servico){
   const servico_clicado = servico.currentTarget;
   if(ativo == false){
      servico_clicado.style.top = "600px";
-     ative = true;
+     ativo = true;
   } else {
      servico_clicado.style.top = 0;
   }
