@@ -137,12 +137,19 @@ loadShow();
 
 let layer = document.querySelector(".serviço-layer");
 let servico_texto = document.querySelector(".serviço-texto");
+let ativo = false;
 layer.addEventListener('click', function(){
   servico_texto.style.top = 0;
 })
 function clique(servico){
   const servico_clicado = servico.currentTarget;
-  servico_clicado.style.top = "600px";
+  if(ativo == false){
+     servico_clicado.style.top = "600px";
+     ative = true;
+  } else {
+     servico_clicado.style.top = 0;
+  }
+ 
   
 }
 
