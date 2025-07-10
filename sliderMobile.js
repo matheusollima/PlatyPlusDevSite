@@ -143,8 +143,7 @@ layer.addEventListener('click', function(){
 function clique(item){
   const item_clicado = item.currentTarget;
   const servico_texto = document.querySelectorAll('.serviço-texto');
-  console.log(servico_texto);
-  console.log(item_clicado);
+  item_clicado.style.top = 0;
 }
 
 items.forEach(function(item) {
