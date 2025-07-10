@@ -364,7 +364,7 @@
     border: solid 1px rgb(0, 255, 55);
     
   }
-
+  
   .serviço-texto * {
     box-sizing: border-box !important;
     right: 0 !important;
@@ -373,6 +373,11 @@
     height: auto !important;
     top: 0 !important;
     display: block !important;
+  }
+
+  .serviço-texto h2 {
+    
+    margin-top: 10% !important;
   }
 
   .slider-mobile {

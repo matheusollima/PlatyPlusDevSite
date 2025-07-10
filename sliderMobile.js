@@ -127,3 +127,22 @@ document.querySelectorAll('.item-container img').forEach((img) => {
 
 // Carrega a exibição inicial
 loadShow();
+
+
+
+
+
+
+// FUNÇÃO CLIQUE DOS ITEMS DO PAINEL SERVIÇOS
+
+
+function clique(item){
+  const item_clicado = item.currentTarget;
+  const servico_texto = document.querySelectorAll('.serviço-texto');
+  console.log(servico_texto);
+  console.log(item_clicado);
+}
+
+items.forEach(function(item) {
+  item.addEventListener('click', clique);
+})
