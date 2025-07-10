@@ -142,7 +142,7 @@ layer.addEventListener('click', function(){
 })
 function clique(servico){
   const servico_clicado = servico.currentTarget;
-  servico_clicado.style.top = 0;
+  servico_clicado.style.top = 600;
   
 }
 
