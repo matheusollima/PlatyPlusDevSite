@@ -140,12 +140,13 @@ let servico_texto = document.querySelector(".serviço-texto");
 layer.addEventListener('click', function(){
   servico_texto.style.top = 0;
 })
-function clique(item){
-  const item_clicado = item.currentTarget;
-  const servico_texto = document.querySelectorAll('.serviço-texto');
-  item_clicado.style.top = 0;
+function clique(servico){
+  const servico_clicado = servico.currentTarget;
+  servico_clicado.style.top = 0;
+  
 }
 
-items.forEach(function(item) {
-  item.addEventListener('click', clique);
+servicos = document.querySelectorAll(".serviço-texto");
+servicos.forEach(function(servico) {
+  servico.addEventListener('click', clique);
 })
