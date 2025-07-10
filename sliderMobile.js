@@ -140,14 +140,17 @@ let servico_texto = document.querySelector(".serviço-texto");
 let ativo = false;
 layer.addEventListener('click', function(){
   servico_texto.style.top = 0;
+  ativo = false;
 })
 function clique(servico){
   const servico_clicado = servico.currentTarget;
   if(ativo == false){
-     servico_clicado.style.top = "600px";
+     servico_clicado.style.top = 0;
      ativo = true;
   } else {
-     servico_clicado.style.top = 0;
+     servico_clicado.style.top = "600px";
+     ativo = false;
+
   }
  
   
