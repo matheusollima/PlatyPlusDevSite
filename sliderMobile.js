@@ -142,16 +142,12 @@ layer.addEventListener('click', function(){
   servico_texto.style.top = 0;
   ativo = false;
 })
+
+
+
 function clique(servico){
   const servico_clicado = servico.currentTarget;
-  if(ativo == false){
-     servico_clicado.style.top = 0;
-     ativo = true;
-  } else if(ativo == true) {
-     servico_clicado.style.top = "600px";
-     ativo = false;
-
-  }
+  servico_clicado.style.top = "600px";
  
   
 }
@@ -161,4 +157,10 @@ servicos.forEach(function(servico) {
   servico.addEventListener('click', clique);
 })
 
-items.forEach()
+items.forEach(function(item){
+  item.addEventListener('click', function(item){
+    const item_clicado = item.currentTarget;
+    let servico_texto = document.querySelector(".serviço-texto");
+    servico_texto.style.top = 0;
+  })
+})
