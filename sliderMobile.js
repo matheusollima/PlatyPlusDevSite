@@ -160,3 +160,5 @@ servicos = document.querySelectorAll(".serviço-texto");
 servicos.forEach(function(servico) {
   servico.addEventListener('click', clique);
 })
+
+items.forEach()
