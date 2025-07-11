@@ -51,9 +51,12 @@
     <!-- MENU MOBILE -->
     <header class="header-mobile" id="header-mobile">
         <nav class="navMenu-mobile">
-            <div id="logo-mobile-div">
-                <img id="logo-mobile-img" src="imgs\logo - oficial.svg" alt="">
-            </div>
+            <a href="#inicio" style = "margin: 0; padding: 0; display: flex; flex-direction: row; align-items: center;">
+                <div id="logo-mobile-div">
+                    <img id="logo-mobile-img" src="imgs\logo - oficial.svg" alt="">
+                </div>
+            </a>
+
             <button id="btn-menu" onclick='ativar_menu()'><img id='menu-hamburguer-img'
                     src="./imgs/front-end/menu-icos/menu - hamburguer.svg" alt=""></button>
 
@@ -62,7 +65,7 @@
                 <li><a href="#inicio" class="js-link actived">Inicio </a></li>
                 <li><a href="#serviços" class="js-link">Serviços</a></li>
                 <li><a href="#tecnologias" class="js-link">Tecnologias</a></li>
-                 <li><a href="#projetos" class="js-link">Projetos</a> </li>
+                <li><a href="#projetos" class="js-link">Projetos</a> </li>
                 <li><a href="#sobre" class="js-link">Sobre</a> </li>
                 <li><a href="#rodape" class="js-link">Contato</a> </li>
             </ul>
@@ -81,13 +84,16 @@
     <main id="home">
         <section class="section" id="inicio">
             <section class="apresentacao">
-                <div class = "titulo-container"><h1 id="titulo-apresentação"></h1></div>
+                <div class="titulo-container">
+                    <h1 id="titulo-apresentação"></h1>
+                </div>
                 <div id="botao-container">
                     <a href="#rodape">
                         <button class="botao-orcamento">Faça um orçamento</button>
                     </a>
                 </div>
-                <div id = "img-container"><img src="imgs/platypus-laptop.png" alt="" id="imagem-apresentação" draggable="false"></div>
+                <div id="img-container"><img src="imgs/platypus-laptop.png" alt="" id="imagem-apresentação"
+                        draggable="false"></div>
             </section>
         </section>
     </main>
@@ -99,10 +105,10 @@
             <h2 id='serviços-subtitulo01'>Fornecemos estes serviços para atender as suas necessidades</h2>
 
             <!-- PAINEL - DESKTOP-->
-            <div class="desktop" id="painel-serviços"> 
+            <div class="desktop" id="painel-serviços">
                 <!-- SOFTWARES -->
                 <div class="painel-software">
-                    
+
                     <div class='painel-software-div' id='site-i-div'>
                         <div class='serviço-texto' id='site-i'>
                             <h2>Site institucional</h2>
@@ -248,7 +254,7 @@
             <!-- PAINEL SLIDER - MOBILE - SOFTWARES -->
             <div class="slider-mobile">
                 <div class='item' id='site-i-div'>
-                    <div class='serviço-texto' >
+                    <div class='serviço-texto'>
                         <h2>Site institucional</h2>
                         <p>Um site institucional é como o cartão de visitas virtual da sua empresa ou organização. É
                             onde você apresenta quem você é, o que faz e por que alguém deveria se interessar pelo que
@@ -284,7 +290,7 @@
                 </div>
 
                 <div class='item' id='web-system-div'>
-                    <div class='serviço-texto' >
+                    <div class='serviço-texto'>
                         <h2>Sistema Web</h2>
                         <p>Um sistema web é uma aplicação de software que opera na internet, acessível por meio de um
                             navegador da web. Aqui estão os principais pontos sobre sistemas</p>
