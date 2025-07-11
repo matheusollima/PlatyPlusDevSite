@@ -416,6 +416,14 @@
     aspect-ratio: 8 / 12 !important;
   }
 
+ .item h3 {
+  text-align: center;
+  font-family: "roboto";
+  font-size: 150%;
+  color: green;
+  margin-top: 15%;
+ }
+
   .item:nth-child(8) {
     z-index: 99999;
   }

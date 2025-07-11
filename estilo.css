@@ -617,6 +617,13 @@ main section h1 {
   cursor: pointer;
 }
 
+.painel-software-div h3 {
+  color: green;
+  text-align: center;
+  font-family: "roboto";
+}
+
+
 .painel-software-div:nth-child(6) {
   grid-column: 2;
 }
