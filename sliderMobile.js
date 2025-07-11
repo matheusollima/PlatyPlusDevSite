@@ -152,15 +152,20 @@ function clique(servico){
   
 }
 
-servicos = document.querySelectorAll(".serviço-texto");
+let servicos = document.querySelectorAll(".serviço-texto");
 servicos.forEach(function(servico) {
   servico.addEventListener('click', clique);
 })
 
 items.forEach(function(item){
   item.addEventListener('click', function(item){
-    const item_clicado = item.currentTarget;
-    let servico_texto = document.querySelector(".serviço-texto");
+    let item_atual = item.currentTarget;
+    let id = item_atual.id;
+    let elemento = document.getElementById(id);
+    let servico_texto = elemento.querySelector(".serviço-texto");
+    console.log(servico_texto);
     servico_texto.style.top = 0;
+    // let item_clicado = document.querySelector(item_atual ,".servico-texto");
+    // console.log(item_clicado);
   })
 })
