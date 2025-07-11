@@ -135,34 +135,20 @@ loadShow();
 
 // FUNÇÃO CLIQUE DOS ITEMS DO PAINEL SERVIÇOS
 
-let layer = document.querySelector(".serviço-layer");
 
-layer.addEventListener('click', function(){
-//  const servico = items.querySelector(".serviço-item");
-//  console.log(servico);
-//  servico.classList.remove("ativo");
-  items.forEach(function(item){
-    const servico = item.querySelector(".serviço-texto");
-    if(servico.classList.contains("ativo")){
+let slider = document.querySelector(".slider-mobile");
+document.addEventListener('click', function(event){
+  if(!slider.contains(event.target)){
+    const servicos = document.querySelectorAll(".serviço-texto");
+    console.log(typeof(servicos))
+   servicos.forEach(function(servico){
+    if (servico.classList.contains("ativo")){
       servico.classList.remove("ativo");
     }
-    
-  })
+   })
+  }
 })
 
-
-
-// function clique(servico){
-//   const servico_clicado = servico.currentTarget;
-//   servico_clicado.style.top = "600px";
- 
-  
-// }
-
-// let servicos = document.querySelectorAll(".serviço-texto");
-// servicos.forEach(function(servico) {
-//   servico.addEventListener('click', clique);
-// })
 
 items.forEach(function(item) {
   item.addEventListener('click', function() {
