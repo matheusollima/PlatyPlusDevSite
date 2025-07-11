@@ -135,13 +135,20 @@ loadShow();
 
 // FUNÇÃO CLIQUE DOS ITEMS DO PAINEL SERVIÇOS
 
-// let layer = document.querySelector(".serviço-layer");
-// let servico_texto = document.querySelector(".serviço-texto");
-// let ativo = false;
-// layer.addEventListener('click', function(){
-//   servico_texto.style.top = 0;
-//   ativo = false;
-// })
+let layer = document.querySelector(".serviço-layer");
+
+layer.addEventListener('click', function(){
+//  const servico = items.querySelector(".serviço-item");
+//  console.log(servico);
+//  servico.classList.remove("ativo");
+  items.forEach(function(item){
+    const servico = item.querySelector(".serviço-texto");
+    if(servico.classList.contains("ativo")){
+      servico.classList.remove("ativo");
+    }
+    
+  })
+})
 
 
 
@@ -157,15 +164,23 @@ loadShow();
 //   servico.addEventListener('click', clique);
 // })
 
-// items.forEach(function(item){
-//   item.addEventListener('click', function(item){
-//     let item_atual = item.currentTarget;
-//     let id = item_atual.id;
-//     let elemento = document.getElementById(id);
-//     let servico_texto = elemento.querySelector(".serviço-texto");
-//     console.log(servico_texto);
-//     servico_texto.style.top = "400px";
-//     // let item_clicado = document.querySelector(item_atual ,".servico-texto");
-//     // console.log(item_clicado);
-//   })
-// })
+items.forEach(function(item) {
+  item.addEventListener('click', function() {
+   const servico = item.querySelector(".serviço-texto");
+   servico.classList.add("ativo");
+  });
+});
+
+items.forEach(function(item) {
+  const servico = item.querySelector(".serviço-texto");
+
+  if (servico) {
+    console.log("teste", servico);
+    servico.addEventListener('click', function() {
+       event.stopPropagation();
+      if (servico.classList.contains("ativo")) {
+        servico.classList.remove("ativo");
+      }
+    });
+  }
+});
