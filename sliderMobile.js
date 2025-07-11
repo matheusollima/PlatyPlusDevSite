@@ -135,37 +135,37 @@ loadShow();
 
 // FUNÇÃO CLIQUE DOS ITEMS DO PAINEL SERVIÇOS
 
-let layer = document.querySelector(".serviço-layer");
-let servico_texto = document.querySelector(".serviço-texto");
-let ativo = false;
-layer.addEventListener('click', function(){
-  servico_texto.style.top = 0;
-  ativo = false;
-})
+// let layer = document.querySelector(".serviço-layer");
+// let servico_texto = document.querySelector(".serviço-texto");
+// let ativo = false;
+// layer.addEventListener('click', function(){
+//   servico_texto.style.top = 0;
+//   ativo = false;
+// })
 
 
 
-function clique(servico){
-  const servico_clicado = servico.currentTarget;
-  servico_clicado.style.top = "600px";
+// function clique(servico){
+//   const servico_clicado = servico.currentTarget;
+//   servico_clicado.style.top = "600px";
  
   
-}
+// }
 
-let servicos = document.querySelectorAll(".serviço-texto");
-servicos.forEach(function(servico) {
-  servico.addEventListener('click', clique);
-})
+// let servicos = document.querySelectorAll(".serviço-texto");
+// servicos.forEach(function(servico) {
+//   servico.addEventListener('click', clique);
+// })
 
-items.forEach(function(item){
-  item.addEventListener('click', function(item){
-    let item_atual = item.currentTarget;
-    let id = item_atual.id;
-    let elemento = document.getElementById(id);
-    let servico_texto = elemento.querySelector(".serviço-texto");
-    console.log(servico_texto);
-    servico_texto.style.top = 0;
-    // let item_clicado = document.querySelector(item_atual ,".servico-texto");
-    // console.log(item_clicado);
-  })
-})
+// items.forEach(function(item){
+//   item.addEventListener('click', function(item){
+//     let item_atual = item.currentTarget;
+//     let id = item_atual.id;
+//     let elemento = document.getElementById(id);
+//     let servico_texto = elemento.querySelector(".serviço-texto");
+//     console.log(servico_texto);
+//     servico_texto.style.top = "400px";
+//     // let item_clicado = document.querySelector(item_atual ,".servico-texto");
+//     // console.log(item_clicado);
+//   })
+// })
