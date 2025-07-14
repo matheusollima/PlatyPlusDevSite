@@ -67,7 +67,7 @@ const elementos = document.querySelectorAll(".hidden");
 elementos.forEach((element) => myObserver.observe(element));
 
 /* ANIMAÇÃO MENU - SCROLL   */
-let links = document.querySelectorAll(".js-link");
+let links = document.querySelectorAll(".botao-menu");
 let sections = document.querySelectorAll(".section");
 
 window.addEventListener("scroll", () => {
