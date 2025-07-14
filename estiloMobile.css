@@ -83,19 +83,31 @@
   .navMenu-mobile > {
   }
 
-  #logo-mobile-div {
-    position: static;
-    display: flex;
-    justify-content: center;
-  }
+    #logo-mobile-div {
+      padding: 0;
+      margin: 0;
+      border: 2px solid green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  #logo-mobile-img {
-    margin: 0;
-    position: relative;
-    width: 60%;
-    left: 7%;
-    overflow-x: hidden;
-  }
+    #logo-link {
+      display: inline-block; /* Link se ajusta ao tamanho da imagem */
+      padding: 0;
+      margin: 0;
+      border: 2px solid red;
+      text-decoration: none;
+    }
+
+    #logo-mobile-img {
+      display: block;         /* Remove espaços embaixo da imagem */
+      width: 50vw;           /* Tamanho fixo da imagem */
+      height: auto;           /* Mantém proporção */
+      margin: 0;
+    }
+
+
 
   #msgDia {
     display: none;
