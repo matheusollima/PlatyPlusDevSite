@@ -42,6 +42,7 @@
     display: block;
     box-sizing: border-box;
     height: auto !important;
+    
    
   }
 
@@ -57,7 +58,7 @@
     background-color: #1f221e;
     grid-template-columns: 70% 30%;
     border-bottom: 1px solid black;
-    z-index: 9999;
+    z-index: 100 !important;
      
   }
 
@@ -131,31 +132,46 @@
 
   .menu-mobile {
     width: 100vw;
-    height: 0;
+   height: 100vh !important;
     box-sizing: border-box;
     overflow: hidden;
     background-color: #1f221e;
-    position: absolute;
-    transition: 3s ease-in-out;
-    top: -300vh;
-    z-index: 9999999999999999999;
+    transition: 0.5s ease-in-out;
+    top: -100vh;
+    z-index: 10;
     display: grid;
     flex-direction: column;
     grid-template-columns: 100%;
+    grid-template-rows: repeat(7, calc(100% / 7));
+    position: fixed;
+    
   }
 
-  #btn-menu.ativo ~ .menu-mobile {
+  .menu-mobile.ativo {
     /* border-top: 0.5px solid rgb(0, 0, 0); */
-    height: 100vh !important;
     top: 12vh;
-    z-index: 99;
+
   }
 
-  .menu-mobile li {
+  .menu-mobile li{
     box-sizing: border-box;
     margin: 0;
-    height: auto;
+    height: ;
     border-bottom: dashed 2px rgb(46, 44, 44);
+    z-index: 10;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  }
+
+  .menu-mobile li a {
+    font-family: 'roboto';
+    text-decoration: none;
+    
+    color: white;
   }
 
   #menu-hamburguer-img {
@@ -203,6 +219,7 @@
    flex-direction: row;
    justify-content: center;
    align-items: center;
+   z-index: 7;
   }
 
   #titulo-apresentação {

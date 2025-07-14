@@ -169,12 +169,14 @@ const img_menu_hamburguer = document.getElementById("menu-hamburguer-img");
 const ativar_menu = () => {
   if (btn_menu.classList.toggle("ativo") == true) {
     img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu-close.svg";
-    document.querySelector(".menu-mobile").style.height = "250px";
+  
   } else {
     img_menu_hamburguer.src =
       "./imgs/front-end/menu-icos/menu - hamburguer.svg";
-    document.querySelector(".menu-mobile").style.height = 0;
+ 
   }
+  const menu = document.getElementById('menu-mobile');
+  menu.classList.toggle('ativo');
 };
 
 /* ANIMAÇÃO DE DIMINUIR O MENU */
