@@ -106,7 +106,7 @@ var alturaMenu = document.querySelector(".menu-mobile");
     });
        setTimeout(() => {
       alturaMenu.style.height = 0;
-      document.getElementById("btn-menu").classList.remove("ativo");
+      document.getElementById("menu-mobile").classList.remove("ativo");
       img_menu_hamburguer.src =
         "./imgs/front-end/menu-icos/menu - hamburguer.svg";
     }, 500);
@@ -122,7 +122,7 @@ var alturaMenu = document.querySelector(".menu-mobile");
     });
        setTimeout(() => {
       alturaMenu.style.height = 0;
-      document.getElementById("btn-menu").classList.remove("ativo");
+      document.getElementById("menu-mobile").classList.remove("ativo");
       img_menu_hamburguer.src =
         "./imgs/front-end/menu-icos/menu - hamburguer.svg";
     }, 500);
@@ -139,7 +139,7 @@ var alturaMenu = document.querySelector(".menu-mobile");
 
     setTimeout(() => {
       alturaMenu.style.height = 0;
-      document.getElementById("btn-menu").classList.remove("ativo");
+      document.getElementById("menu-mobile").classList.remove("ativo");
       img_menu_hamburguer.src =
         "./imgs/front-end/menu-icos/menu - hamburguer.svg";
     }, 500);
@@ -163,7 +163,7 @@ links.forEach((link) => {
 });
 
 
-// ANIMAÇÃO MENU HAMBURGUER
+// ANIMAÇÃO PARA ATIVAR MENU HAMBURGUER
 const btn_menu = document.getElementById("btn-menu");
 const img_menu_hamburguer = document.getElementById("menu-hamburguer-img");
 const ativar_menu = () => {
