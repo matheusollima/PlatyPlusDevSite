@@ -61,8 +61,8 @@ const myObserver = new IntersectionObserver((entries) => {
 const elementos = document.querySelectorAll(".hidden");
 elementos.forEach((element) => myObserver.observe(element));
 
-/* ANIMAÇÃO MENU - SCROLL   */
-let links = document.querySelectorAll(".botao-menu");
+/* ANIMAÇÃO MENU-SCROLL da barra colorida das opções do menu   */
+let linksDesktop = document.querySelectorAll('.js-link');
 let sections = document.querySelectorAll(".section");
 
 window.addEventListener("scroll", () => {
@@ -73,7 +73,7 @@ window.addEventListener("scroll", () => {
     let idSection = section.getAttribute("id");
 
     if (top >= offset && top < offset + heightSection) {
-      links.forEach((link) => {
+      linksDesktop.forEach((link) => {
         link.classList.remove("actived");
         document
           .querySelector(`header nav ul li a[href*='${idSection}']`)
@@ -83,7 +83,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* ANIMAÇÃO PARA FECHAR O MENU - MOBILE APÓS CLICAR EM ALGUMA DAS OPÇÕES  */
+/* ANIMAÇÃO PARA FECHAR O MENU-MOBILE APÓS CLICAR EM ALGUMA DAS OPÇÕES  */
 
 function scrollSection(event) {
   event.preventDefault();
@@ -96,7 +96,8 @@ function scrollSection(event) {
       behavior: "smooth",
     });
     setTimeout(() => {
-      document.getElementById("menu-mobile").toggle("ativo");
+      document.getElementById("menu-mobile").classList.toggle("ativo");
+      document.getElementById('menu-hamburguer-img').classList.toggle('ativo');
     }, 500);
   } else if (href == "#serviços") {
     let topSection = section.offsetTop - 80;
@@ -105,7 +106,8 @@ function scrollSection(event) {
       behavior: "smooth",
     });
     setTimeout(() => {
-      document.getElementById("menu-mobile").toggle("ativo");
+      document.getElementById("menu-mobile").classList.toggle("ativo");
+      document.getElementById('menu-hamburguer-img').classList.toggle('ativo');
     }, 500);
   } else {
     let topSection = section.offsetTop;
@@ -116,13 +118,14 @@ function scrollSection(event) {
     });
 
     setTimeout(() => {
-      document.getElementById("menu-mobile").toggle("ativo");
+      document.getElementById("menu-mobile").classList.toggle("ativo");
+      document.getElementById('menu-hamburguer-img').classList.toggle('ativo');
     }, 500);
   }
 
   console.log("altura", topSection);
 }
-
+let links = document.querySelectorAll(".botao-menu");
 links.forEach((link) => {
   link.addEventListener("click", scrollSection);
 });
