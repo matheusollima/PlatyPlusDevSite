@@ -117,15 +117,17 @@
     width: auto;
   }
 
-  #menu-hamburguer-img {
-    cursor: pointer;
-    outline: none;
-    background-image: url("./imgs/front-end/menu-icos/menu - hamburguer.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 10vh;
-    width: 100%;
-  }
+#menu-hamburguer-img {
+  cursor: pointer;
+  outline: none;
+  background-image: url("./imgs/front-end/menu-icos/menu - hamburguer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* <- essa linha é essencial */
+  width: 15vw;               /* largura responsiva */
+  aspect-ratio: 1 / 1;       /* altura automática proporcional à largura */
+  
+}
 
   #menu-hamburguer-img.ativo {
     background-image: url("./imgs/front-end/menu-icos/menu-close.svg");
@@ -210,7 +212,7 @@
   }
 
   #titulo-apresentação {
-    font-size: 20px !important;
+    font-size: clamp(0.9rem, 4.9vw, 3rem) !important;
     z-index: 999;
     margin-top: 25%;
   }
@@ -248,7 +250,7 @@
 .botao-orcamento {
   width: clamp(150px, 60%, 300px);
   padding: clamp(10px, 3vh, 20px) clamp(20px, 5vw, 40px);
-  font-size: clamp(0.9rem, 4vw, 3rem);
+  font-size: clamp(0.9rem, 4.9vw, 3rem);
   margin-top: 3%;
 
   border: none;
