@@ -132,7 +132,7 @@
 
   .menu-mobile {
     width: 100vw;
-   height: 100vh !important;
+   height: 70vh !important;
     box-sizing: border-box;
     overflow: hidden;
     background-color: #1f221e;
