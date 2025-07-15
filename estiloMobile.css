@@ -408,6 +408,11 @@
     margin-top: 10% !important;
   }
 
+ .serviço-texto h3 {
+  color: green;
+  font-size: 30px;
+ }
+
   .slider-mobile {
     display: flex;
     justify-content: center;
@@ -417,7 +422,7 @@
     position: relative;
     box-sizing: border-box;
     margin-top: 10%;
-
+  
     padding-bottom: 120%;
   }
 
@@ -433,6 +438,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10%;
     justify-content: center !important;
     aspect-ratio: 8 / 12 !important;
   }
@@ -461,6 +467,11 @@
     /* Para Firefox */
     -ms-user-select: none;
     /* Para Edge antigo */
+  }
+
+  .item h3 {
+   font-family: 'roboto';
+   color: green;
   }
 
   #next,

@@ -615,10 +615,12 @@ main section h1 {
   cursor: pointer;
 }
 
-.painel-software-div h3 {
-  color: green;
+.painel-software-div  h3 {
+  color: green !important;
   text-align: center;
   font-family: "roboto";
+  font-size: 3vh;
+  
 }
 
 
