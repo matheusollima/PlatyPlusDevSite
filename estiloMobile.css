@@ -212,7 +212,7 @@
   }
 
   #titulo-apresentação {
-    font-size: clamp(0.9rem, 4.9vw, 3rem) !important;
+    font-size: clamp(0.9rem, 6vw, 3rem) !important;
     z-index: 999;
     margin-top: 25%;
   }
@@ -1212,9 +1212,11 @@
     grid-template-columns: 1fr 1fr;
     /* Divide horizontalmente */
     grid-template-rows: auto;
-    grid-template-areas:
-      "imagem titulo"
-      "botao botao";
+    /* grid-template-areas:
+      
+     "titulo titulo"
+     "imagem imagem"
+      "botao botao"; */
     height: 100vh;
     padding: 5%;
   }
@@ -1224,6 +1226,7 @@
     justify-content: start;
     align-items: center;
     padding-left: 5%;
+    border: solid 3px red !important;
   }
 
   #img-container {
