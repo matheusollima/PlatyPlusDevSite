@@ -231,31 +231,38 @@
   }
 
   /* BOTÃO */
+#botao-container {
+  grid-area: botao;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  margin-top: -2%;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
 
-  #botao-container {
-    grid-area: botao;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin-top: -2%;
-    position: relative;
+.botao-orcamento {
+  width: clamp(150px, 60%, 300px);
+  padding: clamp(10px, 3vh, 20px) clamp(20px, 5vw, 40px);
+  font-size: clamp(0.9rem, 4vw, 3rem);
+  margin-top: 3%;
 
-    padding-top: 60px;
-    padding-bottom: 70px;
+  border: none;
+  border-radius: 12px;
 
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-  .botao-orcamento {
-    font-size: 100%;
-    white-space: nowrap;
-
-    padding: 3% 9%;
-
-    margin-top: 3%;
-  }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
   section {
     height: calc(100vh - 12vh) !important;
