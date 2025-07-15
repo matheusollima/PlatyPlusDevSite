@@ -169,8 +169,10 @@ links.forEach((link) => {
 function botao_orcamento(){
    const section_contato = document.getElementById('rodape');
    let topo_contato = section_contato.offsetTop;
+    let altura_menu = window.innerHeight * 0.12;
+    let scrollPara = topo_contato - altura_menu;
    window.scrollTo({
-    top: topo_contato,
+    top: scrollPara,
     behavior: 'smooth',
    });
 
