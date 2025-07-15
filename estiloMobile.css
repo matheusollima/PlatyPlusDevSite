@@ -53,7 +53,7 @@
     z-index: 100 !important;
   }
 
-  .navMenu-mobile > {
+  .navMenu-mobile> {
     display: inline-block;
   }
 
@@ -69,11 +69,9 @@
     margin: 30px 0;
   }
 
-  .navMenu-mobile li a {
-  }
+  .navMenu-mobile li a {}
 
-  .navMenu-mobile > {
-  }
+  .navMenu-mobile> {}
 
   #logo-mobile-div {
     padding: 0;
@@ -83,7 +81,8 @@
   }
 
   #logo-link {
-    display: inline-block; /* Link se ajusta ao tamanho da imagem */
+    display: inline-block;
+    /* Link se ajusta ao tamanho da imagem */
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -94,9 +93,12 @@
   }
 
   #logo-mobile-img {
-    display: block; /* Remove espaços embaixo da imagem */
-    width: 100%; /* Tamanho fixo da imagem */
-    height: auto; /* Mantém proporção */
+    display: block;
+    /* Remove espaços embaixo da imagem */
+    width: 100%;
+    /* Tamanho fixo da imagem */
+    height: auto;
+    /* Mantém proporção */
     margin: 0;
   }
 
@@ -193,8 +195,7 @@
       "botao";
   }
 
-  .apresentacao > * {
-  }
+  .apresentacao>* {}
 
   /* TITULO */
 
@@ -241,19 +242,18 @@
     width: 100%;
     margin-top: -2%;
     position: relative;
-    /* margin-top: -10% */
+
     padding-top: 60px;
     padding-bottom: 70px;
+
   }
 
   .botao-orcamento {
     font-size: 100%;
     white-space: nowrap;
-    top: 50;
-    left: 50;
+
     padding: 3% 9%;
-    position: absolute;
-    transform: translate(-50%, -50%) !important;
+
     margin-top: 3%;
   }
 
@@ -269,6 +269,7 @@
   .hidden {
     margin: 0;
   }
+
   .front-back-column {
     display: none;
   }
@@ -290,6 +291,7 @@
     position: absolute;
     top: 0;
   }
+
   section#serviços {
     height: 100vh !important;
     min-width: 100vw !important;
@@ -329,6 +331,7 @@
   .div-modelo-negocio {
     display: none;
   }
+
   .img-serviços {
     /* display: none; */
   }
@@ -346,8 +349,7 @@
     box-sizing: border-box;
   }
 
-  #painel-serviços > div {
-  }
+  #painel-serviços>div {}
 
   .painel-software {
     grid-template-columns: auto !important;
@@ -433,7 +435,8 @@
   .item * {
     user-select: none;
   }
-  .item > {
+
+  .item> {
     display: block;
   }
 
@@ -441,10 +444,14 @@
     display: block !important;
     width: 30vw !important;
     height: auto !important;
-    user-select: none !important; /* Impede que o texto dentro do item seja selecionado */
-    -webkit-user-select: none; /* Para navegadores baseados em WebKit */
-    -moz-user-select: none; /* Para Firefox */
-    -ms-user-select: none; /* Para Edge antigo */
+    user-select: none !important;
+    /* Impede que o texto dentro do item seja selecionado */
+    -webkit-user-select: none;
+    /* Para navegadores baseados em WebKit */
+    -moz-user-select: none;
+    /* Para Firefox */
+    -ms-user-select: none;
+    /* Para Edge antigo */
   }
 
   #next,
@@ -501,7 +508,8 @@
     background-color: #dfdfdf;
     width: 100vw;
     box-sizing: border-box;
-    overflow: hidden; /* Importante para esconder o conteúdo fora do container */
+    overflow: hidden;
+    /* Importante para esconder o conteúdo fora do container */
     margin: 0 auto;
   }
 
@@ -518,51 +526,67 @@
 
     /* Criar o efeito contínuo */
     animation: slide 14s infinite linear;
-    width: max-content; /* Necessário para o fluxo contínuo */
+    width: max-content;
+    /* Necessário para o fluxo contínuo */
     list-style: none;
   }
 
   .modelos ul:hover {
-    animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+    animation-play-state: paused;
+    /* Pausa a animação ao passar o mouse */
   }
 
   .item-container {
-    background-color: #1b1b1b; /* Fundo branco para o retângulo */
-    border: 2px solid #ccc; /* Borda cinza clara */
-    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #1b1b1b;
+    /* Fundo branco para o retângulo */
+    border: 2px solid #ccc;
+    /* Borda cinza clara */
+    border-radius: 10px;
+    /* Bordas arredondadas */
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 160px; /* Tamanho consistente para o retângulo */
-    box-sizing: border-box; /* Garantir que padding não afete tamanho */
+    width: 160px;
+    /* Tamanho consistente para o retângulo */
+    box-sizing: border-box;
+    /* Garantir que padding não afete tamanho */
     height: 200px;
   }
 
   .item-container img {
-    width: 50%; /* Ajusta a largura da imagem ao container */
-    height: auto; /* Mantém proporção correta */
+    width: 50%;
+    /* Ajusta a largura da imagem ao container */
+    height: auto;
+    /* Mantém proporção correta */
     justify-self: center;
   }
 
   .item-container label {
-    font-family: "Roboto", sans-serif; /* Fonte Roboto */
-    color: rgb(255, 255, 255); /* Cor verde escuro */
+    font-family: "Roboto", sans-serif;
+    /* Fonte Roboto */
+    color: rgb(255, 255, 255);
+    /* Cor verde escuro */
     margin-top: 10px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
+    /* Centraliza o texto */
     font-size: 20px;
     justify-self: end;
   }
 
   @keyframes slide {
     0% {
-      transform: translateX(0); /* Início */
+      transform: translateX(0);
+      /* Início */
     }
+
     100% {
-      transform: translateX(-2000px); /* Ajustar com base no cálculo exato */
+      transform: translateX(-2000px);
+      /* Ajustar com base no cálculo exato */
     }
   }
+
   /* ///////////////////////////////////// TECNOLOGIAS ///////////////////////////////////////////// */
 
   section#tecnologias {
@@ -593,7 +617,7 @@
   #painelTecnologias {
     margin-top: 15% !important;
 
-    padding-top: 10% !important ;
+    padding-top: 10% !important;
     padding-bottom: 10% !important;
     max-width: 95vw !important;
     max-height: 60vh !important;
@@ -623,7 +647,7 @@
     box-sizing: border-box;
   }
 
-  .front-back-column > li {
+  .front-back-column>li {
     top: 0;
     padding: 0 !important;
     column-gap: 0;
@@ -634,11 +658,14 @@
   }
 
   .front-li:hover {
-    transform: none; /* Remove o efeito de escala */
+    transform: none;
+    /* Remove o efeito de escala */
   }
+
   .back-li:hover {
     transform: none;
   }
+
   #data-li:hover {
     transform: none;
   }
@@ -668,8 +695,8 @@
     width: 100% !important;
   }
 
-  .front-li {
-  }
+  .front-li {}
+
   #data-li {
     left: 0;
   }
@@ -773,6 +800,7 @@
   #html-logo-img {
     justify-self: center;
   }
+
   #javascript-li label {
     font-size: 10px !important;
   }
@@ -877,15 +905,13 @@
     display: block;
   }
 
-  #sobre > * {
-  }
+  #sobre>* {}
 
   #sobre-titulo {
     font-size: 20px !important;
   }
 
-  #sobre-titulo-section {
-  }
+  #sobre-titulo-section {}
 
   #sobre-section {
     height: auto;
@@ -957,6 +983,7 @@
     padding: 3%;
     margin-bottom: 2%;
   }
+
   #painel-redes-profissionais a,
   #painel-redes-profissionais button {
     width: max-content;
@@ -986,6 +1013,7 @@
     display: flex;
     justify-content: center;
   }
+
   #midiasSociais {
     margin-left: 50px;
     margin-right: 50px;
@@ -999,6 +1027,7 @@
     height: auto;
     width: 50px;
   }
+
   .formContato {
     padding: 0;
     height: 310px !important;
@@ -1030,8 +1059,8 @@
     font-size: 15px;
   }
 
-  .formInputs input:focus ~ label,
-  .formInputs input:valid ~ label {
+  .formInputs input:focus~label,
+  .formInputs input:valid~label {
     transform: translateY(-17px);
     font-size: 15px;
   }
@@ -1087,6 +1116,7 @@
     transform: translateX(-50%) !important;
     text-indent: 10px;
   }
+
   #btEnviar {
     position: relative;
     top: 120px;
@@ -1138,6 +1168,7 @@
     height: 100px;
     background-color: crimson;
   }
+
   .nmSocial {
     display: block;
   }
@@ -1145,6 +1176,7 @@
 
 /* ------------------------------------------------POSIÇÃO VERTICAL------------------------------------------------ */
 @media screen and (orientation: landscape) and (max-height: 480px) {
+
   html,
   body {
     width: 100vw;
@@ -1168,7 +1200,8 @@
   }
 
   section.apresentacao {
-    grid-template-columns: 1fr 1fr; /* Divide horizontalmente */
+    grid-template-columns: 1fr 1fr;
+    /* Divide horizontalmente */
     grid-template-rows: auto;
     grid-template-areas:
       "imagem titulo"

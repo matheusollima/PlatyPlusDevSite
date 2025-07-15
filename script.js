@@ -22,22 +22,6 @@ function onScroll() {
   }
 }
 
-// var debouncedOnScroll = debounce(onScroll, 50);
-// window.addEventListener("scroll", debouncedOnScroll);
-
-// function debounce(fn, delay) {
-//   var timer = null;
-
-//   return function () {
-//     var context = this,
-//       args = arguments;
-//     clearTimeout(timer);
-
-//     timer = setTimeout(function () {
-//       fn.apply(context, args);
-//     }, delay);
-//   };
-// }
 
 /*  DESCOBRIR ALTURA SECTION SOBRE  */
 
@@ -82,6 +66,55 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+
+/* ANIMAÇÃO PARA SCROLL PARA TOP DAS SECTIONS - MENU-DESKTOP */
+
+function scrollSection(event) {
+  event.preventDefault();
+  const href = event.currentTarget.getAttribute("href");
+  const section = document.querySelector(href);
+  if (href == "#inicio") {
+    let topSection = 0;
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+    setTimeout(() => {
+      document.getElementById("menu-mobile").classList.toggle("ativo");
+      document.getElementById('menu-hamburguer-img').classList.toggle('ativo');
+    }, 500);
+  } else if (href == "#serviços") {
+    let topSection = section.offsetTop - 80;
+    window.scrollTo({
+      top: topSection,
+      behavior: "smooth",
+    });
+    setTimeout(() => {
+      document.getElementById("menu-mobile").classList.toggle("ativo");
+      document.getElementById('menu-hamburguer-img').classList.toggle('ativo');
+    }, 500);
+  } else {
+    let topSection = section.offsetTop;
+
+    window.scrollTo({
+      top: topSection,
+      behavior: "smooth",
+    });
+
+    setTimeout(() => {
+      document.getElementById("menu-mobile").classList.toggle("ativo");
+      document.getElementById('menu-hamburguer-img').classList.toggle('ativo');
+    }, 500);
+  }
+
+  console.log("altura", topSection);
+}
+
+linksDesktop.forEach((link) => {
+  link.addEventListener("click", scrollSection);
+});
+
 
 /* ANIMAÇÃO PARA FECHAR O MENU-MOBILE APÓS CLICAR EM ALGUMA DAS OPÇÕES  */
 
@@ -129,6 +162,20 @@ let links = document.querySelectorAll(".botao-menu");
 links.forEach((link) => {
   link.addEventListener("click", scrollSection);
 });
+
+
+// BOTÃO ORÇAMENTO SCROLL
+
+function botao_orcamento(){
+   const section_contato = document.getElementById('rodape');
+   let topo_contato = section_contato.offsetTop;
+   window.scrollTo({
+    top: topo_contato,
+    behavior: 'smooth',
+   });
+
+}
+
 
 // ANIMAÇÃO PARA ATIVAR MENU HAMBURGUER
 const btn_menu = document.getElementById("btn-menu");
