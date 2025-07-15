@@ -1,8 +1,6 @@
-
-
 /* ------------------------------------------------POSIÇÃO VERTICAL------------------------------------------------ */
 
-@media (min-width: 227px) and (min-height: 403px)  {
+@media (min-width: 227px) and (min-height: 403px) {
   html {
     box-sizing: border-box;
     width: 100vw;
@@ -10,7 +8,6 @@
   }
 
   body {
-  
     width: 100vw !important;
   }
 
@@ -25,7 +22,6 @@
     width: 100vw;
   }
 
-
   #lorem {
     display: none;
   }
@@ -33,17 +29,13 @@
   /* MENU DE NAVEGAÇÃO */
   .header-desktop {
     display: none;
-   
   }
-
 
   .header-mobile {
     width: 100vw;
     display: block;
     box-sizing: border-box;
     height: auto !important;
-    
-   
   }
 
   .navMenu-mobile {
@@ -59,7 +51,6 @@
     grid-template-columns: 70% 30%;
     border-bottom: 1px solid black;
     z-index: 100 !important;
-     
   }
 
   .navMenu-mobile > {
@@ -84,31 +75,30 @@
   .navMenu-mobile > {
   }
 
-      #logo-mobile-div {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-   
-    }
+  #logo-mobile-div {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
 
-    #logo-link {
-      display: inline-block; /* Link se ajusta ao tamanho da imagem */
-      padding: 0;
-      margin: 0;
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 60%;
-    }
+  #logo-link {
+    display: inline-block; /* Link se ajusta ao tamanho da imagem */
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
 
-    #logo-mobile-img {
-      display: block;         /* Remove espaços embaixo da imagem */
-      width: 100%;           /* Tamanho fixo da imagem */
-      height: auto;           /* Mantém proporção */
-      margin: 0;
-    }
+  #logo-mobile-img {
+    display: block; /* Remove espaços embaixo da imagem */
+    width: 100%; /* Tamanho fixo da imagem */
+    height: auto; /* Mantém proporção */
+    margin: 0;
+  }
 
   #msgDia {
     display: none;
@@ -125,14 +115,23 @@
     width: auto;
   }
 
-  #btn-menu > img {
+  #menu-hamburguer-img {
     cursor: pointer;
     outline: none;
+    background-image: url("./imgs/front-end/menu-icos/menu - hamburguer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    width: 100%;
+  }
+
+  #menu-hamburguer-img.ativo {
+    background-image: url("./imgs/front-end/menu-icos/menu-close.svg");
   }
 
   .menu-mobile {
     width: 100vw;
-   height: 70vh !important;
+    height: 70vh !important;
     box-sizing: border-box;
     overflow: hidden;
     background-color: #222720;
@@ -144,50 +143,41 @@
     grid-template-columns: 100%;
     grid-template-rows: repeat(7, calc(100% / 7));
     position: fixed;
-    
   }
 
   .menu-mobile.ativo {
     /* border-top: 0.5px solid rgb(0, 0, 0); */
     top: 12vh;
-
   }
 
-  .menu-mobile li{
+  .menu-mobile li {
     box-sizing: border-box;
     margin: 0;
-    
+
     border-bottom: dashed 2px rgb(46, 44, 44);
     z-index: 10;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   
   }
 
   .menu-mobile li a {
-    font-family: 'roboto';
+    font-family: "roboto";
     text-decoration: none;
     font-size: 150%;
     color: white;
-  }
-
-  #menu-hamburguer-img {
-    width: 40%;
   }
 
   /*
      CONTEÚDO
   */
 
-.section#inicio{
-  padding: 0;
- 
-}
+  .section#inicio {
+    padding: 0;
+  }
 
-   section.apresentacao {
+  section.apresentacao {
     margin: 0;
     width: 100vw;
     height: calc(100vh - 12vh) !important;
@@ -198,28 +188,24 @@
     grid-template-columns: 100vw;
     grid-template-rows: 35% 40% auto;
     grid-template-areas:
-    "titulo"
-    "imagem"
-    "botao"; 
+      "titulo"
+      "imagem"
+      "botao";
   }
 
- .apresentacao > * {
- 
- }
+  .apresentacao > * {
+  }
 
-
-
-
-/* TITULO */
+  /* TITULO */
 
   .titulo-container {
     grid-area: titulo;
-   height: 100%;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   z-index: 7;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
   }
 
   #titulo-apresentação {
@@ -228,28 +214,22 @@
     margin-top: 25%;
   }
 
-/* IMAGEM */ 
+  /* IMAGEM */
 
-
- #img-container{
-  grid-area: imagem;
-  width: 100vw;
-  height: 100%;
-  align-self: start;
-  
- }
-
-  #imagem-apresentação {
-    margin-top: -10% !important; 
-    height: 100% !important;
-    /* max-height: fit-content; */
-    
+  #img-container {
+    grid-area: imagem;
+    width: 100vw;
+    height: 100%;
+    align-self: start;
   }
 
+  #imagem-apresentação {
+    margin-top: -10% !important;
+    height: 100% !important;
+    /* max-height: fit-content; */
+  }
 
   /* BOTÃO */
- 
-
 
   #botao-container {
     grid-area: botao;
@@ -262,8 +242,8 @@
     margin-top: -2%;
     position: relative;
     /* margin-top: -10% */
-   padding-top: 60px;
-   padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 70px;
   }
 
   .botao-orcamento {
@@ -277,15 +257,9 @@
     margin-top: 3%;
   }
 
-
-
   section {
     height: calc(100vh - 12vh) !important;
   }
-
-
-
-
 
   .section {
     margin: 0;
@@ -315,8 +289,6 @@
     height: 200vw;
     position: absolute;
     top: 0;
-    
-    
   }
   section#serviços {
     height: 100vh !important;
@@ -403,16 +375,14 @@
     box-sizing: border-box;
     justify-content: center !important;
     align-items: space-between;
-   
+
     transition: top 0.5s ease-in-out;
   }
 
   .serviço-texto.ativo {
     top: 0 !important;
   }
-  
 
- 
   .serviço-texto * {
     box-sizing: border-box !important;
     right: 0 !important;
@@ -424,7 +394,6 @@
   }
 
   .serviço-texto h2 {
-    
     margin-top: 10% !important;
   }
 
@@ -546,7 +515,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    
+
     /* Criar o efeito contínuo */
     animation: slide 14s infinite linear;
     width: max-content; /* Necessário para o fluxo contínuo */
@@ -1176,7 +1145,8 @@
 
 /* ------------------------------------------------POSIÇÃO VERTICAL------------------------------------------------ */
 @media screen and (orientation: landscape) and (max-height: 480px) {
-  html, body {
+  html,
+  body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
@@ -1200,7 +1170,7 @@
   section.apresentacao {
     grid-template-columns: 1fr 1fr; /* Divide horizontalmente */
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
       "imagem titulo"
       "botao botao";
     height: 100vh;

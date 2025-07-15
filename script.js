@@ -1,15 +1,13 @@
-
-
 // OCULTAR O MENU
 
 var header = document.querySelector(".header-desktop");
 var is_mobile;
-function ismobile(){
-  return window.innerWidth <= 768
+function ismobile() {
+  return window.innerWidth <= 768;
 }
 is_mobile = ismobile();
 console.log(is_mobile);
-if(is_mobile == false){
+if (is_mobile == false) {
   window.addEventListener("scroll", onScroll);
 }
 function onScroll() {
@@ -19,13 +17,10 @@ function onScroll() {
 
   if (scrollPosition >= sectionTop) {
     header.style.display = "none";
-  
-  }else {
-     header.style.display = "block"; }
+  } else {
+    header.style.display = "block";
+  }
 }
-
-
-
 
 // var debouncedOnScroll = debounce(onScroll, 50);
 // window.addEventListener("scroll", debouncedOnScroll);
@@ -94,89 +89,53 @@ function scrollSection(event) {
   event.preventDefault();
   const href = event.currentTarget.getAttribute("href");
   const section = document.querySelector(href);
-  console.log("Section atual: ", section);
-var alturaMenu = document.querySelector(".menu-mobile");
-
-
   if (href == "#inicio") {
     let topSection = 0;
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
-       setTimeout(() => {
-      alturaMenu.style.height = 0;
-      document.getElementById("menu-mobile").classList.remove("ativo");
-      img_menu_hamburguer.src =
-        "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+    setTimeout(() => {
+      document.getElementById("menu-mobile").toggle("ativo");
     }, 500);
-  } 
-  
-  
-
-  else if (href == "#serviços") {
+  } else if (href == "#serviços") {
     let topSection = section.offsetTop - 80;
     window.scrollTo({
       top: topSection,
       behavior: "smooth",
     });
-       setTimeout(() => {
-      alturaMenu.style.height = 0;
-      document.getElementById("menu-mobile").classList.remove("ativo");
-      img_menu_hamburguer.src =
-        "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+    setTimeout(() => {
+      document.getElementById("menu-mobile").toggle("ativo");
     }, 500);
-  } 
-  
-  
-  else {
+  } else {
     let topSection = section.offsetTop;
-    
+
     window.scrollTo({
       top: topSection,
       behavior: "smooth",
     });
 
     setTimeout(() => {
-      alturaMenu.style.height = 0;
-      document.getElementById("menu-mobile").classList.remove("ativo");
-      img_menu_hamburguer.src =
-        "./imgs/front-end/menu-icos/menu - hamburguer.svg";
+      document.getElementById("menu-mobile").toggle("ativo");
     }, 500);
   }
 
-
-    console.log("altura", topSection);
-
-
-
-    
-
-
-
-
-  }
-
+  console.log("altura", topSection);
+}
 
 links.forEach((link) => {
   link.addEventListener("click", scrollSection);
 });
 
-
 // ANIMAÇÃO PARA ATIVAR MENU HAMBURGUER
 const btn_menu = document.getElementById("btn-menu");
+const botaoIsAtivo = false;
 const img_menu_hamburguer = document.getElementById("menu-hamburguer-img");
 const ativar_menu = () => {
-  if (btn_menu.classList.toggle("ativo") == true) {
-    img_menu_hamburguer.src = "./imgs/front-end/menu-icos/menu-close.svg";
-  
-  } else {
-    img_menu_hamburguer.src =
-      "./imgs/front-end/menu-icos/menu - hamburguer.svg";
- 
-  }
-  const menu = document.getElementById('menu-mobile');
-  menu.classList.toggle('ativo');
+  const imgMenu = document.getElementById('menu-hamburguer-img');
+  imgMenu.classList.toggle('ativo');
+  const menu = document.getElementById("menu-mobile");
+  menu.classList.toggle("ativo");
 };
 
 /* ANIMAÇÃO DE DIMINUIR O MENU */
