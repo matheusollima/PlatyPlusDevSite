@@ -413,6 +413,7 @@
   }
   .serviço-texto :nth-child(2) {
     font-size: clamp(85%, 1vw, 3rem) !important;
+    align-self: center;
   }
 
   .serviço-texto h2 {
