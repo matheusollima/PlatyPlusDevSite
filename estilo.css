@@ -171,10 +171,10 @@ h2 {
   text-decoration: none;
   list-style-type: none;
   display: flex;
+  flex-direction: row;
   top: 0px;
   margin: 0px;
   background-color: #1f221e;
-
   opacity: 0.99;
   backdrop-filter: blur(50px);
   height: 120px;
@@ -182,7 +182,12 @@ h2 {
   align-items: center;
   justify-content: center;
   transition: height 0.3s ease;
-  
+  border: solid 2px red;
+  box-sizing: border-box;
+}
+
+.navMenu > * {
+  border: solid 2px purple !important;
 }
 
 #mascoteLogo {
@@ -190,6 +195,14 @@ h2 {
   height: 85%;
   left: 500px;
 }
+
+
+#divImgLogo {
+  border: solid 2px red;
+  width: 50%;
+  height: 100%;
+}
+
 
 #logo {
   /* position:absolute; */
@@ -212,22 +225,19 @@ h2 {
 }
 
 .menu {
-  /* border:solid red 5px; */
-
   position: fixed;
   text-decoration: none;
   list-style-type: none;
   display: flex;
   margin-bottom: 0px;
   background-color: none;
-  /* box-shadow: 0px 15px 20px #222121; */
-  /* height: 80px;
-      width:100%; */
   padding: 0px;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  
+  width: 50% ;
+  height: 100%;
+  background-color: red;
+  border: solid 3px blue;
 }
 
 nav li {
