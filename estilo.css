@@ -187,7 +187,7 @@ h2 {
   flex-direction: row;
   justify-content: end;
   align-items: center;
- border: solid 2px red;
+ 
   
 }
 
@@ -227,7 +227,6 @@ h2 {
   justify-content: start;
   width: 100% !important;
   height: 100%;
-  border: solid 3px red;
 }
 
 nav li {
