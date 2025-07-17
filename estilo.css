@@ -139,11 +139,9 @@ h2 {
 
 .container {
   display: block;
-  flex-direction: column;
   min-height: 100%;
   margin: 0;
   padding: 0px;
-  padding-top: 120px;
   width: 100%;
   overflow-x: hidden;
   /*background-color:#2f4538;*/
@@ -172,46 +170,38 @@ h2 {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  top: 0px;
-  margin: 0px;
+  gap:clamp(0.3rem, 1vw, 1%);
   background-color: #1f221e;
   opacity: 0.99;
   backdrop-filter: blur(50px);
   height: 120px;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   transition: height 0.3s ease;
-  border: solid 2px red;
   box-sizing: border-box;
 }
 
-.navMenu > * {
-  border: solid 2px purple !important;
-}
-
-#mascoteLogo {
-  position: absolute;
-  height: 85%;
-  left: 500px;
-}
-
-
 #divImgLogo {
-  border: solid 2px red;
-  width: 50%;
+  width: clamp(20% , 30%, 50%);
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+ border: solid 2px red;
+  
 }
 
 
 #logo {
-  /* position:absolute; */
-  left: 500px;
-  height: 90%;
-  width: auto;
+
+ margin: 0;
+ top: 0;
+ left: 0;
   box-sizing: border-box;
-  margin-right: 1300px;
   z-index: 1;
+  width: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 .conteudo {
@@ -225,41 +215,36 @@ h2 {
 }
 
 .menu {
-  position: fixed;
   text-decoration: none;
   list-style-type: none;
   display: flex;
+  flex-direction: row;
+  gap: clamp(0.1rem, 4vw, 10vw);
   margin-bottom: 0px;
   background-color: none;
   padding: 0px;
   align-items: center;
-  justify-content: center;
-  width: 50% ;
+  justify-content: start;
+  width: 100% !important;
   height: 100%;
-  background-color: red;
-  border: solid 3px blue;
+  border: solid 3px red;
 }
 
 nav li {
-  /* border-radius:5px; */
-  /* margin: 0 10px; */
   box-sizing: border-box;
-  margin-left: 70px;
-  /* padding: 20px 30px; */
-  /* padding: 22px 40px; */
-  height: 10px;
-  /* width: 100%; */
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: auto;
 }
 
 nav li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   /* font-weight:bold; */
-  font-size: 25px;
+  font-size: clamp(14px, 2vw, 25px);
+
   font-family: "Roboto", sans-serif;
   padding: 0px 0px 10px 0;
   position: relative;
@@ -1387,15 +1372,15 @@ main section h1 {
   font-size: 19px;
   color: white;
   width: 100%;
-  height: calc(100vh - 120px);
+  height: 100vh;
   background-color: rgb(0, 0, 0);
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
+  justify-content: end;
   padding-left: 5%;
   padding-right: 5%;
-
+  
 }
 
 /* img{display:none;} */

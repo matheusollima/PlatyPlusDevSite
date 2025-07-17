@@ -1,8 +1,4 @@
-@media (max-width: 1920px) and (max-height: 1080px) {
-  #logo {
-    left: 180px;
-  }
-}
+
 
 @media (max-width: 1366px) {
   * {
@@ -33,14 +29,12 @@
   #logo {
     width: auto;
     height: 70%;
-    left: 120px;
     margin-right: 0;
-    position: relative;
   }
   .menu {
     height: 100%;
-    width: auto;
-    margin-left: 300px;
+    width: 100%;
+    display: flex;
   }
 
   #titulo-apresentação {
@@ -65,9 +59,10 @@
   }
 
   .apresentacao {
+    box-sizing: border-box;
     height: calc(100vh - 100px);
     width: 100vw;
-    margin-top: -20px;
+    margin-top: 0;
       display: grid;
   
   grid-template-areas:

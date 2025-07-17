@@ -1,5 +1,12 @@
 /* ------------------------------------------------POSIÇÃO VERTICAL------------------------------------------------ */
 
+@media (max-width: 726px){
+  .header-desktop{
+    opacity: 0;
+  }
+}
+
+
 @media (min-width: 227px) and (min-height: 403px) {
   html {
     box-sizing: border-box;
@@ -50,7 +57,7 @@
     background-color: #1f221e;
     grid-template-columns: 70% 30%;
     border-bottom: 1px solid black;
-    z-index: 100 !important;
+    z-index: 101 !important;
   }
 
   .navMenu-mobile > {
