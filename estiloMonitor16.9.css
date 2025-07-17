@@ -49,12 +49,9 @@
 }
 
   #imagem-apresentação {
-    /* width: 569.16px;
-    height: 569.16px;
-    object-fit: cover;
-    margin-top: -30px; */
-    width: auto;
-    height: 75%;
+    width: 90%;
+    height: auto;
+    
     
   }
 
