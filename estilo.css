@@ -184,17 +184,21 @@ h2 {
   width: 100%;
   transition: height 0.3s ease;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 
 #divImgLogo {
-  width: clamp(20% , 40%, 50%);
+  width: clamp(20% , 25%, 50%);
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
  box-sizing: border-box;
+ border: solid 2px red;
+ margin-left: 5%;
   
 }
 
@@ -202,8 +206,7 @@ h2 {
 #logo {
   box-sizing: border-box;
   z-index: 1;
-  width: 50%;
-  max-width: 100%;
+  width: 40%;
   height: auto;
   margin-left: 10%;
 }
@@ -228,10 +231,9 @@ h2 {
   background-color: none;
   padding: 0px;
   align-items: center;
-  justify-content: start;
-  width: 100% !important;
+  justify-content: center;
+  width: auto;
   height: 100%;
-  
   box-sizing: border-box;
 }
 
@@ -248,7 +250,7 @@ nav li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   /* font-weight:bold; */
-  font-size: clamp(14px, 2vw, 25px);
+  font-size: clamp(14px, 2vw, 30px);
 
   font-family: "Roboto", sans-serif;
   padding: 0px 0px 10px 0;
@@ -574,8 +576,8 @@ main section h1 {
 
 #serviços {
   display: grid;
-
   align-items: start;
+  width: 100vw !important;
 }
 
 #serviços-titulo {
@@ -588,6 +590,7 @@ main section h1 {
   flex-direction: column;
   row-gap: 100px;
   align-items: center;
+  width: 100vw;
 }
 
 .painel-software {

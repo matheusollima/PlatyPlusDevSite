@@ -206,6 +206,7 @@
   }
 
   .apresentacao > * {
+   
   }
 
   /* TITULO */
@@ -223,7 +224,7 @@
   #titulo-apresentação {
     font-size: clamp(0.9rem, 6vw, 3rem) !important;
     z-index: 999;
-    margin-top: 25%;
+    
   }
 
   /* IMAGEM */
@@ -238,6 +239,7 @@
   #imagem-apresentação {
     margin-top: -10% !important;
     height: 100% !important;
+    width: auto !important;
     /* max-height: fit-content; */
   }
 
