@@ -3,8 +3,9 @@
   margin: 0;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  display: grid;
 }
 
 .apresentacao {
@@ -198,7 +199,7 @@ h2 {
   justify-content: center;
   align-items: center;
  box-sizing: border-box;
- border: solid 2px red;
+ border: solid 3px red;
  
   
 }
@@ -1009,8 +1010,7 @@ main section h1 {
   color: white;
   row-gap: 30px;
   column-gap: 2%;
-  border: solid 3px green;
-  background-color: red;
+ 
   white-space: nowrap;
   
 }
@@ -1252,19 +1252,62 @@ main section h1 {
 }
 
 .section#sobre {
-  box-sizing: border-box;
-  min-height: 100vh;
-  max-height: max-content;
-}
-
-.sobre-container {
+ box-sizing: border-box !important;
   height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-columns: 20% 15%;
-  padding-left: 500px;
-  column-gap: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  border: solid 6px darkblue !important;
+
 }
+
+
+#sobre .hidden{
+  background-color: rgb(218, 89, 111);
+  display: flex;
+  flex-direction: column;
+  gap: 5% ;
+  box-sizing: border-box !important;
+  height: auto;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+#sobre .hidden > * {
+  border: solid 7px darkred !important;
+}
+
+
+#sobre .hidden > *{
+
+  
+}
+
+
+.sobre-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100% 100%;
+  gap: 0.5%;
+  background-color: rgb(190, 114, 114);
+  justify-content: center;
+  align-items: center;
+  border: solid 3px yellow !important;
+  box-sizing: border-box;
+ 
+}
+
+.sobre-container > * {
+  border: solid 5px blue !important;
+  box-sizing: border-box !important;
+}
+
 
 .sobre-container div {}
 
@@ -1275,35 +1318,35 @@ main section h1 {
 
 #sobre-foto {
   display: grid;
+  height: 100% !important;
+  width: 100%;
+
 }
 
 #foto-apresentação {
-  width: 120%;
+  width: 85%;
   justify-self: center;
   align-self: center;
   border-radius: 30px;
-  border: 4px solid darkgreen;
+  display: none;
   position: relative;
   top: -5%;
+  /* display: none; */
+  box-sizing: border-box !important;
 }
 
 #sobre-texto {
-  height: max-content;
-  width: max-content;
+  width: 90%;
+  height: 40%;
   background-color: #1e2329;
   border-radius: 10px;
   align-self: center;
-  border: 2px solid darkgreen;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  position: relative;
-  top: -5%;
-  padding-left: 5%;
-  padding-right: 5%;
+  border: 2px solid darkgreen !important;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  gap: 20px;
+ font-size: clamp(0.8rem, 3vh, 2rem) !important;
+  box-sizing: border-box !important;
 }
 
 #sobre-texto>* {
@@ -1311,22 +1354,23 @@ main section h1 {
 }
 
 #sobre-titulo {
-  font-size: 30px;
+   font-size: clamp(0.8rem, 3vh, 2rem) !important;
   color: darkgreen;
   font-family: "roboto";
+  box-sizing: border-box !important;
 }
 
 #sobre-nome {
   color: #d3d3d3;
-  font-size: 30px;
+ font-size: clamp(0.8rem, 20vh, 170%) !important;
   text-align: start;
 }
 
 #sobre-formacao {
   color: #d3d3d3;
-  font-size: 20px;
   text-align: start;
   font-family: "roboto";
+   font-size: clamp(0.8rem, 3vh, 2rem) !important;
 }
 
 /* REDES SOCIAIS PROFISSIONAIS*/
@@ -1336,7 +1380,7 @@ main section h1 {
   gap: 10px;
   /* Espaçamento entre os botões */
   border: solid 1px darkgreen;
-  width: max-content;
+  height: auto;
   align-self: end;
   border-radius: 10px;
 }
@@ -1351,16 +1395,17 @@ main section h1 {
   /* Remove bordas indesejadas */
   background: none;
   /* Remove fundo padrão */
-  width: max-content;
+  height: auto;
+  background-color: red;
   cursor: pointer;
 }
 
 #painel-redes-profissionais img {
   display: block;
   /* Remove espaçamentos extras ao redor da imagem */
-  width: 3vw;
+  width: auto;
   /* Define o tamanho da imagem em relação ao contêiner pai */
-  height: auto;
+  height: 20%;
   /* Mantém a proporção da imagem */
   transition: ease 0.5s;
 }
@@ -1422,13 +1467,14 @@ main section h1 {
   background-color: #000000;
   border: solid 5px aqua;
   width: 100%;
+  box-sizing: border-box !important;
 }
 
 .section#serviços {
   margin-top: 100px;
   height: auto;
   
-  
+  border: solid 3px red !important;
   box-sizing: border-box;
 }
 
@@ -1438,7 +1484,7 @@ flex-direction: column;
 box-sizing: border-box !important;
 width: 100%;
 height: auto;
-
+border: solid 6px darkblue;
 }
 
  #serviços-hidden > * {

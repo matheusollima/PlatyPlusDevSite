@@ -389,15 +389,15 @@
     display: grid;
     padding-left: 10% !important;
     padding-right: 10% !important;
-    column-gap: 150px;
+  
     grid-template-columns: 30% 15%;
-    height: max-content;
+    height: 100%;
     width: 100%;
     justify-content: start;
   }
 
   #sobre-foto {
-    position: relative;
+    
     left: 100px;
     width: 80%;
   }
