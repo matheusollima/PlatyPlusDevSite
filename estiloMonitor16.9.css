@@ -26,9 +26,13 @@
     padding: 0;
   }
 
+  #divImgLogo {
+    margin-left: 10%;
+  }
+
   #logo {
     width: auto;
-    height: 70%;
+    height: 100%;
     margin-right: 0;
   }
   .menu {
@@ -91,8 +95,11 @@
   }
 
   #serviços-hidden {
-    height: 100%;
+    height: auto;
+    width: 100%;
     background-color: rgb(0, 0, 0);
+    border: solid 3px yellow;
+
   }
 
   #serviços {
@@ -106,9 +113,10 @@
   /*PAINEL MODELOS DE NEGÓCIO */
 
   .painel-modelo-negocio {
-    column-gap: 10px;
+  
     grid-template-columns: auto auto auto auto auto;
     padding-bottom: 30px;
+    
   }
 
   .painel-software-div {
@@ -395,7 +403,7 @@
   }
 
   #sobre-texto > {
-    border: solid 2px red !important;
+ 
   }
 
   /* Formulário Contato */
