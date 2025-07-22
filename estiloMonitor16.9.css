@@ -385,22 +385,8 @@
   .section#sobre > {
   }
 
-  .sobre-container {
-    display: grid;
-    padding-left: 10% !important;
-    padding-right: 10% !important;
-  
-    grid-template-columns: 30% 15%;
-    height: 100%;
-    width: 100%;
-    justify-content: start;
-  }
 
-  #sobre-foto {
-    
-    left: 100px;
-    width: 80%;
-  }
+
 
   #sobre-texto > {
  

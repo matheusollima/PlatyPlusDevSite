@@ -932,110 +932,32 @@
 
   /*  ////////////////////////////////////////////// SOBRE ///////////////////////////////////////////////////////////*/
 
-  .section#sobre {
-    z-index: 999999;
-    height: fit-content !important;
-    display: grid;
-    grid-template-areas:
-      "auto"
-      "auto";
-    padding-top: 20px;
-    padding-bottom: 20%;
-  }
+.sobre-container {
+  display: grid;
+  gap: 0;
+  grid-template-rows: 50% 40%;
+}
 
-  #sobre * {
-    display: block;
-  }
+.sobre-container > * {
+  border: solid 4px rgb(0, 255, 242) !important;
+}
 
-  #sobre > * {
-  }
 
-  #sobre-titulo {
-    font-size: 20px !important;
-  }
+#sobre-foto {
+  height: 100% !important;
+  width: 100%;
+}
 
-  #sobre-titulo-section {
-  }
+.foto-apresentação {
+  height: 100% ;
+}
 
-  #sobre-section {
-    height: auto;
-  }
 
-  .sobre-container {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    padding: 0 !important;
-    max-width: fit-content;
-    max-height: fit-content;
-    box-sizing: border-box !important;
-    justify-items: center !important;
-    align-items: start;
-    column-gap: 0;
-  }
-
-  #sobre-foto {
-    align-self: start !important;
-
-    justify-items: center !important;
-    left: 0 !important;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-  }
-
-  #sobre-texto {
-    max-height: max-content !important;
-    width: 95%;
-    height: auto !important;
-    box-sizing: border-box !important;
-    display: flex;
-    justify-content: center !important;
-    flex-direction: column;
-    /* object-fit: contain; */
-    padding: 0;
-    position: relative;
-    top: -20px;
-  }
-
-  #sobre-texto * {
-    text-align: center;
-  }
-
-  #foto-apresentação {
-    height: 75%;
-    width: auto;
-  }
-
-  #sobre-nome {
-    font-size: 28px !important;
-    margin-left: 0;
-  }
-
-  #sobre-formacao {
-    font-size: 15px;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .destaque-formacao {
-    color: green;
-  }
-
-  /* Painel redes profissionais */
-  #painel-redes-profissionais {
-    align-self: center;
-    padding: 3%;
-    margin-bottom: 2%;
-  }
-
-  #painel-redes-profissionais a,
-  #painel-redes-profissionais button {
-    width: max-content;
-  }
-
-  #painel-redes-profissionais img {
-    width: 7vw;
-  }
+.sobre-texto {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
 
   /* /////////////////////////////////////////// RODAPÉ ///////////////////////////////*/
   #rodape {
