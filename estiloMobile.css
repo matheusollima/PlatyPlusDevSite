@@ -932,10 +932,18 @@
 
   /*  ////////////////////////////////////////////// SOBRE ///////////////////////////////////////////////////////////*/
 
+ .section#sobre {
+  height: auto;
+  width: 100vw;
+ }
+
+
+
 .sobre-container {
-  display: grid;
+  display: flex;
   gap: 0;
-  grid-template-rows: 50% 40%;
+  height: 100%;
+  flex-direction: column;
 }
 
 .sobre-container > * {
@@ -945,18 +953,19 @@
 
 #sobre-foto {
   height: 100% !important;
-  width: 100%;
+  width: auto;
 }
 
-.foto-apresentação {
-  height: 100% ;
+#foto-apresentação {
+  height: 20vh;
+  width: auto;
 }
 
 
-.sobre-texto {
-  height: 100%;
-  width: 100%;
-  display: none;
+#sobre-texto {
+  height: 50vh;
+  
+  
 }
 
   /* /////////////////////////////////////////// RODAPÉ ///////////////////////////////*/
