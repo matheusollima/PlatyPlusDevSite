@@ -91,7 +91,7 @@
 
   .section {
     height: calc(100vh - 80px);
-    padding-top: 50px;
+    
   }
 
   #serviços-hidden {
