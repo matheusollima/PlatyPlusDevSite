@@ -32,20 +32,26 @@ html, body {
 
 .titulo-container {
   grid-area: titulo;
-  display: flex;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
   align-items: center;
   justify-content: center;
-
 }
 
+.titulo-container :nth-child(2){
+  font-size: min(1.4vw, 2rem) !important;
+  color: #fffdd0;
+}
 
 #titulo-apresentação {
-  font-size: 2.5vw !important;
+  font-size: min(3vw, 3rem)  !important;
   color: #39ff14;
   justify-self: center;
   margin-top: 15%;
+  margin-left: 10%;
   white-space: nowrap;
-  
+
 }
 
 #botao-container {
@@ -187,7 +193,6 @@ h2 {
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  border: solid 3px green;
 }
 
 
@@ -199,7 +204,7 @@ h2 {
   justify-content: center;
   align-items: center;
  box-sizing: border-box;
- border: solid 3px red;
+ 
  
   
 }
@@ -439,9 +444,6 @@ main section h1 {
   border-radius: 20px;
 }
 
-.inputContato {
-  border: solid red 5px;
-}
 
 .front-back-column {
   display: grid;
@@ -980,7 +982,6 @@ main section h1 {
  justify-content: center;
   width: 100% !important;
   box-sizing: border-box !important;
-  border: solid 3px purple;
   
  
 }
@@ -1258,13 +1259,12 @@ main section h1 {
   display: flex;
   flex-direction: column;
   gap: 10%;
-  border: solid 6px darkblue !important;
+  
 
 }
 
 
 #sobre .hidden{
-  background-color: rgb(218, 89, 111);
   display: flex;
   flex-direction: column;
   gap: 5% ;
@@ -1277,7 +1277,6 @@ main section h1 {
 
 
 #sobre .hidden > * {
-  border: solid 7px darkred !important;
 }
 
 
@@ -1293,17 +1292,14 @@ main section h1 {
   display: flex;
   flex-direction: row;
   gap: 2%;
-  background-color: rgb(190, 114, 114);
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  border: solid 5px red;
   position: relative;
 
 }
 
 .sobre-container > * {
-  border: solid 5px blue !important;
   box-sizing: border-box !important;
   
 }
@@ -1323,9 +1319,6 @@ main section h1 {
   justify-content: end;
   height: auto !important;
   width: auto !important;
-  background-color: red;
-
-
 }
 
 #foto-apresentação {
@@ -1396,7 +1389,6 @@ main section h1 {
 }
 
 #painel-redes-profissionais > * {
-  border: solid 2px red !important;
 }
 
 #painel-redes-profissionais a{
@@ -1472,7 +1464,6 @@ main section h1 {
   padding-top: 50px;
   display: block;
   background-color: #000000;
-  border: solid 5px aqua;
   width: 100%;
   box-sizing: border-box !important;
 }
@@ -1480,8 +1471,6 @@ main section h1 {
 .section#serviços {
   margin-top: 100px;
   height: auto;
-  
-  border: solid 3px red !important;
   box-sizing: border-box;
 }
 
@@ -1491,7 +1480,6 @@ flex-direction: column;
 box-sizing: border-box !important;
 width: 100%;
 height: auto;
-border: solid 6px darkblue;
 }
 
  #serviços-hidden > * {

@@ -32,8 +32,8 @@
 
   #logo {
     width: auto;
-    height: 100%;
-    margin-right: 0;
+    height: 87%;
+  
   }
   .menu {
     height: 100%;
@@ -98,7 +98,7 @@
     height: auto;
     width: 100%;
     background-color: rgb(0, 0, 0);
-    border: solid 3px yellow;
+  
 
   }
 
