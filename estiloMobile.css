@@ -935,25 +935,22 @@
  .section#sobre {
   height: auto;
   width: 100vw;
-  border: solid 3px red;
  }
 
 .section#sobre .hidden {
-  border: solid 4px darkcyan;
   padding-top: 0 !important;
 }
 
 .sobre-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 30% 70%;
+  grid-template-rows: 40% 60%;
   gap: 0;
   height: 100%;
-  border: solid 2px blue;
 }
 
 .sobre-container > * {
-  border: solid 4px rgb(0, 255, 242) !important;
+
 }
 
 
@@ -966,7 +963,7 @@
 }
 
 #foto-apresentação {
-  height: 20vh;
+  height: 25vh;
   width: auto;
 }
 
@@ -975,7 +972,6 @@
   height: 95%;
   width: 80%;
   gap: 0;
-  background-color: red;
   align-self: center;
   justify-self: center;
   display: grid;
@@ -984,19 +980,17 @@
 }
 
 #sobre-texto > * {
- border: solid 3px blue;
  height: 100%;
  font-size: 5vw !important;
  text-align: center;
  white-space: normal;
 }
 
-#sobre-texto :nth-child(1) {
+#sobre-texto > :nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 6vw;
-  background-color: pink;
+  font-size: 8vw !important;
 }
 
 #sobre-texto :nth-child(4) {
@@ -1237,7 +1231,7 @@
     justify-content: start;
     align-items: center;
     padding-left: 5%;
-    border: solid 3px red !important;
+   
   }
 
   #img-container {
