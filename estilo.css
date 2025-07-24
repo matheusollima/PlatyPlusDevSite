@@ -42,6 +42,7 @@ html, body {
 .titulo-container :nth-child(2){
   font-size: min(1.4vw, 2rem) !important;
   color: #fffdd0;
+  margin-left: 10%;
 }
 
 #titulo-apresentação {
