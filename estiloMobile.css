@@ -947,6 +947,7 @@
   grid-template-rows: 40% 60%;
   gap: 0;
   height: 100%;
+  padding-bottom: 5%;
 }
 
 .sobre-container > * {
