@@ -997,7 +997,7 @@
 
 #sobre-texto > :nth-child(2) {
  
-  font-size: min(4vw, 2.5rem) !important;
+  font-size: min(5vw, 2.5rem) !important;
   border: solid 4px orangered !important;
 }
 
