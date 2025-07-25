@@ -946,7 +946,7 @@
   grid-template-columns: 100%;
   grid-template-rows: 40% 60%;
   gap: 0;
-  height: 100%;
+  height: auto;
   padding-bottom: 5%;
 }
 
@@ -970,7 +970,7 @@
 
 
 #sobre-texto {
-  height: 95%;
+  height: auto;
   width: 80%;
   gap: 0;
   align-self: center;
@@ -978,11 +978,12 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: calc(100% / 4);
+  padding-bottom: 3%;
   
 }
 
 #sobre-texto > * {
- height: 100%;
+ 
  text-align: center;
  white-space: normal;
  
@@ -1003,7 +1004,7 @@
 
 #sobre-texto > :nth-child(3) {
   
-  font-size: min(4vw, 2.5rem) !important;
+  font-size: min(3vw, 2.5rem) !important;
   
 }
 
@@ -1013,15 +1014,17 @@
 #sobre-texto > :nth-child(4) {
   border: solid 3px green;
   padding: 0;
-  height: min(10vw, 25vw);
-  width: 40%;
+  height: min(6vw, 25vw);
+  width: auto;
   align-self: center;
   justify-self: center;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 
 #sobre-texto :nth-child(4) img{
-  height: min(8vw, 20vw);
+  height: min(5vw, 10vw);
   width: auto;
 }
 
