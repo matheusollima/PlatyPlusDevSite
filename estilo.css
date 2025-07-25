@@ -1260,7 +1260,16 @@ main section h1 {
   display: flex;
   flex-direction: column;
   gap: 10%;
-  
+  display: relative;
+  text-align: center;
+
+}
+
+#sobre-titulo-section {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
 
 }
 
