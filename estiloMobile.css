@@ -993,7 +993,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: min(8vw, 2.5rem) !important;
+  font-size: min(18vw, 2.5rem) !important;
 }
 
 #sobre-texto > :nth-child(2) {
@@ -1013,18 +1013,19 @@
 
 #sobre-texto > :nth-child(4) {
   border: solid 3px green;
-  padding: 0;
   height: min(6vw, 25vw);
   width: auto;
   align-self: center;
   justify-self: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
   padding-left: 2%;
   padding-right: 2%;
 }
 
 
 #sobre-texto :nth-child(4) img{
-  height: min(5vw, 10vw);
+  height: min(7vw, 10vw);
   width: auto;
 }
 
