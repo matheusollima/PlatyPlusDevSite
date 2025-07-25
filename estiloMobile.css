@@ -970,7 +970,7 @@
 
 
 #sobre-texto {
-  height: auto;
+  height: 100%;
   width: 80%;
   gap: 0;
   align-self: center;
@@ -998,7 +998,7 @@
 
 #sobre-texto > :nth-child(2) {
  
-  font-size: min(5vw, 2.5rem) !important;
+  font-size: min(4.5vw, 2.5rem) !important;
   
 }
 
