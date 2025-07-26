@@ -1296,21 +1296,21 @@ main section h1 {
 .sobre-container {
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  display: grid;
   gap: 2%;
+  grid-template-columns: auto 55%;
+  grid-template-rows: 100% 100%;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   position: relative;
+  background-color: purple;
 
 }
 
 .sobre-container > * {
   box-sizing: border-box !important;
-  
 }
-
 
 .sobre-container div {}
 
@@ -1323,39 +1323,73 @@ main section h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   height: auto !important;
-  width: auto !important;
+  width: auto;
+  
 }
 
 #foto-apresentação {
-  width: 20vw;
+  width: 22vw;
   justify-self: center;
   align-self: center;
   border-radius: 30px;
   box-sizing: border-box !important;
 }
 
-#sobre-texto {
+/* #sobre-texto {
   width: 50vw;
   height: auto;
-  background-color: #1e2329;
-  border-radius: 10px;
+  
   align-self: center;
-  border: 2px solid darkgreen !important;
+  
   display: flex;
   flex-direction: column;
   justify-content: end;
   box-sizing: border-box !important;
   white-space: nowrap;
-  padding-top: 2%;
-  padding-bottom: 1%;
-  padding-right: 2%;
-  padding-left: 2%;
-}
+ 
+} */
 
+
+#sobre-texto {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #sobre-texto>* {
   align-self: center;
+}
+
+#sobre-texto-painel {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  background-color: #1e2329;
+  border-radius: 10px;
+  border: 2px solid darkgreen !important;
+  box-sizing: border-box;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  white-space: nowrap;
+}
+
+#sobre-texto-painel > * {
+  
+}
+
+#sobre-nome {
+  color: #d3d3d3;
+   font-size: min(3vw, 2.5rem) !important;
+  text-align: center;
 }
 
 #sobre-titulo {
@@ -1365,11 +1399,6 @@ main section h1 {
   box-sizing: border-box !important;
 }
 
-#sobre-nome {
-  color: #d3d3d3;
- font-size: clamp(0.8rem, 20vh, 170%) !important;
-  text-align: start;
-}
 
 #sobre-formacao {
   color: #d3d3d3;
@@ -1386,36 +1415,29 @@ main section h1 {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: auto;
   width: auto;
   align-self: end;
   border-radius: 10px;
   border: solid 2px darkgreen;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-  margin-top: 2%;
-  gap: 10%;
+
 }
 
 #painel-redes-profissionais > * {
 }
 
 #painel-redes-profissionais a{
-  display: inline-flex;
   padding: 0;
   border: none;
   background: none;
   height: auto;
   width: auto;
-  
   cursor: pointer;
+  
 }
 
 #painel-redes-profissionais img {
   display: block;
-  width: 2vw;
+  width: 3vw;
   height: auto;
   transition: ease 0.5s;
 }
