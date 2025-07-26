@@ -1012,7 +1012,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: min(6vw, 1.9rem) !important;
+  font-size: min(7vw, 1.9rem) !important;
 }
 
 #sobre-texto-painel > :nth-child(2) {
@@ -1022,8 +1022,8 @@
 }
 
 #sobre-texto-painel > :nth-child(3) {
-  
-  font-size: min(5vw, 1.3rem) !important;
+  text-align: center;
+  font-size: min(4vw, 1.3rem) !important;
   
 }
 
