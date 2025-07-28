@@ -40,32 +40,37 @@
 
   .header-mobile {
     width: 100%;
-  
+    height: 15vh;
     display: block;
+    
     box-sizing: border-box;
-    height: auto !important;
+    border: solid 3px rgb(0, 255, 13);
   
   }
 
   .navMenu-mobile {
     box-sizing: border-box;
     width: 100%;
-    height: 15%;
+    height: 15vh;
     position: fixed;
-    /* overflow-x: hidden; */
     margin: 0px;
     top: 0px;
+    left: 0;
+    right: 0;
     display: grid;
+    align-items: center;
+    justify-content: center;
     background-color: #1f221e;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
     border-bottom: 1px solid black;
-    z-index: 101 !important;
-    
+    z-index: 100 !important;
+    display: ;
     
   }
 
-  .navMenu-mobile > {
-    display: inline-block;
+  .navMenu-mobile > * {
+    
   }
 
   #div0Msgdia {
@@ -87,10 +92,14 @@
   }
 
   #logo-mobile-div {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
+    height: 100%;
+  
+    
   }
 
   #logo-link {
@@ -102,17 +111,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: auto;
+    height: 100%;
   }
 
   #logo-mobile-img {
     display: block;
-    /* Remove espaços embaixo da imagem */
-    width: 100%;
-    /* Tamanho fixo da imagem */
-    height: auto;
-    /* Mantém proporção */
+    width: auto;
+    height: 85%;
+    top: 0;
     margin: 0;
+  
   }
 
   #msgDia {
@@ -193,8 +202,6 @@
  #home {
   width: 100%;
   height: 100vh;
-  margin-top: 12vh;
-  
   box-sizing: border-box;
  }
 
@@ -205,7 +212,6 @@
     width: 100% !important;
     box-sizing: border-box;
     margin: 0;
-    margin-top: 15%;
     
     
   }
@@ -214,7 +220,7 @@
     margin-top: 12vh;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     justify-content: center;
     align-items: start;
     display: grid;
@@ -246,13 +252,13 @@
     align-items: center;
     margin: 0;
     box-sizing: border-box;
-    border: solid 4px blue;
+
     
   }
 
   .titulo-container > * {
-    border: solid 5px orangered !important;
     margin: 0 !important;
+    padding: 0;
   }
 
   .titulo-container > :nth-child(2) {
@@ -273,8 +279,7 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box !important;
-    background-color: chartreuse;
-    border: solid 3px blue;
+
   }
 
   #imagem-apresentação {
@@ -293,13 +298,13 @@
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: red;
+    
     
   }
 
   .botao-orcamento {
-    width: clamp(150px, 60%, 300px);
-    padding: clamp(10px, 3vh, 20px) clamp(20px, 5vw, 40px);
+    width: auto;
+    padding: 
     font-size: clamp(0.9rem, 4.9vw, 3rem);
 
     border: none;
@@ -1038,7 +1043,6 @@
   height: 100%;
   width: 60%;
   padding: 0;
-  border: solid red 2px;
 }
 
 #sobre-texto-painel > * {
