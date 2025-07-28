@@ -302,14 +302,13 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    position: relative;
+    
     
     
   }
 
   .botao-orcamento {
     width: auto;
-    padding: 
     font-size: clamp(0.9rem, 4.9vw, 3rem);
 
     border: none;
