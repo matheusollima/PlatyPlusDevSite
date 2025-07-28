@@ -181,7 +181,6 @@ function botao_orcamento(){
 
 // ANIMAÇÃO PARA ATIVAR MENU HAMBURGUER
 const btn_menu = document.getElementById("btn-menu");
-const botaoIsAtivo = false;
 const img_menu_hamburguer = document.getElementById("menu-hamburguer-img");
 const ativar_menu = () => {
   const imgMenu = document.getElementById('menu-hamburguer-img');
