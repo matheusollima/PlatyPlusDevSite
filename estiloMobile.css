@@ -39,16 +39,18 @@
   }
 
   .header-mobile {
-    width: 100vw;
+    width: 100%;
+  
     display: block;
     box-sizing: border-box;
     height: auto !important;
+  
   }
 
   .navMenu-mobile {
     box-sizing: border-box;
-    width: 100vw;
-    min-height: 12vh;
+    width: 100%;
+    height: 15%;
     position: fixed;
     /* overflow-x: hidden; */
     margin: 0px;
@@ -58,6 +60,8 @@
     grid-template-columns: 70% 30%;
     border-bottom: 1px solid black;
     z-index: 101 !important;
+    
+    
   }
 
   .navMenu-mobile > {
@@ -185,31 +189,48 @@
      CONTEÚDO
   */
 
+
+ #home {
+  width: 100%;
+  height: 100vh;
+  margin-top: 12vh;
+  
+  box-sizing: border-box;
+ }
+
+
   .section#inicio {
     padding: 0;
-    margin-top: 12vh;
-    border: solid 3px green;
+    height: 100vh;
+    width: 100% !important;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 15%;
+    
+    
   }
 
   section.apresentacao {
     margin-top: 12vh;
-    width: 100vw;
+    box-sizing: border-box;
+    width: 100%;
     height: 100vh;
-    border: solid 3px red;
     justify-content: center;
     align-items: start;
     display: grid;
     flex-direction: column;
-    grid-template-columns: 100vw;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 45% auto;
     grid-template-areas:
       "titulo"
       "imagem"
       "botao";
+  
   }
 
   .apresentacao > * {
-   border: solid 1px blue !important;
+
+   
   }
 
   /* TITULO */
@@ -218,22 +239,30 @@
     margin: 0 !important;
     grid-area: titulo;
     height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    z-index: 7;
-    border: solid 6px yellow !important;
+    margin: 0;
+    box-sizing: border-box;
+    border: solid 4px blue;
     
   }
 
   .titulo-container > * {
     border: solid 5px orangered !important;
+    margin: 0 !important;
+  }
+
+  .titulo-container > :nth-child(2) {
+      font-size: min(4vw, 2rem) !important;
   }
 
   #titulo-apresentação {
-    font-size: clamp(0.9rem, 6vw, 3rem) !important;
-    z-index: 999;
+    font-size: min(6.5vw, 2rem) !important;
+  
+    width: 100%;
     
   }
 
@@ -241,17 +270,17 @@
 
   #img-container {
     grid-area: imagem;
-    width: 100%;
     height: 100%;
-    align-self: start;
-    border: solid 6px blue !important;
+    width: 100%;
     box-sizing: border-box !important;
+    background-color: chartreuse;
+    border: solid 3px blue;
   }
 
   #imagem-apresentação {
-    height: 100% !important;
+    height: 90% !important;
     width: auto !important;
-    /* max-height: fit-content; */
+    
   }
 
   /* BOTÃO */
@@ -263,17 +292,15 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    margin-top: -2%;
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    background-color: red;
+    
   }
 
   .botao-orcamento {
     width: clamp(150px, 60%, 300px);
     padding: clamp(10px, 3vh, 20px) clamp(20px, 5vw, 40px);
     font-size: clamp(0.9rem, 4.9vw, 3rem);
-    margin-top: 3%;
 
     border: none;
     border-radius: 12px;
@@ -1269,16 +1296,11 @@
   }
 
   section.apresentacao {
-    grid-template-columns: 1fr 1fr;
-    /* Divide horizontalmente */
+    
     grid-template-rows: auto;
-    /* grid-template-areas:
-      
-     "titulo titulo"
-     "imagem imagem"
-      "botao botao"; */
+
     height: 100vh;
-    padding: 5%;
+  
     display: none;
   }
 
@@ -1286,7 +1308,7 @@
     grid-area: titulo;
     justify-content: start;
     align-items: center;
-    padding-left: 5%;
+  
    
   }
 
