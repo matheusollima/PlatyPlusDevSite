@@ -77,7 +77,7 @@ function scrollSection(event) {
   if (href == "#inicio") {
     let topSection = 0;
     window.scrollTo({
-      top: 0,
+      top: topSection,
       behavior: "smooth",
     });
     setTimeout(() => {
@@ -122,7 +122,7 @@ function scrollSection(event) {
   event.preventDefault();
   const href = event.currentTarget.getAttribute("href");
   const section = document.querySelector(href);
-  if (href == "#inicio") {
+  if (href == "#head") {
     let topSection = 0;
     window.scrollTo({
       top: 0,
