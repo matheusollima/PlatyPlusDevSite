@@ -7,7 +7,7 @@
 }
 
 
-@media (max-width: 720px) and (max-height: 1200px) {
+@media (max-width: 720px) and (max-height: 1023px) {
   html {
     box-sizing: border-box;
     
@@ -281,19 +281,27 @@
 
   /* IMAGEM */
 
-  #img-container {
-    grid-area: imagem;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box !important;
+#img-container {
+  grid-area: imagem;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: solid 2px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* evita que a imagem ultrapasse */
+}
 
-  }
+#imagem-apresentação {
+  width: 80%;
+  height: auto;
+  max-height: 80%;
+  max-width: 100%;
+  border: solid 2px red;
+  object-fit: contain; /* garante que a imagem se ajuste sem cortar */
+}
 
-  #imagem-apresentação {
-    height: 90% !important;
-    width: auto !important;
-    
-  }
 
   /* BOTÃO */
   #botao-container {
@@ -1331,6 +1339,7 @@
   #imagem-apresentação {
     height: 60vh;
     width: auto;
+    display: none;
   }
 
   #botao-container {
