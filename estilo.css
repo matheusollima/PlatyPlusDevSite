@@ -183,29 +183,35 @@ h2 {
   position: fixed;
   text-decoration: none;
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  gap:clamp(0.3rem, 2vw, 10%);
+  display: grid;
+  grid-template-columns: 30% 70% !important;
+  grid-template-rows: 100% 100%;
+
   background-color: #1f221e;
   opacity: 0.99;
   backdrop-filter: blur(50px);
   height: clamp(50px, 120px, 120px);
-  width: 100%;
+  width: 100% !important;
   transition: height 0.3s ease;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
+  border: solid 3px green;
 }
+
 
 
 #divImgLogo {
   
-  height: 100%;
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
  box-sizing: border-box;
+ border: solid 2px red;
+ width: 100%;
+ height: 100%;
  
  
   
@@ -215,8 +221,9 @@ h2 {
 #logo {
   box-sizing: border-box;
   z-index: 1;
-  width: auto;
-  height: 85%;
+  width: 100%;
+  height: 100%;
+ 
 
 }
 
@@ -235,24 +242,29 @@ h2 {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  gap: clamp(0.1rem, 4vw, 10vw);
+  /* gap: clamp(0.1rem, 4vw, 10vw); */
+  gap: 1%;
   margin-bottom: 0px;
   background-color: none;
   padding: 0px;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 100%;
   height: 100%;
   box-sizing: border-box;
+  border: solid 2px blue;
 }
 
 nav li {
   box-sizing: border-box;
-  height: auto;
+  height: 100%;
+  gap: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 100%;
+  border: solid 2px red;
+ 
 }
 
 nav li a {
@@ -599,31 +611,42 @@ main section h1 {
   row-gap: 100px;
   align-items: center;
   width: 100%;
+  height: auto;
+  border: solid 2px rgb(225, 0, 255);
+  
 }
 
 .painel-software {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
-  row-gap: 100px;
-  margin-top: 100px;
-  width: auto;
-  height: auto;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+  border: solid 2px red;
+
 }
 
 .painel-software-div {
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  max-width: 300px;
   padding: 0;
   border-radius: 30px;
   border: 0.009em solid rgb(169, 169, 169, 0.2);
   border-bottom: 10px solid green;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  box-sizing: border-box;
+}
+
+.painel-software-div > * {
+  
 }
 
 .painel-software-div  h3 {
@@ -985,7 +1008,7 @@ main section h1 {
   width: 100% !important;
   box-sizing: border-box !important;
   padding-bottom: 2%;
- 
+ display: none;
 }
 
 
@@ -1502,9 +1525,10 @@ main section h1 {
 }
 
 .section#serviços {
-  margin-top: 100px;
+  margin-top: 10%;
   height: auto;
   box-sizing: border-box;
+  border: solid 2px rgb(255, 30, 0);
 }
 
 #serviços-hidden {

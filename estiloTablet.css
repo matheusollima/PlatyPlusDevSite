@@ -119,5 +119,107 @@
   }
 
 
+  #sobre {
+    border: solid 3px red;
+    height: auto;
+  }
+
+ .sobre-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40% 60%;
+  gap: 0;
+  height: auto;
+  padding-left: 0;
+  padding-bottom: 2%;
+  
+ }
+
+ .sobre-container > * {
+  border: solid 5px yellow;
+ }
+
+
+ .sobre-container > :nth-child(1){
+  height: 100%;
+ }
+
+ #foto-apresentação {
+  height: 25vh;
+  width: auto;
+}
+
+#sobre-texto {
+  height: 100%;
+  width: 100%;
+  gap: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+
+  
+}
+
+#sobre-texto-painel {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-columns: calc(100%, 4);
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+  padding: 0;
+}
+
+#sobre-texto-painel > * {
+  white-space: normal !important;
+}
+
+#sobre-texto-painel > :nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: min(6.7vw, 1.9rem) !important;
+}
+
+#sobre-texto-painel > :nth-child(2) {
+ 
+  font-size: min(6vw, 1.5rem) !important;
+  
+}
+
+#sobre-texto-painel > :nth-child(3) {
+  text-align: center;
+  font-size: min(4vw, 1.3rem) !important;
+  
+}
+
+
+
+
+#sobre-texto-painel > :nth-child(4) {
+  border: solid 1px green;
+  height: auto;
+  width: auto;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ align-self: center;
+ justify-self: center;
+  gap: 6%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  
+}
+
+
+#sobre-texto :nth-child(4) img{
+  height: 6vh;
+  width: auto;
+}
+
 
 }
