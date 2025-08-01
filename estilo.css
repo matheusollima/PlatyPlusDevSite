@@ -615,13 +615,15 @@ main section h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
-
+ border: solid 2px red;
+ padding-left: 5%;
+ padding-right: 5%;
 }
 
 .painel-software-div {
   width: 100%;
   aspect-ratio: 3 / 4;
-  max-width: 300px;
+  max-width: 250px;
   padding: 0;
   border-radius: 30px;
   border: 0.009em solid rgb(169, 169, 169, 0.2);
