@@ -9,7 +9,7 @@
     <title>PlatyPlus Dev</title>
     <link rel="stylesheet" href="estilo.css">
     <link href="estiloMonitor16.9.css" rel="stylesheet" />
-    <link href="estiloTablet.css" rel = "stylesheet" />
+    <link href="estiloTablet.css" rel="stylesheet" />
     <link href="estiloMobile.css" rel="stylesheet" />
     <script defer src="script.js"></script>
     <script defer src=sliderMobile.js></script>
@@ -221,27 +221,33 @@
                             <label for="">Loja de roupas</label>
                         </div>
                         <div id="academia"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/academia.png"
-                                alt=""> <label for="">Academia</label> </div>
+                                alt=""> <label for="">Academia</label>
+                        </div>
                         <div id="mercearia"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/basket.png"
-                                alt=""> <label for="">Mercearia</label> </div>
+                                alt=""> <label for="">Mercearia</label>
+                        </div>
                         <div id="petshop"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/petshop.png"
-                                alt=""> <label for="">Petshop</label> </div>
+                                alt=""> <label for="">Petshop</label>
+                        </div>
                         <div id="loja"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/shop.png" alt="">
                             <label for="">Loja</label>
                         </div>
                         <div id="fotografo"><img
                                 src="./imgs/front-end/serviços - icons/Modelos de negócio/Fotografo.png" alt=""> <label
-                                for="" ">Estúdio de Fotografia</label>   </div>
-                <div id = " escola"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/educação.png"
-                                    alt=""> <label for="">Escola</label> </div>
-                        <div><img src="./imgs/front-end/serviços - icons/Modelos de negócio/salao-beleza.png" alt="">
+                                for="">Estúdio de Fotografia</label>
+                        </div>
+                        <div id="escola"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/educação.png"
+                                alt=""> <label for="">Escola</label>
+                        </div>
+                        <div id = "salao-beleza"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/salao-beleza.png" alt="">
                             <label for="">Salão de beleza</label>
                         </div>
-                        <div><img src="./imgs/front-end/serviços - icons/Modelos de negócio/portfolio.png" alt="">
+                        <div id = "portfolio"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/portfolio.png" alt="">
                             <label for="">Portfólio</label>
                         </div>
-                        <div><img src="./imgs/front-end/serviços - icons/Modelos de negócio/oficina.png" alt=""> <label
-                                for="">Oficina</label> </div>
+                        <div id = "oficina"><img src="./imgs/front-end/serviços - icons/Modelos de negócio/oficina.png" alt=""> <label
+                                for="">Oficina</label>
+                        </div>
                     </div>
                 </div>
 
@@ -591,23 +597,23 @@
             <div class='sobre-container'>
                 <div id='sobre-foto'><img id='foto-apresentação' src="./imgs/front-end/Sobre/matheus.jpg" alt=""></div>
                 <div id='sobre-texto'>
-                    <div id = 'sobre-texto-painel'>
-                            <h1 id="sobre-nome">&lt; Matheus Lima &gt; </h1>
-                    <h2 id="sobre-titulo">Desenvolvedor de software fullstack </h2>
-                    <h3 id="sobre-formacao">
-                        &lt; Formação: <span class="destaque-formacao">Análise e Desenvolvimento de software - Fatec
-                            Zona Sul</span> &gt;
-                    </h3>
-                    <div id="painel-redes-profissionais">
-                        <a href="https://www.linkedin.com/in/matheusollima/" id="linkedin-link" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="./imgs/redes sociais/icons8-linkedin-144.png" alt="LinkedIn de Matheus">
-                        </a>
-                        <a href="https://github.com/matheusollima" id="github-link" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="./imgs/redes sociais/icons8-github-144.png" alt="GitHub de Matheus">
-                        </a>
-                    </div>
+                    <div id='sobre-texto-painel'>
+                        <h1 id="sobre-nome">&lt; Matheus Lima &gt; </h1>
+                        <h2 id="sobre-titulo">Desenvolvedor de software fullstack </h2>
+                        <h3 id="sobre-formacao">
+                            &lt; Formação: <span class="destaque-formacao">Análise e Desenvolvimento de software - Fatec
+                                Zona Sul</span> &gt;
+                        </h3>
+                        <div id="painel-redes-profissionais">
+                            <a href="https://www.linkedin.com/in/matheusollima/" id="linkedin-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="./imgs/redes sociais/icons8-linkedin-144.png" alt="LinkedIn de Matheus">
+                            </a>
+                            <a href="https://github.com/matheusollima" id="github-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="./imgs/redes sociais/icons8-github-144.png" alt="GitHub de Matheus">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -647,10 +653,6 @@
             </div>
         </section>
 
-
-        <br>
-
-
         <section class="section" id="formulario-contato">
 
             <div class="formContato">
@@ -663,14 +665,13 @@
                     <input required type="email" id="inputEmail" class="inputContato" name="Email"><label
                         for="formEmail">Email</label>
                 </div>
-                <textarea id="msgContato" name="msgContato" placeholder="Me mande uma mensagem..." style = "padding-left: 2%; padding-top: 2%;"></textarea>
+                <textarea id="msgContato" name="msgContato" placeholder="Me mande uma mensagem..."
+                    style="padding-left: 2%; padding-top: 2%;"></textarea>
                 <button type="submit" id="btEnviar">Enviar</button>
                 <p id="msgEnviado"></p>
 
             </div>
         </section>
-
-
 
         <div id="msgFinal">
             <p style="padding-left: 50px;">Todos os direitos reservados a Matheus Lima ©</p>

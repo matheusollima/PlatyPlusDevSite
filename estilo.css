@@ -306,26 +306,30 @@ main section h1 {
 }
 
 #rodape {
-  /* align-items:start;
-      justify-content:start; */
-  /* background-color:#93c572; */
   background-color: #1f221e;
-  /* height: auto; */
   font-family: "roboto";
   padding: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
+  display: grid;
+  border: solid 2px purple;
+ grid-template-columns: auto 100%;
+ grid-template-rows: 100%;
+ position: relative;
+}
+
+#rodape > * {
+  border: solid 3px red;
 }
 
 .contato {
   height: fit-content;
   width: fit-content;
+  border: solid 2px blue !important;
+  z-index: 99999999999;
 }
 
-#rodape> {
-  
-}
 
 #divContato {
   display: flex;
@@ -410,44 +414,43 @@ main section h1 {
   font-family: "roboto";
   font-size: 30px;
   border: 0;
-  height: 300px;
-  width: 100%;
+  height: 60vh;
+  width: 90%;
   left: 0;
   border-radius: 10px;
 }
 
 #formulario-contato {
-  display: block;
+  display: flex;
   justify-content: center;
-  padding-bottom: 10px;
-  height: auto;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: solid 3px green;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: transparent;
-  width: 830px;
-  height: 380px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -150px;
-  margin-bottom: 50px;
+ 
 }
 
 #msgOrçamento {
   font-size: 40px;
-  text-align: start;
+  margin-top: 6%;
 }
 
 .formContato {
-  /* justify-content: center; */
-  /* margin-bottom: 50px; */
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
   background-color: black;
   border: solid green 4px;
-  height: auto;
-  width: 830px;
+  width: 50%;
+  height: 80%;
   border-radius: 20px;
+  display: flex;
+  gap: 2%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -481,9 +484,15 @@ main section h1 {
 }
 
 .formInputs {
-  margin: 25px 0px;
-  width: 300px;
+  height: auto;
+  width: 90%;
+  background-color: red;
+  border: solid 2px red;
   position: relative;
+}
+
+#inputEmail {
+  margin-top: 5%;
 }
 
 .formInputs label {
@@ -498,8 +507,7 @@ main section h1 {
 }
 
 .formInputs input {
-  width: 700px;
-  padding: 5px;
+  width: 100%;
   color: rgb(150, 150, 150);
   border: 0;
   background-color: transparent;
@@ -514,7 +522,7 @@ main section h1 {
 
 .formInputs input:focus~label,
 .formInputs input:valid~label {
-  transform: translateY(-24px);
+  transform: translateY(-10px);
   font-size: 20px;
   color: grey;
 }
@@ -530,6 +538,8 @@ main section h1 {
   border: none;
   cursor: pointer;
   position: relative;
+  border: solid 3px red;
+  align-self: end;
 }
 
 #btEnviar::after {
@@ -604,7 +614,7 @@ main section h1 {
   align-items: center;
   width: 100%;
   height: auto;
-  
+  border: solid 3px red;
   
 }
 
@@ -614,8 +624,7 @@ main section h1 {
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 16px;
- border: solid 2px red;
+  gap: 20px;
  padding-left: 5%;
  padding-right: 5%;
 }
@@ -636,6 +645,8 @@ main section h1 {
   align-self: center;
   justify-self: center;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .painel-software-div > * {
@@ -651,14 +662,13 @@ main section h1 {
 }
 
 
+
 .painel-software-div:nth-child(6) {
   grid-column: 2;
 }
 
 .painel-software h2 {
-  display: inline-block;
-  width: 250px;
-  justify-self: center;
+ 
 }
 
 .painel-software h2::after {
@@ -679,47 +689,40 @@ main section h1 {
 
 .serviço-texto {
   position: absolute;
-  z-index: 2000;
-  display: grid;
-  background-image: linear-gradient(to top, #013220, #000000);
-}
-
-.serviço-texto p {
-  margin: 0;
-  font-size: 29px;
-  font-family: "roboto";
-}
-
-/* .painel-software>div:hover img{
-   opacity: 0;
   
- }
-
- .painel-software>div:hover .titulo-serviço{
-  opacity: 0;
- 
-} */
-
-/* TEXTO EXPLICATIVO SITE INSTITUCIONAL*/
-#site-i {
-  width: 300px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-content: center;
+  background-image: linear-gradient(to top, #013220, #000000);
+   width: 100%;
+  height: 100%;
+  display: flex;
+   flex-direction: column;
+  justify-content: start;
   align-items: center;
   position: absolute;
   top: 600px;
   transition: top 0.5s ease-in-out;
-  border: none;
-  background-color: rgba(62, 185, 13);
+  
 }
 
-#site-i-div {
-  position: relative;
-  overflow: hidden;
+.serviço-texto>h2 {
+  color: darkgreen;
+  
 }
+
+.serviço-texto p {
+  font-size: min(3vw, 1rem) !important;
+  font-family: "roboto";
+  border: solid 3px red;
+  height: auto;
+  color: rgb(73, 243, 73);
+  align-self: center;
+  text-align: center;
+   margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+
+/* TEXTO EXPLICATIVO SITE INSTITUCIONAL*/
 
 #site-i-div:hover #site-i {
   top: 0;
@@ -729,36 +732,9 @@ main section h1 {
   font-size: 30px;
 }
 
-#site-i p {
-  /* opacity: 0;
-  transition: 5s ease-in; */
-}
-
-#site-i-div:hover #site-i p {
-  /* opacity: 1; */
-}
 
 /* TEXTO EXPLICATIVO LANDING-PAGES*/
 
-#landing-page {
-  width: 300px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 600px;
-  transition: top 0.5s ease-in-out;
-  border: none;
-  background-color: rgba(62, 185, 13);
-}
-
-#landing-page-div {
-  position: relative;
-  overflow: hidden;
-}
 
 #landing-page-div:hover #landing-page {
   top: 0;
@@ -768,7 +744,7 @@ main section h1 {
   font-size: 30px;
 
   z-index: 2001;
-  position: absolute;
+  
 }
 
 #landing-page p {
@@ -777,25 +753,6 @@ main section h1 {
 
 /* TEXTO EXPLICATIVO HOT SITE*/
 
-#hot-site {
-  width: 300px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 600px;
-  transition: top 0.5s ease-in-out;
-  border: none;
-  background-color: rgba(62, 185, 13);
-}
-
-#hot-site-div {
-  position: relative;
-  overflow: hidden;
-}
 
 #hot-site-div:hover #hot-site {
   top: 0;
@@ -805,30 +762,11 @@ main section h1 {
   font-size: 30px;
 
   z-index: 2001;
-  position: absolute;
+  
 }
 
 /*TEXTO EXPLICATIVO SISTEMA WEB*/
 
-#web-system {
-  width: 300px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 600px;
-  transition: top 0.5s ease-in-out;
-  border: none;
-  background-color: rgba(62, 185, 13);
-}
-
-#web-system-div {
-  position: relative;
-  overflow: hidden;
-}
 
 #web-system-div:hover #web-system {
   top: 0;
@@ -837,31 +775,11 @@ main section h1 {
 .serviço-texto#web-system>h2 {
   font-size: 30px;
   z-index: 2001;
-  position: absolute;
+ 
 }
 
 /* TEXTO EXPLICATIVO E-COMMERCE*/
 
-#commerce {
-  width: 300px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 600px;
-  transition: top 0.5s ease-in-out;
-  border: none;
-  /* background-color:rgba(62, 185, 13); */
-  background-image: linear-gradient(to top, #013220, #000000);
-}
-
-#e-commerce-div {
-  position: relative;
-  overflow: hidden;
-}
 
 #e-commerce-div:hover #commerce {
   top: 0;
@@ -872,42 +790,11 @@ main section h1 {
   z-index: 2001;
 }
 
-.serviço-texto>h2 {
-  color: darkgreen;
-  justify-self: center;
-  align-self: start;
-}
 
-.serviço-texto>h2::after {
-  display: none;
-}
 
-.serviço-texto p {
-  color: rgb(73, 243, 73);
-  font-size: 25px;
-}
 
 /* TEXTO EXPLICATIVO CONSULTORIA*/
 
-#consultoria {
-  width: 300px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 600px;
-  transition: top 0.5s ease-in-out;
-  border: none;
-  background-color: rgba(62, 185, 13);
-}
-
-#consultoria-div {
-  position: relative;
-  overflow: hidden;
-}
 
 #consultoria-div:hover #consultoria {
   top: 0;
@@ -923,25 +810,6 @@ main section h1 {
 
 /* TEXTO EXPLICATIVO APLICATIVOS ANDROID*/
 
-#android {
-  width: 300px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 600px;
-  transition: top 0.5s ease-in-out;
-  border: none;
-  background-color: rgba(62, 185, 13);
-}
-
-#android-div {
-  position: relative;
-  overflow: hidden;
-}
 
 #android-div:hover #android {
   top: 0;
@@ -956,26 +824,6 @@ main section h1 {
 }
 
 /* TEXTO EXPLICATIVO SISTEMA DE GESTÃO (ERP)*/
-
-#erp {
-  width: 300px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 600px;
-  transition: top 0.5s ease-in-out;
-  border: none;
-  background-color: rgba(62, 185, 13);
-}
-
-#erp-div {
-  position: relative;
-  overflow: hidden;
-}
 
 #erp-div:hover #erp {
   top: 0;
@@ -1001,7 +849,7 @@ main section h1 {
   width: 100% !important;
   box-sizing: border-box !important;
   padding-bottom: 2%;
- display: none;
+ border: solid 2px rgb(14, 221, 14);
 }
 
 
@@ -1018,23 +866,28 @@ main section h1 {
 }
 
 .painel-modelo-negocio {
-  display: grid;
-  flex-direction: column;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: repeat(5, calc(100%/5));
-  width: auto !important;
-  box-sizing: border-box;
-  height: auto;
-  color: white;
-  row-gap: 30px;
-  column-gap: 2%;
- 
-  white-space: nowrap;
-  
+  gap: 20px;
+  padding: 20px;
+  background-color: #000;
 }
 
-
+.painel-modelo-negocio div {
+  flex: 0 0 15vw;              /* largura responsiva */
+  aspect-ratio: 5 / 3;         /* MAIS largo do que alto */
+  background-color: #1b1b1b;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+  min-width: 120px;
+}
 
 .painel-modelo-negocio img {
   width: 100px;
@@ -1539,18 +1392,7 @@ height: auto;
   
  }
 
-.painel-modelo-negocio div {
-  display: flex;
-  flex-direction: column;
-  background-color: #1b1b1b;
-  border-radius: 15px;
-  height: 20vh;
-  width: 15vw;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s;
-   ;
-}
+
 
 .painel-modelo-negocio div:hover {
   transform: scale(1.1);
