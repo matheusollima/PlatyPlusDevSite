@@ -314,7 +314,6 @@ main section h1 {
 .contato {
   display: flex;
   flex-direction: column;
-  border: solid 2px blue !important;
   
 }
 
@@ -353,7 +352,6 @@ main section h1 {
 
 #midiasSociais {
   display: inline;
-  border: solid 2px red;
   box-sizing: border-box;
   height: auto;
   width: auto;
@@ -414,7 +412,7 @@ main section h1 {
   display: grid;
  grid-template-columns: auto 1fr;
  grid-template-rows: auto ;
-border: solid 5px red;
+ position: relative;
  
 }
 
@@ -424,13 +422,9 @@ border: solid 5px red;
   align-items: center;
   height: 100%;
   width: 100%;
-  border: solid 3px green;
   top: 0;
   left: 0;
   background-color: transparent;
- background-color: purple;
-
- 
 }
 
 .formContato {
@@ -443,11 +437,15 @@ border: solid 5px red;
   align-items: center;
   justify-content: center;
   gap: 2%;
-  width: min(600px, 100%);
+  width: min(900px, 100%);
   max-width: 100%;
-  
-  height: 80%;
+  height: min(600px, 70%);
   max-height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 
@@ -536,6 +534,7 @@ border: solid 5px red;
   cursor: pointer;
   position: relative;
   align-self: end;
+  margin-right: 5%;
 }
 
 #btEnviar::after {

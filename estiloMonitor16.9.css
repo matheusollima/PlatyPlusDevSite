@@ -85,7 +85,7 @@
   }
 
   h1 {
-    font-size: 40px !important;
+    font-size: 40px;
   }
 
   .section {
@@ -320,7 +320,9 @@
 
   /* Formulário Contato */
 
- 
+ .formContato {
+  width: min(600px, 100%);
+ }
  
 
   #msgOrçamento {
@@ -340,8 +342,5 @@
     margin-bottom: 0px;
   }
 
-  #rodape {
-    height: 100vh;
-    display: grid;
-  }
+ 
 }

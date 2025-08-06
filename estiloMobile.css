@@ -1,12 +1,9 @@
 /* ------------------------------------------------POSIÇÃO VERTICAL------------------------------------------------ */
 
-
-
-
 @media (max-width: 720px) and (max-height: 1023px) {
   html {
     box-sizing: border-box;
-    
+
     overflow-x: hidden;
   }
 
@@ -27,7 +24,7 @@
 
   #lorem {
     display: none;
-    
+
   }
 
   /* MENU DE NAVEGAÇÃO */
@@ -40,10 +37,10 @@
     width: 100%;
     height: 15vh;
     display: block;
-    
+
     box-sizing: border-box;
-    
-  
+
+
   }
 
   .navMenu-mobile {
@@ -64,12 +61,10 @@
     border-bottom: 1px solid black;
     z-index: 100 !important;
     display: ;
-    
+
   }
 
-  .navMenu-mobile > * {
-    
-  }
+  .navMenu-mobile>* {}
 
   #div0Msgdia {
     display: none;
@@ -83,11 +78,9 @@
     margin: 30px 0;
   }
 
-  .navMenu-mobile li a {
-  }
+  .navMenu-mobile li a {}
 
-  .navMenu-mobile > {
-  }
+  .navMenu-mobile> {}
 
   #logo-mobile-div {
     box-sizing: border-box;
@@ -96,8 +89,8 @@
     display: flex;
     justify-content: center;
     height: 100%;
-  
-    
+
+
   }
 
   #logo-link {
@@ -119,7 +112,7 @@
     height: 70%;
     top: 0;
     margin: 0;
-  
+
   }
 
   #msgDia {
@@ -143,9 +136,12 @@
     background-image: url("./imgs/front-end/menu-icos/menu - hamburguer.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; /* <- essa linha é essencial */
-    width: 15vw; /* largura responsiva */
-    aspect-ratio: 1 / 1; /* altura automática proporcional à largura */
+    background-size: contain;
+    /* <- essa linha é essencial */
+    width: 15vw;
+    /* largura responsiva */
+    aspect-ratio: 1 / 1;
+    /* altura automática proporcional à largura */
   }
 
   #menu-hamburguer-img.ativo {
@@ -197,14 +193,14 @@
   */
 
 
- #home {
-  width: 100%;
-  height: 85vh;
-  box-sizing: border-box;
-  margin-top: 0 !important;
-  
+  #home {
+    width: 100%;
+    height: 85vh;
+    box-sizing: border-box;
+    margin-top: 0 !important;
 
- }
+
+  }
 
 
   .section#inicio {
@@ -214,13 +210,13 @@
     box-sizing: border-box;
     margin: 0;
 
-  
-    
-    
+
+
+
   }
 
   section.apresentacao {
-    
+
     box-sizing: border-box;
     width: 100%;
     height: 100% !important;
@@ -229,20 +225,17 @@
     display: grid;
 
     grid-template-columns: 100%;
-    grid-template-rows: repeat(3, calc(100%/3)) ;
+    grid-template-rows: repeat(3, calc(100%/3));
     grid-template-areas:
       "titulo"
       "imagem"
       "botao";
-    
-      
-  
+
+
+
   }
 
-  .apresentacao > * {
-
-   
-  }
+  .apresentacao>* {}
 
   /* TITULO */
 
@@ -257,48 +250,50 @@
     align-items: center;
     margin: 0;
     box-sizing: border-box;
-  
-    
+
+
   }
 
-  .titulo-container > * {
+  .titulo-container>* {
     margin: 0 !important;
     padding: 0;
   }
 
-  .titulo-container > :nth-child(2) {
-      font-size: min(5vw, 2rem) !important;
-      width: 90%;
+  .titulo-container> :nth-child(2) {
+    font-size: min(5vw, 2rem) !important;
+    width: 90%;
   }
 
   #titulo-apresentação {
     font-size: min(6.5vw, 2rem) !important;
-  
+
     width: 100%;
-    
+
   }
 
   /* IMAGEM */
 
-#img-container {
-  grid-area: imagem;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* evita que a imagem ultrapasse */
-}
+  #img-container {
+    grid-area: imagem;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* evita que a imagem ultrapasse */
+  }
 
-#imagem-apresentação {
-  width: 80%;
-  height: auto;
-  max-height: 90%;
-  max-width: 100%;
-  
-  object-fit: contain; /* garante que a imagem se ajuste sem cortar */
-}
+  #imagem-apresentação {
+    width: 80%;
+    height: auto;
+    max-height: 90%;
+    max-width: 100%;
+
+    object-fit: contain;
+    /* garante que a imagem se ajuste sem cortar */
+  }
 
 
   /* BOTÃO */
@@ -310,9 +305,9 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    
-    
-    
+
+
+
   }
 
   .botao-orcamento {
@@ -384,7 +379,6 @@
     width: 100vw !important;
     height: auto !important;
     box-sizing: border-box;
-    border: solid 2px blue;
   }
 
   #serviços-subtitulo01 {
@@ -422,8 +416,7 @@
     box-sizing: border-box;
   }
 
-  #painel-serviços > div {
-  }
+  #painel-serviços>div {}
 
   .painel-software {
     grid-template-columns: auto !important;
@@ -436,10 +429,10 @@
   }
 
   /* ////////////////////////////////////// SLIDER MOBILE SERVIÇOS //////////////////////////////////////////*/
-.titulo-section {
- margin-top: 10%;
+  .titulo-section {
+    margin-top: 10%;
 
-}
+  }
 
 
 
@@ -474,12 +467,13 @@
     height: auto !important;
     top: 0 !important;
     display: block !important;
-   
+
   }
 
   .serviço-texto :nth-child(1) {
     font-size: clamp(100%, 1vw, 3rem) !important;
   }
+
   .serviço-texto :nth-child(2) {
     font-size: clamp(85%, 1vw, 3rem) !important;
     align-self: center;
@@ -532,7 +526,7 @@
     user-select: none;
   }
 
-  .item > {
+  .item> {
     display: block;
   }
 
@@ -748,7 +742,7 @@
     box-sizing: border-box;
   }
 
-  .front-back-column > li {
+  .front-back-column>li {
     top: 0;
     padding: 0 !important;
     column-gap: 0;
@@ -796,8 +790,7 @@
     width: 100% !important;
   }
 
-  .front-li {
-  }
+  .front-li {}
 
   #data-li {
     left: 0;
@@ -992,392 +985,179 @@
 
   /*  ////////////////////////////////////////////// SOBRE ///////////////////////////////////////////////////////////*/
 
- .section#sobre {
-  height: auto;
-  width: 100vw;
- }
-
-.section#sobre .hidden {
-  padding-top: 0 !important;
-}
-
-.sobre-container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 40% 60%;
-  gap: 0;
-  height: auto;
-  padding-left: 0;
-  padding-bottom: 2%;
-  
-}
-
-.sobre-container > * {
-  
-}
-
-
-#sobre-foto {
-  height: auto !important;
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#foto-apresentação {
-  height: 25vh;
-  width: auto;
-}
-
-
-#sobre-texto {
-  height: 100%;
-  width: 100%;
-  gap: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- justify-content: center;
-
-  
-}
-
-#sobre-texto > * {
- 
- text-align: center;
- white-space: normal;
- 
-}
-
-
-#sobre-texto-painel {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-columns: calc(100%, 4);
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 60%;
-  padding: 0;
-}
-
-#sobre-texto-painel > * {
-  white-space: normal !important;
-}
-
-#sobre-texto-painel > :nth-child(1) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: min(6.7vw, 1.9rem) !important;
-}
-
-#sobre-texto-painel > :nth-child(2) {
- 
-  font-size: min(6vw, 1.5rem) !important;
-  
-}
-
-#sobre-texto-painel > :nth-child(3) {
-  text-align: center;
-  font-size: min(4vw, 1.3rem) !important;
-  
-}
-
-
-
-
-#sobre-texto-painel > :nth-child(4) {
-  border: solid 1px green;
-  height: auto;
-  width: auto;
-  display: flex;
- align-items: center;
- justify-content: center;
- align-self: center;
- justify-self: center;
-  gap: 6%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-left: 3%;
-  padding-right: 3%;
-  
-}
-
-
-#sobre-texto :nth-child(4) img{
-  height: 6vh !important;
-  width: auto;
-  
-}
-
-  /* /////////////////////////////////////////// RODAPÉ ///////////////////////////////*/
-  #rodape {
-    height: max-content !important;
-    width: 100vw !important;
-    box-sizing: border-box;
-    padding: 0;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin: 0;
-    display: flex !important;
-    flex-direction: column-reverse !important;
-    justify-content: center;
-    overflow: visible;
-    position: relative;
+  .section#sobre {
+    height: auto;
+    width: 100vw;
   }
 
-  #divContato {
-    display: flex;
-    justify-content: center;
+  .section#sobre .hidden {
+    padding-top: 0 !important;
   }
 
-  #midiasSociais {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
+  .sobre-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+    gap: 0;
+    height: auto;
+    padding-left: 0;
+    padding-bottom: 2%;
+
+  }
+
+  .sobre-container>* {}
+
+
+  #sobre-foto {
+    height: auto !important;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  #midiasSociais div a img {
-    height: auto;
-    width: 50px;
-  }
-
-  .formContato {
-    padding: 0;
-    height: 310px !important;
-    width: 90vw !important;
-    position: relative;
-    top: 0;
-    overflow-x: hidden;
-    box-sizing: border-box !important;
-  }
-
-  .nmSocial {
-    display: none;
-  }
-
-  .formInputs {
+  #foto-apresentação {
+    height: 25vh;
     width: auto;
-    margin-top: -20px;
-    position: relative;
-    top: 20px;
   }
 
-  .formInputs input {
-    width: 100% !important;
-    margin-top: 10px;
-    color: whitesmoke;
+
+  #sobre-texto {
+    height: 100%;
+    width: 100%;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
   }
 
-  .formInputs label {
-    font-size: 15px;
+  #sobre-texto>* {
+
+    text-align: center;
+    white-space: normal;
+
   }
 
-  .formInputs input:focus ~ label,
-  .formInputs input:valid ~ label {
-    transform: translateY(-17px);
-    font-size: 15px;
+
+  #sobre-texto-painel {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-columns: calc(100%, 4);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    padding: 0;
   }
+
+  #sobre-texto-painel>* {
+    white-space: normal !important;
+  }
+
+  #sobre-texto-painel> :nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: min(6.7vw, 1.9rem) !important;
+  }
+
+  #sobre-texto-painel> :nth-child(2) {
+
+    font-size: min(6vw, 1.5rem) !important;
+
+  }
+
+  #sobre-texto-painel> :nth-child(3) {
+    text-align: center;
+    font-size: min(4vw, 1.3rem) !important;
+
+  }
+
+
+
+
+  #sobre-texto-painel> :nth-child(4) {
+    border: solid 1px green;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    gap: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+  }
+
+
+  #sobre-texto :nth-child(4) img {
+    height: 6vh !important;
+    width: auto;
+
+  }
+
+  /* /////////////////////////////////////////// RODAPÉ ///////////////////////////////*/
+
+
+  #rodape {
+    height: calc(100vh - 15vh);
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "formContato"
+      "contato";
+  }
+
 
   #msgOrçamento {
-    font-size: 25px !important;
-    text-align: center;
-    position: relative;
-    top: 2px;
-    left: 50%;
-    /* right: 30px; */
-    transform: translateX(-50%);
-    align-self: center;
-    height: auto;
-    display: block;
-  }
-
-  #tituloContatos {
-    padding: 0;
-  }
-
-  #msgFinal {
-    display: none;
+    font-size: min(8vw, 2.5rem);
+    margin-bottom: 5%;
   }
 
   #formulario-contato {
-    width: auto !important;
-    height: auto !important;
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    height: max-content;
-    top: 0;
+    height: 100%;
+    width: 100%;
+    grid-area: formContato;
+
+  }
+
+  .formContato {
+    white-space: nowrap;
+    position: static;
+    transform: none;
+    max-height: 95%;
+    height: 100%;
+    width: 90%;
+
+  }
+
+  .formContato>* {}
+
+
+  #msgContato {
+    height: 40%;
   }
 
   .contato {
-    height: max-content !important;
+    grid-area: contato;
+    display: flex;
+    flex-direction: column !important;
+
+  }
+
+  #midiasSociais {
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-  }
-
-  #msgContato {
-    overflow-x: hidden;
-    height: 100px !important;
-    font-size: 17px !important;
-    width: 80vw !important;
-    position: absolute;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    text-indent: 10px;
-  }
-
-  #btEnviar {
-    position: relative;
-    top: 120px;
-    left: -20px;
-    font-size: 25px;
-  }
-
-  #tituloContatos {
-    position: relative;
-    top: 30px;
-    font-size: 30px;
-  }
-
-  #midiasSociais {
-    display: grid !important;
-    /* grid-template-columns: auto auto auto; */
-    column-gap: 10px;
-    row-gap: 10px;
-    align-items: center;
-    justify-content: center !important;
-    justify-items: center;
-    grid-template-areas:
-      "auto"
-      "auto"
-      "auto";
-
-    padding: 0;
-    right: 0 !important;
-  }
-
-  .divMidia {
-    height: max-content;
-    width: 100%;
-  }
-
-  #midiasSociais div a img {
-    width: 30px;
-    height: auto;
-    align-self: center;
-  }
-
-  #midiasSociais a {
-    width: 25px !important;
-    height: 25px !important;
-  }
-
-  .teste {
-    width: 40%;
-    height: 100px;
-    background-color: crimson;
-  }
-
-  .nmSocial {
-    display: block;
-  }
-}
-
-/* ------------------------------------------------POSIÇÃO VERTICAL------------------------------------------------ */
-@media screen and (orientation: landscape) and (max-height: 480px) {
-  html,
-  body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
-
-  .container,
-  .header-mobile,
-  .navMenu-mobile,
-  .menu-mobile,
-  section,
-  #painel-serviços,
-  #painelTecnologias,
-  #formulario-contato {
-    width: 100vw !important;
-    height: auto !important;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
-
-  section.apresentacao {
-    
-    grid-template-rows: auto;
-
-    height: 100vh;
-  
-    display: none;
-  }
-
-  .titulo-container {
-    grid-area: titulo;
-    justify-content: start;
-    align-items: center;
-  
-   
-  }
-
-  #img-container {
-    grid-area: imagem;
-    display: flex;
+    align-items: start;
     justify-content: center;
-    align-items: center;
-    
+    gap: 0;
   }
 
-  #imagem-apresentação {
-    height: 60vh;
-    width: auto;
-    display: none;
-  }
-
-  #botao-container {
-    grid-area: botao;
-    justify-content: center;
-    padding-top: 5%;
-  }
-
-  .botao-orcamento {
-    position: relative;
-    transform: none;
-    margin: 0;
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  /* Tecnologias */
-  #tecnologia-front-div ul,
-  #tecnologia-back-div ul,
-  #tecnologia-database-div ul {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
-
-  /* Rodapé e formulário */
-  .formContato {
-    width: 80vw !important;
-    height: auto;
-  }
-
-  #midiasSociais {
-    display: flex !important;
-    justify-content: center;
-    gap: 20px;
-  }
 }
