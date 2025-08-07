@@ -18,8 +18,9 @@ html, body {
   "titulo  imagem"
   "botao   imagem";
   justify-content: center;
-  background-color: #121412;
-  
+  /* background-color: #121412; */
+  background-image: url('./imgs/sectionbg.jpg');
+  background-size: cover;
   box-sizing: border-box;
   border-bottom: 5px rgb(78, 233, 17) solid;
 }
@@ -866,10 +867,11 @@ main section h1 {
   gap: 20px;
   padding: 20px;
   background-color: #000;
+  border: solid 2px red;
 }
 
 .painel-modelo-negocio div {
-  flex: 0 0 15vw;              /* largura responsiva */
+  flex: 0 0 calc((100% - 200px) / 5);            /* largura responsiva */
   aspect-ratio: 5 / 3;         /* MAIS largo do que alto */
   background-color: #1b1b1b;
   color: white;
