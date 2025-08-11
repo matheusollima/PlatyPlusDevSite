@@ -209,4 +209,43 @@
   }
 
 
+
+
+
+
+/* RODAPÉ */
+
+#rodape {
+ height: 100vh;
+ align-items: center ;
+ justify-content: center;
+  grid-template-columns: 100%;
+ grid-template-rows: auto;
+   grid-template-areas:
+ "formContato" 
+ "contato"
+ "footer";
+ border: solid 2px red;
+}
+
+#direita {
+  display: none;
+}
+
+#formulario-contato {
+  justify-content: center;
+}
+
+.contato {
+ 
+}
+
+#midiasSociais {
+  flex-direction: row;
+}
+
+#msgFinal {
+  
+}
+
 }

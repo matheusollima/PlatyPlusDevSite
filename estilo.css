@@ -315,7 +315,14 @@ main section h1 {
 .contato {
   display: flex;
   flex-direction: column;
-  
+  border: solid 2px red;
+  align-items: center;
+  justify-content: center;
+  grid-area: contato;
+}
+
+.contato  img {
+  border: solid 2px red;
 }
 
 
@@ -334,29 +341,25 @@ main section h1 {
   text-align: center;
 }
 
-#divWhatsapp {
-  color: white;
-  display: flex;
-  align-items: center;
-}
 
-#divInstagram {
-  color: white;
-  display: flex;
-  align-items: center;
-}
 
-#divFacebook {
+.divMidia {
   display: flex;
   align-items: center;
+  height: auto;
 }
 
 #midiasSociais {
-  display: inline;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   height: auto;
   width: auto;
-  gap: 50px;
+  gap: 2vh;
+}
+
+#midiasSociais > * {
+  border: solid 2px purple
 }
 
 #midiasSociais div label {
@@ -372,12 +375,13 @@ main section h1 {
   list-style: none;
   color: white;
   font-family: "roboto";
+  display: block;
+  border: solid 2px yellow;
+  width: auto;
 }
 
 #midiasSociais div a img {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
+ width: 4vw;
 }
 
 .nmSocial {
@@ -411,21 +415,32 @@ main section h1 {
   width: 100%;
   box-sizing: border-box;
   display: grid;
- grid-template-columns: auto 1fr;
- grid-template-rows: auto ;
- position: relative;
+ grid-template-columns: 30% 1fr 30%;
+ grid-template-rows: 1fr 5%;
+ grid-template-areas:
+ "contato formContato direita" 
+ "footer footer footer";
  
+ 
+ 
+}
+
+#direita {
+  grid-area: direita;
+  border: solid 2px red;
 }
 
 #formulario-contato {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   background-color: transparent;
+  border: solid 2px blue;
+  grid-area: formContato;
 }
 
 .formContato {
@@ -442,10 +457,7 @@ main section h1 {
   max-width: 100%;
   height: min(600px, 70%);
   max-height: 80%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+
 
 }
 
@@ -572,14 +584,20 @@ main section h1 {
 }
 
 #msgFinal {
-  height: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background: #008000;
   color: rgb(2, 2, 2);
   font-size: 15px;
-  text-align: start;
+  text-align: center;
   font-family: "roboto";
-  display: none;
+  grid-area: footer;
+  align-self: end;
+  white-space: nowrap;
+  
 }
 
 /*
