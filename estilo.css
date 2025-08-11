@@ -1,11 +1,12 @@
 * {
   padding: 0;
   margin: 0;
+  
 }
 
 html, body {
   scroll-behavior: smooth;
-  display: grid;
+
 }
 
 .apresentacao {
@@ -315,14 +316,14 @@ main section h1 {
 .contato {
   display: flex;
   flex-direction: column;
-  border: solid 2px red;
+
   align-items: center;
   justify-content: center;
   grid-area: contato;
 }
 
 .contato  img {
-  border: solid 2px red;
+
 }
 
 
@@ -359,7 +360,7 @@ main section h1 {
 }
 
 #midiasSociais > * {
-  border: solid 2px purple
+ 
 }
 
 #midiasSociais div label {
@@ -427,12 +428,12 @@ main section h1 {
 
 #direita {
   grid-area: direita;
-  border: solid 2px red;
+  
 }
 
 #formulario-contato {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -885,7 +886,7 @@ main section h1 {
   gap: 20px;
   padding: 20px;
   background-color: #000;
-  border: solid 2px red;
+ 
 }
 
 .painel-modelo-negocio div {

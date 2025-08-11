@@ -1109,7 +1109,7 @@
   #rodape {
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 70% auto 1fr;
+    grid-template-rows: 66% 1fr 5%;
     grid-template-areas:
       "formContato"
       "contato"
@@ -1123,7 +1123,7 @@
 
 
   #msgOrçamento {
-    font-size: min(7vw, 2.5rem);
+    font-size: min(6vw, 2.5rem);
     margin-bottom: 5%;
     flex-shrink: 1;
     min-width: 0;
@@ -1164,7 +1164,7 @@
 
 
 #tituloContatos {
-  font-size: min(5vw, 2.5rem);
+  font-size: min(10vw, 2.5rem);
 
 }
 
@@ -1182,8 +1182,7 @@
   }
 
   .divMidia{
-    display: grid;
-    grid-template-columns: 30% 1fr;
+    display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
@@ -1191,6 +1190,7 @@
     margin-left: 0;
     height: 100%;
     margin: 0;
+    
   }
 
   #midiasSociais {
@@ -1200,13 +1200,14 @@
     justify-content: center;
     gap: 0;
     height: 100%;
-    width: 60%;
+    width: auto;
+   
    
   }
 
   #midiasSociais div a {
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1214,19 +1215,20 @@
   }
 
   #midiasSociais div a img {
-   height: 100%;
-   width: 50%;
+   width: 7vw;
    
   }
 
   #midiasSociais div label {
  
-  font-size: min(5vw, 2.5rem);
+  font-size: min(4vw, 2.5rem);
  width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: 0;
+  justify-content: start;
+  margin-left: 8vw;
+  justify-self: start;
 }
 
 
