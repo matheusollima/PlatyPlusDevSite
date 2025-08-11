@@ -1109,7 +1109,7 @@
   #rodape {
     height: calc(100vh - 15vh);
     grid-template-columns: 100%;
-    grid-template-rows: 1fr;
+    grid-template-rows:60% 1fr 5%;
     grid-template-areas:
       "formContato"
       "contato"
@@ -1135,6 +1135,7 @@
     width: 100%;
     grid-area: formContato;
     justify-content: center;
+   
 
   }
 
@@ -1168,6 +1169,8 @@
     grid-area: contato;
     display: flex;
     flex-direction: column !important;
+     border: solid 2px blue !important;
+     height: 100%;
 
   }
 

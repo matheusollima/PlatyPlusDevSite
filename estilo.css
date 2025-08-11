@@ -530,7 +530,7 @@ main section h1 {
 
 .formInputs input:focus~label,
 .formInputs input:valid~label {
-  transform: translateY(-10px);
+  transform: translateY(-1.8vh);
   font-size: 20px;
   color: grey;
 }
