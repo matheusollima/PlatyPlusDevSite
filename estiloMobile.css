@@ -1109,7 +1109,7 @@
   #rodape {
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 66% 1fr 5%;
+    grid-template-rows: 66% 1fr 4%;
     grid-template-areas:
       "formContato"
       "contato"
@@ -1135,12 +1135,13 @@
   #direita {
     display: none;
   }
+
   #formulario-contato {
     height: 100%;
     width: 100%;
     grid-area: formContato;
     justify-content: center;
-   
+
 
   }
 
@@ -1163,10 +1164,10 @@
 
 
 
-#tituloContatos {
-  font-size: min(10vw, 2.5rem);
+  #tituloContatos {
+    font-size: min(10vw, 2.5rem);
 
-}
+  }
 
 
 
@@ -1175,13 +1176,13 @@
     grid-area: contato;
     display: flex;
     flex-direction: column !important;
-     border: solid 2px rgb(217, 255, 0) !important;
-     height: 100%;
+    height: 100%;
+    row-gap: 0;
 
 
   }
 
-  .divMidia{
+  .divMidia {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -1190,19 +1191,20 @@
     margin-left: 0;
     height: 100%;
     margin: 0;
-    
+
   }
 
   #midiasSociais {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    gap: 0;
-    height: 100%;
+    gap: auto;
+    height: auto;
     width: auto;
-   
-   
+    align-self: center;
+    justify-self: center;
+    margin-top: 5%;
   }
 
   #midiasSociais div a {
@@ -1211,29 +1213,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   
+
   }
 
   #midiasSociais div a img {
-   width: 7vw;
-   
+    width: min(6vw, 7vw);
+
   }
 
   #midiasSociais div label {
- 
-  font-size: min(4vw, 2.5rem);
- width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  margin-left: 8vw;
-  justify-self: start;
-}
+
+    font-size: min(4vw, 2.5rem);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 8vw;
+    justify-self: start;
+  }
 
 
 
-#msgFinal {
-
-}
+  #msgFinal {}
 }

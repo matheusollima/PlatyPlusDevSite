@@ -377,7 +377,7 @@ main section h1 {
   color: white;
   font-family: "roboto";
   display: block;
-  border: solid 2px yellow;
+
   width: auto;
 }
 
@@ -440,7 +440,6 @@ main section h1 {
   top: 0;
   left: 0;
   background-color: transparent;
-  border: solid 2px blue;
   grid-area: formContato;
 }
 
