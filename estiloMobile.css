@@ -1109,11 +1109,16 @@
   #rodape {
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 70% 1fr 5%;
+    grid-template-rows: 70% 25% 1fr;
     grid-template-areas:
       "formContato"
       "contato"
       "footer";
+  }
+
+
+  #rodape * {
+    box-sizing: border-box;
   }
 
 
@@ -1159,7 +1164,8 @@
 
 
 #tituloContatos {
-  font-size: min(10vw, 2.5rem);
+  font-size: min(5vw, 2.5rem);
+
 }
 
 
@@ -1169,14 +1175,14 @@
     grid-area: contato;
     display: flex;
     flex-direction: column !important;
-     border: solid 2px blue !important;
+     border: solid 2px rgb(217, 255, 0) !important;
      height: 100%;
-     display: none;
+    
 
   }
 
   .divMidia{
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -1189,13 +1195,19 @@
     align-items: start;
     justify-content: center;
     gap: 0;
+    height: 100%;
   }
 
 
   #midiasSociais div label {
  
-  font-size: 20px;
+  font-size: min(3vw, 2.5rem);
   width: 100%;
 }
 
+
+
+#msgFinal {
+
+}
 }
