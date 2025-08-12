@@ -320,12 +320,11 @@ main section h1 {
   justify-content: start;
   gap: 10%;
   grid-area: contato;
-  border: solid 2px red;
   padding-top: 20%;
 }
 
 .contato  > * {
-  border: solid 3px blue;
+
 }
 
 
@@ -380,7 +379,7 @@ main section h1 {
   font-family: "roboto";
   display: block;
   width: auto;
-  border: solid 2px red;
+  
 }
 
 #midiasSociais div a img {
@@ -864,7 +863,6 @@ main section h1 {
   width: 100% !important;
   box-sizing: border-box !important;
   padding-bottom: 2%;
- border: solid 2px rgb(14, 221, 14);
 }
 
 
