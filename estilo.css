@@ -147,8 +147,7 @@ h1 {
 }
 
 h2 {
-  /* display: inline;   */
-  font-size: 30px;
+ 
   color: #d3d3d3;
   font-family: "roboto";
   text-align: center;
@@ -392,6 +391,9 @@ main section h1 {
   top: -100px;
 }
 
+
+
+
 #msgContato {
   resize: none;
   margin-top: 10px;
@@ -458,10 +460,13 @@ main section h1 {
   max-width: 100%;
   height: min(600px, 70%);
   max-height: 80%;
-
-
+  padding-top: 2%;
 }
 
+
+#msgOrçamento{
+  font-size: min(6vw, 3rem);
+}
 
 .front-back-column {
   display: grid;
@@ -616,7 +621,7 @@ main section h1 {
 }
 
 #serviços-titulo {
-  font-size: 60px;
+  font-size: min(4vw, 3rem);
   padding: 0;
 
 
@@ -669,10 +674,10 @@ main section h1 {
 }
 
 .painel-software-div  h3 {
-  color: green !important;
+  color: green;
   text-align: center;
   font-family: "roboto";
-  font-size: min(3vw, 2.5rem);
+  font-size: min(2vw, 2rem);
   
 }
 
