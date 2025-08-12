@@ -1118,7 +1118,7 @@
   #rodape {
     height: 100vh;
     grid-template-columns: 100%;
-    grid-template-rows: 66% 1fr 4%;
+    grid-template-rows: 66% 1fr 3%;
     grid-template-areas:
       "formContato"
       "contato"
@@ -1186,8 +1186,8 @@
     display: flex;
     flex-direction: column !important;
     height: 100%;
-    row-gap: 0;
-  overflow: hidden;
+    gap: 2%;
+   overflow: hidden;
    background-color: #110f0f;
   }
 
@@ -1208,12 +1208,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: auto;
+   gap: 4;
     height: auto;
     width: auto;
     align-self: center;
     justify-self: center;
-    margin-top: 5%;
+   
+    box-sizing: border-box;
+   
   }
 
   #midiasSociais div a {
