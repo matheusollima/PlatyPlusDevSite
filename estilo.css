@@ -316,14 +316,16 @@ main section h1 {
 .contato {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  gap: 10%;
   grid-area: contato;
+  border: solid 2px red;
+  padding-top: 20%;
 }
 
-.contato  img {
-
+.contato  > * {
+  border: solid 3px blue;
 }
 
 
@@ -377,12 +379,12 @@ main section h1 {
   color: white;
   font-family: "roboto";
   display: block;
-
   width: auto;
+  border: solid 2px red;
 }
 
 #midiasSociais div a img {
- width: 4vw;
+ width: 2vw;
 }
 
 .nmSocial {
@@ -671,7 +673,7 @@ main section h1 {
   color: green !important;
   text-align: center;
   font-family: "roboto";
-  font-size: 3vh;
+  font-size: min(3vw, 2.5rem);
   
 }
 
