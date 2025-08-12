@@ -1188,7 +1188,7 @@
     height: 100%;
     row-gap: 0;
   overflow: hidden;
-
+   background-color: #110f0f;
   }
 
   .divMidia {
