@@ -192,6 +192,7 @@
      CONTEÚDO
   */
 
+ 
 
   #home {
     width: 100%;
@@ -379,6 +380,10 @@
     width: 100vw !important;
     height: auto !important;
     box-sizing: border-box;
+  }
+
+  #serviços-titulo {
+    font-size: min(10vw, 2.5rem);
   }
 
   #serviços-subtitulo01 {
@@ -994,6 +999,10 @@
     padding-top: 0 !important;
   }
 
+  #sobre-titulo-section {
+    font-size: min(10vw, 2.5rem);
+  }
+
   .sobre-container {
     display: grid;
     grid-template-columns: 100%;
@@ -1217,13 +1226,13 @@
   }
 
   #midiasSociais div a img {
-    width: min(6vw, 7vw);
+    width: min(7.5vw, 8vw);
 
   }
 
   #midiasSociais div label {
 
-    font-size: min(4vw, 2.5rem);
+    font-size: min(5vw, 2.5rem);
     width: 100%;
     display: flex;
     flex-direction: row;

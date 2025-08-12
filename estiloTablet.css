@@ -239,9 +239,14 @@
 }
 
 .formContato {
-  max-height: 100%;
-  height: 90%;
+  max-height: 70%;
+  height: 70%;
+  width: 60%;
   
+}
+
+#msgContato {
+  height: 50vh;
 }
 
 .contato {
