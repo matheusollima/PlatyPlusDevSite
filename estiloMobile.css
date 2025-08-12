@@ -1187,7 +1187,7 @@
     flex-direction: column !important;
     height: 100%;
     row-gap: 0;
-
+  overflow: hidden;
 
   }
 
