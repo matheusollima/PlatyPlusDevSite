@@ -121,9 +121,13 @@
    
   }
 
+.painel-software{
+  margin-top: 5%;
+}
 
-
-
+.painel-software-div {
+  max-width: 220px;
+}
 
 
   .painel-software-div h2 {
