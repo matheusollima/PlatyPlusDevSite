@@ -414,7 +414,8 @@ main section h1 {
 
 
 #rodape {
-  background-color: #1f221e;
+  /* background-color: #1f221e; */
+  background-color: red;
   font-family: "roboto";
   padding: 0;
   height: 100vh;
