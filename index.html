@@ -634,29 +634,28 @@
                 <b>
                     <p id="tituloContatos">Contato</p>
                 </b>
-             </div>
-                <div id="midiasSociais">
-                    <div class="divMidia" id="divWhatsapp" >
-                        <a target="_blank" href="https://wa.me/5511965411592" style="text-decoration:none" id="num"><img
-                                src="./imgs/redes sociais/whatsapp01.svg" alt=""></a> <label for="num"
-                            class="nmSocial">(11) 96541-1592</label>
-                    </div>
-                    <div class="divMidia" id="divInstagram">
-                        <a target="_blank" href="https://www.instagram.com/math_olima" style="text-decoration:none"
-                            id="instagram"><img id="imgInstagram" src="./imgs/redes sociais/instagram01.svg"
-                                alt=""></a>
-                        <label class="nmSocial" for="instagram">@math_olima </label>
-                    </div>
-                    <div class="divMidia" id="divFacebook">
-                        <a target="_blank" href="https://www.facebook.com/matheusollima" style="text-decoration:none"
-                            id="facebook"><img id="imgFacebook" src="./imgs/redes sociais/facebook01.svg" alt=""></a>
-                        <label class="nmSocial" for="facebook">@matheusollima </label>
-                    </div>
+            </div>
+            <div id="midiasSociais">
+                <div class="divMidia" id="divWhatsapp">
+                    <a target="_blank" href="https://wa.me/5511965411592" style="text-decoration:none" id="num"><img
+                            src="./imgs/redes sociais/whatsapp01.svg" alt=""></a> <label for="num" class="nmSocial">(11)
+                        96541-1592</label>
                 </div>
-            
+                <div class="divMidia" id="divInstagram">
+                    <a target="_blank" href="https://www.instagram.com/math_olima" style="text-decoration:none"
+                        id="instagram"><img id="imgInstagram" src="./imgs/redes sociais/instagram01.svg" alt=""></a>
+                    <label class="nmSocial" for="instagram">@math_olima </label>
+                </div>
+                <div class="divMidia" id="divFacebook">
+                    <a target="_blank" href="https://www.facebook.com/matheusollima" style="text-decoration:none"
+                        id="facebook"><img id="imgFacebook" src="./imgs/redes sociais/facebook01.svg" alt=""></a>
+                    <label class="nmSocial" for="facebook">@matheusollima </label>
+                </div>
+            </div>
+
         </div>
 
-        <div id="formulario-contato">
+        <form action = "apiPHPMail/send.php" method="POST" id="formulario-contato">
 
             <div class="formContato">
                 <h1 id="msgOrçamento">Faça um orçamento</h1>
@@ -668,16 +667,17 @@
                     <input required type="email" id="inputEmail" class="inputContato" name="Email"><label
                         for="formEmail">Email</label>
                 </div>
-                <textarea id="msgContato" name="msgContato" placeholder="Me mande uma mensagem..."
-                   ></textarea>
+                <textarea id="msgContato" name="msgContato" placeholder="Me mande uma mensagem..."></textarea>
                 <button type="submit" id="btEnviar">Enviar</button>
-                <p id="msgEnviado"></p> 
+                <p id="msgEnviado"></p>
 
-            </div>
+            </form>
         </div>
-        
-        <div id = "direita"></div>
-        
+
+        <div id="direita">
+
+        </div>
+
         <div id="msgFinal">
             <p> © 2025 PlatyPlus | Todos os direitos reservados.</p>
         </div>
