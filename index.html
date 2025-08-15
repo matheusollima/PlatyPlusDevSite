@@ -655,7 +655,7 @@
 
         </div>
 
-        <form action = "apiPHPMail/send2.php" method="POST" id="formulario-contato">
+        <form  id="formulario-contato">
 
             <div class="formContato">
                 <h1 id="msgOrçamento">Faça um orçamento</h1>
@@ -683,7 +683,23 @@
 
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("s7clZOPUx2My0I8kz"); // substitua pela sua Public Key
+  })();
 
+  document.getElementById('formulario-contato').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_4uvd3p8', 'template_8yyu1nx', this)
+      .then(function() {
+        alert('Mensagem enviada com sucesso!');
+      }, function(error) {
+        alert('Erro ao enviar: ' + JSON.stringify(error));
+      });
+  });
+</script>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
