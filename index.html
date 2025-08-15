@@ -655,7 +655,7 @@
 
         </div>
 
-        <form  id="formulario-contato">
+        <form  id="formulario-contato" action = "apiPHPMail/sendGrid.php" method="POST">
 
             <div class="formContato">
                 <h1 id="msgOrçamento">Faça um orçamento</h1>
@@ -683,7 +683,11 @@
 
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+
+  <!-- ENVIO DE EMAIL VIA EMAILJS -->  
+<!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function(){
     emailjs.init("s7clZOPUx2My0I8kz"); // substitua pela sua Public Key
@@ -699,7 +703,7 @@
         alert('Erro ao enviar: ' + JSON.stringify(error));
       });
   });
-</script>
+</script> -->
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
