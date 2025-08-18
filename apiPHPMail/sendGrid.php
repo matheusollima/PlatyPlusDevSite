@@ -6,7 +6,7 @@ require __DIR__ . '/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
 
-$apiKey = $_ENV['SENDGRID_API_KEY'];
+$apiKey = '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';
 
 
 
