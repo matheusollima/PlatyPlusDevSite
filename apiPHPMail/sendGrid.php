@@ -1,11 +1,43 @@
 <?php
-$nome = $_POST['nome'];
-$email = $_POST['email'];
+require __DIR__ . '/../vendor/autoload.php';
+
+
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+
+$apiKey = $_ENV['SENDGRID_API_KEY'];
+
+
+
+$nome = $_POST['Nome'];
+$email = $_POST['Email'];
 $mensagem = $_POST['msgContato'];
 
-require __DIR__ . "/../vendor/autoload.php";
+// Cria o e-mail
+$emailSend = new \SendGrid\Mail\Mail();
+$emailSend->setFrom("platyplusdev@gmail.com", "PlatyPlus Dev");
+$emailSend->setSubject("Nova mensagem do site");
+$emailSend->addTo("contato@platyplus.com.br", "PlatyPlus");
+$emailSend->addContent(
+    "text/html", 
+    "<h1>Nova Mensagem do site</h1>
+     <p>Nome: $nome</p>
+     <p>Email: $email</p>
+     <p>Mensagem: $mensagem</p>"
+);
 
-$from = new SendGrid\Email(null,)
+// Envia
 
+$sendgrid = new \SendGrid($apiKey);
 
-?>
+try {
+    $response = $sendgrid->send($emailSend);
+    if ($response->statusCode() == 202) {
+        echo "Mensagem enviada com sucesso !";
+    } else {
+        echo "Erro ao enviar. Status: " . $response->statusCode();
+    }
+} catch (Exception $e) {
+    echo 'Erro: ' . $e->getMessage();
+}

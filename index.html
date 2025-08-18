@@ -11,6 +11,7 @@
     <link href="estiloMonitor16.9.css" rel="stylesheet" />
     <link href="estiloTablet.css" rel="stylesheet" />
     <link href="estiloMobile.css" rel="stylesheet" />
+    <script defer src="SendEmail.js"></script>
     <script defer src="script.js"></script>
     <script defer src=sliderMobile.js></script>
     <!--  <script defer  src="formularioEmail.js" ></script>
@@ -655,26 +656,32 @@
 
         </div>
 
-        <form  id="formulario-contato" action = "apiPHPMail/sendGrid.php" method="POST">
-
+        <form id="formulario-contato">
             <div class="formContato">
                 <h1 id="msgOrçamento">Faça um orçamento</h1>
-                <div class="formInputs">
-                    <input required type="text" id="inputNome" class="inputContato" name="Nome"> <label
+                <div class="formInputs" id="formInputNome">
+                    <input required type="text" id="inputNome" class="inputContato" name="Nome" required> <label
                         for="formNome">Nome</label>
                 </div>
-                <div class="formInputs">
-                    <input required type="email" id="inputEmail" class="inputContato" name="Email"><label
+                <div class="formInputs" id="formInputEmail">
+                    <input required type="email" id="inputEmail" class="inputContato" name="Email" required><label
                         for="formEmail">Email</label>
                 </div>
-                <textarea id="msgContato" name="msgContato" placeholder="Me mande uma mensagem..."></textarea>
-                <button type="submit" id="btEnviar">Enviar</button>
-                <p id="msgEnviado"></p>
+                <textarea id="msgContato" name="msgContato" placeholder="Me mande uma mensagem..." required></textarea>
+                <div id="enviarContainer">
+                    <button type="submit" id="btEnviar">Enviar</button>
+                    <div class="spinner" id="spinner"></div>
+                </div>
+                       <div class="mensagem" id="msgEnvio">teste mensagem de envio......</div>
 
-            </form>
+        </form>
+
+
+
+
         </div>
 
-    
+
         </div>
 
         <div id="msgFinal">
@@ -686,8 +693,8 @@
 
 
 
-  <!-- ENVIO DE EMAIL VIA EMAILJS -->  
-<!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- ENVIO DE EMAIL VIA EMAILJS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function(){
     emailjs.init("s7clZOPUx2My0I8kz"); // substitua pela sua Public Key

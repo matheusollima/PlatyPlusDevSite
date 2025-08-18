@@ -331,7 +331,7 @@
 
   #msgOrçamento {
     font-size: 30px; /* Diminuído o tamanho da fonte */
-    text-align: start;
+  
   }
 
 
@@ -339,7 +339,7 @@
 
 
   .formInputs label {
-    margin-bottom: 10px;
+    
   }
 
   .inputContato:last-child {
