@@ -24,7 +24,7 @@ try {
                    <p>Mensagem: $mensagem</p><br>
                    "
     ]);
-    echo "Mensagem Enviada com sucesso !";
+    echo "Mensagem Enviada com sucesso !!";
 } catch (Exception $e) {
     echo 'Erro: ' . $e->getMessage();
 }
