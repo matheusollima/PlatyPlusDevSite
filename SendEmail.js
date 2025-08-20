@@ -1,7 +1,7 @@
 const form = document.getElementById("formulario-contato");
 const spinner = document.getElementById("spinner");
 const msgStatus = document.getElementById("msgEnvio");
-const urlPHP = 'apiPHPMail/sendGrid.php';
+const urlPHP = 'apiPHPMail/sendResend.php';
 
 form.addEventListener("submit", function (e) {
    e.preventDefault();
@@ -48,10 +48,11 @@ form.addEventListener("submit", function (e) {
 
       })
       .catch(() => {
-         spinner.style.visibility = "hiddem";
+         spinner.style.visibility = "hidden";
          msgStatus.classList.toggle('erro');
             msgStatus.innerText = "Erro ao enviar a mensagem !";
          msgStatus.style.display = "block";
+         alert("o erro não é no php");
           setTimeout(() => {
                msgStatus.style.display = "none";
                msgStatus.classList.toggle('erro')
