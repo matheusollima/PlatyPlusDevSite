@@ -487,7 +487,7 @@ main section h1 {
   background-color: #222222;
   color: rgb(255, 255, 255);
   font-family: "roboto";
-  font-size: 20px;
+  font-size: min(5vw, 2.5rem);
   border: 0;
   height: 90%;
   width: 90%;
@@ -495,7 +495,6 @@ main section h1 {
   left: 0;
   border-radius: 10px;
    text-indent: 20px;
-  
    grid-area: msgContato;
    align-self: center;
    justify-self: center;
@@ -509,10 +508,8 @@ main section h1 {
   width: auto !important;
   align-items: center;
   justify-content: end;
-  gap: 1%;
+  gap: 2%;
   padding-right: 2%;
- 
-
   
 }
 
@@ -531,7 +528,7 @@ main section h1 {
   border: none;
   cursor: pointer;
   position: relative;
-  align-self: start;
+  align-self: center;
   grid-area: botaoEnviar;
 }
 
@@ -546,12 +543,13 @@ main section h1 {
   visibility: hidden;
   border: 4px solid #ffffff;
   border-top: 4px solid #008000;
-  width: 3vmin;
-  height: 3vmin;
+  width: 2vmin;
+  height: 2vmin;
   aspect-ratio: 1/1;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   grid-area: spinner;
+  align-self: center;
 }
 
 /* Animação spinner */

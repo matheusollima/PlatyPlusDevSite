@@ -328,7 +328,22 @@
   width: min(600px, 100%);
  }
  
+#msgContato {
+   font-size: min(5vw, 2rem);
+}
 
+
+#enviarContainer {
+  
+}
+
+#btEnviar {
+  align-self: start;
+}
+
+.spinner {
+  align-self: center;
+}
   #msgOrçamento {
     font-size: 30px; /* Diminuído o tamanho da fonte */
   
@@ -346,5 +361,9 @@
     margin-bottom: 0px;
   }
 
+  .spinner {
+    width: 3vmin;
+  height: 3vmin;
+  }
  
 }

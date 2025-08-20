@@ -1152,7 +1152,7 @@
     width: 100%;
     grid-area: formContato;
     justify-content: center;
-    border: solid 2px purple;
+    
 
 
   }
@@ -1160,9 +1160,10 @@
   .formContato {
     white-space: nowrap;
     position: static;
+    grid-template-rows: 10% 10% 10% 1fr 10% auto;
     transform: none;
-    max-height: 90%;
-    height: 90%;
+    max-height: 80%;
+    height: 80%;
     width: 80%;
     border: solid green 2px;
   }
@@ -1170,9 +1171,35 @@
   .formContato>* {}
 
 
+  #enviarContainer {
+  
+}
+
   #msgContato {
-    height: 40%;
+    height: 90%;
+    width: 85%;
+    align-self: center;
+    text-indent: 10px;
+    padding-top: 10px;
+    font-size: min(4vw, 2rem);
+    overflow: hidden;
   }
+
+ #btEnviar {
+  align-self: center;
+  font-size: min(5vw, 2rem);
+  width: auto;
+ }
+
+
+
+
+ .spinner {
+  height: 4vmin;
+  width: 4vmin;
+   border: 2px solid #ffffff;
+  border-top: 2px solid #008000;
+ }
 
 
 
@@ -1192,7 +1219,7 @@
     gap: 2%;
    overflow: hidden;
    background-color: #110f0f;
-   border: solid 2px blue;
+
    
   }
 
@@ -1229,7 +1256,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px red;
+
   }
 
   #midiasSociais div a img {
