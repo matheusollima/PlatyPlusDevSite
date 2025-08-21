@@ -1160,7 +1160,7 @@
   .formContato {
     white-space: nowrap;
     position: static;
-    grid-template-rows: 10% 10% 10% 1fr 10% auto;
+    grid-template-rows: 10% 10% 10% 1fr auto auto;
     transform: none;
     max-height: 80%;
     height: 80%;
@@ -1171,6 +1171,14 @@
   .formContato>* {}
 
 
+.formInputs input:focus~label,
+.formInputs input:valid~label {
+  transform: translateY(-2vh);
+  font-size: min(4vw, 2rem);
+  color: grey;
+}
+
+
   #enviarContainer {
   
 }
@@ -1179,10 +1187,15 @@
     height: 90%;
     width: 85%;
     align-self: center;
-    text-indent: 10px;
+    text-indent: 0;
     padding-top: 10px;
-    font-size: min(4vw, 2rem);
-    overflow: hidden;
+    font-size: min(5vw, 2rem);
+
+  }
+
+  #msgContato::placeholder {
+    text-align: center;
+     font-size: min(4.5vw, 2rem);
   }
 
  #btEnviar {
@@ -1204,7 +1217,7 @@
 
 
   #tituloContatos {
-    font-size: min(10vw, 2.5rem);
+    font-size: min(8vw, 2.5rem);
 
   }
 
@@ -1216,11 +1229,15 @@
     display: flex;
     flex-direction: column !important;
     height: 100%;
-    gap: 2%;
+    gap: 10px;
    overflow: hidden;
    background-color: #110f0f;
-
+  box-sizing: border-box;
    
+  }
+
+  .contato  * {
+    box-sizing: border-box !important;
   }
 
   .divMidia {
@@ -1240,15 +1257,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0;
     height: auto;
     width: auto;
     align-self: center;
     justify-self: center;
-   
     box-sizing: border-box;
    
   }
+  
+
 
   #midiasSociais div a {
     height: auto;
@@ -1260,13 +1277,13 @@
   }
 
   #midiasSociais div a img {
-    width: min(7.5vw, 8vw);
+     width: clamp(10px, 6vw, 8vw);
 
   }
 
   #midiasSociais div label {
 
-    font-size: min(5vw, 2.5rem);
+    font-size: min(4vw, 2.5rem);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1274,11 +1291,12 @@
     justify-content: start;
     margin-left: 8vw;
     justify-self: start;
+    
   }
 
 
 
   #msgFinal {
-    
+    font-size: min(3vw, 2rem);
   }
 }
