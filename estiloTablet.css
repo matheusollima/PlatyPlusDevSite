@@ -185,16 +185,21 @@
   /* RODAPÉ */
 
   #rodape {
-    height: auto;
+   
     align-items: center;
     justify-content: center;
     grid-template-columns: 100%;
-    grid-template-rows: 70% auto 5%;
+    grid-template-rows: 70% 1fr 5%;
     grid-template-areas:
       "formContato"
       "contato"
       "footer";
   }
+
+
+  #rodape > * {
+  }
+
 
   #direita {
     display: none;
@@ -204,23 +209,26 @@
     justify-content: center;
   }
 
-  .formContato {
-    max-height: 70%;
-    height: 70%;
-    width: 60%;
-  }
-
-  #msgContato {
-    height: 50vh;
-  }
-
+ 
   .contato {
     display: grid;
    padding: 0;   
     justify-content: center;
     align-items: center;
     row-gap: 0;
- 
+    height: 100%;
+  }
+
+
+  .formContato {
+    padding: 2%;
+  }
+
+
+  #btEnviar {
+   
+    height: 100%;
+    font-size: min(3vw, 2.5rem);
   }
 
   .contato > * {

@@ -42,7 +42,7 @@ form.addEventListener("submit", function (e) {
                msgStatus.style.display = "none";
                msgStatus.classList.toggle('erro')
             }, 4000);
-             form.reset();
+             
 
          }
 
@@ -57,6 +57,6 @@ form.addEventListener("submit", function (e) {
                msgStatus.style.display = "none";
                msgStatus.classList.toggle('erro')
             }, 4000);
-             form.reset();
+           
       });
 });

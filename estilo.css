@@ -41,6 +41,10 @@ html, body {
   justify-content: center;
 }
 
+.titulo-container h1 {
+  user
+}
+
 .titulo-container > :nth-child(2){
   font-size: min(1.8vw, 2.5rem) !important;
   color: #fffdd0;

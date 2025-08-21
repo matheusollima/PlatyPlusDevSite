@@ -1162,10 +1162,12 @@
     position: static;
     grid-template-rows: 10% 10% 10% 1fr auto auto;
     transform: none;
-    max-height: 80%;
-    height: 80%;
+    max-height: 90%;
+    height: 90%;
     width: 80%;
     border: solid green 2px;
+    padding: 5%;
+    
   }
 
   .formContato>* {}
@@ -1185,12 +1187,12 @@
 
   #msgContato {
     height: 90%;
-    width: 85%;
+    width: 95%;
     align-self: center;
-    text-indent: 0;
+    text-indent: 20px;
     padding-top: 10px;
     font-size: min(5vw, 2rem);
-
+   
   }
 
   #msgContato::placeholder {
@@ -1210,8 +1212,8 @@
  .spinner {
   height: 4vmin;
   width: 4vmin;
-   border: 2px solid #ffffff;
-  border-top: 2px solid #008000;
+   border: 3px solid #ffffff;
+  border-top: 3px solid #008000;
  }
 
 
