@@ -399,7 +399,7 @@ main section h1 {
 
 
 #rodape {
-  background-color: #1f221e;
+  /* background-color: #1f221e; */
   font-family: "roboto";
   padding: 0;
   height: 100vh;
@@ -411,7 +411,7 @@ main section h1 {
  grid-template-areas:
  "contato formContato direita" 
  "footer footer footer";
- 
+ background-color: red;
  
  
 }
