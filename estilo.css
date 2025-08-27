@@ -411,8 +411,6 @@ main section h1 {
  grid-template-areas:
  "contato formContato direita" 
  "footer footer footer";
-
- border: solid 2px red;
  
 }
 
