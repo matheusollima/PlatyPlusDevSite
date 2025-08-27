@@ -1,9 +1,6 @@
-# Regras de cache para todos os arquivos
-<FilesMatch ".*">
-    Header set Cache-Control "no-cache, no-store, must-revalidate"
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
     Header set Pragma "no-cache"
     Header set Expires "0"
 </FilesMatch>
 
-# Teste de .htaccess: redireciona teste.html
-Redirect 301 /teste.html https://www.google.com

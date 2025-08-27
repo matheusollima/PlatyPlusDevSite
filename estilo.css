@@ -20,7 +20,7 @@ html, body {
   "botao   imagem";
   justify-content: center;
   /* background-color: #121412; */
-  background-image: url('./imgs/sectionbg.jpg');
+  background-image: url('./imgs/sectionbg.webp');
   background-size: cover;
   box-sizing: border-box;
   border-bottom: 5px rgb(78, 233, 17) solid;
@@ -412,7 +412,7 @@ main section h1 {
  "contato formContato direita" 
  "footer footer footer";
 
- 
+ border: solid 2px red;
  
 }
 
