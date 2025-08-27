@@ -1063,7 +1063,7 @@ input:-webkit-autofill {
   transition: opacity 10s ease-in;
 }
 
-/* PAINEL TECNOLIGIAS FRONT-END*/
+/* PAINEL TECNOLOGIAS FRONT-END*/
 
 #tecnologia-front-div {
   display: grid;
@@ -1248,6 +1248,46 @@ input:-webkit-autofill {
 .data-img {
   height: 150px;
 }
+
+
+/* SECTION POR QUE TER UM SITE */
+
+#porque-ter-um-site {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.bloco {
+  height: auto;
+}
+
+.bloco01 { 
+ padding: 10%;
+}
+
+.bloco01 h1 {
+  color: #4dff2c;
+  font-size: 3.5rem;
+  text-align: center;
+  text-wrap: balance;
+  line-height: -2000px;
+  letter-spacing: -2px;
+}
+
+
+#elementos-bloco02 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  gap: 20px;
+}
+
+#elementos-bloco02 li {
+  border: solid 2px red;
+}
+
 
 /* SECTION SOBRE*/
 
