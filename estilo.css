@@ -324,6 +324,8 @@ main section h1 {
   gap: 10%;
   grid-area: contato;
   padding-top: 20%;
+  border: solid 2px red;
+  
 }
 
 .contato  > * {
@@ -350,17 +352,20 @@ main section h1 {
 
 .divMidia {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  height: auto;
+  
 }
 
 #midiasSociais {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  height: auto;
-  width: auto;
+  /* height: auto; */
+  /* width: auto; */
+ 
   gap: 2vh;
+  border: solid 2px red;
 }
 
 #midiasSociais > * {
@@ -380,13 +385,15 @@ main section h1 {
   list-style: none;
   color: white;
   font-family: "roboto";
-  display: block;
-  width: auto;
+ display: inline-block;
+  
+  border: solid 2px red;
   
 }
 
 #midiasSociais div a img {
- width: 2vw;
+ width: 3vw;
+ display: block;
 }
 
 .nmSocial {
@@ -414,10 +421,10 @@ main section h1 {
  
 }
 
-#direita {
+/* #direita {
   grid-area: direita;
-  
-}
+  background-color: red;
+} */
 
 #formulario-contato {
   display: flex;
@@ -1301,25 +1308,73 @@ input:-webkit-autofill {
   display: grid;
   border: solid 2px blue;
   height: 80vh;
-  margin-inline: 13%;
+  margin-inline: 5%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
 }
 
+
 #elementos-bloco02 li {
   border: solid 2px #333333;
   background-color: #111111;
-  border-radius: 10%;
+  border-radius: 14px;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(2, 1fr);
   overflow: hidden;
+  gap: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#elementos-bloco02 img {
+  /* height: 30px; */
+  border: solid 2px oranged;
+  width: 25px;
+  display: block;
+  
 }
 
 #elementos-bloco02 div {
-  border: solid 2px red;
+  
 }
+
+.elemento-card01 {
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.elemento-card01 p {
+  color: #4dff2c;
+  font-family: "roboto";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.elemento-card02 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.elemento-card02 p {
+  color: #888888;
+}
+
+.elemento-card01 > div:first-child {
+ background-color: #172913;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 10%;
+  width: fit-content;
+
+}
+
 
 /* SECTION SOBRE*/
 
@@ -1394,13 +1449,13 @@ input:-webkit-autofill {
 }
 
 #sobre-foto {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: auto !important;
+  border: solid 2px red;
+  height: auto;
   width: auto;
-  
 }
 
 #foto-apresentação {
