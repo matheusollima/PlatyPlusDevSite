@@ -1256,6 +1256,14 @@ input:-webkit-autofill {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+#porque-ter-um-site * {
+  box-sizing: border-box;
 }
 
 .bloco {
@@ -1263,7 +1271,7 @@ input:-webkit-autofill {
 }
 
 .bloco01 { 
- padding: 10%;
+ padding: 2%;
 }
 
 .bloco01 h1 {
@@ -1271,23 +1279,47 @@ input:-webkit-autofill {
   font-size: 3.5rem;
   text-align: center;
   text-wrap: balance;
-  line-height: -2000px;
-  letter-spacing: -2px;
+  /* line-height: -2000px;
+  letter-spacing: -2px; */
+
 }
 
 
+.bloco02 {
+  border: solid 2px red;
+  width: 100%;
+  height: auto;
+  background-color: #080808;
+  
+}
+
+#apresentacao-bloco02 {
+  margin-bottom: 48px;
+}
+
 #elementos-bloco02 {
   display: grid;
+  border: solid 2px blue;
+  height: 80vh;
+  margin-inline: 13%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: 100vh;
   gap: 20px;
 }
 
 #elementos-bloco02 li {
-  border: solid 2px red;
+  border: solid 2px #333333;
+  background-color: #111111;
+  border-radius: 10%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
 }
 
+#elementos-bloco02 div {
+  border: solid 2px red;
+}
 
 /* SECTION SOBRE*/
 
