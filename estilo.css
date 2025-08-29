@@ -21,9 +21,15 @@ html, body {
   justify-content: center;
   /* background-color: #121412; */
   background-image: url('./imgs/sectionbg.webp');
+  background-attachment: fixed;
   background-size: cover;
   box-sizing: border-box;
-  border-bottom: 5px rgb(78, 233, 17) solid;
+  /* border-bottom: 5px rgb(78, 233, 17) solid; */
+
+
+
+
+
 }
 
 .apresentacao > * {
@@ -324,7 +330,7 @@ main section h1 {
   gap: 10%;
   grid-area: contato;
   padding-top: 20%;
-  border: solid 2px red;
+  
   
 }
 
@@ -361,11 +367,8 @@ main section h1 {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  /* height: auto; */
-  /* width: auto; */
- 
   gap: 2vh;
-  border: solid 2px red;
+  
 }
 
 #midiasSociais > * {
@@ -386,8 +389,7 @@ main section h1 {
   color: white;
   font-family: "roboto";
  display: inline-block;
-  
-  border: solid 2px red;
+
   
 }
 
@@ -1291,24 +1293,32 @@ input:-webkit-autofill {
 
 }
 
+.bloco01 h2 {
+  text-wrap:  balance;
+}
+
 
 .bloco02 {
-  border: solid 2px red;
   width: 100%;
   height: auto;
   background-color: #080808;
-  
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #apresentacao-bloco02 {
   margin-bottom: 48px;
 }
 
+#apresentacao-bloco02 h2 {
+  text-wrap: balance;
+}
+
+
 #elementos-bloco02 {
   display: grid;
-  border: solid 2px blue;
   height: 80vh;
-  margin-inline: 5%;
+  margin-inline: 10%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
@@ -1361,7 +1371,8 @@ input:-webkit-autofill {
 }
 
 .elemento-card02 p {
-  color: #888888;
+  color: #CCC7C7;
+  font-family: "roboto";
 }
 
 .elemento-card01 > div:first-child {
@@ -1370,10 +1381,19 @@ input:-webkit-autofill {
   width: auto;
   display: inline-block;
   padding: 12px;
-  border-radius: 10%;
+  border-radius: 15px;
   width: fit-content;
 
 }
+
+
+
+
+.bloco03 {
+  color: red;
+}
+
+
 
 
 /* SECTION SOBRE*/
@@ -1453,7 +1473,6 @@ input:-webkit-autofill {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: solid 2px red;
   height: auto;
   width: auto;
 }
