@@ -1390,7 +1390,92 @@ input:-webkit-autofill {
 
 
 .bloco03 {
-  color: red;
+  width: 100%;
+   padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+#apresentacao-bloco03 {
+  margin-bottom: 48px;
+}
+
+
+#tabela-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+
+#tabela {
+  width: auto;
+  display: inline-block;
+  border-radius: 15px;
+  border: solid 1px #333333;
+
+  font-family: "roboto";
+  background-color: #111111;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+#tabela-site-redes-sociais {
+  height: 620px;
+    border-collapse: collapse; 
+    width: 800px;
+    border-radius: 10%;
+   text-align: center;
+  
+  
+    
+    
+}
+
+
+
+#tabela-site-redes-sociais thead tr {
+  padding-top: 30px;
+   border-collapse: collapse; 
+   border-bottom: solid 2px #333333;
+   font-size: 20px;
+  
+}
+
+#tabela-site-redes-sociais thead tr th {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#tabela-site-redes-sociais th {
+  color: #4dff2c;
+}
+
+
+#tabela-site-redes-sociais  tr{
+  background-color: #111111;
+  
+}
+
+#tabela-site-redes-sociais tr td:first-child {
+  color: #4dff2c;
+}
+
+#tabela-site-redes-sociais tr td:nth-child(2) {
+  color:#4dff2c ;
+}
+
+#tabela-site-redes-sociais tr td:nth-child(3) {
+color: #CCC7C7;
+}
+
+
+
+#tabela-site-redes-sociais td {
+  text-align: center;
+  border-bottom: solid 1px #333333 ;
 }
 
 
