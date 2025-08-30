@@ -1400,6 +1400,18 @@ input:-webkit-autofill {
   margin-bottom: 48px;
 }
 
+#apresentacao-bloco03 h1 {
+  color: #4dff2c;
+  font-size: 2rem;
+}
+
+#apresentacao-bloco03 h2 {
+  color: #CCC7C7;
+  font-size: 1rem;
+  text-wrap: balance;
+}
+
+
 
 #tabela-container {
   display: flex;
@@ -1422,8 +1434,12 @@ input:-webkit-autofill {
   padding-top: 30px;
 }
 
+#tabela h1 {
+  color: #4dff2c;
+}
+
 #tabela-site-redes-sociais {
-  height: 620px;
+  height: auto;
     border-collapse: collapse; 
     width: 800px;
     border-radius: 10%;
@@ -1445,9 +1461,51 @@ input:-webkit-autofill {
 }
 
 #tabela-site-redes-sociais thead tr th {
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   text-align: center;
+  border: solid 2px red;
+
+  
+  
 }
+
+#tabela-site-redes-sociais thead tr th > div {
+  border: solid 2px blue;
+  /* display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 100%; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+#tabela-site-redes-sociais thead tr th > div h1 {
+  font-size: 20px;
+ 
+
+}
+
+#tabela-site-redes-sociais thead tr th > div > div {
+
+  display: inline-block;
+  width: auto;
+  height: fit-content;
+  padding: 20px;
+  
+}
+
+
+#tabela-site-redes-sociais thead tr th img {
+  align-self: start;
+ 
+  display: block;
+  width: 30px;
+}
+
+
 
 #tabela-site-redes-sociais th {
   color: #4dff2c;
@@ -1457,7 +1515,15 @@ input:-webkit-autofill {
 #tabela-site-redes-sociais  tr{
   background-color: #111111;
   
+  
 }
+
+#tabela-site-redes-sociais tbody  tr:hover {
+  background-color: #1a1919;
+  
+  
+}
+
 
 #tabela-site-redes-sociais tr td:first-child {
   color: #4dff2c;
@@ -1469,6 +1535,12 @@ input:-webkit-autofill {
 
 #tabela-site-redes-sociais tr td:nth-child(3) {
 color: #CCC7C7;
+}
+
+#tabela-site-redes-sociais tr td  {
+ padding: 20px 6px;  
+   line-height: 1; 
+
 }
 
 
