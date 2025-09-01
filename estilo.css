@@ -1555,16 +1555,30 @@ color: #CCC7C7;
 
 
 .bloco04 {
-  height: 90vh;
+  height: 50vh;
   display: flex;
-  flex-direction: row;
+  
   align-items: end;
+
+ border: solid 2px red;
 }
 
 .bloco04 div {
   background-color: #4dff2c;
   height: 90%;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 20px;
+ place-content: center;
+ text-align: center;
+  border: solid 2px blue;
+}
+
+.bloco04 h1 {
+  color: black;
 }
 
 /* SECTION SOBRE*/
