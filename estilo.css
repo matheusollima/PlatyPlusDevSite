@@ -1502,10 +1502,12 @@ input:-webkit-autofill {
   align-self: start;
  
   display: block;
-  width: 30px;
+  width: 40px;
 }
+#tabela-site-redes-sociais thead tr th img#redes-sociais-icon {
+ width: 60px;
 
-
+}
 
 #tabela-site-redes-sociais th {
   color: #4dff2c;
