@@ -1306,8 +1306,14 @@ input:-webkit-autofill {
   padding-bottom: 40px;
 }
 
+
 #apresentacao-bloco02 {
   margin-bottom: 48px;
+}
+
+#apresentacao-bloco02 h1 {
+  color: #4dff2c ;
+  font-size: 25px;
 }
 
 #apresentacao-bloco02 h2 {
@@ -1461,19 +1467,14 @@ input:-webkit-autofill {
 }
 
 #tabela-site-redes-sociais thead tr th {
-  /* padding-bottom: 30px; */
   text-align: center;
-  border: solid 2px red;
+  
 
   
   
 }
 
 #tabela-site-redes-sociais thead tr th > div {
-  border: solid 2px blue;
-  /* display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 100%; */
   height: 100%;
   display: flex;
   justify-content: center;
