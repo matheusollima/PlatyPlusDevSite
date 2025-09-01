@@ -1554,7 +1554,18 @@ color: #CCC7C7;
 }
 
 
+.bloco04 {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
 
+.bloco04 div {
+  background-color: #4dff2c;
+  height: 90%;
+  width: 100vw;
+}
 
 /* SECTION SOBRE*/
 
