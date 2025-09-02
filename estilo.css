@@ -831,6 +831,12 @@ input:-webkit-autofill {
   justify-self: center;
 }
 
+#serviços-titulo {
+  color: #4dff2c;
+}
+
+
+
 .serviço-texto {
   position: absolute;
   
@@ -1005,6 +1011,7 @@ input:-webkit-autofill {
 
 .div-modelo-negocio h1 {
   font-size: 40px;
+  color: #4dff2c;
 }
 
 .painel-modelo-negocio {
@@ -1269,12 +1276,14 @@ input:-webkit-autofill {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  padding: 30px;
+  padding-bottom: 0;
   
 }
 
 #porque-ter-um-site * {
   box-sizing: border-box;
+  
 }
 
 .bloco {
@@ -1282,7 +1291,17 @@ input:-webkit-autofill {
 }
 
 .bloco01 { 
+ border: solid 2px red;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
  padding: 2%;
+ height: 100vh;
+ width: 100vw;
+ box-sizing: border-box;
+ background-image: url('imgs/foguete-fundo.webp');
+background-attachment: fixed;
 }
 
 .bloco01 h1 {
@@ -1563,17 +1582,18 @@ color: #CCC7C7;
   display: flex;
   
   align-items: end;
- width: 100%;
+ width: 100vw;
  height: fit-content;
  padding-top: 30px;
 }
 
-.bloco04 div {
+.bloco04 > div {
   background-color: #4dff2c;
   
   height: fit-content;
   
-  width: 100%;
+  width: 100vw;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
