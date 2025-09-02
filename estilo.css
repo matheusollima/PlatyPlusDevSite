@@ -30,7 +30,7 @@ body {
 
 /* EFEITO REVEAL ELEMENTOS*/
 
-.efeito-reveal-titulo, .efeito-reveal-botao, .efeito-reveal-img {
+.efeito-reveal-titulo, .efeito-reveal-botao, .efeito-reveal-img, .subtitulo {
   visibility: hidden;
 }
 
