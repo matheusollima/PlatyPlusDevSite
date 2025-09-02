@@ -236,7 +236,7 @@ window.addEventListener("resize", () => {
 // ANIMAÇÃO DE DIGITAÇÃO SLOGAN
 
 //texto que sera digitao e apagado
-const texto_apresentação = "Seu site, sua cara, nosso talento!";
+const texto_apresentação = "< Seu site, sua cara, nosso talento! >";
 
 //Função para escrever o texto
 function escrever(texto, elemento) {
