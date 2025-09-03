@@ -697,11 +697,17 @@ input:-webkit-autofill {
 #serviços {
   display: grid;
   align-items: start;
+  overflow-y: hidden;
 }
 
 #serviços-titulo {
   font-size: min(4vw, 3rem);
   padding: 0;
+}
+
+
+#serviços-subtitulo01 {
+  padding-bottom: 50px;
 }
 
 #painel-serviços {
@@ -710,7 +716,8 @@ input:-webkit-autofill {
   row-gap: 100px;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: fit-content;
+  background-color: transparent;
 }
 
 .painel-software {
@@ -722,6 +729,8 @@ input:-webkit-autofill {
   gap: 20px;
   padding-left: 5%;
   padding-right: 5%;
+  background-color: #000;
+  
 }
 
 .painel-software-div {
@@ -947,6 +956,14 @@ input:-webkit-autofill {
   gap: 20px;
   padding: 20px;
   background-color: #000;
+}
+
+.modelo-negocio-card1, .modelo-negocio-card2 {
+  visibility: hidden;
+}
+
+.modelo-negocio-card1:hover, .modelo-negocio-card2:hover {
+  
 }
 
 .painel-modelo-negocio div {
@@ -1284,6 +1301,7 @@ input:-webkit-autofill {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
 
 #elementos-bloco02 img {
   /* height: 30px; */
@@ -1722,6 +1740,8 @@ input:-webkit-autofill {
   transform: translateX(-100%);
   background-color: transparent;
   box-sizing: border-box;
+  
+
 }
 
 .show {
@@ -1729,6 +1749,7 @@ input:-webkit-autofill {
   filter: blur(0);
   transform: translateX(0);
   transition: all 2s;
+  
 }
 
 .section#inicio {
@@ -1767,9 +1788,11 @@ input:-webkit-autofill {
 #serviços-hidden {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box !important;
+  box-sizing: border-box;
   width: 100%;
-  height: auto;
+  height: fit-content;
+
+  
 }
 
 #serviços-hidden > * {
