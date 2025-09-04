@@ -1117,9 +1117,10 @@
 
 
   #rodape {
-    height: 100vh;
+    min-height: 100vh;
+
     grid-template-columns: 100%;
-    grid-template-rows: 66% 1fr 5%;
+    grid-template-rows: 66% auto 5%;
     grid-template-areas:
       "formContato"
       "contato"
@@ -1152,7 +1153,7 @@
     width: 100%;
     grid-area: formContato;
     justify-content: center;
-    
+    padding-bottom: 20px;
 
 
   }
@@ -1162,8 +1163,8 @@
     position: static;
     grid-template-rows: 10% 10% 10% 1fr auto auto;
     transform: none;
-    max-height: 90%;
-    height: 90%;
+    
+    height: 100%;
     width: 80%;
     border: solid green 2px;
     padding: 5%;
@@ -1230,11 +1231,13 @@
     grid-area: contato;
     display: flex;
     flex-direction: column !important;
-    height: 100%;
+    height: fit-content;
     gap: 10px;
-   overflow: hidden;
+  
    background-color: #110f0f;
   box-sizing: border-box;
+  overflow-y: hidden;
+  padding-bottom: 30px;
    
   }
 
@@ -1259,8 +1262,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: auto;
+    height: fit-content;
+    width: fit-content;
     align-self: center;
     justify-self: center;
     box-sizing: border-box;
