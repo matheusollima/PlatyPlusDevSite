@@ -1230,15 +1230,17 @@ input:-webkit-autofill {
 }
 
 .bloco01 {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100% 100%;
   justify-content: center;
   align-items: center;
   padding: 2%;
+  padding-bottom: 0;
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.99)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
     url("imgs/foguete-fundo.webp");
   background-attachment: fixed;
   background-size: cover;
@@ -1256,6 +1258,22 @@ input:-webkit-autofill {
 
 .bloco01 h2 {
   text-wrap: balance;
+}
+
+#img-bloco01 {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+
+#img-bloco01 img {
+ margin-top: 100000px;
+
+}
+
+#apresentacao-bloco01{
+  
 }
 
 .bloco02 {
@@ -1479,7 +1497,7 @@ input:-webkit-autofill {
 }
 
 .bloco04 {
-  height: 90vh;
+  height: 50vh;
   display: flex;
   box-sizing: border-box;
   align-items: end;
