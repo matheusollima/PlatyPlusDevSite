@@ -82,7 +82,7 @@ revelar.reveal('.card1',
     {
         duration: 2000,
         distance: '90px',
-        delay: 1500
+        delay: 1000
       
     }
 )
@@ -91,7 +91,7 @@ revelar.reveal('.card2',
     {
         duration: 2000,
         distance: '90px',
-        delay: 2000
+        delay: 1000
       
     }
 )
@@ -100,7 +100,7 @@ revelar.reveal('.card3',
     {
         duration: 2000,
         distance: '90px',
-        delay: 2500
+        delay: 1000
       
     }
 )
@@ -109,7 +109,7 @@ revelar.reveal('.card4',
     {
         duration: 2000,
         distance: '90px',
-        delay: 3000
+        delay: 1000
       
     }
 )
@@ -117,7 +117,7 @@ revelar.reveal('.card5',
     {
         duration: 2000,
         distance: '90px',
-        delay: 3500
+        delay: 1000
       
     }
 )
@@ -126,7 +126,7 @@ revelar.reveal('.card6',
     {
         duration: 2000,
         distance: '90px',
-        delay: 4000
+        delay: 1000
       
     }
 )

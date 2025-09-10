@@ -329,7 +329,7 @@
   }
 
   section {
-    height: calc(100vh - 12vh) !important;
+   
   }
 
   .section {
@@ -363,7 +363,7 @@
   section#serviços {
     height: 100vh !important;
     min-width: 100vw !important;
-    height: auto !important;
+    height: fit-content !important;
     display: flex !important;
     justify-content: center !important;
     /* overflow-x: hidden; */
@@ -371,6 +371,7 @@
     flex-direction: column;
     margin-top: 0 !important;
     position: relative;
+      align-items: center;
   }
 
   #serviços-hidden {
@@ -380,10 +381,13 @@
     width: 100vw !important;
     height: auto !important;
     box-sizing: border-box;
+  
   }
 
   #serviços-titulo {
     font-size: min(10vw, 2.5rem);
+    border: solid 2px red;
+    
   }
 
   #serviços-subtitulo01 {
@@ -410,6 +414,58 @@
 
   .hidden {
     box-sizing: border-box;
+  }
+
+
+
+  #porque-ter-um-site {
+    border: solid 2px red;
+   
+  } 
+
+  .bloco01 {
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+   
+  }
+
+  .bloco01 > * {
+    border: solid 2px red;
+  }
+
+ #img-bloco01 {
+  height: fit-content;
+ }
+
+  .bloco01 img {
+   border: solid 2px blue;
+  }
+
+ #apresentacao-bloco01 .titulo {
+  font-size: min(10vw, 2.5rem) ;
+ }
+
+#apresentacao-bloco01 .subtitulo {
+  font-size: min(5vw, 2rem);
+}
+
+  .bloco02 {
+   height: min-content !important;
+   background-color: red;
+   border: solid 2px blue;
+  }
+
+  #elementos-bloco02 {
+    height: fit-content;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, calc(200vh / 6)) ;
+    background-color: red;
+  }
+
+  .bloco04 {
+    visibility: hidden;
   }
 
   /* DESKTOP */
