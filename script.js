@@ -192,9 +192,9 @@ const ativar_menu = () => {
 /* ANIMAÇÃO DE DIMINUIR O MENU */
 var resolucao = window.screen.width;
 var navMenu = document.querySelector(".navMenu");
-var menuTamanhoMaior = "120px";
-var menuTamanhoMaior768p = "100px";
-var menuTamanhoMenor = "80px";
+var menuTamanhoMaior = "80px";
+var menuTamanhoMaior768p = "80px";
+var menuTamanhoMenor = "60px";
 var tamanhoMenu = navMenu.offsetHeight;
 console.log(tamanhoMenu);
 window.addEventListener("scroll", () => {
@@ -215,9 +215,9 @@ window.addEventListener("resize", () => {
 
   if (resolucao > 1366) {
     console.log(resolucao);
-    navMenu.style.height = "120px";
+    navMenu.style.height = "80px";
   } else if (resolucao <= 1366) {
-    navMenu.style.height = "100px";
+    navMenu.style.height = "80px";
   }
 
   window.addEventListener("scroll", () => {

@@ -60,7 +60,8 @@
 
   .apresentacao {
     box-sizing: border-box;
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
+    
     width: 100vw;
     margin-top: 0;
       display: grid;

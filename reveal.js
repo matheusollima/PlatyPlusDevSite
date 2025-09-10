@@ -60,7 +60,7 @@ revelar.reveal('.modelo-negocio-card1',
     {
         duration: 2000,
         distance: '90px',
-        delay: 1500
+        delay: 1000
       
     }
 )
@@ -69,7 +69,7 @@ revelar.reveal('.modelo-negocio-card2',
     {
         duration: 2000,
         distance: '90px',
-        delay: 2000
+        delay: 1500
       
     }
 )
@@ -128,5 +128,15 @@ revelar.reveal('.card6',
         distance: '90px',
         delay: 4000
       
+    }
+)
+
+revelar.reveal('.img-bloco01',
+    {
+        duration: 2000,
+        distance: '90px',
+        delay: 2000,
+        origin: 'left'
+       
     }
 )

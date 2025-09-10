@@ -9,7 +9,8 @@ body {
 }
 
 .apresentacao {
-  height: calc(100vh - 120px);
+  /* height: calc(100vh - 120px); */
+  height: calc(100vh - 80px);
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -19,7 +20,7 @@ body {
     "botao   imagem";
   justify-content: center;
   /* background-color: #121412; */
-  background-image: url("./imgs/sectionbg.webp");
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/sectionbg.webp");
   background-attachment: fixed;
   background-size: cover;
   box-sizing: border-box;
@@ -61,7 +62,7 @@ body {
 }
 
 #titulo-apresentação {
-  font-size: min(3vw, 3rem) !important;
+  font-size: min(2.2vw, 2.2rem) !important;
   color: #39ff14;
   justify-self: center;
   margin-top: 15%;
@@ -193,7 +194,7 @@ h2 {
   background-color: #0e0f0e;
   opacity: 0.99;
   backdrop-filter: blur(50px);
-  height: clamp(50px, 120px, 120px);
+  height: clamp(50px, 80px, 80px);
   width: 100% !important;
   transition: height 0.3s ease;
   box-sizing: border-box;
@@ -1265,15 +1266,16 @@ input:-webkit-autofill {
   display: flex;
   justify-content: end;
   flex-direction: column;
+ 
 }
 
 #img-bloco01 img {
- margin-top: 100000px;
+
 
 }
 
 #apresentacao-bloco01{
-  
+  z-index: 1;
 }
 
 .bloco02 {
@@ -1282,6 +1284,7 @@ input:-webkit-autofill {
   background-color: #080808;
   padding-top: 40px;
   padding-bottom: 40px;
+
 }
 
 #apresentacao-bloco02 {
