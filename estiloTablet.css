@@ -93,6 +93,48 @@
     padding: 1rem 2.5rem !important;
   }
 
+
+
+  /* Sessão Porque ter um site */
+
+  .bloco01 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+    "apresentacao-bloco01"
+    "img-bloco01";
+    justify-content: center;
+    align-items: center;
+    background-position: right;
+    height: 100vh;
+  }
+
+
+  #apresentacao-bloco01 {
+    grid-area: apresentacao-bloco01;
+  }
+
+
+  #img-bloco01 {
+    grid-area: img-bloco01;
+  }
+
+  #img-bloco01 img {
+   height: 100%;
+   display: inline-block;
+  object-fit: contain;
+  }
+
+
+  #elementos-bloco02 {
+    height: fit-content;
+    grid-template-columns: repeat(2, calc(100% / 2));
+    grid-template-rows: repeat(3, calc(100% / 3)) ;
+    
+  }
+
+
   #sobre {
     height: auto;
     padding-bottom: 10%;

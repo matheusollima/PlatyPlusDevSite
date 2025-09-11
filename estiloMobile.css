@@ -419,7 +419,7 @@
 
 
   #porque-ter-um-site {
-    border: solid 2px red;
+    
    
   } 
 
@@ -428,19 +428,16 @@
    flex-direction: column-reverse;
    align-items: center;
    justify-content: center;
-   
+   background-position: right;
   }
 
-  .bloco01 > * {
-    border: solid 2px red;
-  }
 
  #img-bloco01 {
-  height: fit-content;
+  display: none;
  }
 
   .bloco01 img {
-   border: solid 2px blue;
+   
   }
 
  #apresentacao-bloco01 .titulo {
@@ -453,19 +450,18 @@
 
   .bloco02 {
    height: min-content !important;
-   background-color: red;
-   border: solid 2px blue;
+  
   }
 
   #elementos-bloco02 {
     height: fit-content;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(6, calc(200vh / 6)) ;
-    background-color: red;
+    grid-template-rows: repeat(6, 300px) ;
+    
   }
 
   .bloco04 {
-    visibility: hidden;
+    
   }
 
   /* DESKTOP */
@@ -1176,7 +1172,7 @@
     min-height: 100vh;
 
     grid-template-columns: 100%;
-    grid-template-rows: 66% auto 5%;
+    grid-template-rows: 66% 1fr 5%;
     grid-template-areas:
       "formContato"
       "contato"
@@ -1287,7 +1283,7 @@
     grid-area: contato;
     display: flex;
     flex-direction: column !important;
-    height: fit-content;
+    min-height: fit-content;
     gap: 10px;
   
    background-color: #110f0f;

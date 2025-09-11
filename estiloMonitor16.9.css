@@ -164,22 +164,12 @@
     position: relative;
   }
 
-  #tecnologias-titulo {
-    position: relative;
-    top: 60px;
-  }
-
-  #tecnologias-subtitulo01 {
-    position: relative;
-    top: -40px;
-  }
 
   #painelTecnologias {
     width: 853.75px;
     height: 498.02px;
     margin: 0;
-    position: relative;
-    top: -50px;
+  
   }
 
   /* PAINEL TECNOLIGIAS FRONT-END*/
@@ -299,7 +289,7 @@
   }
 
   .tecnologia-database li {
-    margin-top: -50px;
+   margin-top: -5px; 
   }
 
   #data-li img {

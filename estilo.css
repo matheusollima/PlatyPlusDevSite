@@ -264,7 +264,7 @@ nav li a {
   font-weight: 300;
   font-size: clamp(14px, 2vw, 30px);
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0px 0px 10px 0;
   position: relative;
   user-select: none;
@@ -1013,6 +1013,21 @@ input:-webkit-autofill {
   /* background-color: #cdd69d; */
   /* background-color: #6c724b; */
   height: 100vh;
+
+ 
+}
+
+#tecnologias section  {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#tecnologias section:first-child {
+  
 }
 
 #platypus-capacete {
@@ -1043,6 +1058,7 @@ input:-webkit-autofill {
   width: 1200px;
   height: 700px;
   background-color: transparent;
+  
   border-bottom: solid 6px green;
   border-radius: 20px;
   background-color: black;
@@ -1196,6 +1212,8 @@ input:-webkit-autofill {
   display: grid;
   align-items: center;
   transition: 0.9ms ease-in-out;
+ 
+ 
 }
 
 #data-li:hover {
