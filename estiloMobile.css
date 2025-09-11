@@ -386,18 +386,20 @@
 
   #serviços-titulo {
     font-size: min(10vw, 2.5rem);
-    border: solid 2px red;
+   
     
   }
 
   #serviços-subtitulo01 {
-    font-size: 15px;
+    font-size: min(5vw, 2.5rem);
     width: auto;
+    text-wrap: balance;
     text-align: center;
   }
 
   .titulo-softwares {
     font-size: 10px;
+  
   }
 
   .painel-software {
@@ -419,7 +421,8 @@
 
 
   #porque-ter-um-site {
-    
+    height: fit-content;
+  
    
   } 
 
@@ -449,7 +452,9 @@
 }
 
   .bloco02 {
-   height: min-content !important;
+   height: fit-content !important;
+  
+   
   
   }
 
@@ -461,9 +466,13 @@
   }
 
   .bloco04 {
-    
+    height: auto;
   }
 
+
+  #relogio-icon {
+    object-fit: contain;
+  }
   /* DESKTOP */
 
   #painel-serviços {
